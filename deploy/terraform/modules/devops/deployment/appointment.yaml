@@ -1,0 +1,13 @@
+version: 1.0
+component: deployment
+runAs: ocarun
+env:
+  variables:
+    OCI_CLI_AUTH: "instance_principal"
+steps:
+  - stepType: Command
+    name: update appointment's deployment.yaml
+    command: |
+      oci ce cluster create-kubeconfig --cluster-id ${cluster-id} --file $HOME/.kube/config  --region ${region} --token-version 2.0.0 --auth instance_principal --kube-endpoint PRIVATE_ENDPOINT
+      kubectl set image deployment/uho-appointment appointment=${docker_repository}/${namespace}/${image}:${hash} -n uho
+    timeoutInSeconds: 600

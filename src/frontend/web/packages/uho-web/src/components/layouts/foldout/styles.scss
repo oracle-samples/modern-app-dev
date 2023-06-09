@@ -1,0 +1,17 @@
+$profileWidth: 348px;
+
+.foldout-layout {
+  width: 100vw;
+  max-width: 100vw;
+  overflow-x: auto;
+
+  .foldout-profile {
+    width: $profileWidth;
+  }
+
+  .conveyor-belt-container {
+    box-sizing: border-box;
+    width: calc(100vw - $profileWidth);
+    max-width: calc(100vw - $profileWidth);
+  }
+}

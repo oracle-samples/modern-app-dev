@@ -1,0 +1,104 @@
+micronaut:
+  application:
+    name: provider
+  security:
+    token:
+      jwt:
+        signatures:
+          static-jwks:
+            key-type: "RSA"
+            keys:
+      roles-name: "scope"
+    endpoints:
+      logout:
+        enabled: true
+        get-allowed: true
+    intercept-url-map:
+      - pattern: /v1/providers/*/feedbacks
+        httpMethod: POST
+        access:
+          - /patient
+      - pattern: /v1/providers
+        httpMethod: POST
+        access:
+          - /service
+      - pattern: /v1/providers/*/schedules
+        httpMethod: POST
+        access:
+          - /provider
+          - /service
+      - pattern: /v1/providers/*
+        httpMethod: DELETE
+        access:
+          - /service
+      - pattern: /v1/providers/*/schedules/*
+        httpMethod: DELETE
+        access:
+          - /provider
+          - /service
+      - pattern: /v1/providers/*
+        httpMethod: GET
+        access:
+          - /patient
+          - /provider
+          - /service
+      - pattern: /v1/providers/username/*
+        httpMethod: GET
+        access:
+          - /patient
+          - /provider
+      - pattern: /v1/providers/*/schedules/*
+        httpMethod: GET
+        access:
+          - /provider
+          - /service
+      - pattern: /v1/providers/*/feedbacks
+        httpMethod: GET
+        access:
+          - /patient
+          - /provider
+      - pattern: /v1/providers/actions/search
+        httpMethod: GET
+        access:
+          - /patient
+      - pattern: /v1/providers/*/schedules
+        httpMethod: GET
+        access:
+          - /provider
+      - pattern: /v1/providers/*/slots
+        httpMethod: GET
+        access:
+          - /patient
+          - /provider
+  metrics:
+    enabled: true
+    export:
+      oraclecloud:
+        enabled: true
+        namespace: uho_${micronaut.application.name}
+        resourceGroup: mn_prod
+        compartmentId:
+datasources:
+  default:
+    ocid:
+    walletPassword:
+    username:
+    password:
+
+streaming:
+  id:
+  endpoint:
+
+tracing:
+  zipkin:
+    enabled: true
+    sampler:
+      probability: 1
+    http:
+      url:
+      path:
+
+oci:
+  config:
+    instance-principal:
+      enabled: true

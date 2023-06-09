@@ -1,0 +1,42 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: "frontend-init-job"
+spec:
+  ttlSecondsAfterFinished: 120
+  template:
+    spec:
+      restartPolicy: Never
+      initContainers:
+        - name: secret-read
+          image: ghcr.io/oracle/oci-cli:latest
+          workingDir: "/home"
+          command: ["/bin/bash","-c"]
+          args:
+            - cp /tmp/vault-read.sh /oracle/vault-read.sh; chmod +x /oracle/vault-read.sh; /oracle/vault-read.sh
+          env:
+            - name: VAULT_OCID
+              value: {{ .Values.global.oci_vault_id }}
+          volumeMounts:
+            - name: initvault
+              mountPath: /tmp
+            - name: idcs
+              mountPath: /idcs
+      containers:
+        - name: secret-write
+          image: bitnami/kubectl
+          command: ["/bin/sh", "-c"]
+          args: ["kubectl delete secret idcs ; kubectl create secret generic idcs --from-file /idcs"]
+          volumeMounts:
+            - mountPath: "/idcs"
+              name: idcs         
+      volumes:
+        - name: idcs
+          emptyDir: {}
+        - name: initvault  
+          configMap:
+            name: "frontend-vault-init-configmap"
+            items:
+              - key: vault-read.sh
+                path: vault-read.sh
+      serviceAccountName: "secret-creator-sa"          

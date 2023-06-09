@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "target": "esnext",
+    "declaration": true,
+    "resolveJsonModule": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "noImplicitReturns": true,
+    "alwaysStrict": true,
+    "strictBindCallApply": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "forceConsistentCasingInFileNames": true,
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "jsx": "react",
+    "jsxFactory": "h",
+    "jsxFragmentFactory": "Fragment",
+    "esModuleInterop": true,
+    "typeRoots": ["./node_modules/@oracle/oraclejet/dist/types", "node_modules/@types"],
+    "paths": {
+      "ojs/*": ["./node_modules/@oracle/oraclejet/dist/types/*"],
+      "oj-c/*": ["./node_modules/@oracle/oraclejet-core-pack/oj-c/types/*"]
+    }
+  },
+  "exclude": ["build", "node_modules", "dist"]
+}

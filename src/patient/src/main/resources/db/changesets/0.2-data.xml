@@ -1,0 +1,181 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<!--
+  Copyright (c) 2023 Oracle and/or its affiliates.
+  Licensed under the Universal Permissive License v 1.0 as shown at https://oss.oracl.com/licenses/upl/
+-->
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.9.xsd">
+    <changeSet id="1" author="reference_application@oracle.com">
+        <insert tableName="patient">
+            <column name="name" value="${prefix}_patient"/>
+            <column name="username" value="${prefix}_patient"/>
+            <column name="phone" value="202-555-0165"/>
+            <column name="dob" valueDate="1980-01-01"/>
+            <column name="email" value="${prefix}_patient@mailinator.com"/>
+            <column name="gender" value="FEMALE"/>
+            <column name="zip" value="90001"/>
+            <column name="city" value="Los Angeles"/>
+            <column name="country" value="US"/>
+            <column name="primary_care_provider_id" value="1"/>
+            <column name="insurance_provider" value="CareShield Insurance Plans"/>
+        </insert>
+        <insert tableName="patient">
+            <column name="name" value="John Smith"/>
+            <column name="username" value="johnsmith"/>
+            <column name="phone" value="202-555-0163"/>
+            <column name="dob" valueDate="1975-05-15"/>
+            <column name="email" value="johnsmith@mailinator.com"/>
+            <column name="gender" value="MALE"/>
+            <column name="zip" value="90001"/>
+            <column name="city" value="Los Angeles"/>
+            <column name="country" value="US"/>
+            <column name="primary_care_provider_id" value="3"/>
+            <column name="insurance_provider" value="CareShield Insurance Plans"/>
+        </insert>
+        <insert tableName="patient">
+            <column name="name" value="Emily Chen"/>
+            <column name="username" value="emilychen"/>
+            <column name="phone" value="202-555-0108"/>
+            <column name="dob" valueDate="1995-10-03"/>
+            <column name="email" value="emilychen@mailinator.com"/>
+            <column name="gender" value="FEMALE"/>
+            <column name="zip" value="789012"/>
+            <column name="city" value="San Francisco"/>
+            <column name="country" value="US"/>
+            <column name="primary_care_provider_id" value="2"/>
+            <column name="insurance_provider" value="HealthMate Insurance Group"/>
+        </insert>
+        <insert tableName="patient">
+            <column name="name" value="Daniel Kim"/>
+            <column name="username" value="danielkim"/>
+            <column name="phone" value="202-555-0172"/>
+            <column name="dob" valueDate="1988-12-25"/>
+            <column name="email" value="danielkim@mailinator.com"/>
+            <column name="gender" value="MALE"/>
+            <column name="zip" value="456789"/>
+            <column name="city" value="New York"/>
+            <column name="country" value="US"/>
+            <column name="primary_care_provider_id" value="5"/>
+            <column name="insurance_provider" value="MedicoShield Health Benefits"/>
+        </insert>
+        <insert tableName="patient">
+            <column name="name" value="Sarah Lee"/>
+            <column name="username" value="sarahlee"/>
+            <column name="phone" value="202-555-0149"/>
+            <column name="dob" valueDate="1990-06-10"/>
+            <column name="email" value="sarahlee@mailinator.com"/>
+            <column name="gender" value="FEMALE"/>
+            <column name="zip" value="234567"/>
+            <column name="city" value="Boston"/>
+            <column name="country" value="US"/>
+            <column name="primary_care_provider_id" value="4"/>
+            <column name="insurance_provider" value="UnityHealth Insurance"/>
+        </insert>
+        <insert tableName="patient">
+            <column name="name" value="Olivia Davis"/>
+            <column name="username" value="oliviadavis"/>
+            <column name="phone" value="650-555-0175"/>
+            <column name="dob" valueDate="1992-02-14"/>
+            <column name="email" value="oliviadavis@mailinator.com"/>
+            <column name="gender" value="FEMALE"/>
+            <column name="zip" value="345678"/>
+            <column name="city" value="Seattle"/>
+            <column name="country" value="US"/>
+            <column name="primary_care_provider_id" value="7"/>
+            <column name="insurance_provider" value="UnityHealth Insurance"/>
+        </insert>
+        <insert tableName="patient">
+            <column name="name" value="Jacob Johnson"/>
+            <column name="username" value="jacobjohnson"/>
+            <column name="phone" value="650-555-0175"/>
+            <column name="dob" valueDate="1977-11-28"/>
+            <column name="email" value="jacobjohnson@mailinator.com"/>
+            <column name="gender" value="MALE"/>
+            <column name="zip" value="567890"/>
+            <column name="city" value="Boston"/>
+            <column name="country" value="US"/>
+            <column name="primary_care_provider_id" value="9"/>
+            <column name="insurance_provider" value="VitalGuard Health Coverage"/>
+        </insert>
+        <insert tableName="patient">
+            <column name="name" value="Sophia Lee"/>
+            <column name="username" value="sophialee"/>
+            <column name="phone" value="650-555-0196"/>
+            <column name="dob" valueDate="1985-04-19"/>
+            <column name="email" value="sophialee@mailinator.com"/>
+            <column name="gender" value="FEMALE"/>
+            <column name="zip" value="123456"/>
+            <column name="city" value="Chicago"/>
+            <column name="country" value="US"/>
+            <column name="primary_care_provider_id" value="8"/>
+            <column name="insurance_provider" value="MedicoShield Health Benefits"/>
+        </insert>
+        <insert tableName="patient">
+            <column name="name" value="Ethan Brown"/>
+            <column name="username" value="ethanbrown"/>
+            <column name="phone" value="650-555-0131"/>
+            <column name="dob" valueDate="1998-09-03"/>
+            <column name="email" value="ethanbrown@mailinator.com"/>
+            <column name="gender" value="MALE"/>
+            <column name="zip" value="100123"/>
+            <column name="city" value="New York"/>
+            <column name="country" value="US"/>
+            <column name="primary_care_provider_id" value="10"/>
+            <column name="insurance_provider" value="HealthWise Insurance Company"/>
+        </insert>
+        <insert tableName="patient">
+            <column name="name" value="Mia Martinez"/>
+            <column name="username" value="miamartinez"/>
+            <column name="phone" value="650-555-0131"/>
+            <column name="dob" valueDate="2000-07-12"/>
+            <column name="email" value="miamartinez@mailinator.com"/>
+            <column name="gender" value="FEMALE"/>
+            <column name="zip" value="100123"/>
+            <column name="city" value="New York"/>
+            <column name="country" value="US"/>
+            <column name="primary_care_provider_id" value="4"/>
+            <column name="insurance_provider" value="MedicoShield Health Benefits"/>
+        </insert>
+        <insert tableName="patient">
+            <column name="name" value="Avery Wilson"/>
+            <column name="username" value="averywilson"/>
+            <column name="phone" value="650-555-0161"/>
+            <column name="dob" valueDate="1995-12-07"/>
+            <column name="email" value="averywilson@mailinator.com"/>
+            <column name="gender" value="FEMALE"/>
+            <column name="zip" value="100123"/>
+            <column name="city" value="New York"/>
+            <column name="country" value="US"/>
+            <column name="primary_care_provider_id" value="3"/>
+            <column name="insurance_provider" value="WellSure Health Insurance"/>
+        </insert>
+        <insert tableName="patient">
+            <column name="name" value="Henry Rodriguez"/>
+            <column name="username" value="henryrodriguez"/>
+            <column name="phone" value="650-555-0170"/>
+            <column name="dob" valueDate="1988-05-15"/>
+            <column name="email" value="henryrodriguez@mailinator.com"/>
+            <column name="gender" value="MALE"/>
+            <column name="zip" value="900123"/>
+            <column name="city" value="Los Angeles"/>
+            <column name="country" value="US"/>
+            <column name="primary_care_provider_id" value="6"/>
+            <column name="insurance_provider" value="VitalGuard Health Coverage"/>
+        </insert>
+        <insert tableName="patient">
+            <column name="name" value="Isabella Johnson"/>
+            <column name="username" value="isabellajohnson"/>
+            <column name="phone" value="650-555-0136"/>
+            <column name="dob" valueDate="1999-03-21"/>
+            <column name="email" value="isabellajohnson@mailinator.com"/>
+            <column name="gender" value="FEMALE"/>
+            <column name="zip" value="021234"/>
+            <column name="city" value="Boston"/>
+            <column name="country" value="US"/>
+            <column name="primary_care_provider_id" value="2"/>
+            <column name="insurance_provider" value="MedicoShield Health Benefits"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>

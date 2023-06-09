@@ -1,5 +1,3 @@
-*Detailed instructions on how to contribute to the project, if applicable. Must include section about Oracle Contributor Agreement with link and instructions*
-
 # Contributing to this repository
 
 We welcome your contributions! There are multiple ways to contribute.
@@ -43,7 +41,7 @@ can be accepted.
 1. Ensure that any documentation is updated with the changes that are required
    by your change.
 1. Ensure that any samples are updated if the base image has been changed.
-1. Submit the pull request. *Do not leave the pull request blank*. Explain exactly
+1. Submit the pull request. _Do not leave the pull request blank_. Explain exactly
    what your changes are meant to do and provide simple steps on how to validate.
    your changes. Ensure that you reference the issue you created as well.
 1. We will assign the pull request to 2-3 people for review before it is merged.

@@ -1,0 +1,73 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<!--
+  Copyright (c) 2023 Oracle and/or its affiliates.
+  Licensed under the Universal Permissive License v 1.0 as shown at https://oss.oracl.com/licenses/upl/
+-->
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.9.xsd">
+    <changeSet id="1" author="reference_application@oracle.com">
+        <createTable tableName="Provider">
+            <column name="id" type="INTEGER" autoIncrement="true">
+                <constraints primaryKey="true" />
+            </column>
+            <column name="username" type="VARCHAR(50)">
+                <constraints unique="true" />
+            </column>
+            <column name="first_name" type="varchar(50)" />
+            <column name="middle_name" type="varchar(50)" />
+            <column name="last_name" type="varchar(50)" />
+            <column name="title" type="varchar(50)" />
+            <column name="phone" type="varchar(20)" />
+            <column name="email" type="varchar(60)" />
+            <column name="gender" type="varchar(30)" />
+            <column name="zip" type="varchar(6)" />
+            <column name="city" type="varchar(30)" />
+            <column name="country" type="varchar(30)" />
+            <column name="speciality" type="varchar(30)" />
+            <column name="qualification" type="varchar(50)" />
+            <column name="designation" type="varchar(50)" />
+            <column name="professional_summary" type="varchar(4000)" />
+            <column name="interests" type="varchar(1000)" />
+            <column name="expertise" type="varchar(3000)" />
+            <column name="tags" type="varchar(500)" />
+            <column name="hospital_name" type="varchar(100)" />
+            <column name="hospital_address" type="varchar(200)" />
+            <column name="hospital_phone" type="varchar(20)" />
+        </createTable>
+        <createTable tableName="Schedule">
+            <column name="id" type="int" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false" />
+            </column>
+            <column name="provider_id" type="int">
+                <constraints foreignKeyName="schedule_provider_fk" referencedTableName="Provider" referencedColumnNames="id" />
+            </column>
+            <column name="start_time" type="timestamp with time zone" />
+            <column name="end_time" type="timestamp with time zone" />
+        </createTable>
+        <createTable tableName="Slot">
+            <column name="id" type="int" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false" />
+            </column>
+            <column name="provider_id" type="int">
+                <constraints foreignKeyName="slot_provider_fk" referencedTableName="Provider" referencedColumnNames="id" />
+            </column>
+            <column name="start_time" type="timestamp with time zone" />
+            <column name="end_time" type="timestamp with time zone" />
+            <column name="status" type="varchar(20)" />
+        </createTable>
+
+        <createTable tableName="Feedback">
+            <column name="id" type="int" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false" />
+            </column>
+            <column name="provider_id" type="int">
+                <constraints foreignKeyName="feedback_provider_fk" referencedTableName="Provider" referencedColumnNames="id" />
+            </column>
+            <column name="patient_id" type="int" />
+            <column name="text" type="varchar(200)" />
+            <column name="rating" type="int" />
+        </createTable>
+    </changeSet>
+</databaseChangeLog>

@@ -1,0 +1,11 @@
+.empty-screen {
+  background: var(--background-empty);
+  height: 100%;
+  width: 100%;
+  padding-left: 90px;
+  padding-bottom: 170px;
+
+  .title {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+}

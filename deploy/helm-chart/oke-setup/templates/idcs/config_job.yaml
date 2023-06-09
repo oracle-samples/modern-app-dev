@@ -1,0 +1,62 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: "idcs-config-job"
+  namespace: uho
+spec:
+  backoffLimit: 1
+  ttlSecondsAfterFinished: 86400
+  template:
+    spec:
+      restartPolicy: Never
+      initContainers:
+        - name: idcs-init
+          image: ghcr.io/oracle/oci-cli:latest
+          command: ["/bin/sh", "-c"]
+          args:
+            - cp /tmp/idcs-init.sh /oracle/idcs-init.sh; chmod +x /oracle/idcs-init.sh; /oracle/idcs-init.sh
+          env:
+            - name: IDCS_URL
+              value: {{ .Values.idcs.url }}
+            - name: IDCS_ADMIN_CLIENT_ID
+              value: {{ .Values.idcs.admin.client_id }}
+            - name: IDCS_ADMIN_CLIENT_SECRET
+              value: {{ .Values.idcs.admin.client_secret }}
+            - name: APIGW_URL
+              value: {{ .Values.apigw.url }}
+            - name: PREFIX
+              value: {{ .Values.deploy_id }}
+          volumeMounts:
+            - name: idcs-config
+              mountPath: /tmp
+              readOnly: true
+            - name: idcs
+              mountPath: /idcs
+      containers:
+        - name: idcs-secret
+          image: ghcr.io/oracle/oci-cli:latest
+          imagePullPolicy: IfNotPresent
+          command: ["/bin/sh", "-c"]
+          workingDir: /idcs
+          args:
+            - cp /tmp/vault-write.sh /oracle/vault-write.sh; chmod +x /oracle/vault-write.sh; /oracle/vault-write.sh file
+          env:
+            - name: COMPARTMENT_OCID
+              value: {{ .Values.compartment_ocid }}
+            - name: VAULT_OCID
+              value: {{ .Values.vault_ocid }}
+            - name: KEY_OCID
+              value: {{ .Values.key_ocid }}
+          volumeMounts:
+            - name: idcs-config
+              mountPath: /tmp
+              readOnly: true
+            - name: idcs
+              mountPath: /idcs
+              readOnly: true
+      volumes:
+        - name: idcs-config
+          configMap:
+            name: idcs
+        - name: idcs
+          emptyDir: {}

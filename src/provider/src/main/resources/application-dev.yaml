@@ -1,0 +1,112 @@
+micronaut:
+  application:
+    name: provider
+  security:
+    token:
+      jwt:
+        signatures:
+          static-jwks:
+            key-type: "RSA"
+            keys: "{\"keys\":[{\"kty\":\"RSA\",\"x5t#S256\":\"12FSWG2pGnxIx-w_3NuMIEoRfgirf7eTd2evsdRCMuc\",\"e\":\"AQAB\",\"x5t\":\"mf6WcCcYZxPjk5Kme7C3Z3YSZ2M\",\"kid\":\"SIGNING_KEY\",\"x5c\":[\"MIIDYTCCAkmgAwIBAgIGAX1HZZGgMA0GCSqGSIb3DQEBCwUAMFkxEzARBgoJkiaJk/IsZAEZFgNjb20xFjAUBgoJkiaJk/IsZAEZFgZvcmFjbGUxFTATBgoJkiaJk/IsZAEZFgVjbG91ZDETMBEGA1UEAxMKQ2xvdWQ5Q0EtMjAeFw0yMTExMjIxMTI2MThaFw0zMTExMjIxMTI2MThaMFYxEzARBgNVBAMTCnNzbERvbWFpbnMxDzANBgNVBAMTBkNsb3VkOTEuMCwGA1UEAxMlaWRjcy0yNjU1YzNmNGM3NTY0Y2UwOTYyYWNhOGEzYzFlOTc3NDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAJve7+vgZwhA0/Qq6/Q0T853zOL/oIKZx3j//3nWWlliJu9pIrT3bM48v7mRkSMYejS5x1VZaCMf48XYPqv6sTXnNhGTSdngClZsNHhoHpc9plKvK6oFsDGYzZATkzGlm9t0My9y4YsKzlVX6wnbuDLQV21EW8odiQuLvXI/oKJ31t1g1rWFAvmVEMTkfztl/xmcsoTAuunbSIL3MCrnzuMAPuw9QX98iSWyX1lh8Y82NI5JxXOTkdqe8ZV5Ymi5HRYdsRDq/5isHFJI4NX8J5B5yo1XC6AMkItGF5y+wu3+Pyq0KWBXEXto32QbCC6l51XE1BxV1QI5VkQG95oETZUCAwEAAaMyMDAwDwYDVR0PAQH/BAUDAwf4ADAdBgNVHQ4EFgQUuboY3I3PKaWMG/PP8Q3t8MPu41MwDQYJKoZIhvcNAQELBQADggEBAMQQofJ3a5nAujwzWG5Sps4bSLPFrn6Z0dLD9kiSGFhBgw9c/ghb88ktenyio0vq3rA5MBkeFr4kQEoQkD0F5ZkR8Tt3AUVZdMBSuQDrMvRara7ERfrQ/fy2PgeIUnxLAhM/e320g2vc6WahW5MFdLbU095s9mYW5EoDxaLW7ajGEjJeB85SdYoPswjV8yoJaz0z9UW+W1qCcnwNC7gw+Lm5ABc6IiAqOjGFdYxckYYYK3BYedCAlWrS/EdjsdN7tI/JQpAkJJen0SF8MkLpOAzVfjfELfut/3oVIsAiPYA6Z6et4P/XoGKlB89ojhxqMTvwEZPIsngPDaa6dwTb61Q=\",\"MIIDazCCAlOgAwIBAgIIMdQl7kIMrv0wDQYJKoZIhvcNAQELBQAwWTETMBEGCgmSJomT8ixkARkWA2NvbTEWMBQGCgmSJomT8ixkARkWBm9yYWNsZTEVMBMGCgmSJomT8ixkARkWBWNsb3VkMRMwEQYDVQQDEwpDbG91ZDlDQS0yMCAXDTE2MDUyMTAyMTgwOVoYDzIxMTYwNDI3MDIxODA5WjBZMRMwEQYKCZImiZPyLGQBGRYDY29tMRYwFAYKCZImiZPyLGQBGRYGb3JhY2xlMRUwEwYKCZImiZPyLGQBGRYFY2xvdWQxEzARBgNVBAMTCkNsb3VkOUNBLTIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDPZn2VAoMsIfWmIJks9exzK+DXaX6qYyBc12dRqDrRpC48v3CBeBchV/GT2E+mjcDp8Hzq8oIpwr9W5kwMja4PU3SPd4/0LB6WKbtLfHOnJxLg9EaT992UpbUGHaHlEq4oRAuVvPgDLp5sSspLZYEBKUh4vJXOyLitE1qsXn7mJNXRKTJZvrJKdfbs1dyTge3V3wk1rwY/wCWMKVgkqCgSzzWCGju8EZWoOrnzlR6BHkA0qZqeV4F7jDW8ucdv+Y20pOlOiaEbIg/ZFYGrZd5VWjlNvgLfU8P4C/YJLSkkcPHgoet3w4jI0S26efu59rVzgU9VsKnKtnqbDL99t81vAgMBAAGjNTAzMBIGA1UdEwEB/wQIMAYBAf8CAQAwHQYDVR0OBBYEFDMA8e55FI5kC12+guIE9xtcIXpFMA0GCSqGSIb3DQEBCwUAA4IBAQC45tOVeqHxA8Bo/Rnv1SHHpULge3HyTC1XV9nmUdrj6g/U6rmbA5hVJ5LshgQ77qopO/YsaNHj5Ru1u/+8VOlZWpbn+kt3CDOuBUCe89CKBZT/KWEDkvtNl2qu16gOkhFnuTQk8NsARvwZZ6KtyPDmsbW4Nc/I5fKwPhdTaMjCV6Lh9RCG4kU77lbdwY3SaXlCBXXQyfPWMouCi7z1thJaF3cNGW4tnsibMR5ej9fJ9j6UvShxNgAIgjNDoihPlC6k0kW3QDR3bBjCHJX47505aIhckojH/eKsP2Or0eE/Ma4WNbndj0IXPE2ae5AVmC8/GRtwAmnoZPnt3g/I2m5j\"],\"key_ops\":[\"wrapKey\",\"verify\",\"encrypt\"],\"alg\":\"RS256\",\"n\":\"m97v6-BnCEDT9Crr9DRPznfM4v-ggpnHeP__edZaWWIm72kitPdszjy_uZGRIxh6NLnHVVloIx_jxdg-q_qxNec2EZNJ2eAKVmw0eGgelz2mUq8rqgWwMZjNkBOTMaWb23QzL3LhiwrOVVfrCdu4MtBXbURbyh2JC4u9cj-gonfW3WDWtYUC-ZUQxOR_O2X_GZyyhMC66dtIgvcwKufO4wA-7D1Bf3yJJbJfWWHxjzY0jknFc5OR2p7xlXliaLkdFh2xEOr_mKwcUkjg1fwnkHnKjVcLoAyQi0YXnL7C7f4_KrQpYFcRe2jfZBsILqXnVcTUHFXVAjlWRAb3mgRNlQ\"}]}"
+      roles-name: "scope"
+    endpoints:
+      logout:
+        enabled: true
+        get-allowed: true
+    intercept-url-map:
+      - pattern: /v1/providers/*/feedbacks
+        httpMethod: POST
+        access:
+          - /patient
+      - pattern: /v1/providers
+        httpMethod: POST
+        access:
+          - /service
+      - pattern: /v1/providers/*/schedules
+        httpMethod: POST
+        access:
+          - /provider
+          - /service
+      - pattern: /v1/providers/*
+        httpMethod: DELETE
+        access:
+          - /service
+      - pattern: /v1/providers/*/schedules/*
+        httpMethod: DELETE
+        access:
+          - /provider
+          - /service
+      - pattern: /v1/providers/*
+        httpMethod: GET
+        access:
+          - /patient
+          - /provider
+          - /service
+      - pattern: /v1/providers/username/*
+        httpMethod: GET
+        access:
+          - /patient
+          - /provider
+      - pattern: /v1/providers/*/schedules/*
+        httpMethod: GET
+        access:
+          - /provider
+          - /service
+      - pattern: /v1/providers/*/feedbacks
+        httpMethod: GET
+        access:
+          - /patient
+          - /provider
+      - pattern: /v1/providers/actions/search
+        httpMethod: GET
+        access:
+          - /patient
+      - pattern: /v1/providers/*/schedules
+        httpMethod: GET
+        access:
+          - /provider
+      - pattern: /v1/providers/*/slots
+        httpMethod: GET
+        access:
+          - /patient
+          - /provider
+    enabled: false
+
+  metrics:
+    enabled: true
+    export:
+      oraclecloud:
+        enabled: true
+        namespace: uho_${micronaut.application.name}
+        resourceGroup: mn_local
+        compartmentId: #<Add compartment id here where metrics need to be posted>
+
+datasources:
+  default:
+    ocid:
+    walletPassword:
+    username:
+    password:
+
+liquibase:
+  datasources:
+    default:
+      parameters:
+        prefix: dev
+
+streaming:
+  id:
+  endpoint:
+
+tracing:
+  zipkin:
+    enabled: true
+    sampler:
+      probability: 1
+    http:
+      url:
+      path:
+
+oci:
+  config:
+    profile: DEFAULT

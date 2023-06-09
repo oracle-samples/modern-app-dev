@@ -1,0 +1,129 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshot tests for CodeSelection Snapshot: Component - CodeSelection 1`] = `
+<DocumentFragment>
+  <div
+    data-oj-binding-provider="preact"
+  >
+    <oj-select-single
+      class="oj-searchselect-no-value oj-required oj-text-field oj-has-no-value oj-complete oj-searchselect oj-form-control oj-component oj-enabled oj-text-field-label-inside"
+      labelled-by="oj-selectsingle-1-labelled-by"
+    >
+      <div
+        aria-live="polite"
+        class="oj-helper-hidden-accessible oj-listbox-liveregion"
+      />
+      <div
+        class="oj-text-field-container oj-searchselect-main-field oj-text-field-has-end-slot"
+        role="presentation"
+      >
+        <div
+          class="oj-text-field-middle"
+        >
+          <oj-label
+            class="oj-searchselect-label oj-label oj-component oj-complete oj-inputtext-label"
+            data-oj-binding-provider="none"
+            data-oj-input-id="oj-searchselect-filter-oj-selectsingle-1|input"
+            data-oj-internal=""
+          >
+            <div
+              class="oj-label-group"
+            >
+              <label
+                class="oj-component-initnode"
+                data-oj-internal=""
+              >
+                <span>
+                  Hint
+                </span>
+              </label>
+            </div>
+          </oj-label>
+          <input
+            aria-autocomplete="list"
+            aria-expanded="false"
+            aria-invalid="false"
+            aria-required="true"
+            autocapitalize="off"
+            autocomplete="off"
+            autocorrect="off"
+            class="oj-searchselect-input oj-text-field-input"
+            placeholder=""
+            role="combobox"
+            spellcheck="false"
+            tabindex="0"
+            type="text"
+          />
+        </div>
+        <span
+          class="oj-text-field-end"
+        >
+          <a
+            class="oj-searchselect-arrow oj-searchselect-open-icon oj-searchselect-icon oj-component-icon oj-clickable-icon-nocontext"
+            role="presentation"
+          />
+        </span>
+      </div>
+      <oj-input-text
+        aria-autocomplete="list"
+        autocomplete="off"
+        class="oj-searchselect-filter oj-inputtext oj-form-control oj-component oj-text-field oj-has-no-value oj-complete"
+        clear-icon="never"
+        data-oj-binding-provider="none"
+        data-oj-context=""
+        data-oj-internal=""
+        display-options.messages="none"
+        labelled-by="oj-selectsingle-1-labelled-by"
+        style="visibility: hidden;"
+        user-assistance-density="compact"
+        virtual-keyboard="search"
+      >
+        <div
+          class="oj-text-field-container oj-text-field-has-end-slot"
+          role="presentation"
+        >
+          <div
+            class="oj-text-field-middle"
+          >
+            <input
+              aria-label=""
+              autocomplete="off"
+              class="oj-inputtext-input oj-text-field-input oj-component-initnode"
+              data-oj-internal=""
+              placeholder=""
+              type="text"
+            />
+          </div>
+          <span
+            class="oj-text-field-end"
+          >
+            <a
+              class="oj-searchselect-arrow oj-searchselect-open-icon oj-searchselect-icon oj-component-icon oj-clickable-icon-nocontext"
+              slot="end"
+            />
+          </span>
+        </div>
+      </oj-input-text>
+      <input
+        aria-hidden="true"
+        class="oj-component-initnode"
+        data-oj-internal=""
+        style="display: none;"
+        type="text"
+      />
+      <div
+        class="oj-user-assistance-inline-container oj-reflow"
+      >
+        <div
+          class="oj-required-inline-container"
+        >
+          Required
+        </div>
+      </div>
+    </oj-select-single>
+  </div>
+  <div
+    id="__oj_layerhost_container"
+  />
+</DocumentFragment>
+`;

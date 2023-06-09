@@ -1,0 +1,40 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: "wallet-extractor-job"
+  namespace: uho
+spec:
+  backoffLimit: 1
+  ttlSecondsAfterFinished: 120
+  template:
+    spec:
+      restartPolicy: Never
+      serviceAccountName: secret-creator-sa
+      initContainers:
+        - name: wallet-extractor
+          image: busybox
+          command: ["/bin/sh", "-c"]
+          args:
+            - base64 -d /tmp/zip/wallet > /tmp/wallet.zip && unzip /tmp/wallet.zip -d /wallet
+          volumeMounts:
+            - name: wallet-zip
+              mountPath: /tmp/zip
+              readOnly: true
+            - name: wallet
+              mountPath: /wallet
+      containers:
+        - name: wallet-binding
+          image: bitnami/kubectl
+          command: ["/bin/sh", "-c"]
+          args:
+            - kubectl delete secret atp-wallet ; kubectl create secret generic atp-wallet --from-file=/wallet
+          volumeMounts:
+            - name: wallet
+              mountPath: /wallet
+              readOnly: true
+      volumes:
+        - name: wallet-zip
+          secret:
+            secretName: atp-wallet-zip
+        - name: wallet
+          emptyDir: {}

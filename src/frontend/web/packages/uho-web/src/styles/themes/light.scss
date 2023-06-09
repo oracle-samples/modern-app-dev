@@ -1,0 +1,42 @@
+#app {
+  --background-color-content: var(--oj-core-bg-color-content);
+  --background-main: url(../images/background.png);
+  --banner-1: url('../images/banner.svg');
+  --color-divider: #f8ca61;
+  --surface-neutral-30: #f1efed;
+  --surface-neutral-20: #f5f4f2;
+  --surface-neutral-10: #fbf9f8;
+  --surface-neutral-0: #fff;
+  --palette-neutral-130: #5c5651;
+  --page-background-neutral-10: #fbf9f8;
+  --page-background-neutral-30: #f1efed;
+  --background-image-left: url(../images/left-pattern.png);
+  --background-image-right: url(../images/right-pattern.png);
+  --vertical-overview-texture: url(../images/vertical-overview-texture-light.png);
+  --border-divider: #1f161513;
+  --border-enabled: #16151380;
+  --text-icon-info: #00688c;
+  --button-borderless-contrast: #161513;
+  --background-empty: var(--surface-neutral-10);
+
+  --dark-page-background-neutral-30: #24211f;
+  --dark-page-background-neutral-40: #322e2b;
+
+  --header-background-neutral-30: #f1efed;
+
+  .header-title-text-color {
+    color: var(--oj-core-text-color-primary);
+  }
+
+  .header-subtitle-text-color {
+    color: var(--oj-core-text-color-primary);
+  }
+
+  .fullscreen {
+    height: 100vh;
+  }
+
+  .oj-listview-no-data-item {
+    --oj-collection-bg-color: transparent;
+  }
+}

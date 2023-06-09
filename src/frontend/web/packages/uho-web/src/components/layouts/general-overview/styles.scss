@@ -1,0 +1,17 @@
+$footerHeight: 48px;
+$headerHeight: 104px;
+
+.overview-layout {
+  .primary {
+    height: calc(100vh - $footerHeight - $headerHeight);
+    background-color: var(--surface-neutral-10);
+    overflow-y: auto;
+  }
+
+  .secondary {
+    width: 464px;
+    height: calc(100vh - $footerHeight - $headerHeight);
+    background-color: var(--surface-neutral-20);
+    overflow-y: auto;
+  }
+}

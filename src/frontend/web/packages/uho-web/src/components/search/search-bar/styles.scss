@@ -1,0 +1,36 @@
+$padding-1-25x-vertical: 0.3125rem;
+
+.search-bar {
+  border: solid var(--border-enabled);
+  border-radius: 4px;
+  border-width: 1px;
+  max-height: 2.75rem;
+  height: 44px;
+  transition: border-color;
+  background-color: #ffffff;
+
+  &:focus-within {
+    box-shadow: rgb(14, 114, 151) 0px 0px 0px 1px inset;
+  }
+
+  .smart-filters-icon-anchor {
+    height: 1.25rem;
+    text-decoration: none;
+    cursor: pointer;
+
+    .icon {
+      font-size: 1.25rem;
+      line-height: 1.25rem;
+      font-weight: 400;
+    }
+  }
+
+  .search-bar-input {
+    --oj-text-field-height: 2rem;
+    --oj-text-field-border-width: 0;
+    --oj-text-field-text-to-edge-padding: 5px;
+    --oj-text-field-border-color-focus: transparent;
+    --oj-text-field-bg-color: transparent;
+    --oj-text-field-box-shadow-focus: transparent;
+  }
+}

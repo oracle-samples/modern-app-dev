@@ -1,0 +1,951 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshot tests for Patient: Overview Snapshot: Component - Patient: Overview 1`] = `
+<DocumentFragment>
+  <div
+    data-oj-binding-provider="preact"
+  >
+    <div
+      class="overview-layout oj-sm-padding-12x-horizontal oj-flex oj-sm-flex-direction-column fullscreen"
+    >
+      <div
+        class="oj-flex-item oj-sm-padding-6x-top oj-sm-padding-4x-bottom oj-sm-flex-0"
+      >
+        <div
+          class="oj-flex-bar"
+        >
+          <div
+            class="oj-flex-bar-start oj-flex oj-sm-flex-direction-column"
+          >
+            <div
+              class="oj-typography-subheading-lg oj-flex-item header-title-text-color"
+            >
+              Welcome to Universal Healthcare Organization
+            </div>
+            <div
+              class="oj-typography-semi-bold-sm oj-flex-item header-subtitle-text-color"
+            >
+              All the care you need. In one single place.
+            </div>
+          </div>
+          <div
+            class="oj-flex-bar-end"
+          >
+            <oj-menu-button
+              class="oj-button oj-component oj-enabled oj-default oj-button-half-chrome oj-button-text-icon-end oj-complete"
+            >
+              <button
+                aria-haspopup="true"
+                class="oj-button-button oj-component-initnode"
+                data-oj-internal=""
+                role="button"
+              >
+                <div
+                  class="oj-button-label"
+                >
+                  <span
+                    class="oj-button-icon oj-end oj-component-icon oj-button-menu-dropdown-icon"
+                    slot="endIcon"
+                  />
+                  <oj-menu
+                    class="oj-component-initnode oj-complete"
+                    slot="menu"
+                    style="display: none;"
+                  >
+                    <oj-option
+                      class="oj-complete"
+                    >
+                      <span
+                        class="oj-ux-ico-log-out"
+                        slot="startIcon"
+                      />
+                      Logout
+                    </oj-option>
+                  </oj-menu>
+                </div>
+              </button>
+            </oj-menu-button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="oj-flex-item oj-sm-flex-0"
+      >
+        <div
+          class="banner"
+        />
+      </div>
+      <div
+        class="oj-flex-item oj-flex oj-sm-flex-1"
+      >
+        <div
+          class="oj-flex-item primary oj-sm-12 oj-md-9 oj-lg-9 oj-sm-padding-8x"
+        >
+          <div
+            class="oj-flex oj-sm-flex-direction-column"
+          >
+            <div
+              class="oj-flex-item"
+            >
+              <span
+                class="oj-typography-subheading-sm"
+              >
+                Search for a Provider
+              </span>
+            </div>
+            <div
+              class="oj-flex-item oj-sm-margin-12x-bottom"
+            >
+              <div
+                class="oj-sm-margin-4x-top landing-search"
+              >
+                <oj-select-single
+                  class="oj-searchselect-no-value oj-text-field oj-has-no-value oj-complete oj-searchselect oj-form-control oj-component oj-enabled oj-text-field-label-inside"
+                  labelled-by="oj-selectsingle-1-labelled-by"
+                >
+                  <div
+                    aria-live="polite"
+                    class="oj-helper-hidden-accessible oj-listbox-liveregion"
+                  />
+                  <div
+                    class="oj-text-field-container oj-searchselect-main-field oj-text-field-has-end-slot"
+                    role="presentation"
+                  >
+                    <div
+                      class="oj-text-field-middle"
+                    >
+                      <oj-label
+                        class="oj-searchselect-label oj-label oj-component oj-complete oj-inputtext-label"
+                        data-oj-binding-provider="none"
+                        data-oj-input-id="oj-searchselect-filter-oj-selectsingle-1|input"
+                        data-oj-internal=""
+                      >
+                        <div
+                          class="oj-label-group"
+                        >
+                          <label
+                            class="oj-component-initnode"
+                            data-oj-internal=""
+                          >
+                            <span>
+                              Select Provider
+                            </span>
+                          </label>
+                        </div>
+                      </oj-label>
+                      <input
+                        aria-autocomplete="list"
+                        aria-expanded="false"
+                        autocapitalize="off"
+                        autocomplete="off"
+                        autocorrect="off"
+                        class="oj-searchselect-input oj-text-field-input"
+                        placeholder=""
+                        role="combobox"
+                        spellcheck="false"
+                        tabindex="0"
+                        type="text"
+                      />
+                    </div>
+                    <span
+                      class="oj-text-field-end"
+                    >
+                      <a
+                        class="oj-searchselect-arrow oj-searchselect-open-icon oj-searchselect-icon oj-component-icon oj-clickable-icon-nocontext"
+                        role="presentation"
+                      />
+                    </span>
+                  </div>
+                  <oj-input-text
+                    aria-autocomplete="list"
+                    autocomplete="off"
+                    class="oj-searchselect-filter oj-inputtext oj-form-control oj-component oj-text-field oj-has-no-value oj-complete"
+                    clear-icon="never"
+                    data-oj-binding-provider="none"
+                    data-oj-context=""
+                    data-oj-internal=""
+                    display-options.messages="none"
+                    labelled-by="oj-selectsingle-1-labelled-by"
+                    style="visibility: hidden;"
+                    user-assistance-density="compact"
+                    virtual-keyboard="search"
+                  >
+                    <div
+                      class="oj-text-field-container oj-text-field-has-end-slot"
+                      role="presentation"
+                    >
+                      <div
+                        class="oj-text-field-middle"
+                      >
+                        <input
+                          aria-label=""
+                          autocomplete="off"
+                          class="oj-inputtext-input oj-text-field-input oj-component-initnode"
+                          data-oj-internal=""
+                          placeholder=""
+                          type="text"
+                        />
+                      </div>
+                      <span
+                        class="oj-text-field-end"
+                      >
+                        <a
+                          class="oj-searchselect-arrow oj-searchselect-open-icon oj-searchselect-icon oj-component-icon oj-clickable-icon-nocontext"
+                          slot="end"
+                        />
+                      </span>
+                    </div>
+                  </oj-input-text>
+                  <template
+                    slot="itemTemplate"
+                  />
+                  <input
+                    aria-hidden="true"
+                    class="oj-component-initnode"
+                    data-oj-internal=""
+                    style="display: none;"
+                    type="text"
+                  />
+                  <div
+                    class="oj-user-assistance-inline-container oj-reflow"
+                  />
+                </oj-select-single>
+              </div>
+            </div>
+            <div
+              class="oj-flex-item"
+            >
+              <div>
+                <div
+                  class="oj-typography-subheading-sm"
+                >
+                  Quick Actions
+                </div>
+                <div
+                  class="oj-flex oj-sm-padding-4x-top"
+                >
+                  <div
+                    class="oj-sm-12 oj-md-6 oj-flex-item oj-sm-padding-1x"
+                  >
+                    <oj-action-card
+                      class="dashboard-card oj-actioncard oj-complete"
+                      role="button"
+                      tabindex="0"
+                    >
+                      <div
+                        class="card-content oj-flex oj-sm-padding-2x oj-sm-flex-direction-row"
+                      >
+                        <div
+                          class="oj-flex-item oj-sm-flex-0 oj-sm-padding-1x"
+                        >
+                          <oj-c-avatar
+                            class="oj-complete"
+                          >
+                            <div
+                              class="x4exih oj-c-avatar-bg-green oj-c-avatar-lg"
+                            >
+                              <div
+                                aria-hidden="true"
+                                class="k1vxov _1fma8t6 _1lhcr86 u5bbjp"
+                              >
+                                <span
+                                  class="oj-ux-ico-calendar-clock"
+                                />
+                              </div>
+                            </div>
+                          </oj-c-avatar>
+                        </div>
+                        <div
+                          class="oj-flex-item oj-flex oj-sm-flex-1 oj-sm-padding-2x oj-sm-flex-direction-column oj-sm-flex-items-initial"
+                        >
+                          <div
+                            class="oj-flex-item oj-text-color-primary oj-typography-body-lg"
+                          >
+                            Schedule Appointment
+                          </div>
+                          <div
+                            class="oj-flex-item oj-text-color-secondary oj-typography-body-md"
+                          >
+                            Do you need our help? Schedule an appointment now
+                          </div>
+                        </div>
+                      </div>
+                    </oj-action-card>
+                  </div>
+                  <div
+                    class="oj-sm-12 oj-md-6 oj-flex-item oj-sm-padding-1x"
+                  >
+                    <oj-action-card
+                      class="dashboard-card oj-actioncard oj-complete"
+                      role="button"
+                      tabindex="0"
+                    >
+                      <div
+                        class="card-content oj-flex oj-sm-padding-2x oj-sm-flex-direction-row"
+                      >
+                        <div
+                          class="oj-flex-item oj-sm-flex-0 oj-sm-padding-1x"
+                        >
+                          <oj-c-avatar
+                            class="oj-complete"
+                          >
+                            <div
+                              class="x4exih oj-c-avatar-bg-purple oj-c-avatar-lg"
+                            >
+                              <div
+                                aria-hidden="true"
+                                class="k1vxov _1fma8t6 _1lhcr86 u5bbjp"
+                              >
+                                <span
+                                  class="oj-ux-ico-clock-history"
+                                />
+                              </div>
+                            </div>
+                          </oj-c-avatar>
+                        </div>
+                        <div
+                          class="oj-flex-item oj-flex oj-sm-flex-1 oj-sm-padding-2x oj-sm-flex-direction-column oj-sm-flex-items-initial"
+                        >
+                          <div
+                            class="oj-flex-item oj-text-color-primary oj-typography-body-lg"
+                          >
+                            Past Visits
+                          </div>
+                          <div
+                            class="oj-flex-item oj-text-color-secondary oj-typography-body-md"
+                          >
+                            See your visit history and medications prescribed.
+                          </div>
+                        </div>
+                      </div>
+                    </oj-action-card>
+                  </div>
+                  <div
+                    class="oj-sm-12 oj-md-6 oj-flex-item oj-sm-padding-1x"
+                  >
+                    <oj-action-card
+                      class="dashboard-card oj-actioncard oj-complete"
+                      role="button"
+                      tabindex="0"
+                    >
+                      <div
+                        class="card-content oj-flex oj-sm-padding-2x oj-sm-flex-direction-row"
+                      >
+                        <div
+                          class="oj-flex-item oj-sm-flex-0 oj-sm-padding-1x"
+                        >
+                          <oj-c-avatar
+                            class="oj-complete"
+                          >
+                            <div
+                              class="x4exih oj-c-avatar-bg-orange oj-c-avatar-lg"
+                            >
+                              <div
+                                aria-hidden="true"
+                                class="k1vxov _1fma8t6 _1lhcr86 u5bbjp"
+                              >
+                                <span
+                                  class="oj-ux-ico-vaccine"
+                                />
+                              </div>
+                            </div>
+                          </oj-c-avatar>
+                        </div>
+                        <div
+                          class="oj-flex-item oj-flex oj-sm-flex-1 oj-sm-padding-2x oj-sm-flex-direction-column oj-sm-flex-items-initial"
+                        >
+                          <div
+                            class="oj-flex-item oj-text-color-primary oj-typography-body-lg"
+                          >
+                            COVID 19
+                          </div>
+                          <div
+                            class="oj-flex-item oj-text-color-secondary oj-typography-body-md"
+                          >
+                            Everything to know about COVID-19
+                          </div>
+                        </div>
+                      </div>
+                    </oj-action-card>
+                  </div>
+                  <div
+                    class="oj-sm-12 oj-md-6 oj-flex-item oj-sm-padding-1x"
+                  >
+                    <oj-action-card
+                      class="dashboard-card oj-actioncard oj-complete"
+                      role="button"
+                      tabindex="0"
+                    >
+                      <div
+                        class="card-content oj-flex oj-sm-padding-2x oj-sm-flex-direction-row"
+                      >
+                        <div
+                          class="oj-flex-item oj-sm-flex-0 oj-sm-padding-1x"
+                        >
+                          <oj-c-avatar
+                            class="oj-complete"
+                          >
+                            <div
+                              class="x4exih oj-c-avatar-bg-blue oj-c-avatar-lg"
+                            >
+                              <div
+                                aria-hidden="true"
+                                class="k1vxov _1fma8t6 _1lhcr86 u5bbjp"
+                              >
+                                <span
+                                  class="oj-ux-ico-doctor"
+                                />
+                              </div>
+                            </div>
+                          </oj-c-avatar>
+                        </div>
+                        <div
+                          class="oj-flex-item oj-flex oj-sm-flex-1 oj-sm-padding-2x oj-sm-flex-direction-column oj-sm-flex-items-initial"
+                        >
+                          <div
+                            class="oj-flex-item oj-text-color-primary oj-typography-body-lg"
+                          >
+                            Choose a Healthcare Specialist
+                          </div>
+                          <div
+                            class="oj-flex-item oj-text-color-secondary oj-typography-body-md"
+                          >
+                            Choose one of over 200 healthcare specialists
+                          </div>
+                        </div>
+                      </div>
+                    </oj-action-card>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="oj-flex-item oj-sm-only-hide secondary oj-sm-3 oj-sm-padding-8x"
+        >
+          <div>
+            <span
+              class="oj-typography-subheading-sm"
+            >
+              Your Primary Care Physician
+            </span>
+            <div
+              class="provider-profile"
+            >
+              <div
+                class="oj-flex-bar oj-sm-margin-8x-bottom"
+              />
+              <div
+                class="person oj-flex oj-sm-flex-direction-column oj-sm-margin-4x-bottom"
+              >
+                <oj-c-avatar
+                  class="oj-flex-item oj-sm-margin-5x-bottom oj-complete"
+                  role="img"
+                >
+                  <div
+                    aria-label="Avatar of FirstName + LastName"
+                    class="x4exih oj-c-avatar-bg-blue oj-c-avatar-2xl"
+                    role="img"
+                  >
+                    <div
+                      aria-hidden="true"
+                      class="k1vxov _1fma8t6 _1mymxz2"
+                    >
+                      JS
+                    </div>
+                  </div>
+                </oj-c-avatar>
+                <span
+                  class="oj-typography-heading-md oj-flex-item"
+                >
+                  John Smith
+                </span>
+                <span
+                  class="oj-typography-semi-bold oj-typography-body-md oj-text-color-secondary oj-flex-item"
+                >
+                  Chief of Surgery
+                </span>
+                <div
+                  class="oj-flex-item"
+                >
+                  <oj-picto-chart
+                    class="oj-dvtbase oj-pictochart oj-component-initnode oj-complete"
+                  >
+                    <div
+                      class="oj-helper-detect-contraction"
+                    >
+                      <div
+                        style="width: 200%; height: 200%;"
+                      />
+                    </div>
+                    <div
+                      class="oj-helper-detect-expansion"
+                    >
+                      <div />
+                    </div>
+                    <template
+                      slot="itemTemplate"
+                    />
+                    <div
+                      style="visibility: hidden;"
+                    />
+                    <svg
+                      height="100%"
+                      width="100%"
+                    >
+                      <defs />
+                      <g
+                        cursor="default"
+                        font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Arial,sans-serif"
+                        font-size="12px"
+                        font-weight="400"
+                      >
+                        <g />
+                      </g>
+                    </svg>
+                  </oj-picto-chart>
+                </div>
+              </div>
+              <div
+                class="contact"
+              >
+                <oj-form-layout
+                  class="oj-form-layout oj-complete oj-formlayout-max-cols-1"
+                >
+                  <div
+                    class="oj-form oj-enabled oj-efficient oj-form-cols oj-formlayout-form-across"
+                    data-oj-context=""
+                    data-oj-formlayout-bonus-dom=""
+                    data-oj-internal=""
+                    style="column-count: 1; webkit-column-count: 1;"
+                  >
+                    <div
+                      class="oj-helper-detect-contraction"
+                    >
+                      <div
+                        style="width: 200%; height: 200%;"
+                      />
+                    </div>
+                    <div
+                      class="oj-helper-detect-expansion"
+                    >
+                      <div />
+                    </div>
+                    <div
+                      class="oj-flex"
+                      data-oj-formlayout-bonus-dom=""
+                      data-oj-internal=""
+                    >
+                      <div
+                        class="oj-flex-item oj-formlayout-no-label-flex-item oj-formlayout-nested-labelvalue"
+                        data-oj-formlayout-bonus-dom=""
+                        data-oj-internal=""
+                        style="flex-grow: 1; flex-shrink: 1; max-width: calc(((100% / 1) - ((var(--oj-form-layout-column-gutter) * (0) / 1))));"
+                      >
+                        <oj-label-value
+                          class="oj-label-value oj-form oj-form-control-label-inside oj-formlayout-form-across oj-complete"
+                          data-oj-colspan="1"
+                          data-oj-column-gap="var(--oj-form-layout-column-gutter)"
+                        >
+                          <div
+                            class="oj-flex"
+                            data-oj-context=""
+                            data-oj-internal=""
+                          >
+                            <div
+                              class="oj-flex-item"
+                              data-oj-context=""
+                              data-oj-internal=""
+                              style="flex-grow: 0; flex-shrink: 1; flex-basis: 100%; width: 100%; max-width: 100%;"
+                            >
+                              <oj-label
+                                class="oj-label oj-component oj-complete"
+                                label-id="f20"
+                                slot="label"
+                              >
+                                <div
+                                  class="oj-label-group"
+                                >
+                                  <label
+                                    class="oj-component-initnode"
+                                    data-oj-internal=""
+                                  >
+                                    Email
+                                  </label>
+                                </div>
+                              </oj-label>
+                            </div>
+                            <div
+                              class="oj-flex-item"
+                              data-oj-context=""
+                              data-oj-internal=""
+                              style="flex: 1 1 0px;"
+                            >
+                              <a
+                                slot="value"
+                              >
+                                jsmith@example.com
+                              </a>
+                            </div>
+                          </div>
+                        </oj-label-value>
+                      </div>
+                    </div>
+                    <div
+                      class="oj-flex"
+                      data-oj-formlayout-bonus-dom=""
+                      data-oj-internal=""
+                    >
+                      <div
+                        class="oj-flex-item oj-formlayout-no-label-flex-item oj-formlayout-nested-labelvalue"
+                        data-oj-formlayout-bonus-dom=""
+                        data-oj-internal=""
+                        style="flex-grow: 1; flex-shrink: 1; max-width: calc(((100% / 1) - ((var(--oj-form-layout-column-gutter) * (0) / 1))));"
+                      >
+                        <oj-label-value
+                          class="oj-label-value oj-form oj-form-control-label-inside oj-formlayout-form-across oj-complete"
+                          data-oj-colspan="1"
+                          data-oj-column-gap="var(--oj-form-layout-column-gutter)"
+                        >
+                          <div
+                            class="oj-flex"
+                            data-oj-context=""
+                            data-oj-internal=""
+                          >
+                            <div
+                              class="oj-flex-item"
+                              data-oj-context=""
+                              data-oj-internal=""
+                              style="flex-grow: 0; flex-shrink: 1; flex-basis: 100%; width: 100%; max-width: 100%;"
+                            >
+                              <oj-label
+                                class="oj-label oj-component oj-complete"
+                                label-id="f20"
+                                slot="label"
+                              >
+                                <div
+                                  class="oj-label-group"
+                                >
+                                  <label
+                                    class="oj-component-initnode"
+                                    data-oj-internal=""
+                                  >
+                                    Phone
+                                  </label>
+                                </div>
+                              </oj-label>
+                            </div>
+                            <div
+                              class="oj-flex-item"
+                              data-oj-context=""
+                              data-oj-internal=""
+                              style="flex: 1 1 0px;"
+                            >
+                              <a
+                                slot="value"
+                              >
+                                (555) 555-1234
+                              </a>
+                            </div>
+                          </div>
+                        </oj-label-value>
+                      </div>
+                    </div>
+                    <div
+                      class="oj-flex"
+                      data-oj-formlayout-bonus-dom=""
+                      data-oj-internal=""
+                    >
+                      <div
+                        class="oj-flex-item oj-formlayout-no-label-flex-item oj-formlayout-nested-labelvalue"
+                        data-oj-formlayout-bonus-dom=""
+                        data-oj-internal=""
+                        style="flex-grow: 1; flex-shrink: 1; max-width: calc(((100% / 1) - ((var(--oj-form-layout-column-gutter) * (0) / 1))));"
+                      >
+                        <oj-label-value
+                          class="oj-label-value oj-form oj-form-control-label-inside oj-formlayout-form-across oj-complete"
+                          data-oj-colspan="1"
+                          data-oj-column-gap="var(--oj-form-layout-column-gutter)"
+                        >
+                          <div
+                            class="oj-flex"
+                            data-oj-context=""
+                            data-oj-internal=""
+                          >
+                            <div
+                              class="oj-flex-item"
+                              data-oj-context=""
+                              data-oj-internal=""
+                              style="flex-grow: 0; flex-shrink: 1; flex-basis: 100%; width: 100%; max-width: 100%;"
+                            >
+                              <oj-label
+                                class="oj-label oj-component oj-complete"
+                                label-id="f20"
+                                slot="label"
+                              >
+                                <div
+                                  class="oj-label-group"
+                                >
+                                  <label
+                                    class="oj-component-initnode"
+                                    data-oj-internal=""
+                                  >
+                                    Facility
+                                  </label>
+                                </div>
+                              </oj-label>
+                            </div>
+                            <div
+                              class="oj-flex-item"
+                              data-oj-context=""
+                              data-oj-internal=""
+                              style="flex: 1 1 0px;"
+                            >
+                              <span
+                                class="oj-text-color-primary"
+                                slot="value"
+                              >
+                                Seattle Hospital
+                              </span>
+                            </div>
+                          </div>
+                        </oj-label-value>
+                      </div>
+                    </div>
+                    <div
+                      class="oj-flex"
+                      data-oj-formlayout-bonus-dom=""
+                      data-oj-internal=""
+                    >
+                      <div
+                        class="oj-flex-item oj-formlayout-no-label-flex-item oj-formlayout-nested-labelvalue"
+                        data-oj-formlayout-bonus-dom=""
+                        data-oj-internal=""
+                        style="flex-grow: 1; flex-shrink: 1; max-width: calc(((100% / 1) - ((var(--oj-form-layout-column-gutter) * (0) / 1))));"
+                      >
+                        <oj-label-value
+                          class="oj-label-value oj-form oj-form-control-label-inside oj-formlayout-form-across oj-complete"
+                          data-oj-colspan="1"
+                          data-oj-column-gap="var(--oj-form-layout-column-gutter)"
+                        >
+                          <div
+                            class="oj-flex"
+                            data-oj-context=""
+                            data-oj-internal=""
+                          >
+                            <div
+                              class="oj-flex-item"
+                              data-oj-context=""
+                              data-oj-internal=""
+                              style="flex-grow: 0; flex-shrink: 1; flex-basis: 100%; width: 100%; max-width: 100%;"
+                            >
+                              <oj-label
+                                class="oj-label oj-component oj-complete"
+                                label-id="f20"
+                                slot="label"
+                              >
+                                <div
+                                  class="oj-label-group"
+                                >
+                                  <label
+                                    class="oj-component-initnode"
+                                    data-oj-internal=""
+                                  >
+                                    Address
+                                  </label>
+                                </div>
+                              </oj-label>
+                            </div>
+                            <div
+                              class="oj-flex-item"
+                              data-oj-context=""
+                              data-oj-internal=""
+                              style="flex: 1 1 0px;"
+                            >
+                              <span
+                                class="oj-text-color-primary"
+                                slot="value"
+                              >
+                                123 Main St.
+                              </span>
+                            </div>
+                          </div>
+                        </oj-label-value>
+                      </div>
+                    </div>
+                    <div
+                      data-oj-formlayout-workaround-dom=""
+                      style="display: table; visibility: hidden;"
+                    />
+                  </div>
+                </oj-form-layout>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="oj-flex-item oj-sm-flex-0"
+      >
+        <div
+          class="footer"
+        >
+          <oj-navigation-list
+            class="oj-sm-condense oj-sm-margin-8x-horizontal oj-navigationlist oj-navigationlist-horizontal-bottom oj-navigationlist-expanded oj-navigationlist-horizontal oj-navigationlist-app-level oj-component-initnode oj-complete"
+            role="tablist"
+            tabindex="0"
+          >
+            <template
+              slot="itemTemplate"
+            />
+            <div
+              class="oj-navigationlist-listview-container"
+              role="presentation"
+            >
+              <div
+                class="oj-navigationlist-listview oj-component"
+                role="presentation"
+                style="max-width: none;"
+              >
+                <div
+                  class="oj-helper-detect-contraction"
+                >
+                  <div
+                    style="width: 200%; height: 200%;"
+                  />
+                </div>
+                <div
+                  class="oj-helper-detect-expansion"
+                >
+                  <div />
+                </div>
+                <div
+                  class="oj-helper-hidden-accessible"
+                  tabindex="-1"
+                >
+                   
+                </div>
+                <ul
+                  class="oj-navigationlist-element oj-navigationlist-has-icons"
+                  role="presentation"
+                >
+                  <li
+                    class="oj-navigationlist-item-element oj-navigationlist-item oj-default"
+                    data-oj-vdom-template-root=""
+                    role="presentation"
+                  >
+                    <a
+                      aria-selected="false"
+                      class="oj-navigationlist-focused-element oj-navigationlist-item-content"
+                      data-oj-tabmod="0"
+                      href="#"
+                      role="tab"
+                      tabindex="-1"
+                    >
+                      <span
+                        class="oj-navigationlist-item-icon oj-ux-ico-home"
+                      />
+                      <span
+                        class="oj-navigationlist-item-label"
+                      >
+                        Home
+                      </span>
+                    </a>
+                  </li>
+                  <li
+                    class="oj-navigationlist-item-element oj-navigationlist-item oj-default"
+                    data-oj-vdom-template-root=""
+                    role="presentation"
+                  >
+                    <a
+                      aria-selected="false"
+                      class="oj-navigationlist-focused-element oj-navigationlist-item-content"
+                      data-oj-tabmod="0"
+                      href="#"
+                      role="tab"
+                      tabindex="-1"
+                    >
+                      <span
+                        class="oj-navigationlist-item-icon oj-ux-ico-doctor"
+                      />
+                      <span
+                        class="oj-navigationlist-item-label"
+                      >
+                        Providers
+                      </span>
+                    </a>
+                  </li>
+                  <li
+                    class="oj-navigationlist-item-element oj-navigationlist-item oj-default"
+                    data-oj-vdom-template-root=""
+                    role="presentation"
+                  >
+                    <a
+                      aria-selected="false"
+                      class="oj-navigationlist-focused-element oj-navigationlist-item-content"
+                      data-oj-tabmod="0"
+                      href="#"
+                      role="tab"
+                      tabindex="-1"
+                    >
+                      <span
+                        class="oj-navigationlist-item-icon oj-ux-ico-calendar-clock"
+                      />
+                      <span
+                        class="oj-navigationlist-item-label"
+                      >
+                        Appointments
+                      </span>
+                    </a>
+                  </li>
+                  <li
+                    class="oj-navigationlist-item-element oj-navigationlist-item oj-default"
+                    data-oj-vdom-template-root=""
+                    role="presentation"
+                  >
+                    <a
+                      aria-selected="false"
+                      class="oj-navigationlist-focused-element oj-navigationlist-item-content"
+                      data-oj-tabmod="0"
+                      href="#"
+                      role="tab"
+                      tabindex="-1"
+                    >
+                      <span
+                        class="oj-navigationlist-item-icon oj-ux-ico-clock-history"
+                      />
+                      <span
+                        class="oj-navigationlist-item-label"
+                      >
+                        Encounters
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+                <div
+                  class="oj-navigationlist-status-message oj-navigationlist-status"
+                  role="status"
+                  style="display: none;"
+                >
+                  <div
+                    class="oj-icon oj-navigationlist-loading-icon"
+                  />
+                </div>
+                <div
+                  class="oj-helper-hidden-accessible"
+                  role="status"
+                  tabindex="-1"
+                />
+              </div>
+            </div>
+          </oj-navigation-list>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    id="__oj_layerhost_container"
+  />
+</DocumentFragment>
+`;

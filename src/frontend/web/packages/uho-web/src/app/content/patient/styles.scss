@@ -1,0 +1,10 @@
+.patient-background {
+  background: var(--page-background-neutral-30);
+  background-image: var(--background-image-left), var(--background-image-right);
+  background-position: left bottom, right bottom;
+  background-repeat: no-repeat;
+
+  .patient-landing {
+    height: 100vh;
+  }
+}

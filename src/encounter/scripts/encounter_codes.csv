@@ -1,0 +1,38 @@
+code,text
+410620009,Well child visit (procedure)
+162673000,General examination of patient (procedure)
+185349003,Encounter for check up (procedure)
+185347001,Encounter for problem (procedure)
+185345009,Encounter for symptom
+390906007,Follow-up encounter (procedure)
+50849002,Emergency room admission (procedure)
+439740005,Postoperative follow-up visit (procedure)
+410410006,Screening surveillance (regime/therapy)
+308335008,Patient encounter procedure
+698314001,Consultation for treatment
+33879002,Administration of vaccine to produce active immunity (procedure)
+424441002,Prenatal initial visit
+424619006,Prenatal visit
+183460006,Obstetric emergency hospital admission
+169762003,Postnatal visit
+702927004,Urgent care clinic (procedure)
+449411000124106,Admission to skilled nursing facility (procedure)
+394701000,Asthma follow-up
+183478001,Emergency hospital admission for asthma
+305336008,Admission to hospice (procedure)
+308646001,Death Certification
+22298006,Myocardial Infarction
+439708006,Home visit (procedure)
+183452005,Encounter Inpatient
+410429000,Cardiac Arrest
+270427003,Patient-initiated encounter
+1505002,Hospital admission for isolation (procedure)
+183495009,Non-urgent orthopedic admission
+230690007,Stroke
+305351004,Admission to intensive care unit (procedure)
+210098006,Domiciliary or rest home patient evaluation and management
+56876005,Drug rehabilitation and detoxification
+371883000,Outpatient procedure
+305408004,Admission to surgical department
+170837001,Allergic disorder initial assessment
+1853470,Encounter for problem (procedure)

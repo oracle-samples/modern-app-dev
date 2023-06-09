@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshot tests for Divider Snapshot: Component - Divider 1`] = `
+<DocumentFragment>
+  <div
+    data-oj-binding-provider="preact"
+  >
+    <div
+      class="oj-sm-padding-4x-top divider"
+    />
+  </div>
+  <div
+    id="__oj_layerhost_container"
+  />
+</DocumentFragment>
+`;

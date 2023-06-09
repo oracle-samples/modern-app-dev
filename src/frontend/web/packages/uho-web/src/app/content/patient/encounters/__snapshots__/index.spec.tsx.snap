@@ -1,0 +1,821 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshot tests for Patient: Encounters Snapshot: Component - Patient: Encounters 1`] = `
+<DocumentFragment>
+  <div
+    data-oj-binding-provider="preact"
+  >
+    <div
+      class="overview-layout oj-sm-padding-12x-horizontal oj-flex oj-sm-flex-direction-column fullscreen"
+    >
+      <div
+        class="oj-flex-item oj-sm-padding-6x-top oj-sm-padding-4x-bottom oj-sm-flex-0"
+      >
+        <div
+          class="oj-flex-bar"
+        >
+          <div
+            class="oj-flex-bar-start oj-flex oj-sm-flex-direction-column"
+          >
+            <div
+              class="oj-typography-subheading-lg oj-flex-item header-title-text-color"
+            >
+              Encounters
+            </div>
+            <div
+              class="oj-typography-semi-bold-sm oj-flex-item header-subtitle-text-color"
+            >
+              See all encounters
+            </div>
+          </div>
+          <div
+            class="oj-flex-bar-end"
+          />
+        </div>
+      </div>
+      <div
+        class="oj-flex-item oj-sm-flex-0"
+      >
+        <div
+          class="banner"
+        />
+      </div>
+      <div
+        class="oj-flex-item oj-flex oj-sm-flex-1"
+      >
+        <div
+          class="oj-flex-item oj-sm-only-hide secondary oj-sm-3 oj-sm-padding-8x"
+        >
+          <oj-list-view
+            class="oj-listview oj-listview-container oj-component oj-listview-gridlines-hidden oj-complete gridline-top-hidden gridline-bottom-hidden"
+          >
+            <div
+              class="oj-helper-detect-contraction"
+            >
+              <div
+                style="width: 200%; height: 200%;"
+              />
+            </div>
+            <div
+              class="oj-helper-detect-expansion"
+            >
+              <div />
+            </div>
+            <div
+              class="oj-helper-hidden-accessible"
+              tabindex="-1"
+            >
+               
+            </div>
+            <ul
+              aria-busy="false"
+              aria-label="list of encounters"
+              aria-multiselectable="false"
+              aria-rowcount="7"
+              class="oj-listview-element oj-component-initnode"
+              data-oj-context=""
+              data-oj-internal=""
+              role="grid"
+              tabindex="0"
+              x-ms-format-detection="none"
+            >
+              <li
+                aria-rowindex="1"
+                class="oj-listview-focused-element oj-listview-item-element oj-listview-item oj-listview-item-layout"
+                role="row"
+              >
+                <div
+                  aria-selected="false"
+                  class="oj-listview-cell-element"
+                  role="gridcell"
+                >
+                  <oj-list-item-layout
+                    class="oj-complete"
+                    data-oj-vdom-template-root=""
+                  >
+                    <div
+                      class="oj-listitemlayout-grid"
+                    >
+                      <div
+                        class="oj-listitemlayout-textslots"
+                      >
+                        <div
+                          data-oj-tabmod="0"
+                          tabindex="-1"
+                        >
+                          <div
+                            class="oj-typography-body-md"
+                          >
+                            Choroidal hemorrhage
+                          </div>
+                        </div>
+                        <div
+                          data-oj-tabmod="0"
+                          tabindex="-1"
+                        >
+                          <div
+                            class="oj-typography-body-sm"
+                            slot="secondary"
+                          >
+                            162673000
+                          </div>
+                        </div>
+                        <div
+                          class="oj-listitemlayout-tertiary"
+                          data-oj-tabmod="0"
+                          tabindex="-1"
+                        >
+                          <div
+                            class="oj-typography-body-xs oj-text-color-secondary"
+                            slot="tertiary"
+                          >
+                            Dr. Foo
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="oj-listitemlayout-extra"
+                      >
+                        <div
+                          class="oj-listitemlayout-action oj-listitemlayout-start-padding"
+                          data-oj-clickthrough="disabled"
+                        >
+                          <div
+                            class=""
+                            slot="action"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </oj-list-item-layout>
+                </div>
+              </li>
+              <li
+                aria-rowindex="2"
+                class="oj-listview-focused-element oj-listview-item-element oj-listview-item oj-listview-item-layout"
+                role="row"
+              >
+                <div
+                  aria-selected="false"
+                  class="oj-listview-cell-element"
+                  role="gridcell"
+                >
+                  <oj-list-item-layout
+                    class="oj-complete"
+                    data-oj-vdom-template-root=""
+                  >
+                    <div
+                      class="oj-listitemlayout-grid"
+                    >
+                      <div
+                        class="oj-listitemlayout-textslots"
+                      >
+                        <div
+                          data-oj-tabmod="0"
+                          tabindex="-1"
+                        >
+                          <div
+                            class="oj-typography-body-md"
+                          >
+                            Choroidal hemorrhage
+                          </div>
+                        </div>
+                        <div
+                          data-oj-tabmod="0"
+                          tabindex="-1"
+                        >
+                          <div
+                            class="oj-typography-body-sm"
+                            slot="secondary"
+                          >
+                            162673000
+                          </div>
+                        </div>
+                        <div
+                          class="oj-listitemlayout-tertiary"
+                          data-oj-tabmod="0"
+                          tabindex="-1"
+                        >
+                          <div
+                            class="oj-typography-body-xs oj-text-color-secondary"
+                            slot="tertiary"
+                          >
+                            Dr. Bar
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="oj-listitemlayout-extra"
+                      >
+                        <div
+                          class="oj-listitemlayout-action oj-listitemlayout-start-padding"
+                          data-oj-clickthrough="disabled"
+                        >
+                          <div
+                            class=""
+                            slot="action"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </oj-list-item-layout>
+                </div>
+              </li>
+              <li
+                aria-rowindex="3"
+                class="oj-listview-focused-element oj-listview-item-element oj-listview-item oj-listview-item-layout"
+                role="row"
+              >
+                <div
+                  aria-selected="false"
+                  class="oj-listview-cell-element"
+                  role="gridcell"
+                >
+                  <oj-list-item-layout
+                    class="oj-complete"
+                    data-oj-vdom-template-root=""
+                  >
+                    <div
+                      class="oj-listitemlayout-grid"
+                    >
+                      <div
+                        class="oj-listitemlayout-textslots"
+                      >
+                        <div
+                          data-oj-tabmod="0"
+                          tabindex="-1"
+                        >
+                          <div
+                            class="oj-typography-body-md"
+                          >
+                            Choroidal hemorrhage
+                          </div>
+                        </div>
+                        <div
+                          data-oj-tabmod="0"
+                          tabindex="-1"
+                        >
+                          <div
+                            class="oj-typography-body-sm"
+                            slot="secondary"
+                          >
+                            162673000
+                          </div>
+                        </div>
+                        <div
+                          class="oj-listitemlayout-tertiary"
+                          data-oj-tabmod="0"
+                          tabindex="-1"
+                        >
+                          <div
+                            class="oj-typography-body-xs oj-text-color-secondary"
+                            slot="tertiary"
+                          >
+                            Dr. Jonah
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="oj-listitemlayout-extra"
+                      >
+                        <div
+                          class="oj-listitemlayout-action oj-listitemlayout-start-padding"
+                          data-oj-clickthrough="disabled"
+                        >
+                          <div
+                            class=""
+                            slot="action"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </oj-list-item-layout>
+                </div>
+              </li>
+              <li
+                aria-rowindex="4"
+                class="oj-listview-focused-element oj-listview-item-element oj-listview-item oj-listview-item-layout"
+                role="row"
+              >
+                <div
+                  aria-selected="false"
+                  class="oj-listview-cell-element"
+                  role="gridcell"
+                >
+                  <oj-list-item-layout
+                    class="oj-complete"
+                    data-oj-vdom-template-root=""
+                  >
+                    <div
+                      class="oj-listitemlayout-grid"
+                    >
+                      <div
+                        class="oj-listitemlayout-textslots"
+                      >
+                        <div
+                          data-oj-tabmod="0"
+                          tabindex="-1"
+                        >
+                          <div
+                            class="oj-typography-body-md"
+                          >
+                            Choroidal hemorrhage
+                          </div>
+                        </div>
+                        <div
+                          data-oj-tabmod="0"
+                          tabindex="-1"
+                        >
+                          <div
+                            class="oj-typography-body-sm"
+                            slot="secondary"
+                          >
+                            162673000
+                          </div>
+                        </div>
+                        <div
+                          class="oj-listitemlayout-tertiary"
+                          data-oj-tabmod="0"
+                          tabindex="-1"
+                        >
+                          <div
+                            class="oj-typography-body-xs oj-text-color-secondary"
+                            slot="tertiary"
+                          >
+                            Dr. Zeus
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="oj-listitemlayout-extra"
+                      >
+                        <div
+                          class="oj-listitemlayout-action oj-listitemlayout-start-padding"
+                          data-oj-clickthrough="disabled"
+                        >
+                          <div
+                            class=""
+                            slot="action"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </oj-list-item-layout>
+                </div>
+              </li>
+              <li
+                aria-rowindex="5"
+                class="oj-listview-focused-element oj-listview-item-element oj-listview-item oj-listview-item-layout"
+                role="row"
+              >
+                <div
+                  aria-selected="false"
+                  class="oj-listview-cell-element"
+                  role="gridcell"
+                >
+                  <oj-list-item-layout
+                    class="oj-complete"
+                    data-oj-vdom-template-root=""
+                  >
+                    <div
+                      class="oj-listitemlayout-grid"
+                    >
+                      <div
+                        class="oj-listitemlayout-textslots"
+                      >
+                        <div
+                          data-oj-tabmod="0"
+                          tabindex="-1"
+                        >
+                          <div
+                            class="oj-typography-body-md"
+                          >
+                            Choroidal hemorrhage
+                          </div>
+                        </div>
+                        <div
+                          data-oj-tabmod="0"
+                          tabindex="-1"
+                        >
+                          <div
+                            class="oj-typography-body-sm"
+                            slot="secondary"
+                          >
+                            162673000
+                          </div>
+                        </div>
+                        <div
+                          class="oj-listitemlayout-tertiary"
+                          data-oj-tabmod="0"
+                          tabindex="-1"
+                        >
+                          <div
+                            class="oj-typography-body-xs oj-text-color-secondary"
+                            slot="tertiary"
+                          >
+                            Dr. Bar
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="oj-listitemlayout-extra"
+                      >
+                        <div
+                          class="oj-listitemlayout-action oj-listitemlayout-start-padding"
+                          data-oj-clickthrough="disabled"
+                        >
+                          <div
+                            class=""
+                            slot="action"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </oj-list-item-layout>
+                </div>
+              </li>
+              <li
+                aria-rowindex="6"
+                class="oj-listview-focused-element oj-listview-item-element oj-listview-item oj-listview-item-layout"
+                role="row"
+              >
+                <div
+                  aria-selected="false"
+                  class="oj-listview-cell-element"
+                  role="gridcell"
+                >
+                  <oj-list-item-layout
+                    class="oj-complete"
+                    data-oj-vdom-template-root=""
+                  >
+                    <div
+                      class="oj-listitemlayout-grid"
+                    >
+                      <div
+                        class="oj-listitemlayout-textslots"
+                      >
+                        <div
+                          data-oj-tabmod="0"
+                          tabindex="-1"
+                        >
+                          <div
+                            class="oj-typography-body-md"
+                          >
+                            Choroidal hemorrhage
+                          </div>
+                        </div>
+                        <div
+                          data-oj-tabmod="0"
+                          tabindex="-1"
+                        >
+                          <div
+                            class="oj-typography-body-sm"
+                            slot="secondary"
+                          >
+                            162673000
+                          </div>
+                        </div>
+                        <div
+                          class="oj-listitemlayout-tertiary"
+                          data-oj-tabmod="0"
+                          tabindex="-1"
+                        >
+                          <div
+                            class="oj-typography-body-xs oj-text-color-secondary"
+                            slot="tertiary"
+                          >
+                            Dr. Jonah
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="oj-listitemlayout-extra"
+                      >
+                        <div
+                          class="oj-listitemlayout-action oj-listitemlayout-start-padding"
+                          data-oj-clickthrough="disabled"
+                        >
+                          <div
+                            class=""
+                            slot="action"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </oj-list-item-layout>
+                </div>
+              </li>
+              <li
+                aria-rowindex="7"
+                class="oj-listview-focused-element oj-listview-item-element oj-listview-item oj-listview-item-layout"
+                role="row"
+              >
+                <div
+                  aria-selected="false"
+                  class="oj-listview-cell-element"
+                  role="gridcell"
+                >
+                  <oj-list-item-layout
+                    class="oj-complete"
+                    data-oj-vdom-template-root=""
+                  >
+                    <div
+                      class="oj-listitemlayout-grid"
+                    >
+                      <div
+                        class="oj-listitemlayout-textslots"
+                      >
+                        <div
+                          data-oj-tabmod="0"
+                          tabindex="-1"
+                        >
+                          <div
+                            class="oj-typography-body-md"
+                          >
+                            Choroidal hemorrhage
+                          </div>
+                        </div>
+                        <div
+                          data-oj-tabmod="0"
+                          tabindex="-1"
+                        >
+                          <div
+                            class="oj-typography-body-sm"
+                            slot="secondary"
+                          >
+                            162673000
+                          </div>
+                        </div>
+                        <div
+                          class="oj-listitemlayout-tertiary"
+                          data-oj-tabmod="0"
+                          tabindex="-1"
+                        >
+                          <div
+                            class="oj-typography-body-xs oj-text-color-secondary"
+                            slot="tertiary"
+                          >
+                            Dr. Zeus
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="oj-listitemlayout-extra"
+                      >
+                        <div
+                          class="oj-listitemlayout-action oj-listitemlayout-start-padding"
+                          data-oj-clickthrough="disabled"
+                        >
+                          <div
+                            class=""
+                            slot="action"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </oj-list-item-layout>
+                </div>
+              </li>
+              <li
+                class="oj-listview-skeleton-container"
+                role="presentation"
+                style="visibility: hidden;"
+              >
+                <ul
+                  class="oj-listview-group"
+                  role="presentation"
+                >
+                  <li
+                    class="oj-listview-item oj-listview-item-layout gridline-hidden"
+                    role="presentation"
+                  >
+                    <div
+                      class="oj-listview-cell-element oj-listview-skeleton oj-listview-skeleton-line-height oj-animation-skeleton"
+                    />
+                  </li>
+                  <li
+                    class="oj-listview-item oj-listview-item-layout gridline-hidden"
+                    role="presentation"
+                  >
+                    <div
+                      class="oj-listview-cell-element oj-listview-skeleton oj-listview-skeleton-line-height oj-animation-skeleton"
+                    />
+                  </li>
+                  <li
+                    class="oj-listview-item oj-listview-item-layout gridline-hidden"
+                    role="presentation"
+                  >
+                    <div
+                      class="oj-listview-cell-element oj-listview-skeleton oj-listview-skeleton-line-height oj-animation-skeleton"
+                    />
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <template
+              slot="itemTemplate"
+            />
+            <div
+              class="oj-listview-status-message oj-listview-status"
+              role="status"
+              style="display: none;"
+            >
+              <div
+                class="oj-icon oj-listview-loading-icon"
+              />
+            </div>
+            <div
+              class="oj-helper-hidden-accessible"
+              role="status"
+              tabindex="-1"
+            />
+            <div
+              class="oj-helper-hidden-accessible"
+            >
+              Use arrow keys to expand and collapse.
+            </div>
+          </oj-list-view>
+        </div>
+        <div
+          class="oj-flex-item primary oj-sm-12 oj-md-9 oj-lg-9 oj-sm-padding-8x"
+        >
+          <div
+            class="oj-flex oj-sm-flex-direction-column oj-sm-justify-content-flex-end empty-screen"
+          >
+            <span
+              class="oj-text-primary-color title oj-typography-heading-2xl oj-flex-item oj-sm-flex-0"
+            >
+              No encounter selected
+            </span>
+            <span
+              class="oj-text-primary-color description oj-typography-body-xl oj-flex-item oj-sm-flex-0"
+            >
+              Select an encounter or submit a new encounter
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="oj-flex-item oj-sm-flex-0"
+      >
+        <div
+          class="footer"
+        >
+          <oj-navigation-list
+            class="oj-sm-condense oj-sm-margin-8x-horizontal oj-navigationlist oj-navigationlist-horizontal-bottom oj-navigationlist-expanded oj-navigationlist-horizontal oj-navigationlist-app-level oj-component-initnode oj-complete"
+            role="tablist"
+            tabindex="0"
+          >
+            <template
+              slot="itemTemplate"
+            />
+            <div
+              class="oj-navigationlist-listview-container"
+              role="presentation"
+            >
+              <div
+                class="oj-navigationlist-listview oj-component"
+                role="presentation"
+                style="max-width: none;"
+              >
+                <div
+                  class="oj-helper-detect-contraction"
+                >
+                  <div
+                    style="width: 200%; height: 200%;"
+                  />
+                </div>
+                <div
+                  class="oj-helper-detect-expansion"
+                >
+                  <div />
+                </div>
+                <div
+                  class="oj-helper-hidden-accessible"
+                  tabindex="-1"
+                >
+                   
+                </div>
+                <ul
+                  class="oj-navigationlist-element oj-navigationlist-has-icons"
+                  role="presentation"
+                >
+                  <li
+                    class="oj-navigationlist-item-element oj-navigationlist-item oj-default"
+                    data-oj-vdom-template-root=""
+                    role="presentation"
+                  >
+                    <a
+                      aria-selected="false"
+                      class="oj-navigationlist-focused-element oj-navigationlist-item-content"
+                      data-oj-tabmod="0"
+                      href="#"
+                      role="tab"
+                      tabindex="-1"
+                    >
+                      <span
+                        class="oj-navigationlist-item-icon oj-ux-ico-home"
+                      />
+                      <span
+                        class="oj-navigationlist-item-label"
+                      >
+                        Home
+                      </span>
+                    </a>
+                  </li>
+                  <li
+                    class="oj-navigationlist-item-element oj-navigationlist-item oj-default"
+                    data-oj-vdom-template-root=""
+                    role="presentation"
+                  >
+                    <a
+                      aria-selected="false"
+                      class="oj-navigationlist-focused-element oj-navigationlist-item-content"
+                      data-oj-tabmod="0"
+                      href="#"
+                      role="tab"
+                      tabindex="-1"
+                    >
+                      <span
+                        class="oj-navigationlist-item-icon oj-ux-ico-doctor"
+                      />
+                      <span
+                        class="oj-navigationlist-item-label"
+                      >
+                        Providers
+                      </span>
+                    </a>
+                  </li>
+                  <li
+                    class="oj-navigationlist-item-element oj-navigationlist-item oj-default"
+                    data-oj-vdom-template-root=""
+                    role="presentation"
+                  >
+                    <a
+                      aria-selected="false"
+                      class="oj-navigationlist-focused-element oj-navigationlist-item-content"
+                      data-oj-tabmod="0"
+                      href="#"
+                      role="tab"
+                      tabindex="-1"
+                    >
+                      <span
+                        class="oj-navigationlist-item-icon oj-ux-ico-calendar-clock"
+                      />
+                      <span
+                        class="oj-navigationlist-item-label"
+                      >
+                        Appointments
+                      </span>
+                    </a>
+                  </li>
+                  <li
+                    class="oj-navigationlist-item-element oj-navigationlist-item oj-default"
+                    data-oj-vdom-template-root=""
+                    role="presentation"
+                  >
+                    <a
+                      aria-selected="false"
+                      class="oj-navigationlist-focused-element oj-navigationlist-item-content"
+                      data-oj-tabmod="0"
+                      href="#"
+                      role="tab"
+                      tabindex="-1"
+                    >
+                      <span
+                        class="oj-navigationlist-item-icon oj-ux-ico-clock-history"
+                      />
+                      <span
+                        class="oj-navigationlist-item-label"
+                      >
+                        Encounters
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+                <div
+                  class="oj-navigationlist-status-message oj-navigationlist-status"
+                  role="status"
+                  style="display: none;"
+                >
+                  <div
+                    class="oj-icon oj-navigationlist-loading-icon"
+                  />
+                </div>
+                <div
+                  class="oj-helper-hidden-accessible"
+                  role="status"
+                  tabindex="-1"
+                />
+              </div>
+            </div>
+          </oj-navigation-list>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    id="__oj_layerhost_container"
+  />
+</DocumentFragment>
+`;

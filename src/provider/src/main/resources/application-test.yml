@@ -1,0 +1,38 @@
+micronaut:
+  application:
+    name: provider
+  security:
+    enabled: false
+  metrics:
+    enabled: false
+datasources:
+  default:
+    url: jdbc:h2:mem:devDb;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE
+    driverClassName: org.h2.Driver
+    username: sa
+    password: ''
+
+kafka:
+  appointment-messages:
+    topic: "appointment-messages"
+  bootstrap:
+    servers: cell-1.streaming.us-ashburn-1.oci.oraclecloud.com:9092
+  security:
+    protocol: SASL_SSL
+  sasl:
+    mechanism: PLAIN
+    jaas:
+      config: org.apache.kafka.common.security.plain.PlainLoginModule required username="cncf-ci/uho-dev-user/ocid1.streampool.oc1.iad.amaaaaaadchomfiaq36k76a3g2xyeo4eshpj3omk4m2b6yr252bzj42owaza" password="#ZM(O{HZ3[6KWvyN<hNJ";
+liquibase:
+  datasources:
+    default:
+      parameters:
+        prefix: test
+tracing:
+  zipkin:
+    enabled: false
+    sampler:
+      probability: 1
+    http:
+      url:
+      path:

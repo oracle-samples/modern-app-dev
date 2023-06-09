@@ -1,0 +1,17 @@
+{
+  "name": "@uho/patient-api-client",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./dist/api-client",
+  "scripts": {
+    "build": "openapi-generator-cli generate -i ../../../../target/specs/Patient.yml -g typescript-fetch -o ./dist/api-client --additional-properties=typescriptThreePlus=true,withInterfaces=true,useSingleRequestParameter=true"
+  },
+  "workspaces": {
+    "nohoist": [
+      "**"
+    ]
+  },
+  "devDependencies": {
+    "@openapitools/openapi-generator-cli": "2.4.24"
+  }
+}

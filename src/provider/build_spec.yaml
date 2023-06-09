@@ -1,0 +1,42 @@
+# Copyright (c) 2023 Oracle and/or its affiliates.
+# Licensed under the Universal Permissive License v 1.0 as shown at https://oss.oracl.com/licenses/upl/
+version: 0.1
+component: build
+timeoutInSeconds: 600
+runAs: root
+shell: bash
+env:
+  variables:
+    key: "value"
+  exportedVariables:
+    - BUILDRUN_HASH
+
+steps:
+  - type: Command
+    name: "Export variables step"
+    timeoutInSeconds: 40
+    command: |
+      export BUILDRUN_HASH=`echo ${OCI_BUILD_RUN_ID} | rev | cut -c 1-7`
+      echo "BUILDRUN_HASH: " $BUILDRUN_HASH
+    onFailure:
+      - type: Command
+        command: echo "build failed, please debug"
+        timeoutInSeconds: 40
+        runAs: root
+  - type: Command
+    name: "Build and Test step"
+    timeoutInSeconds: 1200
+    command: |
+      cd ${OCI_WORKSPACE_DIR}/uho_build_source/src/provider
+      cp ${OCI_WORKSPACE_DIR}/uho_build_source/deploy/terraform/specs ${OCI_WORKSPACE_DIR}/uho_build_source/provider/target/specs
+      docker build -t provider:latest .
+    onFailure:
+      - type: Command
+        command: echo "build failed"
+        timeoutInSeconds: 40
+        runAs: root
+
+outputArtifacts:
+  - name: provider-artifact
+    type: DOCKER_IMAGE
+    location: provider:latest

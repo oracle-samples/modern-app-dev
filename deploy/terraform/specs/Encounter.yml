@@ -1,0 +1,565 @@
+openapi: 3.0.1
+info:
+  title: Encounter Service
+  description: Encounter service of UHO healthcare app
+  version: v1
+tags:
+  - name: encounter
+    description: Includes all operations for an encounter
+paths:
+  /v1/encounters/:
+    post:
+      tags:
+        - encounter
+      summary: Create an encounter
+      description: Creates an encounter with observations and conditions
+      operationId: CreateEncounter
+      parameters: []
+      requestBody:
+        description: Details of the encounter to be created
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Encounter'
+        required: true
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Encounter'
+        "400":
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        "404":
+          description: Not Found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        "500":
+          description: Internal Server Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      security:
+        - BearerAuth: []
+  /v1/encounters/actions/search:
+    get:
+      tags:
+        - encounter
+      summary: Filtered list of encounters based on search criteria
+      description: Filtered list of encounters for patient and/or provider
+      operationId: ListEncounters
+      parameters:
+        - name: patientId
+          in: query
+          required: false
+          schema:
+            type: integer
+            format: int32
+            nullable: true
+        - name: providerId
+          in: query
+          required: false
+          schema:
+            type: integer
+            format: int32
+            nullable: true
+        - name: appointmentId
+          in: query
+          required: false
+          schema:
+            type: integer
+            format: int32
+            nullable: true
+        - name: limit
+          in: query
+          required: false
+          schema:
+            minimum: 1
+            type: integer
+            format: int32
+            nullable: true
+            default: 20
+        - name: page
+          in: query
+          required: false
+          schema:
+            minimum: 0
+            type: integer
+            format: int32
+            nullable: true
+            default: 0
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/EncounterCollection'
+        "400":
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        "404":
+          description: Not Found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        "500":
+          description: Internal Server Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      security:
+        - BearerAuth: []
+  /v1/encounters/codes:
+    get:
+      tags:
+        - encounter
+      summary: "List code,text by code constant type"
+      description: Returns code and associated text based on code constant type
+      operationId: ListCodes
+      parameters:
+        - name: type
+          in: query
+          description: Type of the code to be fetched
+          required: true
+          schema:
+            $ref: '#/components/schemas/CodeType'
+        - name: limit
+          in: query
+          required: false
+          schema:
+            minimum: 1
+            type: integer
+            format: int32
+            nullable: true
+            default: 20
+        - name: page
+          in: query
+          required: false
+          schema:
+            minimum: 0
+            type: integer
+            format: int32
+            nullable: true
+            default: 0
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CodeCollection'
+        "400":
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        "404":
+          description: Not Found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        "500":
+          description: Internal Server Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      security:
+        - BearerAuth: []
+  /v1/encounters/{encounterId}:
+    get:
+      tags:
+        - encounter
+      summary: Get an encounter by encounter Id
+      description: Returns the encounter details based on encounter Id
+      operationId: GetEncounter
+      parameters:
+        - name: encounterId
+          in: path
+          description: ID of the encounter to be fetched
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Encounter'
+        "400":
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        "404":
+          description: Not Found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        "500":
+          description: Internal Server Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      security:
+        - BearerAuth: []
+    put:
+      tags:
+        - encounter
+      summary: Update an encounter
+      description: Update details of an existing encounter
+      operationId: UpdateEncounter
+      parameters:
+        - name: encounterId
+          in: path
+          description: ID of the encounter to be updated
+          required: true
+          schema:
+            type: string
+      requestBody:
+        description: Details of the encounter to be updated
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Encounter'
+        required: true
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Encounter'
+        "400":
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        "404":
+          description: Not Found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        "409":
+          description: Conflict
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        "500":
+          description: Internal Server Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      security:
+        - BearerAuth: []
+    delete:
+      tags:
+        - encounter
+      summary: Delete an encounter
+      description: Delete the specified encounter
+      operationId: DeleteEncounter
+      parameters:
+        - name: encounterId
+          in: path
+          description: ID of the encounter to be deleted
+          required: true
+          schema:
+            type: string
+      responses:
+        "204":
+          description: No Content
+        "400":
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        "404":
+          description: Not Found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        "500":
+          description: Internal Server Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      security:
+        - BearerAuth: []
+components:
+  schemas:
+    CodeCollection:
+      type: object
+      properties:
+        items:
+          type: array
+          items:
+            $ref: '#/components/schemas/CodeSummary'
+        nextPage:
+          type: integer
+          format: int32
+    CodeSummary:
+      type: object
+      properties:
+        code:
+          type: string
+        text:
+          type: string
+    CodeType:
+      type: string
+      enum:
+        - CONDITION
+        - ENCOUNTER
+        - OBSERVATION
+        - REASON
+    Condition:
+      required:
+        - category
+        - clinicalStatus
+        - code
+        - conditionId
+        - recordedDate
+        - verificationStatus
+      type: object
+      properties:
+        conditionId:
+          type: string
+        code:
+          type: string
+        clinicalStatus:
+          type: string
+        verificationStatus:
+          type: string
+        category:
+          type: string
+        recordedDate:
+          type: string
+    Encounter:
+      required:
+        - appointmentId
+        - followUpRequested
+        - patientId
+        - providerId
+        - reasonCode
+        - recommendation
+        - type
+      type: object
+      properties:
+        encounterId:
+          type: string
+        providerId:
+          type: integer
+          format: int32
+        patientId:
+          type: integer
+          format: int32
+        appointmentId:
+          type: integer
+          format: int32
+        status:
+          type: string
+        type:
+          type: string
+        followUpRequested:
+          type: boolean
+        reasonCode:
+          type: string
+        observations:
+          required:
+            - "false"
+          type: array
+          items:
+            $ref: '#/components/schemas/Observation'
+        conditions:
+          required:
+            - "false"
+          type: array
+          items:
+            $ref: '#/components/schemas/Condition'
+        recommendation:
+          $ref: '#/components/schemas/Recommendation'
+        participant:
+          $ref: '#/components/schemas/Participant'
+        patientName:
+          type: string
+        period:
+          $ref: '#/components/schemas/Period'
+        location:
+          type: string
+        serviceProvider:
+          type: string
+    EncounterCollection:
+      type: object
+      properties:
+        items:
+          type: array
+          items:
+            $ref: '#/components/schemas/EncounterSummary'
+        nextPage:
+          type: integer
+          format: int32
+    EncounterSummary:
+      required:
+        - appointmentId
+        - encounterId
+        - patientId
+        - providerId
+        - providerName
+        - reasonCode
+        - recommendationText
+        - type
+      type: object
+      properties:
+        encounterId:
+          type: string
+        patientId:
+          type: integer
+          format: int32
+        providerId:
+          type: integer
+          format: int32
+        appointmentId:
+          type: integer
+          format: int32
+        providerName:
+          type: string
+        patientName:
+          type: string
+        type:
+          type: string
+        reasonCode:
+          type: string
+        recommendationText:
+          type: string
+    ErrorResponse:
+      type: object
+      properties:
+        code:
+          type: string
+        message:
+          type: string
+    Observation:
+      type: object
+      properties:
+        observationId:
+          type: string
+        status:
+          type: string
+        category:
+          type: string
+        parameterType:
+          type: string
+        parameterValue:
+          $ref: '#/components/schemas/Parameter'
+        dateRecorded:
+          type: string
+    Parameter:
+      required:
+        - unit
+        - value
+      type: object
+      properties:
+        value:
+          type: integer
+          format: int32
+        unit:
+          type: string
+    Participant:
+      type: object
+      properties:
+        type:
+          type: string
+        name:
+          type: string
+    Period:
+      required:
+        - endDate
+        - startDate
+      type: object
+      properties:
+        startDate:
+          type: string
+        endDate:
+          type: string
+    Recommendation:
+      required:
+        - additionalInstructions
+        - instruction
+      type: object
+      properties:
+        recommendationId:
+          type: string
+        recommendationDate:
+          type: string
+        recommendedBy:
+          type: string
+        instruction:
+          type: string
+        additionalInstructions:
+          type: string
+  securitySchemes:
+    BearerAuth:
+      type: http
+      scheme: bearer

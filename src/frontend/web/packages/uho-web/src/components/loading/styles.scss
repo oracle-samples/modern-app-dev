@@ -1,0 +1,17 @@
+.loading-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: var(--page-background-neutral-30);
+  background-image: var(--background-image-left), var(--background-image-right);
+  background-position: left bottom, right bottom;
+  background-repeat: no-repeat;
+
+  .wrapper {
+    top: 40%;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    scale: 3;
+  }
+}

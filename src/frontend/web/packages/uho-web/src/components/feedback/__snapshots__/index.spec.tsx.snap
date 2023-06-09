@@ -1,0 +1,153 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshot tests for FeedbackList Snapshot: Component - FeedbackList 1`] = `
+<DocumentFragment>
+  <div
+    data-oj-binding-provider="preact"
+  >
+    <div>
+      <oj-list-view
+        class="oj-listview oj-listview-container oj-component oj-listview-gridlines-hidden gridline-top-hidden gridline-bottom-hidden oj-complete"
+      >
+        <div
+          class="oj-helper-detect-contraction"
+        >
+          <div
+            style="width: 200%; height: 200%;"
+          />
+        </div>
+        <div
+          class="oj-helper-detect-expansion"
+        >
+          <div />
+        </div>
+        <div
+          class="oj-helper-hidden-accessible"
+          tabindex="-1"
+        >
+           
+        </div>
+        <ul
+          aria-busy="false"
+          aria-rowcount="1"
+          class="oj-listview-element oj-component-initnode"
+          data-oj-context=""
+          data-oj-internal=""
+          role="grid"
+          tabindex="0"
+          x-ms-format-detection="none"
+        >
+          <li
+            aria-rowindex="1"
+            class="oj-listview-focused-element oj-listview-item-element oj-listview-item"
+            data-oj-vdom-template-root=""
+            role="row"
+          >
+            <div
+              class="oj-listview-cell-element"
+              role="gridcell"
+            >
+              <oj-c-list-item-layout
+                class="oj-complete"
+              >
+                <div
+                  style="padding: 12px 16px;"
+                >
+                  <div
+                    class="_1mhs7ua undefined"
+                    style="grid-template-columns: 1fr; gap: calc(4 * var(--oj-c-PRIVATE-DO-NOT-USE-core-spacing-1x)) calc(4 * var(--oj-c-PRIVATE-DO-NOT-USE-core-spacing-1x));"
+                  >
+                    <div
+                      class="_3lfxww"
+                    >
+                      <div
+                        class="_198d627"
+                      >
+                        <div />
+                        <div>
+                          <undefined
+                            negative="[object Object]"
+                            positive="[object Object]"
+                          />
+                          <div
+                            class="oj-typography-body-sm"
+                            slot="secondary"
+                          >
+                            Great doctor
+                          </div>
+                        </div>
+                        <div />
+                        <div />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </oj-c-list-item-layout>
+            </div>
+          </li>
+          <li
+            class="oj-listview-skeleton-container"
+            role="presentation"
+            style="visibility: hidden;"
+          >
+            <ul
+              class="oj-listview-group"
+              role="presentation"
+            >
+              <li
+                class="oj-listview-item oj-listview-item-layout gridline-hidden"
+                role="presentation"
+              >
+                <div
+                  class="oj-listview-cell-element oj-listview-skeleton oj-listview-skeleton-line-height oj-animation-skeleton"
+                />
+              </li>
+              <li
+                class="oj-listview-item oj-listview-item-layout gridline-hidden"
+                role="presentation"
+              >
+                <div
+                  class="oj-listview-cell-element oj-listview-skeleton oj-listview-skeleton-line-height oj-animation-skeleton"
+                />
+              </li>
+              <li
+                class="oj-listview-item oj-listview-item-layout gridline-hidden"
+                role="presentation"
+              >
+                <div
+                  class="oj-listview-cell-element oj-listview-skeleton oj-listview-skeleton-line-height oj-animation-skeleton"
+                />
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <template
+          slot="itemTemplate"
+        />
+        <div
+          class="oj-listview-status-message oj-listview-status"
+          role="status"
+          style="display: none;"
+        >
+          <div
+            class="oj-icon oj-listview-loading-icon"
+          />
+        </div>
+        <div
+          class="oj-helper-hidden-accessible"
+          role="status"
+          tabindex="-1"
+        />
+        <div
+          class="oj-helper-hidden-accessible"
+        >
+          Use arrow keys to expand and collapse.
+        </div>
+      </oj-list-view>
+    </div>
+  </div>
+  <div
+    id="__oj_layerhost_container"
+  />
+</DocumentFragment>
+`;

@@ -1,0 +1,39 @@
+.patient-card {
+  margin-left: 10px;
+
+  .container {
+    width: 330px;
+    height: 395px;
+  }
+
+  .inner-container {
+    padding-top: 70px;
+    padding-left: 32px;
+    padding-right: 32px;
+
+    .name {
+      overflow: hidden;
+      width: 261px;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+
+    .title {
+      width: 261px;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+    }
+
+    .avatar {
+      margin-bottom: 16px;
+    }
+  }
+
+  .spacer {
+    height: 4px;
+    width: 261px;
+  }
+}

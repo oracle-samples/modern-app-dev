@@ -1,0 +1,98 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "frontend.fullname" . }}
+  labels: {{ include "frontend.labels" . | nindent 4 }}
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      app: {{ .Chart.Name }}
+      app.kubernetes.io/name: {{ include "frontend.name" . }}
+      app.kubernetes.io/instance: {{ .Release.Name }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Chart.Name }}
+        version: {{ .Values.global.image_tag | quote }}
+        app.kubernetes.io/name: {{ include "frontend.name" . }}
+        app.kubernetes.io/instance: {{ .Release.Name }}
+    spec:
+      topologySpreadConstraints:
+        - maxSkew: 1
+          topologyKey: failure-domain.beta.kubernetes.io/zone
+          whenUnsatisfiable: ScheduleAnyway
+          labelSelector:
+            matchLabels:
+              app: {{ .Chart.Name }}
+              version: {{ .Values.global.image_tag | quote }}
+              app.kubernetes.io/name: {{ include "frontend.name" . }}
+              app.kubernetes.io/instance: {{ .Release.Name }}
+        - maxSkew: 1
+          topologyKey: oci.oraclecloud.com/fault-domain
+          whenUnsatisfiable: ScheduleAnyway
+          labelSelector:
+            matchLabels:
+              app: {{ .Chart.Name }}
+              version: {{ .Values.global.image_tag | quote }}
+              app.kubernetes.io/name: {{ include "frontend.name" . }}
+              app.kubernetes.io/instance: {{ .Release.Name }}
+      containers:
+        - name: {{ .Chart.Name }}
+          image: "{{ .Values.global.repo_path }}{{.Values.name}}-{{.Values.global.deploy_id}}:{{ .Values.global.image_tag }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          env:
+            - name: MICRONAUT_SECURITY_OAUTH2_CLIENTS_PATIENT_CLIENT_ID
+              valueFrom:
+                secretKeyRef:
+                  name: idcs
+                  key: patient-app-client-id
+            - name: MICRONAUT_SECURITY_OAUTH2_CLIENTS_PATIENT_CLIENT_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: idcs
+                  key: patient-app-client-secret
+            - name: MICRONAUT_SECURITY_OAUTH2_CLIENTS_PATIENT_OPENID_ISSUER
+              valueFrom:
+                configMapKeyRef:
+                  name: idcs
+                  key: url  
+            - name: MICRONAUT_SECURITY_OAUTH2_CLIENTS_PROVIDER_CLIENT_ID
+              valueFrom:
+                secretKeyRef:
+                  name: idcs
+                  key: provider-app-client-id
+            - name: MICRONAUT_SECURITY_OAUTH2_CLIENTS_PROVIDER_CLIENT_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: idcs
+                  key: provider-app-client-secret
+            - name: MICRONAUT_SECURITY_OAUTH2_CLIENTS_PROVIDER_OPENID_ISSUER
+              valueFrom:
+                configMapKeyRef:
+                  name: idcs
+                  key: url
+            - name: APIGW_URL
+              valueFrom:
+                configMapKeyRef:
+                  name: apigw
+                  key: url
+            - name: MICRONAUT_METRICS_EXPORT_ORACLECLOUD_COMPARTMENT_ID
+              value: {{ .Values.global.compartment_id }}
+            - name: OCI_CONFIG_INSTANCE-PRINCIPAL_ENABLED
+              value: "true"
+            - name: TRACING_ZIPKIN_HTTP_URL
+              valueFrom:
+                secretKeyRef:
+                  name: apm
+                  key: data_upload_endpoint
+            - name: TRACING_ZIPKIN_HTTP_PATH
+              valueFrom:
+                secretKeyRef:
+                  name: apm
+                  key: data_upload_path
+            - name: MICRONAUT_SECURITY_TOKEN_JWT_SIGNATURES_STATIC_JWKS_KEYS
+              value: {{ .Values.global.idcs.keys | toJson }}
+          ports:
+            - name: http
+              containerPort: {{ .Values.pod.containerPort }}

@@ -1,0 +1,95 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: "encounter-init-job"
+spec:
+  ttlSecondsAfterFinished: 1200
+  template:
+    spec:
+      restartPolicy: Never
+      containers:
+        - name: atp-init
+          image: ghcr.io/oracle/oraclelinux8-instantclient:19
+          workingDir: "/data"
+          command: ["/bin/sh","-c"]
+          args:
+            - sqlplus ADMIN/\"${ATP_ADMIN_PW}\"@${ATP_SERVICE} @atp.init.sql ${ENCOUNTER_ATP_USERNAME} ${ENCOUNTER_ATP_PASSWORD}
+          env:
+            - name: ATP_ADMIN_PW
+              valueFrom:
+                secretKeyRef:
+                  name: {{ .Values.global.atpAdminSecret }}
+                  key: atp-admin-password
+            - name: ENCOUNTER_ATP_USERNAME
+              valueFrom:
+                secretKeyRef:
+                  name: atp-encounter-secret
+                  key: atp-encounter-username
+            - name: ENCOUNTER_ATP_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: atp-encounter-secret
+                  key: atp-encounter-password
+            - name: ATP_SERVICE
+              valueFrom:
+                secretKeyRef:
+                  name: {{ .Values.global.atpConnectionSecret }}
+                  key: atp-service
+          volumeMounts:
+            - name: initdb
+              mountPath: /data/
+            - name: wallet
+              mountPath: /usr/lib/oracle/19.18/client64/lib/network/admin/
+              readOnly: true
+        - name: ajdb-init
+          image: ghcr.io/oracle/oraclelinux8-instantclient:19
+          workingDir: "/data"
+          command: ["/bin/sh","-c"]
+          args:
+            - sqlplus ADMIN/\"${AJDB_ADMIN_PW}\"@${AJDB_SERVICE} @ajdb.init.sql ${ENCOUNTER_AJDB_USERNAME} ${ENCOUNTER_AJDB_PASSWORD}
+          env:
+            - name: AJDB_ADMIN_PW
+              valueFrom:
+                secretKeyRef:
+                  name: {{ .Values.global.ajdbAdminSecret }}
+                  key: ajdb-admin-password
+            - name: ENCOUNTER_AJDB_USERNAME
+              valueFrom:
+                secretKeyRef:
+                  name: ajdb-encounter-secret
+                  key: ajdb-encounter-username
+            - name: ENCOUNTER_AJDB_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: ajdb-encounter-secret
+                  key: ajdb-encounter-password
+            - name: AJDB_SERVICE
+              valueFrom:
+                secretKeyRef:
+                  name: {{ .Values.global.ajdbConnectionSecret }}
+                  key: ajdb-service
+          volumeMounts:
+            - name: initajdb
+              mountPath: /data/
+            - name: ajdb-wallet
+              mountPath: /usr/lib/oracle/19.18/client64/lib/network/admin/
+              readOnly: true
+      volumes:
+        - name: wallet
+          secret:
+            secretName: {{ .Values.global.atpWalletSecret }}
+        - name: initdb
+          configMap:
+            name: "encounter-atp-init-configmap"
+            items:
+              - key: atp.init.sql
+                path: atp.init.sql
+        - name: ajdb-wallet
+          secret:
+            secretName: {{ .Values.global.ajdbWalletSecret }}
+        - name: initajdb
+          configMap:
+            name: "encounter-atp-init-configmap"
+            items:
+              - key: ajdb.init.sql
+                path: ajdb.init.sql

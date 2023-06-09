@@ -1,0 +1,1469 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshot tests for Patient: Providers Snapshot: Component - Patient: Providers 1`] = `
+<DocumentFragment>
+  <div
+    data-oj-binding-provider="preact"
+  >
+    <div
+      class="smart-filter-search oj-sm-margin-12x-horizontal"
+    >
+      <div
+        class="oj-sm-padding-2x-top oj-flex oj-sm-flex-direction-column"
+        style="height: 100%;"
+      >
+        <div
+          class="oj-flex-item header oj-sm-padding-4x-top oj-sm-padding-4x-bottom oj-sm-padding-8x-horizontal oj-sm-flex-0"
+        >
+          <div>
+            <div
+              class="oj-typography-subheading-lg header-title-text-color"
+            >
+              Find a provider
+            </div>
+            <div
+              class="oj-typography-semi-bold-sm header-subtitle-text-color"
+            >
+              Search a provider by name, keyword, email or any other properties
+            </div>
+            <div
+              class="oj-sm-margin-4x-top"
+            >
+              <div
+                class="oj-sm-margin-2x-top oj-flex oj-sm-flex-direction-column search"
+              >
+                <div
+                  class="oj-flex-item"
+                >
+                  <div
+                    class="oj-flex oj-sm-align-items-center search-bar oj-sm-padding-4x-horizontal"
+                  >
+                    <div
+                      class="oj-sm-flex-0 oj-flex oj-sm-align-items-center oj-sm-margin-3x-end"
+                    >
+                      <div
+                        aria-hidden="true"
+                        class="oj-text-color-primary smart-filters-icon-anchor"
+                        tabindex="-1"
+                      >
+                        <span
+                          class="oj-ux-ico-search icon"
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="oj-sm-flex-1 search-bar-content"
+                    >
+                      <div
+                        class="oj-flex oj-sm-align-items-center chips"
+                      >
+                        <div
+                          class="oj-flex oj-sm-align-items-center"
+                        />
+                        <div
+                          class="oj-sm-flex-1 search-bar-input"
+                        >
+                          <oj-input-text
+                            class="oj-inputtext oj-form-control oj-component oj-text-field oj-has-no-value oj-complete"
+                          >
+                            <div
+                              class="oj-text-field-container"
+                              role="presentation"
+                            >
+                              <div
+                                class="oj-text-field-middle"
+                              >
+                                <input
+                                  class="oj-inputtext-input oj-text-field-input oj-component-initnode"
+                                  data-oj-internal=""
+                                  placeholder="Search for healthcare specialist..."
+                                  type="text"
+                                />
+                              </div>
+                            </div>
+                            <div
+                              class="oj-user-assistance-inline-container oj-reflow"
+                            />
+                          </oj-input-text>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="oj-flex-item oj-sm-padding-2x-top"
+                >
+                  <oj-conveyor-belt
+                    class="oj-conveyorbelt oj-component oj-component-initnode oj-complete"
+                  >
+                    <div
+                      class="chip oj-flex oj-sm-align-items-center oj-sm-margin-2x-end"
+                    >
+                      <div
+                        class="oj-flex-item filter-chip-label oj-sm-flex-wrap-nowrap oj-sm-justify-content-center oj-typography-body-sm oj-text-color-secondary"
+                      >
+                        Speciality
+                      </div>
+                      <div
+                        class="oj-flex-item oj-sm-justify-content-center oj-sm-justify-content-center oj-sm-padding-1x-start oj-typography-body-sm oj-typography-semi-bold oj-text-color-primary"
+                      >
+                        Physician
+                      </div>
+                    </div>
+                    <div
+                      class="chip oj-flex oj-sm-align-items-center oj-sm-margin-2x-end"
+                    >
+                      <div
+                        class="oj-flex-item filter-chip-label oj-sm-flex-wrap-nowrap oj-sm-justify-content-center oj-typography-body-sm oj-text-color-secondary"
+                      >
+                        Location
+                      </div>
+                      <div
+                        class="oj-flex-item oj-sm-justify-content-center oj-sm-justify-content-center oj-sm-padding-1x-start oj-typography-body-sm oj-typography-semi-bold oj-text-color-primary"
+                      >
+                        Chicago
+                      </div>
+                    </div>
+                  </oj-conveyor-belt>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="oj-flex-item oj-sm-flex-0"
+        >
+          <div
+            class="banner"
+          />
+        </div>
+        <div
+          class="content oj-flex-item oj-sm-padding-8x-horizontal oj-sm-padding-8x-top oj-sm-flex-1"
+        >
+          <div
+            class="provider-list-panel oj-flex oj-sm-padding-2x-bottom oj-sm-flex-items-initial oj-sm-justify-content-space-between"
+          >
+            <div
+              class="oj-flex-item"
+            >
+              10 results
+            </div>
+            <div
+              class="oj-flex-item"
+            >
+              <oj-buttonset-one
+                class="oj-button-sm oj-buttonset oj-component oj-component-initnode oj-button-outlined-chrome oj-buttonset-multi oj-complete"
+                data-oj-container="ojButtonset"
+                role="toolbar"
+              >
+                <span
+                  class="oj-button-toggle oj-button oj-component oj-enabled oj-default oj-button-icon-only oj-button-outlined-chrome oj-buttonset-first"
+                  title="Card"
+                >
+                  <label
+                    class="oj-button-label"
+                  >
+                    <oj-option
+                      class="oj-complete"
+                    >
+                      <span
+                        class="oj-ux-ico-grid-view-large oj-button-icon oj-start"
+                        slot="startIcon"
+                      />
+                      <span
+                        class="oj-button-text oj-helper-hidden-accessible"
+                      >
+                        Card
+                      </span>
+                    </oj-option>
+                  </label>
+                  <input
+                    class="oj-button-input oj-helper-hidden-accessible oj-component-initnode"
+                    data-oj-internal=""
+                    name="_n_ui-id-4"
+                    tabindex="0"
+                    type="radio"
+                    value="card"
+                  />
+                </span>
+                <span
+                  class="oj-button-toggle oj-button oj-component oj-enabled oj-button-outlined-chrome oj-button-icon-only oj-buttonset-last oj-selected"
+                  title="List"
+                >
+                  <label
+                    class="oj-button-label"
+                  >
+                    <oj-option
+                      class="oj-complete"
+                    >
+                      <span
+                        class="oj-ux-ico-list-item-layout oj-button-icon oj-start"
+                        slot="startIcon"
+                      />
+                      <span
+                        class="oj-button-text oj-helper-hidden-accessible"
+                      >
+                        List
+                      </span>
+                    </oj-option>
+                  </label>
+                  <input
+                    class="oj-button-input oj-helper-hidden-accessible oj-component-initnode"
+                    data-oj-internal=""
+                    name="_n_ui-id-4"
+                    tabindex="0"
+                    type="radio"
+                    value="list"
+                  />
+                </span>
+              </oj-buttonset-one>
+            </div>
+          </div>
+          <oj-list-view
+            class="list-view oj-listview oj-listview-container oj-component oj-complete gridline-top-hidden gridline-bottom-hidden"
+          >
+            <div
+              class="oj-helper-detect-contraction"
+            >
+              <div
+                style="width: 200%; height: 200%;"
+              />
+            </div>
+            <div
+              class="oj-helper-detect-expansion"
+            >
+              <div />
+            </div>
+            <div
+              class="oj-helper-hidden-accessible"
+              tabindex="-1"
+            >
+               
+            </div>
+            <ul
+              aria-busy="false"
+              aria-label="list of providers"
+              aria-multiselectable="false"
+              aria-rowcount="10"
+              class="oj-listview-element oj-component-initnode"
+              data-oj-context=""
+              data-oj-internal=""
+              role="grid"
+              tabindex="0"
+              x-ms-format-detection="none"
+            >
+              <li
+                aria-rowindex="1"
+                class="oj-listview-focused-element oj-listview-item-element oj-listview-item"
+                data-oj-vdom-template-root=""
+                role="row"
+              >
+                <div
+                  aria-selected="false"
+                  class="oj-listview-cell-element"
+                  role="gridcell"
+                >
+                  <oj-c-list-item-layout
+                    class="oj-complete"
+                  >
+                    <div
+                      style="padding: 12px 16px;"
+                    >
+                      <div
+                        class="_1mhs7ua undefined"
+                        style="grid-template-columns: auto 1fr auto; gap: calc(4 * var(--oj-c-PRIVATE-DO-NOT-USE-core-spacing-1x)) calc(4 * var(--oj-c-PRIVATE-DO-NOT-USE-core-spacing-1x));"
+                      >
+                        <div
+                          class="_3lfxww"
+                        >
+                          <oj-c-avatar
+                            class="profile-card-layout-image oj-complete"
+                            role="img"
+                          >
+                            <div
+                              aria-label="Avatar of John Smith"
+                              class="x4exih oj-c-avatar-bg-blue oj-c-avatar-xs"
+                              role="img"
+                            >
+                              <div
+                                aria-hidden="true"
+                                class="k1vxov _1fma8t6 _1mymxz2"
+                              >
+                                JS
+                              </div>
+                            </div>
+                          </oj-c-avatar>
+                        </div>
+                        <div
+                          class="_3lfxww"
+                        >
+                          <div
+                            class="_198d627"
+                          >
+                            <div />
+                            <div>
+                              <div
+                                class="oj-typography-body-md oj-typography-bold"
+                              >
+                                John Smith
+                              </div>
+                            </div>
+                            <div>
+                              <div
+                                class="oj-typography-body-sm"
+                              >
+                                Seattle Hospital
+                              </div>
+                            </div>
+                            <div>
+                              <div
+                                class="oj-typography-body-xs oj-text-color-secondary"
+                              >
+                                jsmith@example.com
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="_6482su"
+                        >
+                          <div
+                            class="_3lfxww do20s5"
+                          >
+                            <div
+                              class="oj-typography-body-xs oj-text-color-secondary"
+                            >
+                              <undefined
+                                negative="[object Object]"
+                                positive="[object Object]"
+                              />
+                            </div>
+                          </div>
+                          <div
+                            class="_3lfxww"
+                          />
+                          <div
+                            class="_3lfxww"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </oj-c-list-item-layout>
+                </div>
+              </li>
+              <li
+                aria-rowindex="2"
+                class="oj-listview-focused-element oj-listview-item-element oj-listview-item"
+                data-oj-vdom-template-root=""
+                role="row"
+              >
+                <div
+                  aria-selected="false"
+                  class="oj-listview-cell-element"
+                  role="gridcell"
+                >
+                  <oj-c-list-item-layout
+                    class="oj-complete"
+                  >
+                    <div
+                      style="padding: 12px 16px;"
+                    >
+                      <div
+                        class="_1mhs7ua undefined"
+                        style="grid-template-columns: auto 1fr auto; gap: calc(4 * var(--oj-c-PRIVATE-DO-NOT-USE-core-spacing-1x)) calc(4 * var(--oj-c-PRIVATE-DO-NOT-USE-core-spacing-1x));"
+                      >
+                        <div
+                          class="_3lfxww"
+                        >
+                          <oj-c-avatar
+                            class="profile-card-layout-image oj-complete"
+                            role="img"
+                          >
+                            <div
+                              aria-label="Avatar of Emily Nguyen"
+                              class="x4exih oj-c-avatar-bg-orange oj-c-avatar-xs"
+                              role="img"
+                            >
+                              <div
+                                aria-hidden="true"
+                                class="k1vxov _1fma8t6 _1mymxz2"
+                              >
+                                EN
+                              </div>
+                            </div>
+                          </oj-c-avatar>
+                        </div>
+                        <div
+                          class="_3lfxww"
+                        >
+                          <div
+                            class="_198d627"
+                          >
+                            <div />
+                            <div>
+                              <div
+                                class="oj-typography-body-md oj-typography-bold"
+                              >
+                                Emily Nguyen
+                              </div>
+                            </div>
+                            <div>
+                              <div
+                                class="oj-typography-body-sm"
+                              >
+                                Northwestern Memorial Hospital
+                              </div>
+                            </div>
+                            <div>
+                              <div
+                                class="oj-typography-body-xs oj-text-color-secondary"
+                              >
+                                enguyen@example.com
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="_6482su"
+                        >
+                          <div
+                            class="_3lfxww do20s5"
+                          >
+                            <div
+                              class="oj-typography-body-xs oj-text-color-secondary"
+                            >
+                              <undefined
+                                negative="[object Object]"
+                                positive="[object Object]"
+                              />
+                            </div>
+                          </div>
+                          <div
+                            class="_3lfxww"
+                          />
+                          <div
+                            class="_3lfxww"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </oj-c-list-item-layout>
+                </div>
+              </li>
+              <li
+                aria-rowindex="3"
+                class="oj-listview-focused-element oj-listview-item-element oj-listview-item"
+                data-oj-vdom-template-root=""
+                role="row"
+              >
+                <div
+                  aria-selected="false"
+                  class="oj-listview-cell-element"
+                  role="gridcell"
+                >
+                  <oj-c-list-item-layout
+                    class="oj-complete"
+                  >
+                    <div
+                      style="padding: 12px 16px;"
+                    >
+                      <div
+                        class="_1mhs7ua undefined"
+                        style="grid-template-columns: auto 1fr auto; gap: calc(4 * var(--oj-c-PRIVATE-DO-NOT-USE-core-spacing-1x)) calc(4 * var(--oj-c-PRIVATE-DO-NOT-USE-core-spacing-1x));"
+                      >
+                        <div
+                          class="_3lfxww"
+                        >
+                          <oj-c-avatar
+                            class="profile-card-layout-image oj-complete"
+                            role="img"
+                          >
+                            <div
+                              aria-label="Avatar of David Kim"
+                              class="x4exih oj-c-avatar-bg-purple oj-c-avatar-xs"
+                              role="img"
+                            >
+                              <div
+                                aria-hidden="true"
+                                class="k1vxov _1fma8t6 _1mymxz2"
+                              >
+                                DK
+                              </div>
+                            </div>
+                          </oj-c-avatar>
+                        </div>
+                        <div
+                          class="_3lfxww"
+                        >
+                          <div
+                            class="_198d627"
+                          >
+                            <div />
+                            <div>
+                              <div
+                                class="oj-typography-body-md oj-typography-bold"
+                              >
+                                David Kim
+                              </div>
+                            </div>
+                            <div>
+                              <div
+                                class="oj-typography-body-sm"
+                              >
+                                Houston Medical Center
+                              </div>
+                            </div>
+                            <div>
+                              <div
+                                class="oj-typography-body-xs oj-text-color-secondary"
+                              >
+                                dkim@example.com
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="_6482su"
+                        >
+                          <div
+                            class="_3lfxww do20s5"
+                          >
+                            <div
+                              class="oj-typography-body-xs oj-text-color-secondary"
+                            >
+                              <undefined
+                                negative="[object Object]"
+                                positive="[object Object]"
+                              />
+                            </div>
+                          </div>
+                          <div
+                            class="_3lfxww"
+                          />
+                          <div
+                            class="_3lfxww"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </oj-c-list-item-layout>
+                </div>
+              </li>
+              <li
+                aria-rowindex="4"
+                class="oj-listview-focused-element oj-listview-item-element oj-listview-item"
+                data-oj-vdom-template-root=""
+                role="row"
+              >
+                <div
+                  aria-selected="false"
+                  class="oj-listview-cell-element"
+                  role="gridcell"
+                >
+                  <oj-c-list-item-layout
+                    class="oj-complete"
+                  >
+                    <div
+                      style="padding: 12px 16px;"
+                    >
+                      <div
+                        class="_1mhs7ua undefined"
+                        style="grid-template-columns: auto 1fr auto; gap: calc(4 * var(--oj-c-PRIVATE-DO-NOT-USE-core-spacing-1x)) calc(4 * var(--oj-c-PRIVATE-DO-NOT-USE-core-spacing-1x));"
+                      >
+                        <div
+                          class="_3lfxww"
+                        >
+                          <oj-c-avatar
+                            class="profile-card-layout-image oj-complete"
+                            role="img"
+                          >
+                            <div
+                              aria-label="Avatar of Emily Garcia"
+                              class="x4exih oj-c-avatar-bg-orange oj-c-avatar-xs"
+                              role="img"
+                            >
+                              <div
+                                aria-hidden="true"
+                                class="k1vxov _1fma8t6 _1mymxz2"
+                              >
+                                EG
+                              </div>
+                            </div>
+                          </oj-c-avatar>
+                        </div>
+                        <div
+                          class="_3lfxww"
+                        >
+                          <div
+                            class="_198d627"
+                          >
+                            <div />
+                            <div>
+                              <div
+                                class="oj-typography-body-md oj-typography-bold"
+                              >
+                                Emily Garcia
+                              </div>
+                            </div>
+                            <div>
+                              <div
+                                class="oj-typography-body-sm"
+                              >
+                                Seattle Medical Center
+                              </div>
+                            </div>
+                            <div>
+                              <div
+                                class="oj-typography-body-xs oj-text-color-secondary"
+                              >
+                                egarcia@example.com
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="_6482su"
+                        >
+                          <div
+                            class="_3lfxww do20s5"
+                          >
+                            <div
+                              class="oj-typography-body-xs oj-text-color-secondary"
+                            >
+                              <undefined
+                                negative="[object Object]"
+                                positive="[object Object]"
+                              />
+                            </div>
+                          </div>
+                          <div
+                            class="_3lfxww"
+                          />
+                          <div
+                            class="_3lfxww"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </oj-c-list-item-layout>
+                </div>
+              </li>
+              <li
+                aria-rowindex="5"
+                class="oj-listview-focused-element oj-listview-item-element oj-listview-item"
+                data-oj-vdom-template-root=""
+                role="row"
+              >
+                <div
+                  aria-selected="false"
+                  class="oj-listview-cell-element"
+                  role="gridcell"
+                >
+                  <oj-c-list-item-layout
+                    class="oj-complete"
+                  >
+                    <div
+                      style="padding: 12px 16px;"
+                    >
+                      <div
+                        class="_1mhs7ua undefined"
+                        style="grid-template-columns: auto 1fr auto; gap: calc(4 * var(--oj-c-PRIVATE-DO-NOT-USE-core-spacing-1x)) calc(4 * var(--oj-c-PRIVATE-DO-NOT-USE-core-spacing-1x));"
+                      >
+                        <div
+                          class="_3lfxww"
+                        >
+                          <oj-c-avatar
+                            class="profile-card-layout-image oj-complete"
+                            role="img"
+                          >
+                            <div
+                              aria-label="Avatar of Adam Gonzalez"
+                              class="x4exih oj-c-avatar-bg-lilac oj-c-avatar-xs"
+                              role="img"
+                            >
+                              <div
+                                aria-hidden="true"
+                                class="k1vxov _1fma8t6 _1mymxz2"
+                              >
+                                AG
+                              </div>
+                            </div>
+                          </oj-c-avatar>
+                        </div>
+                        <div
+                          class="_3lfxww"
+                        >
+                          <div
+                            class="_198d627"
+                          >
+                            <div />
+                            <div>
+                              <div
+                                class="oj-typography-body-md oj-typography-bold"
+                              >
+                                Adam Gonzalez
+                              </div>
+                            </div>
+                            <div>
+                              <div
+                                class="oj-typography-body-sm"
+                              >
+                                Portland Orthopedic Center
+                              </div>
+                            </div>
+                            <div>
+                              <div
+                                class="oj-typography-body-xs oj-text-color-secondary"
+                              >
+                                agonzalez@example.com
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="_6482su"
+                        >
+                          <div
+                            class="_3lfxww do20s5"
+                          >
+                            <div
+                              class="oj-typography-body-xs oj-text-color-secondary"
+                            >
+                              <undefined
+                                negative="[object Object]"
+                                positive="[object Object]"
+                              />
+                            </div>
+                          </div>
+                          <div
+                            class="_3lfxww"
+                          />
+                          <div
+                            class="_3lfxww"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </oj-c-list-item-layout>
+                </div>
+              </li>
+              <li
+                aria-rowindex="6"
+                class="oj-listview-focused-element oj-listview-item-element oj-listview-item"
+                data-oj-vdom-template-root=""
+                role="row"
+              >
+                <div
+                  aria-selected="false"
+                  class="oj-listview-cell-element"
+                  role="gridcell"
+                >
+                  <oj-c-list-item-layout
+                    class="oj-complete"
+                  >
+                    <div
+                      style="padding: 12px 16px;"
+                    >
+                      <div
+                        class="_1mhs7ua undefined"
+                        style="grid-template-columns: auto 1fr auto; gap: calc(4 * var(--oj-c-PRIVATE-DO-NOT-USE-core-spacing-1x)) calc(4 * var(--oj-c-PRIVATE-DO-NOT-USE-core-spacing-1x));"
+                      >
+                        <div
+                          class="_3lfxww"
+                        >
+                          <oj-c-avatar
+                            class="profile-card-layout-image oj-complete"
+                            role="img"
+                          >
+                            <div
+                              aria-label="Avatar of Jennifer Chen"
+                              class="x4exih oj-c-avatar-bg-purple oj-c-avatar-xs"
+                              role="img"
+                            >
+                              <div
+                                aria-hidden="true"
+                                class="k1vxov _1fma8t6 _1mymxz2"
+                              >
+                                JC
+                              </div>
+                            </div>
+                          </oj-c-avatar>
+                        </div>
+                        <div
+                          class="_3lfxww"
+                        >
+                          <div
+                            class="_198d627"
+                          >
+                            <div />
+                            <div>
+                              <div
+                                class="oj-typography-body-md oj-typography-bold"
+                              >
+                                Jennifer Chen
+                              </div>
+                            </div>
+                            <div>
+                              <div
+                                class="oj-typography-body-sm"
+                              >
+                                Seton Medical Center
+                              </div>
+                            </div>
+                            <div>
+                              <div
+                                class="oj-typography-body-xs oj-text-color-secondary"
+                              >
+                                jchen@example.com
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="_6482su"
+                        >
+                          <div
+                            class="_3lfxww do20s5"
+                          >
+                            <div
+                              class="oj-typography-body-xs oj-text-color-secondary"
+                            >
+                              <undefined
+                                negative="[object Object]"
+                                positive="[object Object]"
+                              />
+                            </div>
+                          </div>
+                          <div
+                            class="_3lfxww"
+                          />
+                          <div
+                            class="_3lfxww"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </oj-c-list-item-layout>
+                </div>
+              </li>
+              <li
+                aria-rowindex="7"
+                class="oj-listview-focused-element oj-listview-item-element oj-listview-item"
+                data-oj-vdom-template-root=""
+                role="row"
+              >
+                <div
+                  aria-selected="false"
+                  class="oj-listview-cell-element"
+                  role="gridcell"
+                >
+                  <oj-c-list-item-layout
+                    class="oj-complete"
+                  >
+                    <div
+                      style="padding: 12px 16px;"
+                    >
+                      <div
+                        class="_1mhs7ua undefined"
+                        style="grid-template-columns: auto 1fr auto; gap: calc(4 * var(--oj-c-PRIVATE-DO-NOT-USE-core-spacing-1x)) calc(4 * var(--oj-c-PRIVATE-DO-NOT-USE-core-spacing-1x));"
+                      >
+                        <div
+                          class="_3lfxww"
+                        >
+                          <oj-c-avatar
+                            class="profile-card-layout-image oj-complete"
+                            role="img"
+                          >
+                            <div
+                              aria-label="Avatar of Michael Williams"
+                              class="x4exih oj-c-avatar-bg-teal oj-c-avatar-xs"
+                              role="img"
+                            >
+                              <div
+                                aria-hidden="true"
+                                class="k1vxov _1fma8t6 _1mymxz2"
+                              >
+                                MW
+                              </div>
+                            </div>
+                          </oj-c-avatar>
+                        </div>
+                        <div
+                          class="_3lfxww"
+                        >
+                          <div
+                            class="_198d627"
+                          >
+                            <div />
+                            <div>
+                              <div
+                                class="oj-typography-body-md oj-typography-bold"
+                              >
+                                Michael Williams
+                              </div>
+                            </div>
+                            <div>
+                              <div
+                                class="oj-typography-body-sm"
+                              >
+                                UT Southwestern Medical Center
+                              </div>
+                            </div>
+                            <div>
+                              <div
+                                class="oj-typography-body-xs oj-text-color-secondary"
+                              >
+                                mwilliams@example.com
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="_6482su"
+                        >
+                          <div
+                            class="_3lfxww do20s5"
+                          >
+                            <div
+                              class="oj-typography-body-xs oj-text-color-secondary"
+                            >
+                              <undefined
+                                negative="[object Object]"
+                                positive="[object Object]"
+                              />
+                            </div>
+                          </div>
+                          <div
+                            class="_3lfxww"
+                          />
+                          <div
+                            class="_3lfxww"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </oj-c-list-item-layout>
+                </div>
+              </li>
+              <li
+                aria-rowindex="8"
+                class="oj-listview-focused-element oj-listview-item-element oj-listview-item"
+                data-oj-vdom-template-root=""
+                role="row"
+              >
+                <div
+                  aria-selected="false"
+                  class="oj-listview-cell-element"
+                  role="gridcell"
+                >
+                  <oj-c-list-item-layout
+                    class="oj-complete"
+                  >
+                    <div
+                      style="padding: 12px 16px;"
+                    >
+                      <div
+                        class="_1mhs7ua undefined"
+                        style="grid-template-columns: auto 1fr auto; gap: calc(4 * var(--oj-c-PRIVATE-DO-NOT-USE-core-spacing-1x)) calc(4 * var(--oj-c-PRIVATE-DO-NOT-USE-core-spacing-1x));"
+                      >
+                        <div
+                          class="_3lfxww"
+                        >
+                          <oj-c-avatar
+                            class="profile-card-layout-image oj-complete"
+                            role="img"
+                          >
+                            <div
+                              aria-label="Avatar of Julia Gonzalez"
+                              class="x4exih oj-c-avatar-bg-lilac oj-c-avatar-xs"
+                              role="img"
+                            >
+                              <div
+                                aria-hidden="true"
+                                class="k1vxov _1fma8t6 _1mymxz2"
+                              >
+                                JG
+                              </div>
+                            </div>
+                          </oj-c-avatar>
+                        </div>
+                        <div
+                          class="_3lfxww"
+                        >
+                          <div
+                            class="_198d627"
+                          >
+                            <div />
+                            <div>
+                              <div
+                                class="oj-typography-body-md oj-typography-bold"
+                              >
+                                Julia Gonzalez
+                              </div>
+                            </div>
+                            <div>
+                              <div
+                                class="oj-typography-body-sm"
+                              >
+                                Houston Medical Center
+                              </div>
+                            </div>
+                            <div>
+                              <div
+                                class="oj-typography-body-xs oj-text-color-secondary"
+                              >
+                                juliag@example.com
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="_6482su"
+                        >
+                          <div
+                            class="_3lfxww do20s5"
+                          >
+                            <div
+                              class="oj-typography-body-xs oj-text-color-secondary"
+                            >
+                              <undefined
+                                negative="[object Object]"
+                                positive="[object Object]"
+                              />
+                            </div>
+                          </div>
+                          <div
+                            class="_3lfxww"
+                          />
+                          <div
+                            class="_3lfxww"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </oj-c-list-item-layout>
+                </div>
+              </li>
+              <li
+                aria-rowindex="9"
+                class="oj-listview-focused-element oj-listview-item-element oj-listview-item"
+                data-oj-vdom-template-root=""
+                role="row"
+              >
+                <div
+                  aria-selected="false"
+                  class="oj-listview-cell-element"
+                  role="gridcell"
+                >
+                  <oj-c-list-item-layout
+                    class="oj-complete"
+                  >
+                    <div
+                      style="padding: 12px 16px;"
+                    >
+                      <div
+                        class="_1mhs7ua undefined"
+                        style="grid-template-columns: auto 1fr auto; gap: calc(4 * var(--oj-c-PRIVATE-DO-NOT-USE-core-spacing-1x)) calc(4 * var(--oj-c-PRIVATE-DO-NOT-USE-core-spacing-1x));"
+                      >
+                        <div
+                          class="_3lfxww"
+                        >
+                          <oj-c-avatar
+                            class="profile-card-layout-image oj-complete"
+                            role="img"
+                          >
+                            <div
+                              aria-label="Avatar of James Lee"
+                              class="x4exih oj-c-avatar-bg-teal oj-c-avatar-xs"
+                              role="img"
+                            >
+                              <div
+                                aria-hidden="true"
+                                class="k1vxov _1fma8t6 _1mymxz2"
+                              >
+                                JL
+                              </div>
+                            </div>
+                          </oj-c-avatar>
+                        </div>
+                        <div
+                          class="_3lfxww"
+                        >
+                          <div
+                            class="_198d627"
+                          >
+                            <div />
+                            <div>
+                              <div
+                                class="oj-typography-body-md oj-typography-bold"
+                              >
+                                James Lee
+                              </div>
+                            </div>
+                            <div>
+                              <div
+                                class="oj-typography-body-sm"
+                              >
+                                Dallas General Hospital
+                              </div>
+                            </div>
+                            <div>
+                              <div
+                                class="oj-typography-body-xs oj-text-color-secondary"
+                              >
+                                jamesl@example.com
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="_6482su"
+                        >
+                          <div
+                            class="_3lfxww do20s5"
+                          >
+                            <div
+                              class="oj-typography-body-xs oj-text-color-secondary"
+                            >
+                              <undefined
+                                negative="[object Object]"
+                                positive="[object Object]"
+                              />
+                            </div>
+                          </div>
+                          <div
+                            class="_3lfxww"
+                          />
+                          <div
+                            class="_3lfxww"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </oj-c-list-item-layout>
+                </div>
+              </li>
+              <li
+                aria-rowindex="10"
+                class="oj-listview-focused-element oj-listview-item-element oj-listview-item"
+                data-oj-vdom-template-root=""
+                role="row"
+              >
+                <div
+                  aria-selected="false"
+                  class="oj-listview-cell-element"
+                  role="gridcell"
+                >
+                  <oj-c-list-item-layout
+                    class="oj-complete"
+                  >
+                    <div
+                      style="padding: 12px 16px;"
+                    >
+                      <div
+                        class="_1mhs7ua undefined"
+                        style="grid-template-columns: auto 1fr auto; gap: calc(4 * var(--oj-c-PRIVATE-DO-NOT-USE-core-spacing-1x)) calc(4 * var(--oj-c-PRIVATE-DO-NOT-USE-core-spacing-1x));"
+                      >
+                        <div
+                          class="_3lfxww"
+                        >
+                          <oj-c-avatar
+                            class="profile-card-layout-image oj-complete"
+                            role="img"
+                          >
+                            <div
+                              aria-label="Avatar of Emily Wang"
+                              class="x4exih oj-c-avatar-bg-gray oj-c-avatar-xs"
+                              role="img"
+                            >
+                              <div
+                                aria-hidden="true"
+                                class="k1vxov _1fma8t6 _1mymxz2"
+                              >
+                                EW
+                              </div>
+                            </div>
+                          </oj-c-avatar>
+                        </div>
+                        <div
+                          class="_3lfxww"
+                        >
+                          <div
+                            class="_198d627"
+                          >
+                            <div />
+                            <div>
+                              <div
+                                class="oj-typography-body-md oj-typography-bold"
+                              >
+                                Emily Wang
+                              </div>
+                            </div>
+                            <div>
+                              <div
+                                class="oj-typography-body-sm"
+                              >
+                                Portland Orthopedic Center
+                              </div>
+                            </div>
+                            <div>
+                              <div
+                                class="oj-typography-body-xs oj-text-color-secondary"
+                              >
+                                emilyw@example.com
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="_6482su"
+                        >
+                          <div
+                            class="_3lfxww do20s5"
+                          >
+                            <div
+                              class="oj-typography-body-xs oj-text-color-secondary"
+                            >
+                              <undefined
+                                negative="[object Object]"
+                                positive="[object Object]"
+                              />
+                            </div>
+                          </div>
+                          <div
+                            class="_3lfxww"
+                          />
+                          <div
+                            class="_3lfxww"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </oj-c-list-item-layout>
+                </div>
+              </li>
+              <li
+                class="oj-listview-skeleton-container"
+                role="presentation"
+                style="visibility: hidden;"
+              >
+                <ul
+                  class="oj-listview-group"
+                  role="presentation"
+                >
+                  <li
+                    class="oj-listview-item oj-listview-item-layout"
+                    role="presentation"
+                  >
+                    <div
+                      class="oj-listview-cell-element oj-listview-skeleton oj-listview-skeleton-line-height oj-animation-skeleton"
+                    />
+                  </li>
+                  <li
+                    class="oj-listview-item oj-listview-item-layout"
+                    role="presentation"
+                  >
+                    <div
+                      class="oj-listview-cell-element oj-listview-skeleton oj-listview-skeleton-line-height oj-animation-skeleton"
+                    />
+                  </li>
+                  <li
+                    class="oj-listview-item oj-listview-item-layout"
+                    role="presentation"
+                  >
+                    <div
+                      class="oj-listview-cell-element oj-listview-skeleton oj-listview-skeleton-line-height oj-animation-skeleton"
+                    />
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <template
+              slot="itemTemplate"
+            />
+            <div
+              class="oj-listview-status-message oj-listview-status"
+              role="status"
+              style="display: none;"
+            >
+              <div
+                class="oj-icon oj-listview-loading-icon"
+              />
+            </div>
+            <div
+              class="oj-helper-hidden-accessible"
+              role="status"
+              tabindex="-1"
+            />
+            <div
+              class="oj-helper-hidden-accessible"
+            >
+              Use arrow keys to expand and collapse.
+            </div>
+          </oj-list-view>
+        </div>
+        <div
+          class="footer oj-flex-item oj-sm-flex-0"
+        >
+          <div
+            class="footer"
+          >
+            <oj-navigation-list
+              class="oj-sm-condense oj-sm-margin-8x-horizontal oj-navigationlist oj-navigationlist-horizontal-bottom oj-navigationlist-expanded oj-navigationlist-horizontal oj-navigationlist-app-level oj-component-initnode oj-complete"
+              role="tablist"
+              tabindex="0"
+            >
+              <template
+                slot="itemTemplate"
+              />
+              <div
+                class="oj-navigationlist-listview-container"
+                role="presentation"
+              >
+                <div
+                  class="oj-navigationlist-listview oj-component"
+                  role="presentation"
+                  style="max-width: none;"
+                >
+                  <div
+                    class="oj-helper-detect-contraction"
+                  >
+                    <div
+                      style="width: 200%; height: 200%;"
+                    />
+                  </div>
+                  <div
+                    class="oj-helper-detect-expansion"
+                  >
+                    <div />
+                  </div>
+                  <div
+                    class="oj-helper-hidden-accessible"
+                    tabindex="-1"
+                  >
+                     
+                  </div>
+                  <ul
+                    class="oj-navigationlist-element oj-navigationlist-has-icons"
+                    role="presentation"
+                  >
+                    <li
+                      class="oj-navigationlist-item-element oj-navigationlist-item oj-default"
+                      data-oj-vdom-template-root=""
+                      role="presentation"
+                    >
+                      <a
+                        aria-selected="false"
+                        class="oj-navigationlist-focused-element oj-navigationlist-item-content"
+                        data-oj-tabmod="0"
+                        href="#"
+                        role="tab"
+                        tabindex="-1"
+                      >
+                        <span
+                          class="oj-navigationlist-item-icon oj-ux-ico-home"
+                        />
+                        <span
+                          class="oj-navigationlist-item-label"
+                        >
+                          Home
+                        </span>
+                      </a>
+                    </li>
+                    <li
+                      class="oj-navigationlist-item-element oj-navigationlist-item oj-default"
+                      data-oj-vdom-template-root=""
+                      role="presentation"
+                    >
+                      <a
+                        aria-selected="false"
+                        class="oj-navigationlist-focused-element oj-navigationlist-item-content"
+                        data-oj-tabmod="0"
+                        href="#"
+                        role="tab"
+                        tabindex="-1"
+                      >
+                        <span
+                          class="oj-navigationlist-item-icon oj-ux-ico-doctor"
+                        />
+                        <span
+                          class="oj-navigationlist-item-label"
+                        >
+                          Providers
+                        </span>
+                      </a>
+                    </li>
+                    <li
+                      class="oj-navigationlist-item-element oj-navigationlist-item oj-default"
+                      data-oj-vdom-template-root=""
+                      role="presentation"
+                    >
+                      <a
+                        aria-selected="false"
+                        class="oj-navigationlist-focused-element oj-navigationlist-item-content"
+                        data-oj-tabmod="0"
+                        href="#"
+                        role="tab"
+                        tabindex="-1"
+                      >
+                        <span
+                          class="oj-navigationlist-item-icon oj-ux-ico-calendar-clock"
+                        />
+                        <span
+                          class="oj-navigationlist-item-label"
+                        >
+                          Appointments
+                        </span>
+                      </a>
+                    </li>
+                    <li
+                      class="oj-navigationlist-item-element oj-navigationlist-item oj-default"
+                      data-oj-vdom-template-root=""
+                      role="presentation"
+                    >
+                      <a
+                        aria-selected="false"
+                        class="oj-navigationlist-focused-element oj-navigationlist-item-content"
+                        data-oj-tabmod="0"
+                        href="#"
+                        role="tab"
+                        tabindex="-1"
+                      >
+                        <span
+                          class="oj-navigationlist-item-icon oj-ux-ico-clock-history"
+                        />
+                        <span
+                          class="oj-navigationlist-item-label"
+                        >
+                          Encounters
+                        </span>
+                      </a>
+                    </li>
+                  </ul>
+                  <div
+                    class="oj-navigationlist-status-message oj-navigationlist-status"
+                    role="status"
+                    style="display: none;"
+                  >
+                    <div
+                      class="oj-icon oj-navigationlist-loading-icon"
+                    />
+                  </div>
+                  <div
+                    class="oj-helper-hidden-accessible"
+                    role="status"
+                    tabindex="-1"
+                  />
+                </div>
+              </div>
+            </oj-navigation-list>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    id="__oj_layerhost_container"
+  />
+</DocumentFragment>
+`;

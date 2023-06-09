@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshot tests for RenderCard Snapshot: Component - RenderCard 1`] = `
+<DocumentFragment>
+  <div
+    data-oj-binding-provider="preact"
+  >
+    <div
+      class="oj-flex-item oj-sm-margin-10x"
+    >
+      <oj-action-card
+        class="action-card"
+      >
+        <div
+          class="oj-sm-padding-4x"
+        >
+          <div
+            class="oj-flex oj-sm-flex-direction-column oj-sm-flex-justify-content-center"
+          >
+            <oj-c-avatar
+              class="card-avatar oj-flex-item oj-sm-margin-8x-horizontal oj-sm-margin-4x-bottom oj-complete"
+              role="img"
+            >
+              <div
+                aria-label="Title"
+                class="x4exih oj-c-avatar-bg-teal oj-c-avatar-2xl"
+                role="img"
+              >
+                <div
+                  aria-hidden="true"
+                  class="k1vxov _1fma8t6 _1lhcr86 u5bbjp"
+                >
+                  <span
+                    class="oj-ux-ico-patient"
+                  />
+                </div>
+              </div>
+            </oj-c-avatar>
+            <span
+              class="card-title oj-text-primary-color oj-typography-subheading-xs oj-flex-item"
+            >
+              Title
+            </span>
+          </div>
+        </div>
+      </oj-action-card>
+    </div>
+  </div>
+  <div
+    id="__oj_layerhost_container"
+  />
+</DocumentFragment>
+`;

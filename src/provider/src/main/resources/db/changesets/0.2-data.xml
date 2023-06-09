@@ -1,0 +1,331 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<!--
+  Copyright (c) 2023 Oracle and/or its affiliates.
+  Licensed under the Universal Permissive License v 1.0 as shown at https://oss.oracl.com/licenses/upl/
+-->
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.9.xsd">
+    <changeSet id="1" author="reference_application@oracle.com">
+        <insert tableName="provider">
+            <column name="username" value="${prefix}_provider"/>
+            <column name="first_name" value="Mary"/>
+            <column name="middle_name" value="Elizabeth"/>
+            <column name="last_name" value="Smith"/>
+            <column name="title" value="Dr"/>
+            <column name="phone" value="650-555-0176"/>
+            <column name="email" value="${prefix}_provider@mailinator.com"/>
+            <column name="gender" value="FEMALE"/>
+            <column name="zip" value="98101"/>
+            <column name="city" value="Seattle"/>
+            <column name="country" value="USA"/>
+            <column name="speciality" value="Physician"/>
+            <column name="qualification" value="MBBS"/>
+            <column name="designation" value="General Physician"/>
+            <column name="professional_summary" value="Passionate doctor with extensive experience in internal medicine"/>
+            <column name="interests" value="Cooking, Sports"/>
+            <column name="expertise" value="Adept in properly diagnosing"/>
+            <column name="tags" value="Patient Care, Urgent Care, CPR"/>
+            <column name="hospital_name" value="Seattle Medical Center"/>
+            <column name="hospital_address" value="789 Forest Ave, Seattle, Washington, 98103"/>
+            <column name="hospital_phone" value="650-555-0137"/>
+        </insert>
+        <insert tableName="provider">
+            <column name="username" value="provider1"/>
+            <column name="first_name" value="john"/>
+            <column name="middle_name" value="doe"/>
+            <column name="last_name" value="miller"/>
+            <column name="title" value="Dr"/>
+            <column name="phone" value="650-555-0129"/>
+            <column name="email" value="bar@uho.com"/>
+            <column name="gender" value="MALE"/>
+            <column name="zip" value="98101"/>
+            <column name="city" value="Seattle"/>
+            <column name="country" value="USA"/>
+            <column name="speciality" value="Ophthalmologist"/>
+            <column name="qualification" value="MBBS"/>
+            <column name="designation" value="General Physician"/>
+            <column name="professional_summary" value="Passionate doctor with extensive experience in internal ophthalmology"/>
+            <column name="interests" value="Dogs, Sports"/>
+            <column name="expertise" value="Adept in properly diagnosing and treating patients"/>
+            <column name="tags" value="Urgent Care, CPR"/>
+            <column name="hospital_name" value="Seattle Medical Center"/>
+            <column name="hospital_address" value="789 Forest Ave, Seattle, Washington, 98103"/>
+            <column name="hospital_phone" value="650-555-0137"/>
+        </insert>
+        <insert tableName="provider">
+            <column name="username" value="janedoe"/>
+            <column name="first_name" value="Jane"/>
+            <column name="middle_name" value="L."/>
+            <column name="last_name" value="Doe"/>
+            <column name="title" value="Dr"/>
+            <column name="phone" value="650-555-0178"/>
+            <column name="email" value="jane.doe@example.com"/>
+            <column name="gender" value="FEMALE"/>
+            <column name="zip" value="90001"/>
+            <column name="city" value="Los Angeles"/>
+            <column name="country" value="USA"/>
+            <column name="speciality" value="Cardiologist"/>
+            <column name="qualification" value="MD"/>
+            <column name="designation" value="Medical Director"/>
+            <column name="professional_summary" value="Compassionate cardiologist with a track record of successful treatments."/>
+            <column name="interests" value="Gardening, Traveling"/>
+            <column name="expertise" value="Expert in the diagnosis and treatment of cardiovascular disease."/>
+            <column name="tags" value="Heart Health, Preventive Care"/>
+            <column name="hospital_name" value="Coastal Medical Center"/>
+            <column name="hospital_address" value="1000 Costal Blvd, Los Angeles, CA 90210"/>
+            <column name="hospital_phone" value="650-555-0169"/>
+        </insert>
+        <insert tableName="provider">
+            <column name="username" value="joedoe"/>
+            <column name="first_name" value="Joe"/>
+            <column name="last_name" value="Doe"/>
+            <column name="title" value="Dr"/>
+            <column name="phone" value="650-555-0177"/>
+            <column name="email" value="joe.doe@example.com"/>
+            <column name="gender" value="MALE"/>
+            <column name="zip" value="60611"/>
+            <column name="city" value="Chicago"/>
+            <column name="country" value="USA"/>
+            <column name="speciality" value="Dermatologist"/>
+            <column name="qualification" value="MD"/>
+            <column name="designation" value="Clinical Professor"/>
+            <column name="professional_summary" value="Dermatologist with 15 years of experience in clinical and research settings."/>
+            <column name="interests" value="Reading, Skiing"/>
+            <column name="expertise" value="Expert in the diagnosis and treatment of skin disorders."/>
+            <column name="tags" value="Acne, Eczema"/>
+            <column name="hospital_name" value="Northwestern Memorial Hospital"/>
+            <column name="hospital_address" value="251 E Huron St, Chicago, IL 60611"/>
+            <column name="hospital_phone" value="650-555-0167"/>
+        </insert>
+        <insert tableName="provider">
+            <column name="username" value="johndoe"/>
+            <column name="first_name" value="John"/>
+            <column name="last_name" value="Doe"/>
+            <column name="title" value="Dr"/>
+            <column name="phone" value="602-555-0172"/>
+            <column name="email" value="johndoe@example.com"/>
+            <column name="gender" value="MALE"/>
+            <column name="zip" value="90210"/>
+            <column name="city" value="Los Angeles"/>
+            <column name="country" value="USA"/>
+            <column name="speciality" value="Cardiology"/>
+            <column name="qualification" value="MD"/>
+            <column name="designation" value="Cardiologist"/>
+            <column name="professional_summary" value="Experienced cardiologist with a passion for improving patient outcomes."/>
+            <column name="interests" value="Fitness, cooking, reading"/>
+            <column name="expertise" value="Interventional cardiology, echocardiography, nuclear cardiology"/>
+            <column name="tags" value="Heart disease, hypertension, arrhythmia"/>
+            <column name="hospital_name" value="Coastal Medical Center"/>
+            <column name="hospital_address" value="1000 Costal Blvd, Los Angeles, CA 90210"/>
+            <column name="hospital_phone" value="650-555-0169"/>
+        </insert>
+        <insert tableName="provider">
+            <column name="username" value="marynoma"/>
+            <column name="first_name" value="Mary"/>
+            <column name="middle_name" value="Katherine"/>
+            <column name="last_name" value="Noma"/>
+            <column name="title" value="Dr"/>
+            <column name="phone" value="555-555-1234"/>
+            <column name="email" value="maryNoma@example.com"/>
+            <column name="gender" value="FEMALE"/>
+            <column name="zip" value="10001"/>
+            <column name="city" value="New York"/>
+            <column name="country" value="USA"/>
+            <column name="speciality" value="Pediatrics"/>
+            <column name="qualification" value="MD"/>
+            <column name="designation" value="Pediatrician"/>
+            <column name="professional_summary" value="Compassionate pediatrician dedicated to providing high-quality care for children."/>
+            <column name="interests" value="Reading, hiking, traveling"/>
+            <column name="expertise" value="Childhood illnesses, developmental disorders, behavioral issues"/>
+            <column name="tags" value="Immunizations, well-child visits, ADHD"/>
+            <column name="hospital_name" value="New York Medical Center"/>
+            <column name="hospital_address" value="1234 New York Ave, New York, NY 10065"/>
+            <column name="hospital_phone" value="312-555-0130"/>
+        </insert>
+        <insert tableName="provider">
+            <column name="username" value="amandaguy"/>
+            <column name="first_name" value="Amanda"/>
+            <column name="last_name" value="Guy"/>
+            <column name="title" value="Dr"/>
+            <column name="phone" value="602-555-0145"/>
+            <column name="email" value="amandaguy@example.com"/>
+            <column name="gender" value="FEMALE"/>
+            <column name="zip" value="543210"/>
+            <column name="city" value="Boston"/>
+            <column name="country" value="USA"/>
+            <column name="speciality" value="Cardiologist"/>
+            <column name="qualification" value="MD"/>
+            <column name="designation" value="Consultant Physician"/>
+            <column name="professional_summary" value="Dedicated and experienced cardiologist with expertise in diagnosing and treating heart conditions"/>
+            <column name="interests" value="Hiking, Cooking"/>
+            <column name="expertise" value="Skilled in performing heart surgeries"/>
+            <column name="tags" value="Heart Diseases, Surgery"/>
+            <column name="hospital_name" value="Boston General Hospital"/>
+            <column name="hospital_address" value="1234 Fruit Tree St, Boston, MA 02114"/>
+            <column name="hospital_phone" value="602-555-0135"/>
+        </insert>
+        <insert tableName="provider">
+            <column name="username" value="jessicabrown"/>
+            <column name="first_name" value="Jessica"/>
+            <column name="middle_name" value="Lee"/>
+            <column name="last_name" value="Brown"/>
+            <column name="title" value="Dr"/>
+            <column name="phone" value="602-555-0142"/>
+            <column name="email" value="jessicabrown@clinic.com"/>
+            <column name="gender" value="FEMALE"/>
+            <column name="zip" value="456789"/>
+            <column name="city" value="San Francisco"/>
+            <column name="country" value="USA"/>
+            <column name="speciality" value="Dermatologist"/>
+            <column name="qualification" value="MD"/>
+            <column name="designation" value="Dermatologist"/>
+            <column name="professional_summary" value="Experienced dermatologist with a passion for helping patients look and feel their best"/>
+            <column name="interests" value="Yoga, Traveling"/>
+            <column name="expertise" value="Expert in treating skin conditions such as acne, psoriasis, and eczema"/>
+            <column name="tags" value="Skin Conditions, Skincare"/>
+            <column name="hospital_name" value="San Francisco Medical Center"/>
+            <column name="hospital_address" value="1234 SFMC Ave, San Francisco, CA 94143"/>
+            <column name="hospital_phone" value="602-555-0125"/>
+        </insert>
+        <insert tableName="provider">
+            <column name="username" value="emilyjones"/>
+            <column name="first_name" value="Emily"/>
+            <column name="last_name" value="Jones"/>
+            <column name="title" value="Dr"/>
+            <column name="phone" value="312-555-0131"/>
+            <column name="email" value="emilyjones@hospital.com"/>
+            <column name="gender" value="FEMALE"/>
+            <column name="zip" value="90001"/>
+            <column name="city" value="Los Angeles"/>
+            <column name="country" value="USA"/>
+            <column name="speciality" value="Pediatrician"/>
+            <column name="qualification" value="MD"/>
+            <column name="designation" value="Assistant Professor"/>
+            <column name="professional_summary" value="Dedicated pediatrician with expertise in treating children with chronic illnesses"/>
+            <column name="interests" value="Reading, hiking, and spending time with family"/>
+            <column name="expertise" value="Expert in diagnosing and treating childhood illnesses"/>
+            <column name="tags" value="Pediatrics, Chronic Illness"/>
+            <column name="hospital_name" value="Coastal Medical Center"/>
+            <column name="hospital_address" value="1000 Costal Blvd, Los Angeles, CA 90210"/>
+            <column name="hospital_phone" value="650-555-0169"/>
+        </insert>
+        <insert tableName="provider">
+            <column name="username" value="susanwilson"/>
+            <column name="first_name" value="Susan"/>
+            <column name="last_name" value="Wilson"/>
+            <column name="title" value="Dr"/>
+            <column name="phone" value="312-555-0140"/>
+            <column name="email" value="susanwilson@hospital.com"/>
+            <column name="gender" value="FEMALE"/>
+            <column name="zip" value="98765"/>
+            <column name="city" value="New York"/>
+            <column name="country" value="USA"/>
+            <column name="speciality" value="Cardiologist"/>
+            <column name="qualification" value="MD"/>
+            <column name="designation" value="Director of Cardiology"/>
+            <column name="professional_summary" value="Passionate about providing the best care for patients with heart conditions"/>
+            <column name="interests" value="Traveling, reading, and trying new foods"/>
+            <column name="expertise" value="Expert in diagnosing and treating heart conditions"/>
+            <column name="tags" value="Cardiology, Heart Conditions"/>
+            <column name="hospital_name" value="New York Medical Center"/>
+            <column name="hospital_address" value="1234 New York Ave, New York, NY 10065"/>
+            <column name="hospital_phone" value="312-555-0130"/>
+        </insert>
+        <insert tableName="provider">
+            <column name="username" value="janesmith"/>
+            <column name="first_name" value="Jane"/>
+            <column name="last_name" value="Smith"/>
+            <column name="title" value="Dr"/>
+            <column name="phone" value="312-555-0166"/>
+            <column name="email" value="jane.smith@hospital.com"/>
+            <column name="gender" value="FEMALE"/>
+            <column name="zip" value="90210"/>
+            <column name="city" value="Los Angeles"/>
+            <column name="country" value="USA"/>
+            <column name="speciality" value="Cardiologist"/>
+            <column name="qualification" value="MD"/>
+            <column name="designation" value="Attending Physician"/>
+            <column name="professional_summary" value="Experienced cardiologist with a passion for improving patient outcomes."/>
+            <column name="interests" value="Reading, hiking, spending time with family"/>
+            <column name="expertise" value="Advanced diagnostic techniques for heart disease"/>
+            <column name="tags" value="Cardiology, EKG, Echocardiography"/>
+            <column name="hospital_name" value="Coastal Medical Center"/>
+            <column name="hospital_address" value="1000 Costal Blvd, Los Angeles, CA 90210"/>
+            <column name="hospital_phone" value="650-555-0169"/>
+        </insert>
+        <insert tableName="provider">
+            <column name="username" value="peterjones"/>
+            <column name="first_name" value="Peter"/>
+            <column name="middle_name" value="Henry"/>
+            <column name="last_name" value="Jones"/>
+            <column name="title" value="Dr"/>
+            <column name="phone" value="312-555-0127"/>
+            <column name="email" value="pjones@hospital.com"/>
+            <column name="gender" value="MALE"/>
+            <column name="zip" value="10001"/>
+            <column name="city" value="New York"/>
+            <column name="country" value="USA"/>
+            <column name="speciality" value="Oncologist"/>
+            <column name="qualification" value="MD"/>
+            <column name="designation" value="Chief of Oncology"/>
+            <column name="professional_summary" value="Leader in cancer research and patient care."/>
+            <column name="interests" value="Travel, photography, running"/>
+            <column name="expertise" value="Innovative cancer treatment approaches"/>
+            <column name="tags" value="Oncology, Chemotherapy, Radiation Therapy"/>
+            <column name="hospital_name" value="New York Medical Center"/>
+            <column name="hospital_address" value="1234 New York Ave, New York, NY 10065"/>
+            <column name="hospital_phone" value="312-555-0130"/>
+        </insert>
+
+        <insert tableName="feedback">
+            <column name="provider_id" value="1" />
+            <column name="patient_id" value="1" />
+            <column name="text" value="The doctor's expertise was evident in their diagnosis and recommendations." />
+            <column name="rating" value="5" />
+        </insert>
+        <insert tableName="feedback">
+            <column name="provider_id" value="1" />
+            <column name="patient_id" value="2" />
+            <column name="text" value="The doctor was very knowledgeable and helped me understand my condition better." />
+            <column name="rating" value="5" />
+        </insert>
+        <insert tableName="feedback">
+            <column name="provider_id" value="1" />
+            <column name="patient_id" value="3" />
+            <column name="text" value="The doctor was attentive and caring throughout my appointment." />
+            <column name="rating" value="4" />
+        </insert>
+        <insert tableName="feedback">
+            <column name="provider_id" value="1" />
+            <column name="patient_id" value="4" />
+            <column name="text" value="The doctor was professional and made me feel comfortable during my visit." />
+            <column name="rating" value="4" />
+        </insert>
+        <insert tableName="feedback">
+            <column name="provider_id" value="1" />
+            <column name="patient_id" value="5" />
+            <column name="text" value="The doctor was friendly and approachable, making it easy for me to ask questions." />
+            <column name="rating" value="4" />
+        </insert>
+        <insert tableName="feedback">
+            <column name="provider_id" value="1" />
+            <column name="patient_id" value="6" />
+            <column name="text" value="The doctor was thorough in their examination and diagnosis." />
+            <column name="rating" value="5" />
+        </insert>
+        <insert tableName="feedback">
+            <column name="provider_id" value="1" />
+            <column name="patient_id" value="7" />
+            <column name="text" value="The doctor was punctual and respectful of my time." />
+            <column name="rating" value="4" />
+        </insert>
+        <insert tableName="feedback">
+            <column name="provider_id" value="1" />
+            <column name="patient_id" value="8" />
+            <column name="text" value="The doctor explained the treatment plan clearly and made me feel at ease." />
+            <column name="rating" value="5" />
+        </insert>
+    </changeSet>
+</databaseChangeLog>

@@ -1,0 +1,101 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "followup.fullname" . }}
+  labels: {{ include "followup.labels" . | nindent 4 }}
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      app: {{ .Chart.Name }}
+      app.kubernetes.io/name: {{ include "followup.name" . }}
+      app.kubernetes.io/instance: {{ .Release.Name }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Chart.Name }}
+        version: {{ .Values.global.image_tag | quote }}
+        app.kubernetes.io/name: {{ include "followup.name" . }}
+        app.kubernetes.io/instance: {{ .Release.Name }}
+    spec:
+      topologySpreadConstraints:
+        - maxSkew: 1
+          topologyKey: failure-domain.beta.kubernetes.io/zone
+          whenUnsatisfiable: ScheduleAnyway
+          labelSelector:
+            matchLabels:
+              app: {{ .Chart.Name }}
+              version: {{ .Values.global.image_tag | quote }}
+              app.kubernetes.io/name: {{ include "followup.name" . }}
+              app.kubernetes.io/instance: {{ .Release.Name }}
+        - maxSkew: 1
+          topologyKey: oci.oraclecloud.com/fault-domain
+          whenUnsatisfiable: ScheduleAnyway
+          labelSelector:
+            matchLabels:
+              app: {{ .Chart.Name }}
+              version: {{ .Values.global.image_tag | quote }}
+              app.kubernetes.io/name: {{ include "followup.name" . }}
+              app.kubernetes.io/instance: {{ .Release.Name }}
+      containers:
+        - name: {{ .Chart.Name }}
+          image: "{{ .Values.global.repo_path }}{{.Values.name}}-{{.Values.global.deploy_id}}:{{ .Values.global.image_tag }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          env:
+            - name: OCI_CONFIG_INSTANCE_PRINCIPAL_ENABLED
+              value: "true"
+            - name: OCI_MONITORING_COMPARTMENT_ID
+              value: {{ .Values.global.compartment_id }}
+            - name: MP_MESSAGING_INCOMING_FROM_STREAM_TOPIC
+              valueFrom:
+                secretKeyRef:
+                  name: uho-streampool
+                  key: encounter-messages-stream
+            - name: MP_MESSAGING_OUTGOING_TO_STREAM_TOPIC
+              valueFrom:
+                secretKeyRef:
+                  name: uho-streampool
+                  key: followup-messages-stream
+            - name: MP_MESSAGING_CONNECTOR_HELIDON_KAFKA_BOOTSTRAP_SERVERS
+              valueFrom:
+                secretKeyRef:
+                  name: uho-streampool
+                  key: bootstrap-servers
+            - name: MP_MESSAGING_CONNECTOR_HELIDON_KAFKA_SASL_JAAS_CONFIG
+              valueFrom:
+                secretKeyRef:
+                  name: uho-streampool
+                  key: sasl-connection-instance-principal
+            - name: TRACING_HOST
+              valueFrom:
+                secretKeyRef:
+                  name: apm
+                  key: data_upload_endpoint
+            - name: TRACING_PATH
+              valueFrom:
+                secretKeyRef:
+                  name: apm
+                  key: data_upload_path
+            - name: SERVICE_IDCS
+              valueFrom:
+                configMapKeyRef:
+                  name: idcs
+                  key: url
+            - name: SERVICE_CLIENT_ID
+              valueFrom:
+                secretKeyRef:
+                  name: idcs
+                  key: service-app-client-id
+            - name: SERVICE_CLIENT_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: idcs
+                  key: service-app-client-secret
+            - name: SERVICE_APIGW_URL
+              valueFrom:
+                configMapKeyRef:
+                  name: apigw
+                  key: url
+          ports:
+            - name: http
+              containerPort: {{ .Values.pod.containerPort }}

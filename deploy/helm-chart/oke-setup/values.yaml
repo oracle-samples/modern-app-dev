@@ -1,0 +1,50 @@
+secrets:
+  stream:
+    bootstrap_servers:
+    sasl_connection_instance_principal:
+    appointment_mesaages_stream:
+    patient_events_stream:
+    followup_messages_stream:
+    feedback_messages_stream:
+    encounter_messages_stream:
+    appointment_messages_stream_id:
+    patient_messages_stream_id:
+    endpoint:
+  atp:
+    admin:
+      password:
+    connection:
+      wallet_password:
+      atp_service:
+    wallet_zip:
+      content:
+  ajdb:
+    admin:
+      password:
+    connection:
+      wallet_password:
+      ajdb_service:
+    wallet_zip:
+      content:
+config_maps:
+  object_storage:
+    namespace:
+    bucket_name:
+    region_id:
+apigw:
+  url:
+idcs:
+  url:
+  admin:
+    client_id:
+    client_secret:
+  patient:
+    client_id:
+    client_secret:
+  provider:
+    client_id:
+    client_secret:
+compartment_ocid:
+vault_ocid:
+key_ocid:
+deploy_id:

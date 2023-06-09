@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshot tests for EmptyScreen Snapshot: Component - EmptyScreen 1`] = `
+<DocumentFragment>
+  <div
+    data-oj-binding-provider="preact"
+  >
+    <div
+      class="oj-flex oj-sm-flex-direction-column oj-sm-justify-content-flex-end empty-screen"
+    >
+      <span
+        class="oj-text-primary-color title oj-typography-heading-2xl oj-flex-item oj-sm-flex-0"
+      >
+        title
+      </span>
+      <span
+        class="oj-text-primary-color description oj-typography-body-xl oj-flex-item oj-sm-flex-0"
+      >
+        description
+      </span>
+    </div>
+  </div>
+  <div
+    id="__oj_layerhost_container"
+  />
+</DocumentFragment>
+`;

@@ -1,0 +1,31 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<!--
+  Copyright (c) 2023 Oracle and/or its affiliates.
+  Licensed under the Universal Permissive License v 1.0 as shown at https://oss.oracl.com/licenses/upl/
+-->
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.9.xsd">
+    <changeSet id="1" author="reference_application@oracle.com">
+        <createTable tableName="Patient">
+            <column name="id" type="INTEGER" autoIncrement="true">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="${prefix}" type="VARCHAR(50)" />
+            <column name="name" type="VARCHAR(50)" />
+            <column name="username" type="VARCHAR(50)">
+                <constraints unique="true"/>
+            </column>
+            <column name="phone" type="VARCHAR(20)" />
+            <column name="DOB" type="DATE" />
+            <column name="email" type="VARCHAR(60)" />
+            <column name="gender" type="VARCHAR(6)" />
+            <column name="zip" type="VARCHAR(6)" />
+            <column name="city" type="VARCHAR(30)" />
+            <column name="country" type="VARCHAR(30)" />
+            <column name="primary_care_provider_id" type="INTEGER" />
+            <column name="insurance_provider" type="VARCHAR(50)" />
+        </createTable>
+    </changeSet>
+</databaseChangeLog>

@@ -1,0 +1,9 @@
+$headerHeight: 58px;
+
+.provider-list-header {
+  height: $headerHeight;
+}
+
+.list-view {
+  max-height: calc(100% - $headerHeight);
+}

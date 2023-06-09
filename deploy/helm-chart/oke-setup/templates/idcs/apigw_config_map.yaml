@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: "apigw"
+  namespace: uho
+data:
+  url: {{ .Values.apigw.url }}

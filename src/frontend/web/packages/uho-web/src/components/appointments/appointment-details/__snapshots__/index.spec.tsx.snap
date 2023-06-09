@@ -1,0 +1,2267 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshot tests for AppointmentDetails Snapshot: Component - AppointmentDetails 1`] = `
+<DocumentFragment>
+  <div
+    data-oj-binding-provider="preact"
+  >
+    <div
+      class="appointment-container"
+    >
+      <div
+        class="oj-flex-bar"
+      >
+        <div
+          class="oj-flex-bar-start"
+        >
+          Wed Jun 08 2022
+        </div>
+        <div
+          class="oj-flex-bar-end"
+        />
+      </div>
+      <div
+        class="appointment-body"
+      >
+        <h3
+          class="oj-typography-subheading-sm"
+        >
+          Appointment
+        </h3>
+        <oj-form-layout
+          class="oj-form-layout oj-complete oj-form-layout-no-min-column-width oj-formlayout-max-cols-2"
+        >
+          <div
+            class="oj-form oj-enabled oj-efficient oj-form-cols oj-formlayout-form-across"
+            data-oj-context=""
+            data-oj-formlayout-bonus-dom=""
+            data-oj-internal=""
+            style="column-count: 1; webkit-column-count: 1;"
+          >
+            <div
+              class="oj-flex"
+              data-oj-formlayout-bonus-dom=""
+              data-oj-internal=""
+            >
+              <div
+                class="oj-flex-item oj-formlayout-no-label-flex-item oj-formlayout-nested-labelvalue"
+                data-oj-formlayout-bonus-dom=""
+                data-oj-internal=""
+                style="flex-grow: 1; flex-shrink: 1; max-width: calc(((100% / 2) - ((var(--oj-form-layout-column-gutter) * (1) / 2))));"
+              >
+                <oj-label-value
+                  class="oj-label-value oj-form oj-form-control-label-inside oj-formlayout-form-across oj-complete"
+                  data-oj-colspan="1"
+                  data-oj-column-gap="var(--oj-form-layout-column-gutter)"
+                >
+                  <div
+                    class="oj-flex"
+                    data-oj-context=""
+                    data-oj-internal=""
+                  >
+                    <div
+                      class="oj-flex-item"
+                      data-oj-context=""
+                      data-oj-internal=""
+                      style="flex-grow: 0; flex-shrink: 1; flex-basis: 100%; width: 100%; max-width: 100%;"
+                    >
+                      <oj-label
+                        class="oj-label oj-component oj-complete"
+                        slot="label"
+                      >
+                        <div
+                          class="oj-label-group"
+                        >
+                          <label
+                            class="oj-component-initnode"
+                            data-oj-internal=""
+                          >
+                            Status
+                          </label>
+                        </div>
+                      </oj-label>
+                    </div>
+                    <div
+                      class="oj-flex-item"
+                      data-oj-context=""
+                      data-oj-internal=""
+                      style="flex: 1 1 0px;"
+                    >
+                      <div
+                        slot="value"
+                      >
+                        CONFIRMED
+                      </div>
+                    </div>
+                  </div>
+                </oj-label-value>
+              </div>
+              <div
+                class="oj-formlayout-column-gutter"
+                data-oj-formlayout-bonus-dom=""
+                data-oj-internal=""
+              />
+              <div
+                class="oj-flex-item oj-formlayout-no-label-flex-item oj-formlayout-nested-labelvalue"
+                data-oj-formlayout-bonus-dom=""
+                data-oj-internal=""
+                style="flex-grow: 1; flex-shrink: 1; max-width: calc(((100% / 2) - ((var(--oj-form-layout-column-gutter) * (1) / 2))));"
+              >
+                <oj-label-value
+                  class="oj-label-value oj-form oj-form-control-label-inside oj-formlayout-form-across oj-complete"
+                  data-oj-colspan="1"
+                  data-oj-column-gap="var(--oj-form-layout-column-gutter)"
+                >
+                  <div
+                    class="oj-flex"
+                    data-oj-context=""
+                    data-oj-internal=""
+                  >
+                    <div
+                      class="oj-flex-item"
+                      data-oj-context=""
+                      data-oj-internal=""
+                      style="flex-grow: 0; flex-shrink: 1; flex-basis: 100%; width: 100%; max-width: 100%;"
+                    >
+                      <oj-label
+                        class="oj-label oj-component oj-complete"
+                        slot="label"
+                      >
+                        <div
+                          class="oj-label-group"
+                        >
+                          <label
+                            class="oj-component-initnode"
+                            data-oj-internal=""
+                          >
+                            Previsit Data
+                          </label>
+                        </div>
+                      </oj-label>
+                    </div>
+                    <div
+                      class="oj-flex-item"
+                      data-oj-context=""
+                      data-oj-internal=""
+                      style="flex: 1 1 0px;"
+                    >
+                      <div
+                        slot="value"
+                      >
+                        /
+                      </div>
+                    </div>
+                  </div>
+                </oj-label-value>
+              </div>
+            </div>
+            <div
+              class="oj-flex"
+              data-oj-formlayout-bonus-dom=""
+              data-oj-internal=""
+            >
+              <div
+                class="oj-flex-item oj-formlayout-no-label-flex-item oj-formlayout-nested-labelvalue"
+                data-oj-formlayout-bonus-dom=""
+                data-oj-internal=""
+                style="flex-grow: 1; flex-shrink: 1; max-width: calc(((100% / 2) - ((var(--oj-form-layout-column-gutter) * (1) / 2))));"
+              >
+                <oj-label-value
+                  class="oj-label-value oj-form oj-form-control-label-inside oj-formlayout-form-across oj-complete"
+                  data-oj-colspan="1"
+                  data-oj-column-gap="var(--oj-form-layout-column-gutter)"
+                >
+                  <div
+                    class="oj-flex"
+                    data-oj-context=""
+                    data-oj-internal=""
+                  >
+                    <div
+                      class="oj-flex-item"
+                      data-oj-context=""
+                      data-oj-internal=""
+                      style="flex-grow: 0; flex-shrink: 1; flex-basis: 100%; width: 100%; max-width: 100%;"
+                    >
+                      <oj-label
+                        class="oj-label oj-component oj-complete"
+                        slot="label"
+                      >
+                        <div
+                          class="oj-label-group"
+                        >
+                          <label
+                            class="oj-component-initnode"
+                            data-oj-internal=""
+                          >
+                            Start Time
+                          </label>
+                        </div>
+                      </oj-label>
+                    </div>
+                    <div
+                      class="oj-flex-item"
+                      data-oj-context=""
+                      data-oj-internal=""
+                      style="flex: 1 1 0px;"
+                    >
+                      <div
+                        slot="value"
+                      >
+                        01:11 PM
+                      </div>
+                    </div>
+                  </div>
+                </oj-label-value>
+              </div>
+              <div
+                class="oj-formlayout-column-gutter"
+                data-oj-formlayout-bonus-dom=""
+                data-oj-internal=""
+              />
+              <div
+                class="oj-flex-item oj-formlayout-no-label-flex-item oj-formlayout-nested-labelvalue"
+                data-oj-formlayout-bonus-dom=""
+                data-oj-internal=""
+                style="flex-grow: 1; flex-shrink: 1; max-width: calc(((100% / 2) - ((var(--oj-form-layout-column-gutter) * (1) / 2))));"
+              >
+                <oj-label-value
+                  class="oj-label-value oj-form oj-form-control-label-inside oj-formlayout-form-across oj-complete"
+                  data-oj-colspan="1"
+                  data-oj-column-gap="var(--oj-form-layout-column-gutter)"
+                >
+                  <div
+                    class="oj-flex"
+                    data-oj-context=""
+                    data-oj-internal=""
+                  >
+                    <div
+                      class="oj-flex-item"
+                      data-oj-context=""
+                      data-oj-internal=""
+                      style="flex-grow: 0; flex-shrink: 1; flex-basis: 100%; width: 100%; max-width: 100%;"
+                    >
+                      <oj-label
+                        class="oj-label oj-component oj-complete"
+                        slot="label"
+                      >
+                        <div
+                          class="oj-label-group"
+                        >
+                          <label
+                            class="oj-component-initnode"
+                            data-oj-internal=""
+                          >
+                            End Time
+                          </label>
+                        </div>
+                      </oj-label>
+                    </div>
+                    <div
+                      class="oj-flex-item"
+                      data-oj-context=""
+                      data-oj-internal=""
+                      style="flex: 1 1 0px;"
+                    >
+                      <div
+                        slot="value"
+                      >
+                        01:11 PM
+                      </div>
+                    </div>
+                  </div>
+                </oj-label-value>
+              </div>
+            </div>
+            <div
+              data-oj-formlayout-workaround-dom=""
+              style="display: table; visibility: hidden;"
+            />
+          </div>
+        </oj-form-layout>
+        <h3
+          class="oj-typography-subheading-sm"
+        >
+          Encounters
+        </h3>
+        <hr />
+        <div
+          class="encounter-list"
+        >
+          <oj-list-view
+            class="oj-listview oj-listview-container oj-component oj-listview-gridlines-hidden oj-complete gridline-top-hidden gridline-bottom-hidden"
+          >
+            <div
+              class="oj-helper-detect-contraction"
+            >
+              <div
+                style="width: 200%; height: 200%;"
+              />
+            </div>
+            <div
+              class="oj-helper-detect-expansion"
+            >
+              <div />
+            </div>
+            <div
+              class="oj-helper-hidden-accessible"
+              tabindex="-1"
+            >
+               
+            </div>
+            <ul
+              aria-busy="false"
+              aria-label="list of encounters"
+              aria-multiselectable="false"
+              aria-rowcount="7"
+              class="oj-listview-element oj-component-initnode"
+              data-oj-context=""
+              data-oj-internal=""
+              role="grid"
+              tabindex="0"
+              x-ms-format-detection="none"
+            >
+              <li
+                aria-rowindex="1"
+                class="oj-listview-focused-element oj-listview-item-element oj-listview-item oj-listview-item-layout"
+                role="row"
+              >
+                <div
+                  aria-selected="false"
+                  class="oj-listview-cell-element"
+                  role="gridcell"
+                >
+                  <oj-list-item-layout
+                    class="oj-complete"
+                    data-oj-vdom-template-root=""
+                  >
+                    <div
+                      class="oj-listitemlayout-grid"
+                    >
+                      <div
+                        class="oj-listitemlayout-textslots"
+                      >
+                        <div
+                          data-oj-tabmod="0"
+                          tabindex="-1"
+                        >
+                          <div
+                            class="oj-typography-body-md"
+                          >
+                            Choroidal hemorrhage
+                          </div>
+                        </div>
+                        <div
+                          data-oj-tabmod="0"
+                          tabindex="-1"
+                        >
+                          <div
+                            class="oj-typography-body-sm"
+                            slot="secondary"
+                          >
+                            162673000
+                          </div>
+                        </div>
+                        <div
+                          class="oj-listitemlayout-tertiary"
+                          data-oj-tabmod="0"
+                          tabindex="-1"
+                        >
+                          <div
+                            class="oj-typography-body-xs oj-text-color-secondary"
+                            slot="tertiary"
+                          >
+                            Dr. Foo
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="oj-listitemlayout-extra"
+                      >
+                        <div
+                          class="oj-listitemlayout-action oj-listitemlayout-start-padding"
+                          data-oj-clickthrough="disabled"
+                        >
+                          <div
+                            class=""
+                            slot="action"
+                          >
+                            <oj-c-button
+                              class="oj-complete"
+                            >
+                              <button
+                                aria-label=""
+                                class="_1hs6wpf _152mtj0 oj-c-base-button-outlined oj-c-base-button-md _1y7lsgo _1bp9nal undefined"
+                                data-oj-tabmod="0"
+                                style="width: 100%;"
+                                tabindex="-1"
+                                title=""
+                              >
+                                <span
+                                  class="_1cyejrm"
+                                >
+                                  <span
+                                    class="_72uy5s oj-c-button-layout-md"
+                                  >
+                                    <span
+                                      class="oj-ux-ico-trash"
+                                    />
+                                  </span>
+                                </span>
+                              </button>
+                            </oj-c-button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </oj-list-item-layout>
+                </div>
+              </li>
+              <li
+                aria-rowindex="2"
+                class="oj-listview-focused-element oj-listview-item-element oj-listview-item oj-listview-item-layout"
+                role="row"
+              >
+                <div
+                  aria-selected="false"
+                  class="oj-listview-cell-element"
+                  role="gridcell"
+                >
+                  <oj-list-item-layout
+                    class="oj-complete"
+                    data-oj-vdom-template-root=""
+                  >
+                    <div
+                      class="oj-listitemlayout-grid"
+                    >
+                      <div
+                        class="oj-listitemlayout-textslots"
+                      >
+                        <div
+                          data-oj-tabmod="0"
+                          tabindex="-1"
+                        >
+                          <div
+                            class="oj-typography-body-md"
+                          >
+                            Choroidal hemorrhage
+                          </div>
+                        </div>
+                        <div
+                          data-oj-tabmod="0"
+                          tabindex="-1"
+                        >
+                          <div
+                            class="oj-typography-body-sm"
+                            slot="secondary"
+                          >
+                            162673000
+                          </div>
+                        </div>
+                        <div
+                          class="oj-listitemlayout-tertiary"
+                          data-oj-tabmod="0"
+                          tabindex="-1"
+                        >
+                          <div
+                            class="oj-typography-body-xs oj-text-color-secondary"
+                            slot="tertiary"
+                          >
+                            Dr. Bar
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="oj-listitemlayout-extra"
+                      >
+                        <div
+                          class="oj-listitemlayout-action oj-listitemlayout-start-padding"
+                          data-oj-clickthrough="disabled"
+                        >
+                          <div
+                            class=""
+                            slot="action"
+                          >
+                            <oj-c-button
+                              class="oj-complete"
+                            >
+                              <button
+                                aria-label=""
+                                class="_1hs6wpf _152mtj0 oj-c-base-button-outlined oj-c-base-button-md _1y7lsgo _1bp9nal undefined"
+                                data-oj-tabmod="0"
+                                style="width: 100%;"
+                                tabindex="-1"
+                                title=""
+                              >
+                                <span
+                                  class="_1cyejrm"
+                                >
+                                  <span
+                                    class="_72uy5s oj-c-button-layout-md"
+                                  >
+                                    <span
+                                      class="oj-ux-ico-trash"
+                                    />
+                                  </span>
+                                </span>
+                              </button>
+                            </oj-c-button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </oj-list-item-layout>
+                </div>
+              </li>
+              <li
+                aria-rowindex="3"
+                class="oj-listview-focused-element oj-listview-item-element oj-listview-item oj-listview-item-layout"
+                role="row"
+              >
+                <div
+                  aria-selected="false"
+                  class="oj-listview-cell-element"
+                  role="gridcell"
+                >
+                  <oj-list-item-layout
+                    class="oj-complete"
+                    data-oj-vdom-template-root=""
+                  >
+                    <div
+                      class="oj-listitemlayout-grid"
+                    >
+                      <div
+                        class="oj-listitemlayout-textslots"
+                      >
+                        <div
+                          data-oj-tabmod="0"
+                          tabindex="-1"
+                        >
+                          <div
+                            class="oj-typography-body-md"
+                          >
+                            Choroidal hemorrhage
+                          </div>
+                        </div>
+                        <div
+                          data-oj-tabmod="0"
+                          tabindex="-1"
+                        >
+                          <div
+                            class="oj-typography-body-sm"
+                            slot="secondary"
+                          >
+                            162673000
+                          </div>
+                        </div>
+                        <div
+                          class="oj-listitemlayout-tertiary"
+                          data-oj-tabmod="0"
+                          tabindex="-1"
+                        >
+                          <div
+                            class="oj-typography-body-xs oj-text-color-secondary"
+                            slot="tertiary"
+                          >
+                            Dr. Jonah
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="oj-listitemlayout-extra"
+                      >
+                        <div
+                          class="oj-listitemlayout-action oj-listitemlayout-start-padding"
+                          data-oj-clickthrough="disabled"
+                        >
+                          <div
+                            class=""
+                            slot="action"
+                          >
+                            <oj-c-button
+                              class="oj-complete"
+                            >
+                              <button
+                                aria-label=""
+                                class="_1hs6wpf _152mtj0 oj-c-base-button-outlined oj-c-base-button-md _1y7lsgo _1bp9nal undefined"
+                                data-oj-tabmod="0"
+                                style="width: 100%;"
+                                tabindex="-1"
+                                title=""
+                              >
+                                <span
+                                  class="_1cyejrm"
+                                >
+                                  <span
+                                    class="_72uy5s oj-c-button-layout-md"
+                                  >
+                                    <span
+                                      class="oj-ux-ico-trash"
+                                    />
+                                  </span>
+                                </span>
+                              </button>
+                            </oj-c-button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </oj-list-item-layout>
+                </div>
+              </li>
+              <li
+                aria-rowindex="4"
+                class="oj-listview-focused-element oj-listview-item-element oj-listview-item oj-listview-item-layout"
+                role="row"
+              >
+                <div
+                  aria-selected="false"
+                  class="oj-listview-cell-element"
+                  role="gridcell"
+                >
+                  <oj-list-item-layout
+                    class="oj-complete"
+                    data-oj-vdom-template-root=""
+                  >
+                    <div
+                      class="oj-listitemlayout-grid"
+                    >
+                      <div
+                        class="oj-listitemlayout-textslots"
+                      >
+                        <div
+                          data-oj-tabmod="0"
+                          tabindex="-1"
+                        >
+                          <div
+                            class="oj-typography-body-md"
+                          >
+                            Choroidal hemorrhage
+                          </div>
+                        </div>
+                        <div
+                          data-oj-tabmod="0"
+                          tabindex="-1"
+                        >
+                          <div
+                            class="oj-typography-body-sm"
+                            slot="secondary"
+                          >
+                            162673000
+                          </div>
+                        </div>
+                        <div
+                          class="oj-listitemlayout-tertiary"
+                          data-oj-tabmod="0"
+                          tabindex="-1"
+                        >
+                          <div
+                            class="oj-typography-body-xs oj-text-color-secondary"
+                            slot="tertiary"
+                          >
+                            Dr. Zeus
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="oj-listitemlayout-extra"
+                      >
+                        <div
+                          class="oj-listitemlayout-action oj-listitemlayout-start-padding"
+                          data-oj-clickthrough="disabled"
+                        >
+                          <div
+                            class=""
+                            slot="action"
+                          >
+                            <oj-c-button
+                              class="oj-complete"
+                            >
+                              <button
+                                aria-label=""
+                                class="_1hs6wpf _152mtj0 oj-c-base-button-outlined oj-c-base-button-md _1y7lsgo _1bp9nal undefined"
+                                data-oj-tabmod="0"
+                                style="width: 100%;"
+                                tabindex="-1"
+                                title=""
+                              >
+                                <span
+                                  class="_1cyejrm"
+                                >
+                                  <span
+                                    class="_72uy5s oj-c-button-layout-md"
+                                  >
+                                    <span
+                                      class="oj-ux-ico-trash"
+                                    />
+                                  </span>
+                                </span>
+                              </button>
+                            </oj-c-button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </oj-list-item-layout>
+                </div>
+              </li>
+              <li
+                aria-rowindex="5"
+                class="oj-listview-focused-element oj-listview-item-element oj-listview-item oj-listview-item-layout"
+                role="row"
+              >
+                <div
+                  aria-selected="false"
+                  class="oj-listview-cell-element"
+                  role="gridcell"
+                >
+                  <oj-list-item-layout
+                    class="oj-complete"
+                    data-oj-vdom-template-root=""
+                  >
+                    <div
+                      class="oj-listitemlayout-grid"
+                    >
+                      <div
+                        class="oj-listitemlayout-textslots"
+                      >
+                        <div
+                          data-oj-tabmod="0"
+                          tabindex="-1"
+                        >
+                          <div
+                            class="oj-typography-body-md"
+                          >
+                            Choroidal hemorrhage
+                          </div>
+                        </div>
+                        <div
+                          data-oj-tabmod="0"
+                          tabindex="-1"
+                        >
+                          <div
+                            class="oj-typography-body-sm"
+                            slot="secondary"
+                          >
+                            162673000
+                          </div>
+                        </div>
+                        <div
+                          class="oj-listitemlayout-tertiary"
+                          data-oj-tabmod="0"
+                          tabindex="-1"
+                        >
+                          <div
+                            class="oj-typography-body-xs oj-text-color-secondary"
+                            slot="tertiary"
+                          >
+                            Dr. Bar
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="oj-listitemlayout-extra"
+                      >
+                        <div
+                          class="oj-listitemlayout-action oj-listitemlayout-start-padding"
+                          data-oj-clickthrough="disabled"
+                        >
+                          <div
+                            class=""
+                            slot="action"
+                          >
+                            <oj-c-button
+                              class="oj-complete"
+                            >
+                              <button
+                                aria-label=""
+                                class="_1hs6wpf _152mtj0 oj-c-base-button-outlined oj-c-base-button-md _1y7lsgo _1bp9nal undefined"
+                                data-oj-tabmod="0"
+                                style="width: 100%;"
+                                tabindex="-1"
+                                title=""
+                              >
+                                <span
+                                  class="_1cyejrm"
+                                >
+                                  <span
+                                    class="_72uy5s oj-c-button-layout-md"
+                                  >
+                                    <span
+                                      class="oj-ux-ico-trash"
+                                    />
+                                  </span>
+                                </span>
+                              </button>
+                            </oj-c-button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </oj-list-item-layout>
+                </div>
+              </li>
+              <li
+                aria-rowindex="6"
+                class="oj-listview-focused-element oj-listview-item-element oj-listview-item oj-listview-item-layout"
+                role="row"
+              >
+                <div
+                  aria-selected="false"
+                  class="oj-listview-cell-element"
+                  role="gridcell"
+                >
+                  <oj-list-item-layout
+                    class="oj-complete"
+                    data-oj-vdom-template-root=""
+                  >
+                    <div
+                      class="oj-listitemlayout-grid"
+                    >
+                      <div
+                        class="oj-listitemlayout-textslots"
+                      >
+                        <div
+                          data-oj-tabmod="0"
+                          tabindex="-1"
+                        >
+                          <div
+                            class="oj-typography-body-md"
+                          >
+                            Choroidal hemorrhage
+                          </div>
+                        </div>
+                        <div
+                          data-oj-tabmod="0"
+                          tabindex="-1"
+                        >
+                          <div
+                            class="oj-typography-body-sm"
+                            slot="secondary"
+                          >
+                            162673000
+                          </div>
+                        </div>
+                        <div
+                          class="oj-listitemlayout-tertiary"
+                          data-oj-tabmod="0"
+                          tabindex="-1"
+                        >
+                          <div
+                            class="oj-typography-body-xs oj-text-color-secondary"
+                            slot="tertiary"
+                          >
+                            Dr. Jonah
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="oj-listitemlayout-extra"
+                      >
+                        <div
+                          class="oj-listitemlayout-action oj-listitemlayout-start-padding"
+                          data-oj-clickthrough="disabled"
+                        >
+                          <div
+                            class=""
+                            slot="action"
+                          >
+                            <oj-c-button
+                              class="oj-complete"
+                            >
+                              <button
+                                aria-label=""
+                                class="_1hs6wpf _152mtj0 oj-c-base-button-outlined oj-c-base-button-md _1y7lsgo _1bp9nal undefined"
+                                data-oj-tabmod="0"
+                                style="width: 100%;"
+                                tabindex="-1"
+                                title=""
+                              >
+                                <span
+                                  class="_1cyejrm"
+                                >
+                                  <span
+                                    class="_72uy5s oj-c-button-layout-md"
+                                  >
+                                    <span
+                                      class="oj-ux-ico-trash"
+                                    />
+                                  </span>
+                                </span>
+                              </button>
+                            </oj-c-button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </oj-list-item-layout>
+                </div>
+              </li>
+              <li
+                aria-rowindex="7"
+                class="oj-listview-focused-element oj-listview-item-element oj-listview-item oj-listview-item-layout"
+                role="row"
+              >
+                <div
+                  aria-selected="false"
+                  class="oj-listview-cell-element"
+                  role="gridcell"
+                >
+                  <oj-list-item-layout
+                    class="oj-complete"
+                    data-oj-vdom-template-root=""
+                  >
+                    <div
+                      class="oj-listitemlayout-grid"
+                    >
+                      <div
+                        class="oj-listitemlayout-textslots"
+                      >
+                        <div
+                          data-oj-tabmod="0"
+                          tabindex="-1"
+                        >
+                          <div
+                            class="oj-typography-body-md"
+                          >
+                            Choroidal hemorrhage
+                          </div>
+                        </div>
+                        <div
+                          data-oj-tabmod="0"
+                          tabindex="-1"
+                        >
+                          <div
+                            class="oj-typography-body-sm"
+                            slot="secondary"
+                          >
+                            162673000
+                          </div>
+                        </div>
+                        <div
+                          class="oj-listitemlayout-tertiary"
+                          data-oj-tabmod="0"
+                          tabindex="-1"
+                        >
+                          <div
+                            class="oj-typography-body-xs oj-text-color-secondary"
+                            slot="tertiary"
+                          >
+                            Dr. Zeus
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="oj-listitemlayout-extra"
+                      >
+                        <div
+                          class="oj-listitemlayout-action oj-listitemlayout-start-padding"
+                          data-oj-clickthrough="disabled"
+                        >
+                          <div
+                            class=""
+                            slot="action"
+                          >
+                            <oj-c-button
+                              class="oj-complete"
+                            >
+                              <button
+                                aria-label=""
+                                class="_1hs6wpf _152mtj0 oj-c-base-button-outlined oj-c-base-button-md _1y7lsgo _1bp9nal undefined"
+                                data-oj-tabmod="0"
+                                style="width: 100%;"
+                                tabindex="-1"
+                                title=""
+                              >
+                                <span
+                                  class="_1cyejrm"
+                                >
+                                  <span
+                                    class="_72uy5s oj-c-button-layout-md"
+                                  >
+                                    <span
+                                      class="oj-ux-ico-trash"
+                                    />
+                                  </span>
+                                </span>
+                              </button>
+                            </oj-c-button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </oj-list-item-layout>
+                </div>
+              </li>
+              <li
+                class="oj-listview-skeleton-container"
+                role="presentation"
+                style="visibility: hidden;"
+              >
+                <ul
+                  class="oj-listview-group"
+                  role="presentation"
+                >
+                  <li
+                    class="oj-listview-item oj-listview-item-layout gridline-hidden"
+                    role="presentation"
+                  >
+                    <div
+                      class="oj-listview-cell-element oj-listview-skeleton oj-listview-skeleton-line-height oj-animation-skeleton"
+                    />
+                  </li>
+                  <li
+                    class="oj-listview-item oj-listview-item-layout gridline-hidden"
+                    role="presentation"
+                  >
+                    <div
+                      class="oj-listview-cell-element oj-listview-skeleton oj-listview-skeleton-line-height oj-animation-skeleton"
+                    />
+                  </li>
+                  <li
+                    class="oj-listview-item oj-listview-item-layout gridline-hidden"
+                    role="presentation"
+                  >
+                    <div
+                      class="oj-listview-cell-element oj-listview-skeleton oj-listview-skeleton-line-height oj-animation-skeleton"
+                    />
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <template
+              slot="itemTemplate"
+            />
+            <div
+              class="oj-listview-status-message oj-listview-status"
+              role="status"
+              style="display: none;"
+            >
+              <div
+                class="oj-icon oj-listview-loading-icon"
+              />
+            </div>
+            <div
+              class="oj-helper-hidden-accessible"
+              role="status"
+              tabindex="-1"
+            />
+            <div
+              class="oj-helper-hidden-accessible"
+            >
+              Use arrow keys to expand and collapse.
+            </div>
+          </oj-list-view>
+        </div>
+        <div>
+          <div>
+            <oj-dialog
+              class="oj-dialog oj-component oj-component-initnode oj-complete"
+              role="dialog"
+              style="width: 60vw; display: none;"
+              tabindex="-1"
+              title="Create Encounter"
+            >
+              <div
+                class="oj-dialog-container"
+              >
+                <div
+                  class="oj-dialog-header"
+                >
+                  <h1
+                    class="oj-dialog-title"
+                  >
+                    Create Encounter
+                  </h1>
+                </div>
+                <div
+                  class="oj-dialog-content oj-dialog-default-content"
+                >
+                  <div
+                    class="oj-dialog-body-wrapper"
+                  >
+                    <div
+                      class="oj-dialog-body"
+                      slot="body"
+                    >
+                      <div
+                        class="encounter-container"
+                      >
+                        <div
+                          class="oj-flex-bar"
+                        >
+                          <div
+                            class="oj-flex-bar-start"
+                          />
+                          <div
+                            class="oj-flex-bar-end oj-text-secondary-color"
+                          />
+                        </div>
+                        <hr />
+                        <div
+                          class="encounter-body"
+                        >
+                          <h3
+                            class="oj-typography-subheading-sm"
+                          >
+                            Encounter
+                          </h3>
+                          <oj-validation-group
+                            class="oj-validation-group oj-complete"
+                          >
+                            <div
+                              data-oj-context=""
+                            >
+                              <oj-form-layout
+                                class="oj-form-layout oj-complete oj-formlayout-max-cols-2"
+                              >
+                                <div
+                                  class="oj-form oj-enabled oj-efficient oj-form-cols oj-formlayout-form-across"
+                                  data-oj-context=""
+                                  data-oj-formlayout-bonus-dom=""
+                                  data-oj-internal=""
+                                  style="column-count: 1; webkit-column-count: 1;"
+                                >
+                                  <div
+                                    class="oj-helper-detect-contraction"
+                                  >
+                                    <div
+                                      style="width: 200%; height: 200%;"
+                                    />
+                                  </div>
+                                  <div
+                                    class="oj-helper-detect-expansion"
+                                  >
+                                    <div />
+                                  </div>
+                                  <div
+                                    class="oj-flex"
+                                    data-oj-formlayout-bonus-dom=""
+                                    data-oj-internal=""
+                                  >
+                                    <div
+                                      class="oj-flex-item"
+                                      data-oj-formlayout-bonus-dom=""
+                                      data-oj-internal=""
+                                      style="flex-grow: 1; flex-shrink: 1; max-width: calc(((100% / 2) - ((var(--oj-form-layout-column-gutter) * (1) / 2))));"
+                                    >
+                                      <oj-select-single
+                                        class="oj-searchselect-no-value oj-required oj-text-field oj-has-no-value oj-complete oj-searchselect oj-form-control oj-component oj-enabled oj-text-field-label-inside"
+                                        labelled-by="oj-selectsingle-1-labelled-by"
+                                      >
+                                        <div
+                                          aria-live="polite"
+                                          class="oj-helper-hidden-accessible oj-listbox-liveregion"
+                                        />
+                                        <div
+                                          class="oj-text-field-container oj-searchselect-main-field oj-text-field-has-end-slot"
+                                          role="presentation"
+                                        >
+                                          <div
+                                            class="oj-text-field-middle"
+                                          >
+                                            <oj-label
+                                              class="oj-searchselect-label oj-label oj-component oj-complete oj-inputtext-label"
+                                              data-oj-binding-provider="none"
+                                              data-oj-input-id="oj-searchselect-filter-oj-selectsingle-1|input"
+                                              data-oj-internal=""
+                                            >
+                                              <div
+                                                class="oj-label-group"
+                                              >
+                                                <label
+                                                  class="oj-component-initnode"
+                                                  data-oj-internal=""
+                                                >
+                                                  <span>
+                                                    Reason Code
+                                                  </span>
+                                                </label>
+                                              </div>
+                                            </oj-label>
+                                            <input
+                                              aria-autocomplete="list"
+                                              aria-expanded="false"
+                                              aria-invalid="false"
+                                              aria-required="true"
+                                              autocapitalize="off"
+                                              autocomplete="off"
+                                              autocorrect="off"
+                                              class="oj-searchselect-input oj-text-field-input"
+                                              placeholder=""
+                                              role="combobox"
+                                              spellcheck="false"
+                                              tabindex="0"
+                                              type="text"
+                                            />
+                                          </div>
+                                          <span
+                                            class="oj-text-field-end"
+                                          >
+                                            <a
+                                              class="oj-searchselect-arrow oj-searchselect-open-icon oj-searchselect-icon oj-component-icon oj-clickable-icon-nocontext"
+                                              role="presentation"
+                                            />
+                                          </span>
+                                        </div>
+                                        <oj-input-text
+                                          aria-autocomplete="list"
+                                          autocomplete="off"
+                                          class="oj-searchselect-filter oj-inputtext oj-form-control oj-component oj-text-field oj-has-no-value oj-complete"
+                                          clear-icon="never"
+                                          data-oj-binding-provider="none"
+                                          data-oj-context=""
+                                          data-oj-internal=""
+                                          display-options.messages="none"
+                                          labelled-by="oj-selectsingle-1-labelled-by"
+                                          style="visibility: hidden;"
+                                          user-assistance-density="compact"
+                                          virtual-keyboard="search"
+                                        >
+                                          <div
+                                            class="oj-text-field-container oj-text-field-has-end-slot"
+                                            role="presentation"
+                                          >
+                                            <div
+                                              class="oj-text-field-middle"
+                                            >
+                                              <input
+                                                aria-label=""
+                                                autocomplete="off"
+                                                class="oj-inputtext-input oj-text-field-input oj-component-initnode"
+                                                data-oj-internal=""
+                                                placeholder=""
+                                                type="text"
+                                              />
+                                            </div>
+                                            <span
+                                              class="oj-text-field-end"
+                                            >
+                                              <a
+                                                class="oj-searchselect-arrow oj-searchselect-open-icon oj-searchselect-icon oj-component-icon oj-clickable-icon-nocontext"
+                                                slot="end"
+                                              />
+                                            </span>
+                                          </div>
+                                        </oj-input-text>
+                                        <input
+                                          aria-hidden="true"
+                                          class="oj-component-initnode"
+                                          data-oj-internal=""
+                                          style="display: none;"
+                                          type="text"
+                                        />
+                                        <div
+                                          class="oj-user-assistance-inline-container oj-reflow"
+                                        >
+                                          <div
+                                            class="oj-required-inline-container"
+                                          >
+                                            Required
+                                          </div>
+                                        </div>
+                                      </oj-select-single>
+                                    </div>
+                                    <div
+                                      class="oj-formlayout-column-gutter"
+                                      data-oj-formlayout-bonus-dom=""
+                                      data-oj-internal=""
+                                    />
+                                    <div
+                                      class="oj-flex-item"
+                                      data-oj-formlayout-bonus-dom=""
+                                      data-oj-internal=""
+                                      style="flex-grow: 1; flex-shrink: 1; max-width: calc(((100% / 2) - ((var(--oj-form-layout-column-gutter) * (1) / 2))));"
+                                    >
+                                      <oj-c-input-text
+                                        class="oj-complete"
+                                      >
+                                        <div
+                                          class="_1s3skvi d1iwqt _3navvy gol8rq"
+                                        >
+                                          <div
+                                            class="_3fpx1v _1vwpcak _1x5ro8z _1gbcwl7"
+                                            role="presentation"
+                                          >
+                                            <div
+                                              class="_1hu6m6d"
+                                            >
+                                              <label
+                                                class="_1iep09b _1auu5wh _1sdyl3f"
+                                              >
+                                                Status
+                                              </label>
+                                              <input
+                                                aria-required="true"
+                                                autocomplete="on"
+                                                class="oj-c-text-field-input r31ub9 gius89 _1xcja60 _13165zu oe9gzv _8uf9oc _821xj3 _1klg2yk"
+                                              />
+                                            </div>
+                                          </div>
+                                          <div
+                                            class="b7his9 _2he38a"
+                                          >
+                                            <div
+                                              class="xb1yle"
+                                            >
+                                              Required
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </oj-c-input-text>
+                                    </div>
+                                  </div>
+                                  <div
+                                    class="oj-flex"
+                                    data-oj-formlayout-bonus-dom=""
+                                    data-oj-internal=""
+                                  >
+                                    <div
+                                      class="oj-flex-item"
+                                      data-oj-formlayout-bonus-dom=""
+                                      data-oj-internal=""
+                                      style="flex-grow: 1; flex-shrink: 1; max-width: calc(((100% / 2) - ((var(--oj-form-layout-column-gutter) * (1) / 2))));"
+                                    >
+                                      <oj-select-single
+                                        class="oj-searchselect-no-value oj-required oj-text-field oj-has-no-value oj-complete oj-searchselect oj-form-control oj-component oj-enabled oj-text-field-label-inside"
+                                        labelled-by="oj-selectsingle-2-labelled-by"
+                                      >
+                                        <div
+                                          aria-live="polite"
+                                          class="oj-helper-hidden-accessible oj-listbox-liveregion"
+                                        />
+                                        <div
+                                          class="oj-text-field-container oj-searchselect-main-field oj-text-field-has-end-slot"
+                                          role="presentation"
+                                        >
+                                          <div
+                                            class="oj-text-field-middle"
+                                          >
+                                            <oj-label
+                                              class="oj-searchselect-label oj-label oj-component oj-complete oj-inputtext-label"
+                                              data-oj-binding-provider="none"
+                                              data-oj-input-id="oj-searchselect-filter-oj-selectsingle-2|input"
+                                              data-oj-internal=""
+                                            >
+                                              <div
+                                                class="oj-label-group"
+                                              >
+                                                <label
+                                                  class="oj-component-initnode"
+                                                  data-oj-internal=""
+                                                >
+                                                  <span>
+                                                    Type
+                                                  </span>
+                                                </label>
+                                              </div>
+                                            </oj-label>
+                                            <input
+                                              aria-autocomplete="list"
+                                              aria-expanded="false"
+                                              aria-invalid="false"
+                                              aria-required="true"
+                                              autocapitalize="off"
+                                              autocomplete="off"
+                                              autocorrect="off"
+                                              class="oj-searchselect-input oj-text-field-input"
+                                              placeholder=""
+                                              role="combobox"
+                                              spellcheck="false"
+                                              tabindex="0"
+                                              type="text"
+                                            />
+                                          </div>
+                                          <span
+                                            class="oj-text-field-end"
+                                          >
+                                            <a
+                                              class="oj-searchselect-arrow oj-searchselect-open-icon oj-searchselect-icon oj-component-icon oj-clickable-icon-nocontext"
+                                              role="presentation"
+                                            />
+                                          </span>
+                                        </div>
+                                        <oj-input-text
+                                          aria-autocomplete="list"
+                                          autocomplete="off"
+                                          class="oj-searchselect-filter oj-inputtext oj-form-control oj-component oj-text-field oj-has-no-value oj-complete"
+                                          clear-icon="never"
+                                          data-oj-binding-provider="none"
+                                          data-oj-context=""
+                                          data-oj-internal=""
+                                          display-options.messages="none"
+                                          labelled-by="oj-selectsingle-2-labelled-by"
+                                          style="visibility: hidden;"
+                                          user-assistance-density="compact"
+                                          virtual-keyboard="search"
+                                        >
+                                          <div
+                                            class="oj-text-field-container oj-text-field-has-end-slot"
+                                            role="presentation"
+                                          >
+                                            <div
+                                              class="oj-text-field-middle"
+                                            >
+                                              <input
+                                                aria-label=""
+                                                autocomplete="off"
+                                                class="oj-inputtext-input oj-text-field-input oj-component-initnode"
+                                                data-oj-internal=""
+                                                placeholder=""
+                                                type="text"
+                                              />
+                                            </div>
+                                            <span
+                                              class="oj-text-field-end"
+                                            >
+                                              <a
+                                                class="oj-searchselect-arrow oj-searchselect-open-icon oj-searchselect-icon oj-component-icon oj-clickable-icon-nocontext"
+                                                slot="end"
+                                              />
+                                            </span>
+                                          </div>
+                                        </oj-input-text>
+                                        <input
+                                          aria-hidden="true"
+                                          class="oj-component-initnode"
+                                          data-oj-internal=""
+                                          style="display: none;"
+                                          type="text"
+                                        />
+                                        <div
+                                          class="oj-user-assistance-inline-container oj-reflow"
+                                        >
+                                          <div
+                                            class="oj-required-inline-container"
+                                          >
+                                            Required
+                                          </div>
+                                        </div>
+                                      </oj-select-single>
+                                    </div>
+                                    <div
+                                      class="oj-formlayout-column-gutter"
+                                      data-oj-formlayout-bonus-dom=""
+                                      data-oj-internal=""
+                                    />
+                                    <div
+                                      class="oj-flex-item"
+                                      data-oj-formlayout-bonus-dom=""
+                                      data-oj-internal=""
+                                      style="flex-grow: 1; flex-shrink: 1; max-width: calc(((100% / 2) - ((var(--oj-form-layout-column-gutter) * (1) / 2))));"
+                                    >
+                                      <oj-c-input-text
+                                        class="oj-complete"
+                                      >
+                                        <div
+                                          class="_1s3skvi d1iwqt _3navvy gol8rq"
+                                        >
+                                          <div
+                                            class="_3fpx1v _1vwpcak _1x5ro8z _1gbcwl7"
+                                            role="presentation"
+                                          >
+                                            <div
+                                              class="_1hu6m6d"
+                                            >
+                                              <label
+                                                class="_1iep09b _1auu5wh _1sdyl3f"
+                                              >
+                                                Location
+                                              </label>
+                                              <input
+                                                aria-required="true"
+                                                autocomplete="on"
+                                                class="oj-c-text-field-input r31ub9 gius89 _1xcja60 _13165zu oe9gzv _8uf9oc _821xj3 _1klg2yk"
+                                              />
+                                            </div>
+                                          </div>
+                                          <div
+                                            class="b7his9 _2he38a"
+                                          >
+                                            <div
+                                              class="xb1yle"
+                                            >
+                                              Required
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </oj-c-input-text>
+                                    </div>
+                                  </div>
+                                  <div
+                                    class="oj-flex"
+                                    data-oj-formlayout-bonus-dom=""
+                                    data-oj-internal=""
+                                  >
+                                    <div
+                                      class="oj-flex-item"
+                                      data-oj-formlayout-bonus-dom=""
+                                      data-oj-internal=""
+                                      style="flex-grow: 1; flex-shrink: 1; max-width: calc(((100% / 2) - ((var(--oj-form-layout-column-gutter) * (1) / 2))));"
+                                    >
+                                      <oj-c-input-text
+                                        class="oj-complete"
+                                      >
+                                        <div
+                                          class="_1s3skvi d1iwqt _3navvy gol8rq"
+                                        >
+                                          <div
+                                            class="_3fpx1v _1vwpcak _1x5ro8z _1gbcwl7"
+                                            role="presentation"
+                                          >
+                                            <div
+                                              class="_1hu6m6d"
+                                            >
+                                              <label
+                                                class="_1iep09b _1auu5wh _1sdyl3f"
+                                              >
+                                                Service Provider
+                                              </label>
+                                              <input
+                                                aria-required="true"
+                                                autocomplete="on"
+                                                class="oj-c-text-field-input r31ub9 gius89 _1xcja60 _13165zu oe9gzv _8uf9oc _821xj3 _1klg2yk"
+                                              />
+                                            </div>
+                                          </div>
+                                          <div
+                                            class="b7his9 _2he38a"
+                                          >
+                                            <div
+                                              class="xb1yle"
+                                            >
+                                              Required
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </oj-c-input-text>
+                                    </div>
+                                    <div
+                                      class="oj-formlayout-column-gutter"
+                                      data-oj-formlayout-bonus-dom=""
+                                      data-oj-internal=""
+                                    />
+                                    <div
+                                      class="oj-flex-item"
+                                      data-oj-formlayout-bonus-dom=""
+                                      data-oj-internal=""
+                                      style="flex-grow: 1; flex-shrink: 1; max-width: calc(((100% / 2) - ((var(--oj-form-layout-column-gutter) * (1) / 2))));"
+                                    >
+                                      <oj-checkboxset
+                                        class="oj-checkboxset oj-component oj-checkboxset-single oj-choice-direction-column oj-form-control oj-has-no-value oj-component-initnode oj-complete oj-form-control-label-inside"
+                                        label-hint="Follow up"
+                                        labelled-by="ui-id-17-labelled-by"
+                                        role="group"
+                                      >
+                                        <oj-label
+                                          class="oj-checkboxset-label oj-label oj-component oj-complete"
+                                          data-oj-binding-provider="none"
+                                          data-oj-internal=""
+                                          data-oj-set-id="ui-id-17"
+                                        >
+                                          <div
+                                            class="oj-label-group"
+                                          >
+                                            <label
+                                              class="oj-component-initnode"
+                                              data-oj-internal=""
+                                            >
+                                              <span>
+                                                Follow up
+                                              </span>
+                                            </label>
+                                          </div>
+                                        </oj-label>
+                                        <div
+                                          class="oj-checkboxset-wrapper oj-form-control-container"
+                                        >
+                                          <span
+                                            class="oj-choice-item oj-enabled"
+                                          >
+                                            <span
+                                              class="oj-radiocheckbox-icon oj-component-icon"
+                                            >
+                                              <input
+                                                class="oj-checkbox oj-component oj-enabled oj-component-initnode"
+                                                data-oj-internal=""
+                                                data-oj-option-id="ui-id-18"
+                                                name="ui-id-17"
+                                                placeholder=""
+                                                tabindex="0"
+                                                type="checkbox"
+                                                value="yes"
+                                              />
+                                            </span>
+                                            <label
+                                              class="oj-checkbox-label oj-enabled"
+                                            >
+                                              <span
+                                                class="oj-radiocheckbox-label-text"
+                                              >
+                                                <oj-option
+                                                  class="oj-complete"
+                                                >
+                                                  Yes
+                                                </oj-option>
+                                              </span>
+                                            </label>
+                                          </span>
+                                        </div>
+                                        <div
+                                          class="oj-user-assistance-inline-container oj-reflow"
+                                        />
+                                      </oj-checkboxset>
+                                    </div>
+                                  </div>
+                                  <div
+                                    data-oj-formlayout-workaround-dom=""
+                                    style="display: table; visibility: hidden;"
+                                  />
+                                </div>
+                              </oj-form-layout>
+                              <h3
+                                class="oj-typography-subheading-sm"
+                              >
+                                Participant
+                              </h3>
+                              <oj-form-layout
+                                class="oj-form-layout oj-complete oj-formlayout-max-cols-2"
+                              >
+                                <div
+                                  class="oj-form oj-enabled oj-efficient oj-form-cols oj-formlayout-form-across"
+                                  data-oj-context=""
+                                  data-oj-formlayout-bonus-dom=""
+                                  data-oj-internal=""
+                                  style="column-count: 1; webkit-column-count: 1;"
+                                >
+                                  <div
+                                    class="oj-helper-detect-contraction"
+                                  >
+                                    <div
+                                      style="width: 200%; height: 200%;"
+                                    />
+                                  </div>
+                                  <div
+                                    class="oj-helper-detect-expansion"
+                                  >
+                                    <div />
+                                  </div>
+                                  <div
+                                    class="oj-flex"
+                                    data-oj-formlayout-bonus-dom=""
+                                    data-oj-internal=""
+                                  >
+                                    <div
+                                      class="oj-flex-item"
+                                      data-oj-formlayout-bonus-dom=""
+                                      data-oj-internal=""
+                                      style="flex-grow: 1; flex-shrink: 1; max-width: calc(((100% / 2) - ((var(--oj-form-layout-column-gutter) * (1) / 2))));"
+                                    >
+                                      <oj-c-input-text
+                                        class="oj-complete"
+                                      >
+                                        <div
+                                          class="_1s3skvi d1iwqt _3navvy gol8rq"
+                                        >
+                                          <div
+                                            class="_3fpx1v _1vwpcak _1x5ro8z _1gbcwl7"
+                                            role="presentation"
+                                          >
+                                            <div
+                                              class="_1hu6m6d"
+                                            >
+                                              <label
+                                                class="_1iep09b _1auu5wh _1sdyl3f"
+                                              >
+                                                Participant Name
+                                              </label>
+                                              <input
+                                                aria-required="true"
+                                                autocomplete="on"
+                                                class="oj-c-text-field-input r31ub9 gius89 _1xcja60 _13165zu oe9gzv _8uf9oc _821xj3 _1klg2yk"
+                                              />
+                                            </div>
+                                          </div>
+                                          <div
+                                            class="b7his9 _2he38a"
+                                          >
+                                            <div
+                                              class="xb1yle"
+                                            >
+                                              Required
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </oj-c-input-text>
+                                    </div>
+                                    <div
+                                      class="oj-formlayout-column-gutter"
+                                      data-oj-formlayout-bonus-dom=""
+                                      data-oj-internal=""
+                                    />
+                                    <div
+                                      class="oj-flex-item"
+                                      data-oj-formlayout-bonus-dom=""
+                                      data-oj-internal=""
+                                      style="flex-grow: 1; flex-shrink: 1; max-width: calc(((100% / 2) - ((var(--oj-form-layout-column-gutter) * (1) / 2))));"
+                                    >
+                                      <oj-c-input-text
+                                        class="oj-complete"
+                                      >
+                                        <div
+                                          class="_1s3skvi d1iwqt _3navvy gol8rq"
+                                        >
+                                          <div
+                                            class="_3fpx1v _1vwpcak _1x5ro8z _1gbcwl7"
+                                            role="presentation"
+                                          >
+                                            <div
+                                              class="_1hu6m6d"
+                                            >
+                                              <label
+                                                class="_1iep09b _1auu5wh _1sdyl3f"
+                                              >
+                                                Participant Type
+                                              </label>
+                                              <input
+                                                aria-required="true"
+                                                autocomplete="on"
+                                                class="oj-c-text-field-input r31ub9 gius89 _1xcja60 _13165zu oe9gzv _8uf9oc _821xj3 _1klg2yk"
+                                              />
+                                            </div>
+                                          </div>
+                                          <div
+                                            class="b7his9 _2he38a"
+                                          >
+                                            <div
+                                              class="xb1yle"
+                                            >
+                                              Required
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </oj-c-input-text>
+                                    </div>
+                                  </div>
+                                  <div
+                                    data-oj-formlayout-workaround-dom=""
+                                    style="display: table; visibility: hidden;"
+                                  />
+                                </div>
+                              </oj-form-layout>
+                              <div
+                                class="oj-sm-margin-2x-vertical"
+                              >
+                                <h3
+                                  class="oj-typography-subheading-sm"
+                                >
+                                  Observations
+                                </h3>
+                                <div
+                                  class="oj-flex oj-sm-flex-direction-column"
+                                >
+                                  <div
+                                    class="oj-flex oj-sm-justify-content-flex-end oj-flex-item oj-sm-margin-4x-top"
+                                  >
+                                    <oj-c-button
+                                      class="oj-complete"
+                                    >
+                                      <button
+                                        class="_1hs6wpf _152mtj0 oj-c-base-button-borderless oj-c-base-button-md _1y7lsgo _1bp9nal undefined"
+                                        style="width: 100%;"
+                                        tabindex="0"
+                                      >
+                                        <span
+                                          class="_1cyejrm"
+                                        >
+                                          <span
+                                            class="_72uy5s oj-c-button-layout-md _1tlz7y2"
+                                          >
+                                            <span
+                                              class="oj-ux-ico-plus"
+                                            />
+                                          </span>
+                                          <span
+                                            class="_5n6nd8 _1rgjvlt"
+                                          >
+                                             Add Observation 
+                                          </span>
+                                        </span>
+                                      </button>
+                                    </oj-c-button>
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="oj-sm-margin-2x-vertical"
+                              >
+                                <h3
+                                  class="oj-typography-subheading-sm"
+                                >
+                                  Conditions
+                                </h3>
+                                <div
+                                  class="oj-flex oj-sm-flex-direction-column"
+                                >
+                                  <div
+                                    class="oj-flex oj-sm-justify-content-flex-end oj-flex-item oj-sm-margin-4x-top"
+                                  >
+                                    <oj-c-button
+                                      class="oj-complete"
+                                    >
+                                      <button
+                                        class="_1hs6wpf _152mtj0 oj-c-base-button-borderless oj-c-base-button-md _1y7lsgo _1bp9nal undefined"
+                                        style="width: 100%;"
+                                        tabindex="0"
+                                      >
+                                        <span
+                                          class="_1cyejrm"
+                                        >
+                                          <span
+                                            class="_72uy5s oj-c-button-layout-md _1tlz7y2"
+                                          >
+                                            <span
+                                              class="oj-ux-ico-plus"
+                                            />
+                                          </span>
+                                          <span
+                                            class="_5n6nd8 _1rgjvlt"
+                                          >
+                                             Add Condition 
+                                          </span>
+                                        </span>
+                                      </button>
+                                    </oj-c-button>
+                                  </div>
+                                </div>
+                              </div>
+                              <h3
+                                class="oj-typography-subheading-sm"
+                              >
+                                Recommendation
+                              </h3>
+                              <oj-form-layout
+                                class="oj-formlayout-full-width oj-form-layout oj-complete oj-formlayout-max-cols-1"
+                              >
+                                <div
+                                  class="oj-form oj-enabled oj-efficient oj-form-cols oj-formlayout-form-across"
+                                  data-oj-context=""
+                                  data-oj-formlayout-bonus-dom=""
+                                  data-oj-internal=""
+                                  style="column-count: 1; webkit-column-count: 1;"
+                                >
+                                  <div
+                                    class="oj-helper-detect-contraction"
+                                  >
+                                    <div
+                                      style="width: 200%; height: 200%;"
+                                    />
+                                  </div>
+                                  <div
+                                    class="oj-helper-detect-expansion"
+                                  >
+                                    <div />
+                                  </div>
+                                  <div
+                                    class="oj-flex"
+                                    data-oj-formlayout-bonus-dom=""
+                                    data-oj-internal=""
+                                  >
+                                    <div
+                                      class="oj-flex-item"
+                                      data-oj-formlayout-bonus-dom=""
+                                      data-oj-internal=""
+                                      style="flex-grow: 1; flex-shrink: 1; max-width: calc(((100% / 1) - ((var(--oj-form-layout-column-gutter) * (0) / 1))));"
+                                    >
+                                      <oj-c-text-area
+                                        class="oj-complete"
+                                      >
+                                        <div
+                                          class="_1s3skvi d1iwqt _3navvy gol8rq"
+                                        >
+                                          <div
+                                            class="_3fpx1v _1vwpcak _1x5ro8z _1gbcwl7 e8zd1"
+                                            role="presentation"
+                                          >
+                                            <div
+                                              class="_1hu6m6d _1l06ws5"
+                                            >
+                                              <label
+                                                class="_1iep09b _1auu5wh _1sdyl3f"
+                                              >
+                                                Instruction
+                                              </label>
+                                              <textarea
+                                                aria-required="true"
+                                                autocomplete="on"
+                                                class="oj-c-text-field-input r31ub9 gius89 _18nhsex _13165zu oe9gzv _8uf9oc kvvgcx _821xj3 _1klg2yk"
+                                              />
+                                            </div>
+                                          </div>
+                                          <div
+                                            class="b7his9 _2he38a"
+                                          >
+                                            <div
+                                              class="xb1yle"
+                                            >
+                                              Required
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </oj-c-text-area>
+                                    </div>
+                                  </div>
+                                  <div
+                                    class="oj-flex"
+                                    data-oj-formlayout-bonus-dom=""
+                                    data-oj-internal=""
+                                  >
+                                    <div
+                                      class="oj-flex-item"
+                                      data-oj-formlayout-bonus-dom=""
+                                      data-oj-internal=""
+                                      style="flex-grow: 1; flex-shrink: 1; max-width: calc(((100% / 1) - ((var(--oj-form-layout-column-gutter) * (0) / 1))));"
+                                    >
+                                      <oj-c-text-area
+                                        class="oj-complete"
+                                      >
+                                        <div
+                                          class="_1s3skvi d1iwqt _3navvy gol8rq"
+                                        >
+                                          <div
+                                            class="_3fpx1v _1vwpcak _1x5ro8z _1gbcwl7 e8zd1"
+                                            role="presentation"
+                                          >
+                                            <div
+                                              class="_1hu6m6d _1l06ws5"
+                                            >
+                                              <label
+                                                class="_1iep09b _1auu5wh _1sdyl3f"
+                                              >
+                                                Additional Instructions
+                                              </label>
+                                              <textarea
+                                                aria-required="true"
+                                                autocomplete="on"
+                                                class="oj-c-text-field-input r31ub9 gius89 _18nhsex _13165zu oe9gzv _8uf9oc kvvgcx _821xj3 _1klg2yk"
+                                              />
+                                            </div>
+                                          </div>
+                                          <div
+                                            class="b7his9 _2he38a"
+                                          >
+                                            <div
+                                              class="xb1yle"
+                                            >
+                                              Required
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </oj-c-text-area>
+                                    </div>
+                                  </div>
+                                  <div
+                                    data-oj-formlayout-workaround-dom=""
+                                    style="display: table; visibility: hidden;"
+                                  />
+                                </div>
+                              </oj-form-layout>
+                              <oj-form-layout
+                                class="oj-form-layout oj-complete oj-formlayout-max-cols-2"
+                              >
+                                <div
+                                  class="oj-form oj-enabled oj-efficient oj-form-cols oj-formlayout-form-across"
+                                  data-oj-context=""
+                                  data-oj-formlayout-bonus-dom=""
+                                  data-oj-internal=""
+                                  style="column-count: 1; webkit-column-count: 1;"
+                                >
+                                  <div
+                                    class="oj-helper-detect-contraction"
+                                  >
+                                    <div
+                                      style="width: 200%; height: 200%;"
+                                    />
+                                  </div>
+                                  <div
+                                    class="oj-helper-detect-expansion"
+                                  >
+                                    <div />
+                                  </div>
+                                  <div
+                                    class="oj-flex"
+                                    data-oj-formlayout-bonus-dom=""
+                                    data-oj-internal=""
+                                  >
+                                    <div
+                                      class="oj-flex-item"
+                                      data-oj-formlayout-bonus-dom=""
+                                      data-oj-internal=""
+                                      style="flex-grow: 1; flex-shrink: 1; max-width: calc(((100% / 2) - ((var(--oj-form-layout-column-gutter) * (1) / 2))));"
+                                    >
+                                      <oj-input-date-time
+                                        class="oj-inputdatetime-date-time oj-component oj-inputdatetime oj-form-control oj-text-field oj-has-no-value oj-text-field-label-inside oj-required oj-complete"
+                                        labelled-by="ui-id-12-labelled-by"
+                                      >
+                                        <div
+                                          aria-hidden="true"
+                                          class="oj-datepicker-popup oj-popup oj-component oj-component-initnode"
+                                          data-oj-internal=""
+                                          style="display: none;"
+                                        >
+                                          <div
+                                            class="oj-popup-content"
+                                            role="presentation"
+                                          >
+                                            <div
+                                              class="oj-timepicker-popup"
+                                              style="display: none;"
+                                            >
+                                              <div
+                                                class="oj-timepicker-content"
+                                              />
+                                            </div>
+                                            <div
+                                              class="oj-datepicker-content"
+                                              role="region"
+                                            />
+                                            <div
+                                              class="oj-datetimepicker-switcher"
+                                            >
+                                              <div
+                                                data-event="click keydown"
+                                                data-handler="switchMe"
+                                              >
+                                                <div
+                                                  class="oj-inputdatetime-time-icon oj-clickable-icon-nocontext oj-component-icon oj-enabled oj-default"
+                                                />
+                                                <a
+                                                  class="oj-enabled oj-datetimepicker-switcher-text"
+                                                  href="#"
+                                                  role="button"
+                                                />
+                                              </div>
+                                              <div
+                                                class="oj-datetimepicker-switcher-buttons"
+                                              >
+                                                <a
+                                                  class="oj-enabled"
+                                                  data-event="click keydown"
+                                                  data-handler="switchDone"
+                                                  href="#"
+                                                  role="button"
+                                                >
+                                                  Done
+                                                </a>
+                                                <a
+                                                  class="oj-enabled"
+                                                  data-event="click keydown"
+                                                  data-handler="switchCancel"
+                                                  href="#"
+                                                  role="button"
+                                                >
+                                                  Cancel
+                                                </a>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div
+                                          class=" oj-inputdatetime-input-container oj-text-field-container"
+                                          role="presentation"
+                                          tabindex="-1"
+                                        >
+                                          <div
+                                            class="oj-text-field-middle"
+                                          >
+                                            <oj-label
+                                              class="oj-inputdatetime-label oj-label oj-component oj-complete"
+                                              data-oj-binding-provider="none"
+                                              data-oj-input-id="ui-id-12|input"
+                                              data-oj-internal=""
+                                            >
+                                              <div
+                                                class="oj-label-group"
+                                              >
+                                                <label
+                                                  class="oj-component-initnode"
+                                                  data-oj-internal=""
+                                                >
+                                                  <span>
+                                                    Recommendation Date
+                                                  </span>
+                                                </label>
+                                              </div>
+                                            </oj-label>
+                                            <input
+                                              aria-haspopup="true"
+                                              aria-required="true"
+                                              class="oj-inputdatetime-input oj-text-field-input oj-has-no-value oj-component-initnode"
+                                              data-oj-internal=""
+                                              data-oj-popup-ui-id-11-parent=""
+                                              placeholder=""
+                                              role="combobox"
+                                              type="text"
+                                            />
+                                          </div>
+                                          <span
+                                            class="oj-inputdatetime-input-trigger"
+                                          >
+                                            <span
+                                              class="oj-inputdatetime-calendar-clock-icon oj-clickable-icon-nocontext oj-component-icon oj-enabled oj-default"
+                                              title="Select Date Time."
+                                            />
+                                            <div
+                                              aria-hidden="true"
+                                              class="oj-helper-hidden-accessible"
+                                            >
+                                              Press Key down or Key up for access to Calendar and Shift + Key down or Shift Key up for access to time drop down.
+                                            </div>
+                                          </span>
+                                        </div>
+                                        <div
+                                          class="oj-user-assistance-inline-container oj-reflow"
+                                        >
+                                          <div
+                                            class="oj-required-inline-container"
+                                          >
+                                            Required
+                                          </div>
+                                        </div>
+                                      </oj-input-date-time>
+                                    </div>
+                                    <div
+                                      class="oj-formlayout-column-gutter"
+                                      data-oj-formlayout-bonus-dom=""
+                                      data-oj-internal=""
+                                    />
+                                    <div
+                                      class="oj-flex-item"
+                                      data-oj-formlayout-bonus-dom=""
+                                      data-oj-internal=""
+                                      style="flex-grow: 1; flex-shrink: 1; max-width: calc(((100% / 2) - ((var(--oj-form-layout-column-gutter) * (1) / 2))));"
+                                    >
+                                      <oj-c-input-text
+                                        class="oj-complete"
+                                      >
+                                        <div
+                                          class="_1s3skvi d1iwqt _3navvy gol8rq"
+                                        >
+                                          <div
+                                            class="_3fpx1v _1vwpcak _1x5ro8z _1gbcwl7"
+                                            role="presentation"
+                                          >
+                                            <div
+                                              class="_1hu6m6d"
+                                            >
+                                              <label
+                                                class="_1iep09b _1auu5wh _1sdyl3f"
+                                              >
+                                                Recommended By
+                                              </label>
+                                              <input
+                                                autocomplete="on"
+                                                class="oj-c-text-field-input r31ub9 gius89 _1xcja60 _13165zu oe9gzv _8uf9oc _821xj3 _1klg2yk"
+                                              />
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </oj-c-input-text>
+                                    </div>
+                                  </div>
+                                  <div
+                                    data-oj-formlayout-workaround-dom=""
+                                    style="display: table; visibility: hidden;"
+                                  />
+                                </div>
+                              </oj-form-layout>
+                            </div>
+                          </oj-validation-group>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div
+                    class="oj-dialog-footer"
+                    slot="footer"
+                  >
+                    <oj-c-button
+                      class="oj-sm-margin-2x-end oj-complete"
+                    >
+                      <button
+                        class="_1hs6wpf oj-c-base-button-outlined oj-c-base-button-md _1y7lsgo _1bp9nal undefined"
+                        style="width: 100%;"
+                        tabindex="0"
+                      >
+                        Cancel
+                      </button>
+                    </oj-c-button>
+                    <oj-c-button
+                      class="oj-complete"
+                    >
+                      <button
+                        class="_1hs6wpf oj-c-base-button-callToAction oj-c-base-button-md cocc1t _1y7lsgo _1bp9nal undefined"
+                        disabled=""
+                        style="width: 100%;"
+                        tabindex="-1"
+                      >
+                        Create
+                      </button>
+                    </oj-c-button>
+                  </div>
+                </div>
+              </div>
+            </oj-dialog>
+          </div>
+        </div>
+        <div>
+          <oj-dialog
+            class="oj-dialog oj-component oj-component-initnode oj-complete"
+            role="dialog"
+            style="display: none;"
+            tabindex="-1"
+          >
+            <div
+              class="oj-dialog-container"
+            >
+              <div
+                class="oj-dialog-header"
+              >
+                <h1
+                  class="oj-dialog-title"
+                >
+                  Encounter created
+                </h1>
+              </div>
+              <div
+                class="oj-dialog-content oj-dialog-default-content"
+              >
+                <div
+                  class="oj-dialog-body-wrapper"
+                >
+                  <div
+                    class="oj-dialog-body"
+                    slot="body"
+                  >
+                    The appointment has been scheduled!
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div
+                  class="oj-dialog-footer"
+                  slot="footer"
+                />
+              </div>
+            </div>
+          </oj-dialog>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    id="__oj_layerhost_container"
+  />
+</DocumentFragment>
+`;

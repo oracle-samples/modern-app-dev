@@ -1,0 +1,19 @@
+<!--
+  ~ Copyright (c) 2023 Oracle and/or its affiliates.
+  ~ Licensed under the Universal Permissive License v 1.0 as shown at https://oss.oracl.com/licenses/upl/
+  -->
+
+<configuration>
+    <appender name="consoleAppender"
+            class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>
+                %cyan(%d{HH:mm:ss.SSS}) %gray([%thread]) %highlight(%-5level) %magenta(%logger{36}) - %msg %X{name}%n
+            </pattern>
+        </encoder>
+    </appender>
+
+    <root level="INFO">
+        <appender-ref ref="consoleAppender" />
+    </root>
+</configuration>

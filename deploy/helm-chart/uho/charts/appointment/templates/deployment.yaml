@@ -1,0 +1,110 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "appointment.fullname" . }}
+  labels: {{ include "appointment.labels" . | nindent 4 }}
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      app: {{ .Chart.Name }}
+      app.kubernetes.io/name: {{ include "appointment.name" . }}
+      app.kubernetes.io/instance: {{ .Release.Name }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Chart.Name }}
+        version: {{ .Values.global.image_tag | quote }}
+        app.kubernetes.io/name: {{ include "appointment.name" . }}
+        app.kubernetes.io/instance: {{ .Release.Name }}
+    spec:
+      topologySpreadConstraints:
+        - maxSkew: 1
+          topologyKey: failure-domain.beta.kubernetes.io/zone
+          whenUnsatisfiable: ScheduleAnyway
+          labelSelector:
+            matchLabels:
+              app: {{ .Chart.Name }}
+              version: {{ .Values.global.image_tag | quote }}
+              app.kubernetes.io/name: {{ include "appointment.name" . }}
+              app.kubernetes.io/instance: {{ .Release.Name }}
+        - maxSkew: 1
+          topologyKey: oci.oraclecloud.com/fault-domain
+          whenUnsatisfiable: ScheduleAnyway
+          labelSelector:
+            matchLabels:
+              app: {{ .Chart.Name }}
+              version: {{ .Values.global.image_tag | quote }}
+              app.kubernetes.io/name: {{ include "appointment.name" . }}
+              app.kubernetes.io/instance: {{ .Release.Name }}
+      containers:
+        - name: {{ .Chart.Name }}
+          image: "{{ .Values.global.repo_path }}{{.Values.name}}-{{.Values.global.deploy_id}}:{{ .Values.global.image_tag }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          volumeMounts:
+            - name: wallet
+              mountPath: /usr/lib/wallet/
+              readOnly: true
+          env:
+            - name: TNS_ADMIN
+              value: "/usr/lib/wallet/"
+            - name: DATASOURCES_DEFAULT_OCID
+              value: {{ .Values.global.atp_ocid }}
+            - name: DATASOURCES_DEFAULT_WALLET_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: atp-connection
+                  key: atp-wallet-password
+            - name: DATASOURCES_DEFAULT_USERNAME
+              valueFrom:
+                secretKeyRef:
+                  name: atp-appointment-secret
+                  key: atp-appointment-username
+            - name: DATASOURCES_DEFAULT_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: atp-appointment-secret
+                  key: atp-appointment-password
+            - name: ATP_SERVICE
+              valueFrom:
+                secretKeyRef:
+                  name: atp-connection
+                  key: atp-service
+            - name: STREAMING_ENDPOINT
+              valueFrom:
+                secretKeyRef:
+                  name: uho-streampool
+                  key: endpoint
+            - name: STREAMING_ID
+              valueFrom:
+                secretKeyRef:
+                  name: uho-streampool
+                  key: appointment-messages-stream-id
+            - name: IDCS_URL
+              valueFrom:
+                configMapKeyRef:
+                  name: idcs
+                  key: url
+            - name: MICRONAUT_METRICS_EXPORT_ORACLECLOUD_COMPARTMENT_ID
+              value: {{ .Values.global.compartment_id }}
+            - name: OCI_CONFIG_INSTANCE-PRINCIPAL_ENABLED
+              value: "true"
+            - name: TRACING_ZIPKIN_HTTP_URL
+              valueFrom:
+                secretKeyRef:
+                  name: apm
+                  key: data_upload_endpoint
+            - name: TRACING_ZIPKIN_HTTP_PATH
+              valueFrom:
+                secretKeyRef:
+                  name: apm
+                  key: data_upload_path
+            - name: MICRONAUT_SECURITY_TOKEN_JWT_SIGNATURES_STATIC_JWKS_KEYS
+              value: {{ .Values.global.idcs.keys | toJson }}
+          ports:
+            - name: http
+              containerPort: {{ .Values.pod.containerPort }}
+      volumes:
+        - name: wallet
+          secret:
+            secretName: {{ .Values.global.atpWalletSecret }}

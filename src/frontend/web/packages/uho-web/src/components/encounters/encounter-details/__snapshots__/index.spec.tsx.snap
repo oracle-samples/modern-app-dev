@@ -1,0 +1,3526 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshot tests for EncounterDetails Snapshot: Component - EncounterDetails 1`] = `
+<DocumentFragment>
+  <div
+    data-oj-binding-provider="preact"
+  >
+    <div
+      class="encounter-container"
+    >
+      <div
+        class="oj-flex-bar"
+      >
+        <div
+          class="oj-flex-bar-start"
+        >
+          162673000
+        </div>
+        <div
+          class="oj-flex-bar-end oj-text-secondary-color"
+        >
+          Mr Patient
+        </div>
+      </div>
+      <hr />
+      <div
+        class="encounter-body"
+      >
+        <h3
+          class="oj-typography-subheading-sm"
+        >
+          Encounter
+        </h3>
+        <oj-validation-group
+          class="oj-validation-group oj-complete"
+        >
+          <div
+            data-oj-context=""
+          >
+            <oj-form-layout
+              class="oj-form-layout oj-complete oj-formlayout-max-cols-2"
+            >
+              <div
+                class="oj-form oj-efficient oj-form-cols oj-formlayout-form-across"
+                data-oj-context=""
+                data-oj-formlayout-bonus-dom=""
+                data-oj-internal=""
+                style="column-count: 1; webkit-column-count: 1;"
+              >
+                <div
+                  class="oj-helper-detect-contraction"
+                >
+                  <div
+                    style="width: 200%; height: 200%;"
+                  />
+                </div>
+                <div
+                  class="oj-helper-detect-expansion"
+                >
+                  <div />
+                </div>
+                <div
+                  class="oj-flex"
+                  data-oj-formlayout-bonus-dom=""
+                  data-oj-internal=""
+                >
+                  <div
+                    class="oj-flex-item"
+                    data-oj-formlayout-bonus-dom=""
+                    data-oj-internal=""
+                    style="flex-grow: 1; flex-shrink: 1; max-width: calc(((100% / 2) - ((var(--oj-form-layout-column-gutter) * (1) / 2))));"
+                  >
+                    <oj-select-single
+                      class="oj-required oj-text-field oj-complete oj-searchselect oj-form-control oj-component oj-read-only oj-text-field-label-inside"
+                      labelled-by="oj-selectsingle-1-labelled-by"
+                    >
+                      <div
+                        aria-live="polite"
+                        class="oj-helper-hidden-accessible oj-listbox-liveregion"
+                      />
+                      <div
+                        class="oj-text-field-container oj-searchselect-main-field oj-text-field-has-end-slot"
+                        role="presentation"
+                      >
+                        <div
+                          class="oj-text-field-middle"
+                        >
+                          <oj-label
+                            class="oj-searchselect-label oj-label oj-component oj-complete oj-read-only oj-inputtext-label"
+                            data-oj-binding-provider="none"
+                            data-oj-input-id="oj-searchselect-filter-oj-selectsingle-1|input"
+                            data-oj-internal=""
+                          >
+                            <div
+                              class="oj-label-group"
+                            >
+                              <label
+                                class="oj-component-initnode"
+                                data-oj-internal=""
+                              >
+                                <span>
+                                  Reason Code
+                                </span>
+                              </label>
+                            </div>
+                          </oj-label>
+                          <div
+                            class="oj-text-field-readonly-div"
+                          >
+                            <div
+                              aria-readonly="true"
+                              class="oj-text-field-readonly"
+                              role="textbox"
+                              tabindex="0"
+                            >
+                              Choroidal hemorrhage
+                            </div>
+                          </div>
+                          <input
+                            aria-autocomplete="list"
+                            aria-required="true"
+                            autocapitalize="off"
+                            autocomplete="off"
+                            autocorrect="off"
+                            class="oj-searchselect-input oj-text-field-input"
+                            placeholder=""
+                            readonly="true"
+                            spellcheck="false"
+                            tabindex="0"
+                            type="text"
+                          />
+                        </div>
+                        <span
+                          class="oj-text-field-end"
+                        >
+                          <a
+                            class="oj-searchselect-arrow oj-searchselect-open-icon oj-searchselect-icon oj-component-icon oj-clickable-icon-nocontext"
+                            role="presentation"
+                          />
+                        </span>
+                      </div>
+                      <oj-input-text
+                        aria-autocomplete="list"
+                        autocomplete="off"
+                        class="oj-searchselect-filter oj-inputtext oj-form-control oj-component oj-text-field oj-has-no-value oj-complete"
+                        clear-icon="never"
+                        data-oj-binding-provider="none"
+                        data-oj-context=""
+                        data-oj-internal=""
+                        display-options.messages="none"
+                        labelled-by="oj-selectsingle-1-labelled-by"
+                        style="visibility: hidden;"
+                        user-assistance-density="compact"
+                        virtual-keyboard="search"
+                      >
+                        <div
+                          class="oj-text-field-container oj-text-field-has-end-slot"
+                          role="presentation"
+                        >
+                          <div
+                            class="oj-text-field-middle"
+                          >
+                            <input
+                              aria-label=""
+                              autocomplete="off"
+                              class="oj-inputtext-input oj-text-field-input oj-component-initnode"
+                              data-oj-internal=""
+                              placeholder=""
+                              type="text"
+                            />
+                          </div>
+                          <span
+                            class="oj-text-field-end"
+                          >
+                            <a
+                              class="oj-searchselect-arrow oj-searchselect-open-icon oj-searchselect-icon oj-component-icon oj-clickable-icon-nocontext"
+                              slot="end"
+                            />
+                          </span>
+                        </div>
+                      </oj-input-text>
+                      <input
+                        aria-hidden="true"
+                        class="oj-component-initnode"
+                        data-oj-internal=""
+                        disabled=""
+                        style="display: none;"
+                        type="text"
+                      />
+                      <div
+                        class="oj-user-assistance-inline-container oj-reflow"
+                      />
+                    </oj-select-single>
+                  </div>
+                  <div
+                    class="oj-formlayout-column-gutter"
+                    data-oj-formlayout-bonus-dom=""
+                    data-oj-internal=""
+                  />
+                  <div
+                    class="oj-flex-item"
+                    data-oj-formlayout-bonus-dom=""
+                    data-oj-internal=""
+                    style="flex-grow: 1; flex-shrink: 1; max-width: calc(((100% / 2) - ((var(--oj-form-layout-column-gutter) * (1) / 2))));"
+                  >
+                    <oj-c-input-text
+                      class="oj-complete"
+                    >
+                      <div
+                        class="_1s3skvi d1iwqt _3navvy"
+                        labelstartwidth="33%"
+                        role="presentation"
+                      >
+                        <div
+                          class="_1kz2e2a _13qk218"
+                        >
+                          <label
+                            class="_1iep09b _1auu5wh _111uzw1"
+                          >
+                            Status
+                          </label>
+                          <div
+                            aria-readonly="true"
+                            class="oj-c-hide-scrollbar vblukg _1klg2yk"
+                            role="textbox"
+                            tabindex="0"
+                          >
+                            triage
+                          </div>
+                        </div>
+                      </div>
+                    </oj-c-input-text>
+                  </div>
+                </div>
+                <div
+                  class="oj-flex"
+                  data-oj-formlayout-bonus-dom=""
+                  data-oj-internal=""
+                >
+                  <div
+                    class="oj-flex-item"
+                    data-oj-formlayout-bonus-dom=""
+                    data-oj-internal=""
+                    style="flex-grow: 1; flex-shrink: 1; max-width: calc(((100% / 2) - ((var(--oj-form-layout-column-gutter) * (1) / 2))));"
+                  >
+                    <oj-select-single
+                      class="oj-required oj-text-field oj-complete oj-searchselect oj-form-control oj-component oj-read-only oj-text-field-label-inside"
+                      labelled-by="oj-selectsingle-2-labelled-by"
+                    >
+                      <div
+                        aria-live="polite"
+                        class="oj-helper-hidden-accessible oj-listbox-liveregion"
+                      />
+                      <div
+                        class="oj-text-field-container oj-searchselect-main-field oj-text-field-has-end-slot"
+                        role="presentation"
+                      >
+                        <div
+                          class="oj-text-field-middle"
+                        >
+                          <oj-label
+                            class="oj-searchselect-label oj-label oj-component oj-complete oj-read-only oj-inputtext-label"
+                            data-oj-binding-provider="none"
+                            data-oj-input-id="oj-searchselect-filter-oj-selectsingle-2|input"
+                            data-oj-internal=""
+                          >
+                            <div
+                              class="oj-label-group"
+                            >
+                              <label
+                                class="oj-component-initnode"
+                                data-oj-internal=""
+                              >
+                                <span>
+                                  Type
+                                </span>
+                              </label>
+                            </div>
+                          </oj-label>
+                          <div
+                            class="oj-text-field-readonly-div"
+                          >
+                            <div
+                              aria-readonly="true"
+                              class="oj-text-field-readonly"
+                              role="textbox"
+                              tabindex="0"
+                            />
+                          </div>
+                          <input
+                            aria-autocomplete="list"
+                            aria-required="true"
+                            autocapitalize="off"
+                            autocomplete="off"
+                            autocorrect="off"
+                            class="oj-searchselect-input oj-text-field-input"
+                            placeholder=""
+                            readonly="true"
+                            spellcheck="false"
+                            tabindex="0"
+                            type="text"
+                          />
+                        </div>
+                        <span
+                          class="oj-text-field-end"
+                        >
+                          <a
+                            class="oj-searchselect-arrow oj-searchselect-open-icon oj-searchselect-icon oj-component-icon oj-clickable-icon-nocontext"
+                            role="presentation"
+                          />
+                        </span>
+                      </div>
+                      <oj-input-text
+                        aria-autocomplete="list"
+                        autocomplete="off"
+                        class="oj-searchselect-filter oj-inputtext oj-form-control oj-component oj-text-field oj-has-no-value oj-complete"
+                        clear-icon="never"
+                        data-oj-binding-provider="none"
+                        data-oj-context=""
+                        data-oj-internal=""
+                        display-options.messages="none"
+                        labelled-by="oj-selectsingle-2-labelled-by"
+                        style="visibility: hidden;"
+                        user-assistance-density="compact"
+                        virtual-keyboard="search"
+                      >
+                        <div
+                          class="oj-text-field-container oj-text-field-has-end-slot"
+                          role="presentation"
+                        >
+                          <div
+                            class="oj-text-field-middle"
+                          >
+                            <input
+                              aria-label=""
+                              autocomplete="off"
+                              class="oj-inputtext-input oj-text-field-input oj-component-initnode"
+                              data-oj-internal=""
+                              placeholder=""
+                              type="text"
+                            />
+                          </div>
+                          <span
+                            class="oj-text-field-end"
+                          >
+                            <a
+                              class="oj-searchselect-arrow oj-searchselect-open-icon oj-searchselect-icon oj-component-icon oj-clickable-icon-nocontext"
+                              slot="end"
+                            />
+                          </span>
+                        </div>
+                      </oj-input-text>
+                      <input
+                        aria-hidden="true"
+                        class="oj-component-initnode"
+                        data-oj-internal=""
+                        disabled=""
+                        style="display: none;"
+                        type="text"
+                      />
+                      <div
+                        class="oj-user-assistance-inline-container oj-reflow"
+                      />
+                    </oj-select-single>
+                  </div>
+                  <div
+                    class="oj-formlayout-column-gutter"
+                    data-oj-formlayout-bonus-dom=""
+                    data-oj-internal=""
+                  />
+                  <div
+                    class="oj-flex-item"
+                    data-oj-formlayout-bonus-dom=""
+                    data-oj-internal=""
+                    style="flex-grow: 1; flex-shrink: 1; max-width: calc(((100% / 2) - ((var(--oj-form-layout-column-gutter) * (1) / 2))));"
+                  >
+                    <oj-c-input-text
+                      class="oj-complete"
+                    >
+                      <div
+                        class="_1s3skvi d1iwqt _3navvy"
+                        labelstartwidth="33%"
+                        role="presentation"
+                      >
+                        <div
+                          class="_1kz2e2a _13qk218"
+                        >
+                          <label
+                            class="_1iep09b _1auu5wh _111uzw1"
+                          >
+                            Location
+                          </label>
+                          <div
+                            aria-readonly="true"
+                            class="oj-c-hide-scrollbar vblukg _1klg2yk"
+                            role="textbox"
+                            tabindex="0"
+                          >
+                            NP2U, LLC
+                          </div>
+                        </div>
+                      </div>
+                    </oj-c-input-text>
+                  </div>
+                </div>
+                <div
+                  class="oj-flex"
+                  data-oj-formlayout-bonus-dom=""
+                  data-oj-internal=""
+                >
+                  <div
+                    class="oj-flex-item"
+                    data-oj-formlayout-bonus-dom=""
+                    data-oj-internal=""
+                    style="flex-grow: 1; flex-shrink: 1; max-width: calc(((100% / 2) - ((var(--oj-form-layout-column-gutter) * (1) / 2))));"
+                  >
+                    <oj-c-input-text
+                      class="oj-complete"
+                    >
+                      <div
+                        class="_1s3skvi d1iwqt _3navvy"
+                        labelstartwidth="33%"
+                        role="presentation"
+                      >
+                        <div
+                          class="_1kz2e2a _13qk218"
+                        >
+                          <label
+                            class="_1iep09b _1auu5wh _111uzw1"
+                          >
+                            Service Provider
+                          </label>
+                          <div
+                            aria-readonly="true"
+                            class="oj-c-hide-scrollbar vblukg _1klg2yk"
+                            role="textbox"
+                            tabindex="0"
+                          >
+                            provider
+                          </div>
+                        </div>
+                      </div>
+                    </oj-c-input-text>
+                  </div>
+                  <div
+                    class="oj-formlayout-column-gutter"
+                    data-oj-formlayout-bonus-dom=""
+                    data-oj-internal=""
+                  />
+                  <div
+                    class="oj-flex-item"
+                    data-oj-formlayout-bonus-dom=""
+                    data-oj-internal=""
+                    style="flex-grow: 1; flex-shrink: 1; max-width: calc(((100% / 2) - ((var(--oj-form-layout-column-gutter) * (1) / 2))));"
+                  >
+                    <oj-checkboxset
+                      class="oj-checkboxset oj-component oj-read-only oj-choice-direction-column oj-form-control oj-component-initnode oj-complete oj-form-control-label-inside"
+                      label-hint="Follow up"
+                      labelled-by="ui-id-29-labelled-by"
+                    >
+                      <oj-label
+                        class="oj-checkboxset-label oj-label oj-component oj-read-only oj-complete"
+                        data-oj-binding-provider="none"
+                        data-oj-internal=""
+                        data-oj-set-id="ui-id-29"
+                      >
+                        <div
+                          class="oj-label-group"
+                        >
+                          <label
+                            class="oj-component-initnode"
+                            data-oj-internal=""
+                          >
+                            <span>
+                              Follow up
+                            </span>
+                          </label>
+                        </div>
+                      </oj-label>
+                      <div
+                        class="oj-checkboxset-wrapper oj-form-control-container"
+                        tabindex="0"
+                      >
+                        <span
+                          aria-readonly="true"
+                          class="oj-choice-item"
+                        >
+                          <label
+                            class="oj-checkbox-label"
+                          >
+                            <oj-option
+                              class="oj-complete"
+                            >
+                              Yes
+                            </oj-option>
+                          </label>
+                        </span>
+                      </div>
+                      <div
+                        class="oj-user-assistance-inline-container oj-reflow"
+                      />
+                    </oj-checkboxset>
+                  </div>
+                </div>
+                <div
+                  data-oj-formlayout-workaround-dom=""
+                  style="display: table; visibility: hidden;"
+                />
+              </div>
+            </oj-form-layout>
+            <h3
+              class="oj-typography-subheading-sm"
+            >
+              Participant
+            </h3>
+            <oj-form-layout
+              class="oj-form-layout oj-complete oj-formlayout-max-cols-2"
+            >
+              <div
+                class="oj-form oj-efficient oj-form-cols oj-formlayout-form-across"
+                data-oj-context=""
+                data-oj-formlayout-bonus-dom=""
+                data-oj-internal=""
+                style="column-count: 1; webkit-column-count: 1;"
+              >
+                <div
+                  class="oj-helper-detect-contraction"
+                >
+                  <div
+                    style="width: 200%; height: 200%;"
+                  />
+                </div>
+                <div
+                  class="oj-helper-detect-expansion"
+                >
+                  <div />
+                </div>
+                <div
+                  class="oj-flex"
+                  data-oj-formlayout-bonus-dom=""
+                  data-oj-internal=""
+                >
+                  <div
+                    class="oj-flex-item"
+                    data-oj-formlayout-bonus-dom=""
+                    data-oj-internal=""
+                    style="flex-grow: 1; flex-shrink: 1; max-width: calc(((100% / 2) - ((var(--oj-form-layout-column-gutter) * (1) / 2))));"
+                  >
+                    <oj-c-input-text
+                      class="oj-complete"
+                    >
+                      <div
+                        class="_1s3skvi d1iwqt _3navvy"
+                        labelstartwidth="33%"
+                        role="presentation"
+                      >
+                        <div
+                          class="_1kz2e2a _13qk218"
+                        >
+                          <label
+                            class="_1iep09b _1auu5wh _111uzw1"
+                          >
+                            Participant Name
+                          </label>
+                          <div
+                            aria-readonly="true"
+                            class="oj-c-hide-scrollbar vblukg _1klg2yk"
+                            role="textbox"
+                            tabindex="0"
+                          >
+                            Foo
+                          </div>
+                        </div>
+                      </div>
+                    </oj-c-input-text>
+                  </div>
+                  <div
+                    class="oj-formlayout-column-gutter"
+                    data-oj-formlayout-bonus-dom=""
+                    data-oj-internal=""
+                  />
+                  <div
+                    class="oj-flex-item"
+                    data-oj-formlayout-bonus-dom=""
+                    data-oj-internal=""
+                    style="flex-grow: 1; flex-shrink: 1; max-width: calc(((100% / 2) - ((var(--oj-form-layout-column-gutter) * (1) / 2))));"
+                  >
+                    <oj-c-input-text
+                      class="oj-complete"
+                    >
+                      <div
+                        class="_1s3skvi d1iwqt _3navvy"
+                        labelstartwidth="33%"
+                        role="presentation"
+                      >
+                        <div
+                          class="_1kz2e2a _13qk218"
+                        >
+                          <label
+                            class="_1iep09b _1auu5wh _111uzw1"
+                          >
+                            Participant Type
+                          </label>
+                          <div
+                            aria-readonly="true"
+                            class="oj-c-hide-scrollbar vblukg _1klg2yk"
+                            role="textbox"
+                            tabindex="0"
+                          >
+                            type
+                          </div>
+                        </div>
+                      </div>
+                    </oj-c-input-text>
+                  </div>
+                </div>
+                <div
+                  data-oj-formlayout-workaround-dom=""
+                  style="display: table; visibility: hidden;"
+                />
+              </div>
+            </oj-form-layout>
+            <div
+              class="oj-sm-margin-2x-vertical"
+            >
+              <h3
+                class="oj-typography-subheading-sm"
+              >
+                Observations
+              </h3>
+              <div
+                class="oj-flex oj-sm-flex-direction-row"
+              >
+                <div
+                  class="oj-xl-4 oj-lg-6 oj-sm-6 oj-flex-item oj-sm-padding-2x-end oj-sm-padding-2x-bottom"
+                >
+                  <div
+                    class="oj-panel oj-flex oj-sm-justify-content-space-between"
+                  >
+                    <oj-form-layout
+                      class="oj-flex-item oj-sm-0 oj-form-layout oj-complete oj-form-layout-no-min-column-width oj-formlayout-max-cols-2"
+                    >
+                      <div
+                        class="oj-form oj-efficient oj-form-cols oj-formlayout-form-across"
+                        data-oj-context=""
+                        data-oj-formlayout-bonus-dom=""
+                        data-oj-internal=""
+                        style="column-count: 1; webkit-column-count: 1;"
+                      >
+                        <div
+                          class="oj-flex"
+                          data-oj-formlayout-bonus-dom=""
+                          data-oj-internal=""
+                        >
+                          <div
+                            class="oj-flex-item"
+                            data-oj-formlayout-bonus-dom=""
+                            data-oj-internal=""
+                            style="flex-grow: 1; flex-shrink: 1; max-width: calc(((100% / 2) - ((var(--oj-form-layout-column-gutter) * (1) / 2))));"
+                          >
+                            <oj-combobox-one
+                              class="oj-combobox oj-component oj-enabled oj-read-only oj-form-control oj-text-field oj-text-field-label-inside oj-complete"
+                              labelled-by="oj-combobox-1-labelled-by"
+                            >
+                              <div
+                                class="oj-text-field-container oj-text-field-has-end-slot"
+                                role="presentation"
+                              >
+                                  
+                                <div
+                                  class="oj-combobox-choice oj-combobox-accessible-container"
+                                  role="presentation"
+                                  tabindex="-1"
+                                >
+                                     
+                                  <div
+                                    class="oj-text-field-middle"
+                                  >
+                                         
+                                    <oj-label
+                                      class="oj-combobox-label oj-label oj-component oj-read-only oj-complete"
+                                      data-oj-binding-provider="none"
+                                      data-oj-input-id="oj-combobox-1|input"
+                                      data-oj-internal=""
+                                    >
+                                      <div
+                                        class="oj-label-group"
+                                      >
+                                        <label
+                                          class="oj-component-initnode"
+                                          data-oj-internal=""
+                                        >
+                                          <span>
+                                            Category
+                                          </span>
+                                        </label>
+                                      </div>
+                                    </oj-label>
+                                    <div
+                                      class="oj-text-field-readonly-div"
+                                    >
+                                      <div
+                                        aria-readonly="true"
+                                        class="oj-text-field-readonly"
+                                        role="textbox"
+                                        tabindex="0"
+                                      >
+                                        Vital Signs
+                                      </div>
+                                    </div>
+                                    <input
+                                      aria-autocomplete="list"
+                                      aria-owns="oj-listbox-results-oj-combobox-1"
+                                      autocapitalize="off"
+                                      autocomplete="off"
+                                      autocorrect="off"
+                                      class="oj-combobox-input"
+                                      readonly="readonly"
+                                      spellcheck="false"
+                                      type="text"
+                                    />
+                                       
+                                  </div>
+                                     
+                                  <abbr
+                                    class="oj-combobox-clear-entry"
+                                    role="presentation"
+                                  />
+                                     
+                                  <span
+                                    class="oj-combobox-divider"
+                                    role="presentation"
+                                  />
+                                     
+                                  <span
+                                    class="oj-text-field-end"
+                                  >
+                                         
+                                    <a
+                                      class="oj-combobox-arrow oj-combobox-icon oj-component-icon oj-clickable-icon-nocontext oj-combobox-open-icon"
+                                      role="presentation"
+                                    />
+                                       
+                                  </span>
+                                    
+                                </div>
+                              </div>
+                              <div
+                                class="oj-listbox-drop"
+                                data-oj-containerid="oj-combobox-1"
+                                role="presentation"
+                                style="display: none;"
+                              >
+                                   
+                                <div
+                                  class="oj-listbox-loader-wrapper"
+                                />
+                                   
+                                <ul
+                                  class="oj-listbox-results"
+                                  data-oj-context=""
+                                  role="listbox"
+                                >
+                                     
+                                </ul>
+                              </div>
+                              <div
+                                aria-live="polite"
+                                class="oj-helper-hidden-accessible oj-listbox-liveregion"
+                              />
+                              <input
+                                aria-hidden="true"
+                                class="oj-component-initnode"
+                                data-oj-internal=""
+                                style="display: none;"
+                                tabindex="-1"
+                              />
+                              <div
+                                class="oj-user-assistance-inline-container oj-reflow"
+                              />
+                            </oj-combobox-one>
+                          </div>
+                          <div
+                            class="oj-formlayout-column-gutter"
+                            data-oj-formlayout-bonus-dom=""
+                            data-oj-internal=""
+                          />
+                          <div
+                            class="oj-flex-item"
+                            data-oj-formlayout-bonus-dom=""
+                            data-oj-internal=""
+                            style="flex-grow: 1; flex-shrink: 1; max-width: calc(((100% / 2) - ((var(--oj-form-layout-column-gutter) * (1) / 2))));"
+                          >
+                            <oj-combobox-one
+                              class="oj-combobox oj-component oj-enabled oj-read-only oj-form-control oj-text-field oj-text-field-label-inside oj-complete"
+                              labelled-by="oj-combobox-2-labelled-by"
+                            >
+                              <div
+                                class="oj-text-field-container oj-text-field-has-end-slot"
+                                role="presentation"
+                              >
+                                  
+                                <div
+                                  class="oj-combobox-choice oj-combobox-accessible-container"
+                                  role="presentation"
+                                  tabindex="-1"
+                                >
+                                     
+                                  <div
+                                    class="oj-text-field-middle"
+                                  >
+                                         
+                                    <oj-label
+                                      class="oj-combobox-label oj-label oj-component oj-read-only oj-complete"
+                                      data-oj-binding-provider="none"
+                                      data-oj-input-id="oj-combobox-2|input"
+                                      data-oj-internal=""
+                                    >
+                                      <div
+                                        class="oj-label-group"
+                                      >
+                                        <label
+                                          class="oj-component-initnode"
+                                          data-oj-internal=""
+                                        >
+                                          <span>
+                                            Parameter Type
+                                          </span>
+                                        </label>
+                                      </div>
+                                    </oj-label>
+                                    <div
+                                      class="oj-text-field-readonly-div"
+                                    >
+                                      <div
+                                        aria-readonly="true"
+                                        class="oj-text-field-readonly"
+                                        role="textbox"
+                                        tabindex="0"
+                                      >
+                                        Body Height
+                                      </div>
+                                    </div>
+                                    <input
+                                      aria-autocomplete="list"
+                                      aria-owns="oj-listbox-results-oj-combobox-2"
+                                      autocapitalize="off"
+                                      autocomplete="off"
+                                      autocorrect="off"
+                                      class="oj-combobox-input"
+                                      readonly="readonly"
+                                      spellcheck="false"
+                                      type="text"
+                                    />
+                                       
+                                  </div>
+                                     
+                                  <abbr
+                                    class="oj-combobox-clear-entry"
+                                    role="presentation"
+                                  />
+                                     
+                                  <span
+                                    class="oj-combobox-divider"
+                                    role="presentation"
+                                  />
+                                     
+                                  <span
+                                    class="oj-text-field-end"
+                                  >
+                                         
+                                    <a
+                                      class="oj-combobox-arrow oj-combobox-icon oj-component-icon oj-clickable-icon-nocontext oj-combobox-open-icon"
+                                      role="presentation"
+                                    />
+                                       
+                                  </span>
+                                    
+                                </div>
+                              </div>
+                              <div
+                                class="oj-listbox-drop"
+                                data-oj-containerid="oj-combobox-2"
+                                role="presentation"
+                                style="display: none;"
+                              >
+                                   
+                                <div
+                                  class="oj-listbox-loader-wrapper"
+                                />
+                                   
+                                <ul
+                                  class="oj-listbox-results"
+                                  data-oj-context=""
+                                  role="listbox"
+                                >
+                                     
+                                </ul>
+                              </div>
+                              <div
+                                aria-live="polite"
+                                class="oj-helper-hidden-accessible oj-listbox-liveregion"
+                              />
+                              <input
+                                aria-hidden="true"
+                                class="oj-component-initnode"
+                                data-oj-internal=""
+                                style="display: none;"
+                                tabindex="-1"
+                              />
+                              <div
+                                class="oj-user-assistance-inline-container oj-reflow"
+                              />
+                            </oj-combobox-one>
+                          </div>
+                        </div>
+                        <div
+                          class="oj-flex"
+                          data-oj-formlayout-bonus-dom=""
+                          data-oj-internal=""
+                        >
+                          <div
+                            class="oj-flex-item"
+                            data-oj-formlayout-bonus-dom=""
+                            data-oj-internal=""
+                            style="flex-grow: 1; flex-shrink: 1; max-width: calc(((100% / 2) - ((var(--oj-form-layout-column-gutter) * (1) / 2))));"
+                          >
+                            <oj-combobox-one
+                              class="oj-combobox oj-component oj-enabled oj-read-only oj-form-control oj-text-field oj-text-field-label-inside oj-complete"
+                              labelled-by="oj-combobox-3-labelled-by"
+                            >
+                              <div
+                                class="oj-text-field-container oj-text-field-has-end-slot"
+                                role="presentation"
+                              >
+                                  
+                                <div
+                                  class="oj-combobox-choice oj-combobox-accessible-container"
+                                  role="presentation"
+                                  tabindex="-1"
+                                >
+                                     
+                                  <div
+                                    class="oj-text-field-middle"
+                                  >
+                                         
+                                    <oj-label
+                                      class="oj-combobox-label oj-label oj-component oj-read-only oj-complete"
+                                      data-oj-binding-provider="none"
+                                      data-oj-input-id="oj-combobox-3|input"
+                                      data-oj-internal=""
+                                    >
+                                      <div
+                                        class="oj-label-group"
+                                      >
+                                        <label
+                                          class="oj-component-initnode"
+                                          data-oj-internal=""
+                                        >
+                                          <span>
+                                            Unit
+                                          </span>
+                                        </label>
+                                      </div>
+                                    </oj-label>
+                                    <div
+                                      class="oj-text-field-readonly-div"
+                                    >
+                                      <div
+                                        aria-readonly="true"
+                                        class="oj-text-field-readonly"
+                                        role="textbox"
+                                        tabindex="0"
+                                      >
+                                        Meter
+                                      </div>
+                                    </div>
+                                    <input
+                                      aria-autocomplete="list"
+                                      aria-owns="oj-listbox-results-oj-combobox-3"
+                                      autocapitalize="off"
+                                      autocomplete="off"
+                                      autocorrect="off"
+                                      class="oj-combobox-input"
+                                      readonly="readonly"
+                                      spellcheck="false"
+                                      type="text"
+                                    />
+                                       
+                                  </div>
+                                     
+                                  <abbr
+                                    class="oj-combobox-clear-entry"
+                                    role="presentation"
+                                  />
+                                     
+                                  <span
+                                    class="oj-combobox-divider"
+                                    role="presentation"
+                                  />
+                                     
+                                  <span
+                                    class="oj-text-field-end"
+                                  >
+                                         
+                                    <a
+                                      class="oj-combobox-arrow oj-combobox-icon oj-component-icon oj-clickable-icon-nocontext oj-combobox-open-icon"
+                                      role="presentation"
+                                    />
+                                       
+                                  </span>
+                                    
+                                </div>
+                              </div>
+                              <div
+                                class="oj-listbox-drop"
+                                data-oj-containerid="oj-combobox-3"
+                                role="presentation"
+                                style="display: none;"
+                              >
+                                   
+                                <div
+                                  class="oj-listbox-loader-wrapper"
+                                />
+                                   
+                                <ul
+                                  class="oj-listbox-results"
+                                  data-oj-context=""
+                                  role="listbox"
+                                >
+                                     
+                                </ul>
+                              </div>
+                              <div
+                                aria-live="polite"
+                                class="oj-helper-hidden-accessible oj-listbox-liveregion"
+                              />
+                              <input
+                                aria-hidden="true"
+                                class="oj-component-initnode"
+                                data-oj-internal=""
+                                style="display: none;"
+                                tabindex="-1"
+                              />
+                              <div
+                                class="oj-user-assistance-inline-container oj-reflow"
+                              />
+                            </oj-combobox-one>
+                          </div>
+                          <div
+                            class="oj-formlayout-column-gutter"
+                            data-oj-formlayout-bonus-dom=""
+                            data-oj-internal=""
+                          />
+                          <div
+                            class="oj-flex-item"
+                            data-oj-formlayout-bonus-dom=""
+                            data-oj-internal=""
+                            style="flex-grow: 1; flex-shrink: 1; max-width: calc(((100% / 2) - ((var(--oj-form-layout-column-gutter) * (1) / 2))));"
+                          >
+                            <oj-c-input-number
+                              class="oj-complete"
+                            >
+                              <div
+                                class="_1s3skvi d1iwqt _3navvy"
+                                labelstartwidth="33%"
+                                role="presentation"
+                              >
+                                <div
+                                  class="_1kz2e2a _13qk218"
+                                >
+                                  <label
+                                    class="_1iep09b _1auu5wh _111uzw1"
+                                  >
+                                    Value
+                                  </label>
+                                  <div
+                                    aria-readonly="true"
+                                    class="oj-c-hide-scrollbar vblukg _1klg2yk"
+                                    role="textbox"
+                                    tabindex="0"
+                                  >
+                                    1.8
+                                  </div>
+                                </div>
+                              </div>
+                            </oj-c-input-number>
+                          </div>
+                        </div>
+                        <div
+                          class="oj-flex"
+                          data-oj-formlayout-bonus-dom=""
+                          data-oj-internal=""
+                        >
+                          <div
+                            class="oj-flex-item"
+                            data-oj-formlayout-bonus-dom=""
+                            data-oj-internal=""
+                            style="flex-grow: 1; flex-shrink: 1; max-width: calc(((100% / 2) - ((var(--oj-form-layout-column-gutter) * (1) / 2))));"
+                          >
+                            <oj-input-date-time
+                              class="oj-inputdatetime-date-time oj-component oj-inputdatetime oj-form-control oj-text-field oj-text-field-label-inside oj-read-only oj-complete"
+                              labelled-by="ui-id-3-labelled-by"
+                            >
+                              <div
+                                class=" oj-inputdatetime-input-container oj-text-field-container"
+                                role="presentation"
+                                tabindex="-1"
+                              >
+                                <div
+                                  class="oj-text-field-middle"
+                                >
+                                  <oj-label
+                                    class="oj-inputdatetime-label oj-label oj-component oj-read-only oj-complete"
+                                    data-oj-binding-provider="none"
+                                    data-oj-input-id="ui-id-3|input"
+                                    data-oj-internal=""
+                                  >
+                                    <div
+                                      class="oj-label-group"
+                                    >
+                                      <label
+                                        class="oj-component-initnode"
+                                        data-oj-internal=""
+                                      >
+                                        <span>
+                                          Date Recorded
+                                        </span>
+                                      </label>
+                                    </div>
+                                  </oj-label>
+                                  <div
+                                    class="oj-text-field-readonly-div"
+                                  >
+                                    <div
+                                      aria-readonly="true"
+                                      class="oj-text-field-readonly"
+                                      role="textbox"
+                                      tabindex="0"
+                                    >
+                                      06/08/2022, 08:11 PM
+                                    </div>
+                                  </div>
+                                  <input
+                                    aria-haspopup="true"
+                                    class="oj-inputdatetime-input oj-text-field-input oj-component-initnode"
+                                    data-oj-internal=""
+                                    placeholder=""
+                                    readonly=""
+                                    role="combobox"
+                                    type="text"
+                                  />
+                                </div>
+                              </div>
+                              <div
+                                class="oj-user-assistance-inline-container oj-reflow"
+                              />
+                            </oj-input-date-time>
+                          </div>
+                          <div
+                            class="oj-formlayout-column-gutter"
+                            data-oj-formlayout-bonus-dom=""
+                            data-oj-internal=""
+                          />
+                          <div
+                            class="oj-flex-item"
+                            data-oj-formlayout-bonus-dom=""
+                            data-oj-internal=""
+                            style="flex-grow: 1; flex-shrink: 1; max-width: calc(((100% / 2) - ((var(--oj-form-layout-column-gutter) * (1) / 2))));"
+                          >
+                            <oj-combobox-one
+                              class="oj-combobox oj-component oj-enabled oj-read-only oj-form-control oj-text-field oj-text-field-label-inside oj-complete"
+                              labelled-by="oj-combobox-4-labelled-by"
+                            >
+                              <div
+                                class="oj-text-field-container oj-text-field-has-end-slot"
+                                role="presentation"
+                              >
+                                  
+                                <div
+                                  class="oj-combobox-choice oj-combobox-accessible-container"
+                                  role="presentation"
+                                  tabindex="-1"
+                                >
+                                     
+                                  <div
+                                    class="oj-text-field-middle"
+                                  >
+                                         
+                                    <oj-label
+                                      class="oj-combobox-label oj-label oj-component oj-read-only oj-complete"
+                                      data-oj-binding-provider="none"
+                                      data-oj-input-id="oj-combobox-4|input"
+                                      data-oj-internal=""
+                                    >
+                                      <div
+                                        class="oj-label-group"
+                                      >
+                                        <label
+                                          class="oj-component-initnode"
+                                          data-oj-internal=""
+                                        >
+                                          <span>
+                                            Status
+                                          </span>
+                                        </label>
+                                      </div>
+                                    </oj-label>
+                                    <div
+                                      class="oj-text-field-readonly-div"
+                                    >
+                                      <div
+                                        aria-readonly="true"
+                                        class="oj-text-field-readonly"
+                                        role="textbox"
+                                        tabindex="0"
+                                      >
+                                        Final
+                                      </div>
+                                    </div>
+                                    <input
+                                      aria-autocomplete="list"
+                                      aria-owns="oj-listbox-results-oj-combobox-4"
+                                      autocapitalize="off"
+                                      autocomplete="off"
+                                      autocorrect="off"
+                                      class="oj-combobox-input"
+                                      readonly="readonly"
+                                      spellcheck="false"
+                                      type="text"
+                                    />
+                                       
+                                  </div>
+                                     
+                                  <abbr
+                                    class="oj-combobox-clear-entry"
+                                    role="presentation"
+                                  />
+                                     
+                                  <span
+                                    class="oj-combobox-divider"
+                                    role="presentation"
+                                  />
+                                     
+                                  <span
+                                    class="oj-text-field-end"
+                                  >
+                                         
+                                    <a
+                                      class="oj-combobox-arrow oj-combobox-icon oj-component-icon oj-clickable-icon-nocontext oj-combobox-open-icon"
+                                      role="presentation"
+                                    />
+                                       
+                                  </span>
+                                    
+                                </div>
+                              </div>
+                              <div
+                                class="oj-listbox-drop"
+                                data-oj-containerid="oj-combobox-4"
+                                role="presentation"
+                                style="display: none;"
+                              >
+                                   
+                                <div
+                                  class="oj-listbox-loader-wrapper"
+                                />
+                                   
+                                <ul
+                                  class="oj-listbox-results"
+                                  data-oj-context=""
+                                  role="listbox"
+                                >
+                                     
+                                </ul>
+                              </div>
+                              <div
+                                aria-live="polite"
+                                class="oj-helper-hidden-accessible oj-listbox-liveregion"
+                              />
+                              <input
+                                aria-hidden="true"
+                                class="oj-component-initnode"
+                                data-oj-internal=""
+                                style="display: none;"
+                                tabindex="-1"
+                              />
+                              <div
+                                class="oj-user-assistance-inline-container oj-reflow"
+                              />
+                            </oj-combobox-one>
+                          </div>
+                        </div>
+                        <div
+                          data-oj-formlayout-workaround-dom=""
+                          style="display: table; visibility: hidden;"
+                        />
+                      </div>
+                    </oj-form-layout>
+                  </div>
+                </div>
+                <div
+                  class="oj-xl-4 oj-lg-6 oj-sm-6 oj-flex-item oj-sm-padding-2x-end oj-sm-padding-2x-bottom"
+                >
+                  <div
+                    class="oj-panel oj-flex oj-sm-justify-content-space-between"
+                  >
+                    <oj-form-layout
+                      class="oj-flex-item oj-sm-0 oj-form-layout oj-complete oj-form-layout-no-min-column-width oj-formlayout-max-cols-2"
+                    >
+                      <div
+                        class="oj-form oj-efficient oj-form-cols oj-formlayout-form-across"
+                        data-oj-context=""
+                        data-oj-formlayout-bonus-dom=""
+                        data-oj-internal=""
+                        style="column-count: 1; webkit-column-count: 1;"
+                      >
+                        <div
+                          class="oj-flex"
+                          data-oj-formlayout-bonus-dom=""
+                          data-oj-internal=""
+                        >
+                          <div
+                            class="oj-flex-item"
+                            data-oj-formlayout-bonus-dom=""
+                            data-oj-internal=""
+                            style="flex-grow: 1; flex-shrink: 1; max-width: calc(((100% / 2) - ((var(--oj-form-layout-column-gutter) * (1) / 2))));"
+                          >
+                            <oj-combobox-one
+                              class="oj-combobox oj-component oj-enabled oj-read-only oj-form-control oj-text-field oj-text-field-label-inside oj-complete"
+                              labelled-by="oj-combobox-5-labelled-by"
+                            >
+                              <div
+                                class="oj-text-field-container oj-text-field-has-end-slot"
+                                role="presentation"
+                              >
+                                  
+                                <div
+                                  class="oj-combobox-choice oj-combobox-accessible-container"
+                                  role="presentation"
+                                  tabindex="-1"
+                                >
+                                     
+                                  <div
+                                    class="oj-text-field-middle"
+                                  >
+                                         
+                                    <oj-label
+                                      class="oj-combobox-label oj-label oj-component oj-read-only oj-complete"
+                                      data-oj-binding-provider="none"
+                                      data-oj-input-id="oj-combobox-5|input"
+                                      data-oj-internal=""
+                                    >
+                                      <div
+                                        class="oj-label-group"
+                                      >
+                                        <label
+                                          class="oj-component-initnode"
+                                          data-oj-internal=""
+                                        >
+                                          <span>
+                                            Category
+                                          </span>
+                                        </label>
+                                      </div>
+                                    </oj-label>
+                                    <div
+                                      class="oj-text-field-readonly-div"
+                                    >
+                                      <div
+                                        aria-readonly="true"
+                                        class="oj-text-field-readonly"
+                                        role="textbox"
+                                        tabindex="0"
+                                      >
+                                        Vital Signs
+                                      </div>
+                                    </div>
+                                    <input
+                                      aria-autocomplete="list"
+                                      aria-owns="oj-listbox-results-oj-combobox-5"
+                                      autocapitalize="off"
+                                      autocomplete="off"
+                                      autocorrect="off"
+                                      class="oj-combobox-input"
+                                      readonly="readonly"
+                                      spellcheck="false"
+                                      type="text"
+                                    />
+                                       
+                                  </div>
+                                     
+                                  <abbr
+                                    class="oj-combobox-clear-entry"
+                                    role="presentation"
+                                  />
+                                     
+                                  <span
+                                    class="oj-combobox-divider"
+                                    role="presentation"
+                                  />
+                                     
+                                  <span
+                                    class="oj-text-field-end"
+                                  >
+                                         
+                                    <a
+                                      class="oj-combobox-arrow oj-combobox-icon oj-component-icon oj-clickable-icon-nocontext oj-combobox-open-icon"
+                                      role="presentation"
+                                    />
+                                       
+                                  </span>
+                                    
+                                </div>
+                              </div>
+                              <div
+                                class="oj-listbox-drop"
+                                data-oj-containerid="oj-combobox-5"
+                                role="presentation"
+                                style="display: none;"
+                              >
+                                   
+                                <div
+                                  class="oj-listbox-loader-wrapper"
+                                />
+                                   
+                                <ul
+                                  class="oj-listbox-results"
+                                  data-oj-context=""
+                                  role="listbox"
+                                >
+                                     
+                                </ul>
+                              </div>
+                              <div
+                                aria-live="polite"
+                                class="oj-helper-hidden-accessible oj-listbox-liveregion"
+                              />
+                              <input
+                                aria-hidden="true"
+                                class="oj-component-initnode"
+                                data-oj-internal=""
+                                style="display: none;"
+                                tabindex="-1"
+                              />
+                              <div
+                                class="oj-user-assistance-inline-container oj-reflow"
+                              />
+                            </oj-combobox-one>
+                          </div>
+                          <div
+                            class="oj-formlayout-column-gutter"
+                            data-oj-formlayout-bonus-dom=""
+                            data-oj-internal=""
+                          />
+                          <div
+                            class="oj-flex-item"
+                            data-oj-formlayout-bonus-dom=""
+                            data-oj-internal=""
+                            style="flex-grow: 1; flex-shrink: 1; max-width: calc(((100% / 2) - ((var(--oj-form-layout-column-gutter) * (1) / 2))));"
+                          >
+                            <oj-combobox-one
+                              class="oj-combobox oj-component oj-enabled oj-read-only oj-form-control oj-text-field oj-text-field-label-inside oj-complete"
+                              labelled-by="oj-combobox-6-labelled-by"
+                            >
+                              <div
+                                class="oj-text-field-container oj-text-field-has-end-slot"
+                                role="presentation"
+                              >
+                                  
+                                <div
+                                  class="oj-combobox-choice oj-combobox-accessible-container"
+                                  role="presentation"
+                                  tabindex="-1"
+                                >
+                                     
+                                  <div
+                                    class="oj-text-field-middle"
+                                  >
+                                         
+                                    <oj-label
+                                      class="oj-combobox-label oj-label oj-component oj-read-only oj-complete"
+                                      data-oj-binding-provider="none"
+                                      data-oj-input-id="oj-combobox-6|input"
+                                      data-oj-internal=""
+                                    >
+                                      <div
+                                        class="oj-label-group"
+                                      >
+                                        <label
+                                          class="oj-component-initnode"
+                                          data-oj-internal=""
+                                        >
+                                          <span>
+                                            Parameter Type
+                                          </span>
+                                        </label>
+                                      </div>
+                                    </oj-label>
+                                    <div
+                                      class="oj-text-field-readonly-div"
+                                    >
+                                      <div
+                                        aria-readonly="true"
+                                        class="oj-text-field-readonly"
+                                        role="textbox"
+                                        tabindex="0"
+                                      >
+                                        Body Height
+                                      </div>
+                                    </div>
+                                    <input
+                                      aria-autocomplete="list"
+                                      aria-owns="oj-listbox-results-oj-combobox-6"
+                                      autocapitalize="off"
+                                      autocomplete="off"
+                                      autocorrect="off"
+                                      class="oj-combobox-input"
+                                      readonly="readonly"
+                                      spellcheck="false"
+                                      type="text"
+                                    />
+                                       
+                                  </div>
+                                     
+                                  <abbr
+                                    class="oj-combobox-clear-entry"
+                                    role="presentation"
+                                  />
+                                     
+                                  <span
+                                    class="oj-combobox-divider"
+                                    role="presentation"
+                                  />
+                                     
+                                  <span
+                                    class="oj-text-field-end"
+                                  >
+                                         
+                                    <a
+                                      class="oj-combobox-arrow oj-combobox-icon oj-component-icon oj-clickable-icon-nocontext oj-combobox-open-icon"
+                                      role="presentation"
+                                    />
+                                       
+                                  </span>
+                                    
+                                </div>
+                              </div>
+                              <div
+                                class="oj-listbox-drop"
+                                data-oj-containerid="oj-combobox-6"
+                                role="presentation"
+                                style="display: none;"
+                              >
+                                   
+                                <div
+                                  class="oj-listbox-loader-wrapper"
+                                />
+                                   
+                                <ul
+                                  class="oj-listbox-results"
+                                  data-oj-context=""
+                                  role="listbox"
+                                >
+                                     
+                                </ul>
+                              </div>
+                              <div
+                                aria-live="polite"
+                                class="oj-helper-hidden-accessible oj-listbox-liveregion"
+                              />
+                              <input
+                                aria-hidden="true"
+                                class="oj-component-initnode"
+                                data-oj-internal=""
+                                style="display: none;"
+                                tabindex="-1"
+                              />
+                              <div
+                                class="oj-user-assistance-inline-container oj-reflow"
+                              />
+                            </oj-combobox-one>
+                          </div>
+                        </div>
+                        <div
+                          class="oj-flex"
+                          data-oj-formlayout-bonus-dom=""
+                          data-oj-internal=""
+                        >
+                          <div
+                            class="oj-flex-item"
+                            data-oj-formlayout-bonus-dom=""
+                            data-oj-internal=""
+                            style="flex-grow: 1; flex-shrink: 1; max-width: calc(((100% / 2) - ((var(--oj-form-layout-column-gutter) * (1) / 2))));"
+                          >
+                            <oj-combobox-one
+                              class="oj-combobox oj-component oj-enabled oj-read-only oj-form-control oj-text-field oj-text-field-label-inside oj-complete"
+                              labelled-by="oj-combobox-7-labelled-by"
+                            >
+                              <div
+                                class="oj-text-field-container oj-text-field-has-end-slot"
+                                role="presentation"
+                              >
+                                  
+                                <div
+                                  class="oj-combobox-choice oj-combobox-accessible-container"
+                                  role="presentation"
+                                  tabindex="-1"
+                                >
+                                     
+                                  <div
+                                    class="oj-text-field-middle"
+                                  >
+                                         
+                                    <oj-label
+                                      class="oj-combobox-label oj-label oj-component oj-read-only oj-complete"
+                                      data-oj-binding-provider="none"
+                                      data-oj-input-id="oj-combobox-7|input"
+                                      data-oj-internal=""
+                                    >
+                                      <div
+                                        class="oj-label-group"
+                                      >
+                                        <label
+                                          class="oj-component-initnode"
+                                          data-oj-internal=""
+                                        >
+                                          <span>
+                                            Unit
+                                          </span>
+                                        </label>
+                                      </div>
+                                    </oj-label>
+                                    <div
+                                      class="oj-text-field-readonly-div"
+                                    >
+                                      <div
+                                        aria-readonly="true"
+                                        class="oj-text-field-readonly"
+                                        role="textbox"
+                                        tabindex="0"
+                                      >
+                                        Meter
+                                      </div>
+                                    </div>
+                                    <input
+                                      aria-autocomplete="list"
+                                      aria-owns="oj-listbox-results-oj-combobox-7"
+                                      autocapitalize="off"
+                                      autocomplete="off"
+                                      autocorrect="off"
+                                      class="oj-combobox-input"
+                                      readonly="readonly"
+                                      spellcheck="false"
+                                      type="text"
+                                    />
+                                       
+                                  </div>
+                                     
+                                  <abbr
+                                    class="oj-combobox-clear-entry"
+                                    role="presentation"
+                                  />
+                                     
+                                  <span
+                                    class="oj-combobox-divider"
+                                    role="presentation"
+                                  />
+                                     
+                                  <span
+                                    class="oj-text-field-end"
+                                  >
+                                         
+                                    <a
+                                      class="oj-combobox-arrow oj-combobox-icon oj-component-icon oj-clickable-icon-nocontext oj-combobox-open-icon"
+                                      role="presentation"
+                                    />
+                                       
+                                  </span>
+                                    
+                                </div>
+                              </div>
+                              <div
+                                class="oj-listbox-drop"
+                                data-oj-containerid="oj-combobox-7"
+                                role="presentation"
+                                style="display: none;"
+                              >
+                                   
+                                <div
+                                  class="oj-listbox-loader-wrapper"
+                                />
+                                   
+                                <ul
+                                  class="oj-listbox-results"
+                                  data-oj-context=""
+                                  role="listbox"
+                                >
+                                     
+                                </ul>
+                              </div>
+                              <div
+                                aria-live="polite"
+                                class="oj-helper-hidden-accessible oj-listbox-liveregion"
+                              />
+                              <input
+                                aria-hidden="true"
+                                class="oj-component-initnode"
+                                data-oj-internal=""
+                                style="display: none;"
+                                tabindex="-1"
+                              />
+                              <div
+                                class="oj-user-assistance-inline-container oj-reflow"
+                              />
+                            </oj-combobox-one>
+                          </div>
+                          <div
+                            class="oj-formlayout-column-gutter"
+                            data-oj-formlayout-bonus-dom=""
+                            data-oj-internal=""
+                          />
+                          <div
+                            class="oj-flex-item"
+                            data-oj-formlayout-bonus-dom=""
+                            data-oj-internal=""
+                            style="flex-grow: 1; flex-shrink: 1; max-width: calc(((100% / 2) - ((var(--oj-form-layout-column-gutter) * (1) / 2))));"
+                          >
+                            <oj-c-input-number
+                              class="oj-complete"
+                            >
+                              <div
+                                class="_1s3skvi d1iwqt _3navvy"
+                                labelstartwidth="33%"
+                                role="presentation"
+                              >
+                                <div
+                                  class="_1kz2e2a _13qk218"
+                                >
+                                  <label
+                                    class="_1iep09b _1auu5wh _111uzw1"
+                                  >
+                                    Value
+                                  </label>
+                                  <div
+                                    aria-readonly="true"
+                                    class="oj-c-hide-scrollbar vblukg _1klg2yk"
+                                    role="textbox"
+                                    tabindex="0"
+                                  >
+                                    1.8
+                                  </div>
+                                </div>
+                              </div>
+                            </oj-c-input-number>
+                          </div>
+                        </div>
+                        <div
+                          class="oj-flex"
+                          data-oj-formlayout-bonus-dom=""
+                          data-oj-internal=""
+                        >
+                          <div
+                            class="oj-flex-item"
+                            data-oj-formlayout-bonus-dom=""
+                            data-oj-internal=""
+                            style="flex-grow: 1; flex-shrink: 1; max-width: calc(((100% / 2) - ((var(--oj-form-layout-column-gutter) * (1) / 2))));"
+                          >
+                            <oj-input-date-time
+                              class="oj-inputdatetime-date-time oj-component oj-inputdatetime oj-form-control oj-text-field oj-text-field-label-inside oj-read-only oj-complete"
+                              labelled-by="ui-id-5-labelled-by"
+                            >
+                              <div
+                                class=" oj-inputdatetime-input-container oj-text-field-container"
+                                role="presentation"
+                                tabindex="-1"
+                              >
+                                <div
+                                  class="oj-text-field-middle"
+                                >
+                                  <oj-label
+                                    class="oj-inputdatetime-label oj-label oj-component oj-read-only oj-complete"
+                                    data-oj-binding-provider="none"
+                                    data-oj-input-id="ui-id-5|input"
+                                    data-oj-internal=""
+                                  >
+                                    <div
+                                      class="oj-label-group"
+                                    >
+                                      <label
+                                        class="oj-component-initnode"
+                                        data-oj-internal=""
+                                      >
+                                        <span>
+                                          Date Recorded
+                                        </span>
+                                      </label>
+                                    </div>
+                                  </oj-label>
+                                  <div
+                                    class="oj-text-field-readonly-div"
+                                  >
+                                    <div
+                                      aria-readonly="true"
+                                      class="oj-text-field-readonly"
+                                      role="textbox"
+                                      tabindex="0"
+                                    >
+                                      06/08/2022, 08:11 PM
+                                    </div>
+                                  </div>
+                                  <input
+                                    aria-haspopup="true"
+                                    class="oj-inputdatetime-input oj-text-field-input oj-component-initnode"
+                                    data-oj-internal=""
+                                    placeholder=""
+                                    readonly=""
+                                    role="combobox"
+                                    type="text"
+                                  />
+                                </div>
+                              </div>
+                              <div
+                                class="oj-user-assistance-inline-container oj-reflow"
+                              />
+                            </oj-input-date-time>
+                          </div>
+                          <div
+                            class="oj-formlayout-column-gutter"
+                            data-oj-formlayout-bonus-dom=""
+                            data-oj-internal=""
+                          />
+                          <div
+                            class="oj-flex-item"
+                            data-oj-formlayout-bonus-dom=""
+                            data-oj-internal=""
+                            style="flex-grow: 1; flex-shrink: 1; max-width: calc(((100% / 2) - ((var(--oj-form-layout-column-gutter) * (1) / 2))));"
+                          >
+                            <oj-combobox-one
+                              class="oj-combobox oj-component oj-enabled oj-read-only oj-form-control oj-text-field oj-text-field-label-inside oj-complete"
+                              labelled-by="oj-combobox-8-labelled-by"
+                            >
+                              <div
+                                class="oj-text-field-container oj-text-field-has-end-slot"
+                                role="presentation"
+                              >
+                                  
+                                <div
+                                  class="oj-combobox-choice oj-combobox-accessible-container"
+                                  role="presentation"
+                                  tabindex="-1"
+                                >
+                                     
+                                  <div
+                                    class="oj-text-field-middle"
+                                  >
+                                         
+                                    <oj-label
+                                      class="oj-combobox-label oj-label oj-component oj-read-only oj-complete"
+                                      data-oj-binding-provider="none"
+                                      data-oj-input-id="oj-combobox-8|input"
+                                      data-oj-internal=""
+                                    >
+                                      <div
+                                        class="oj-label-group"
+                                      >
+                                        <label
+                                          class="oj-component-initnode"
+                                          data-oj-internal=""
+                                        >
+                                          <span>
+                                            Status
+                                          </span>
+                                        </label>
+                                      </div>
+                                    </oj-label>
+                                    <div
+                                      class="oj-text-field-readonly-div"
+                                    >
+                                      <div
+                                        aria-readonly="true"
+                                        class="oj-text-field-readonly"
+                                        role="textbox"
+                                        tabindex="0"
+                                      >
+                                        Final
+                                      </div>
+                                    </div>
+                                    <input
+                                      aria-autocomplete="list"
+                                      aria-owns="oj-listbox-results-oj-combobox-8"
+                                      autocapitalize="off"
+                                      autocomplete="off"
+                                      autocorrect="off"
+                                      class="oj-combobox-input"
+                                      readonly="readonly"
+                                      spellcheck="false"
+                                      type="text"
+                                    />
+                                       
+                                  </div>
+                                     
+                                  <abbr
+                                    class="oj-combobox-clear-entry"
+                                    role="presentation"
+                                  />
+                                     
+                                  <span
+                                    class="oj-combobox-divider"
+                                    role="presentation"
+                                  />
+                                     
+                                  <span
+                                    class="oj-text-field-end"
+                                  >
+                                         
+                                    <a
+                                      class="oj-combobox-arrow oj-combobox-icon oj-component-icon oj-clickable-icon-nocontext oj-combobox-open-icon"
+                                      role="presentation"
+                                    />
+                                       
+                                  </span>
+                                    
+                                </div>
+                              </div>
+                              <div
+                                class="oj-listbox-drop"
+                                data-oj-containerid="oj-combobox-8"
+                                role="presentation"
+                                style="display: none;"
+                              >
+                                   
+                                <div
+                                  class="oj-listbox-loader-wrapper"
+                                />
+                                   
+                                <ul
+                                  class="oj-listbox-results"
+                                  data-oj-context=""
+                                  role="listbox"
+                                >
+                                     
+                                </ul>
+                              </div>
+                              <div
+                                aria-live="polite"
+                                class="oj-helper-hidden-accessible oj-listbox-liveregion"
+                              />
+                              <input
+                                aria-hidden="true"
+                                class="oj-component-initnode"
+                                data-oj-internal=""
+                                style="display: none;"
+                                tabindex="-1"
+                              />
+                              <div
+                                class="oj-user-assistance-inline-container oj-reflow"
+                              />
+                            </oj-combobox-one>
+                          </div>
+                        </div>
+                        <div
+                          data-oj-formlayout-workaround-dom=""
+                          style="display: table; visibility: hidden;"
+                        />
+                      </div>
+                    </oj-form-layout>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="oj-sm-margin-2x-vertical"
+            >
+              <h3
+                class="oj-typography-subheading-sm"
+              >
+                Conditions
+              </h3>
+              <div
+                class="oj-flex oj-sm-flex-direction-row"
+              >
+                <div
+                  class="oj-xl-4 oj-lg-6 oj-sm-6 oj-flex-item oj-sm-padding-2x-end oj-sm-padding-2x-bottom"
+                >
+                  <div
+                    class="oj-panel oj-flex oj-sm-justify-content-space-between"
+                  >
+                    <oj-form-layout
+                      class="oj-flex-item oj-sm-0 oj-sm-padding-2x-end oj-form-layout oj-complete oj-form-layout-no-min-column-width oj-formlayout-max-cols-2"
+                    >
+                      <div
+                        class="oj-form oj-efficient oj-form-cols oj-formlayout-form-across"
+                        data-oj-context=""
+                        data-oj-formlayout-bonus-dom=""
+                        data-oj-internal=""
+                        style="column-count: 1; webkit-column-count: 1;"
+                      >
+                        <div
+                          class="oj-flex"
+                          data-oj-formlayout-bonus-dom=""
+                          data-oj-internal=""
+                        >
+                          <div
+                            class="oj-flex-item"
+                            data-oj-formlayout-bonus-dom=""
+                            data-oj-internal=""
+                            style="flex-grow: 1; flex-shrink: 1; max-width: calc(((100% / 2) - ((var(--oj-form-layout-column-gutter) * (1) / 2))));"
+                          >
+                            <oj-combobox-one
+                              class="oj-combobox oj-component oj-enabled oj-read-only oj-required oj-form-control oj-text-field oj-text-field-label-inside oj-complete"
+                              labelled-by="oj-combobox-9-labelled-by"
+                            >
+                              <div
+                                class="oj-text-field-container oj-text-field-has-end-slot"
+                                role="presentation"
+                              >
+                                  
+                                <div
+                                  class="oj-combobox-choice oj-combobox-accessible-container"
+                                  role="presentation"
+                                  tabindex="-1"
+                                >
+                                     
+                                  <div
+                                    class="oj-text-field-middle"
+                                  >
+                                         
+                                    <oj-label
+                                      class="oj-combobox-label oj-label oj-component oj-read-only oj-complete"
+                                      data-oj-binding-provider="none"
+                                      data-oj-input-id="oj-combobox-9|input"
+                                      data-oj-internal=""
+                                    >
+                                      <div
+                                        class="oj-label-group"
+                                      >
+                                        <label
+                                          class="oj-component-initnode"
+                                          data-oj-internal=""
+                                        >
+                                          <span>
+                                            Category
+                                          </span>
+                                        </label>
+                                      </div>
+                                    </oj-label>
+                                    <div
+                                      class="oj-text-field-readonly-div"
+                                    >
+                                      <div
+                                        aria-readonly="true"
+                                        class="oj-text-field-readonly"
+                                        role="textbox"
+                                        tabindex="0"
+                                      >
+                                        Encounter Diagnosis
+                                      </div>
+                                    </div>
+                                    <input
+                                      aria-autocomplete="list"
+                                      aria-owns="oj-listbox-results-oj-combobox-9"
+                                      aria-required="true"
+                                      autocapitalize="off"
+                                      autocomplete="off"
+                                      autocorrect="off"
+                                      class="oj-combobox-input"
+                                      readonly="readonly"
+                                      spellcheck="false"
+                                      type="text"
+                                    />
+                                       
+                                  </div>
+                                     
+                                  <abbr
+                                    class="oj-combobox-clear-entry"
+                                    role="presentation"
+                                  />
+                                     
+                                  <span
+                                    class="oj-combobox-divider"
+                                    role="presentation"
+                                  />
+                                     
+                                  <span
+                                    class="oj-text-field-end"
+                                  >
+                                         
+                                    <a
+                                      class="oj-combobox-arrow oj-combobox-icon oj-component-icon oj-clickable-icon-nocontext oj-combobox-open-icon"
+                                      role="presentation"
+                                    />
+                                       
+                                  </span>
+                                    
+                                </div>
+                              </div>
+                              <div
+                                class="oj-listbox-drop"
+                                data-oj-containerid="oj-combobox-9"
+                                role="presentation"
+                                style="display: none;"
+                              >
+                                   
+                                <div
+                                  class="oj-listbox-loader-wrapper"
+                                />
+                                   
+                                <ul
+                                  class="oj-listbox-results"
+                                  data-oj-context=""
+                                  role="listbox"
+                                >
+                                     
+                                </ul>
+                              </div>
+                              <div
+                                aria-live="polite"
+                                class="oj-helper-hidden-accessible oj-listbox-liveregion"
+                              />
+                              <input
+                                aria-hidden="true"
+                                class="oj-component-initnode"
+                                data-oj-internal=""
+                                style="display: none;"
+                                tabindex="-1"
+                              />
+                              <div
+                                class="oj-user-assistance-inline-container oj-reflow"
+                              />
+                            </oj-combobox-one>
+                          </div>
+                          <div
+                            class="oj-formlayout-column-gutter"
+                            data-oj-formlayout-bonus-dom=""
+                            data-oj-internal=""
+                          />
+                          <div
+                            class="oj-flex-item"
+                            data-oj-formlayout-bonus-dom=""
+                            data-oj-internal=""
+                            style="flex-grow: 1; flex-shrink: 1; max-width: calc(((100% / 2) - ((var(--oj-form-layout-column-gutter) * (1) / 2))));"
+                          >
+                            <oj-select-single
+                              class="oj-required oj-text-field oj-complete oj-searchselect oj-form-control oj-component oj-read-only oj-text-field-label-inside"
+                              labelled-by="oj-selectsingle-3-labelled-by"
+                            >
+                              <div
+                                aria-live="polite"
+                                class="oj-helper-hidden-accessible oj-listbox-liveregion"
+                              />
+                              <div
+                                class="oj-text-field-container oj-searchselect-main-field oj-text-field-has-end-slot"
+                                role="presentation"
+                              >
+                                <div
+                                  class="oj-text-field-middle"
+                                >
+                                  <oj-label
+                                    class="oj-searchselect-label oj-label oj-component oj-complete oj-read-only oj-inputtext-label"
+                                    data-oj-binding-provider="none"
+                                    data-oj-input-id="oj-searchselect-filter-oj-selectsingle-3|input"
+                                    data-oj-internal=""
+                                  >
+                                    <div
+                                      class="oj-label-group"
+                                    >
+                                      <label
+                                        class="oj-component-initnode"
+                                        data-oj-internal=""
+                                      >
+                                        <span>
+                                          Code
+                                        </span>
+                                      </label>
+                                    </div>
+                                  </oj-label>
+                                  <div
+                                    class="oj-text-field-readonly-div"
+                                  >
+                                    <div
+                                      aria-readonly="true"
+                                      class="oj-text-field-readonly"
+                                      role="textbox"
+                                      tabindex="0"
+                                    />
+                                  </div>
+                                  <input
+                                    aria-autocomplete="list"
+                                    aria-required="true"
+                                    autocapitalize="off"
+                                    autocomplete="off"
+                                    autocorrect="off"
+                                    class="oj-searchselect-input oj-text-field-input"
+                                    placeholder=""
+                                    readonly="true"
+                                    spellcheck="false"
+                                    tabindex="0"
+                                    type="text"
+                                  />
+                                </div>
+                                <span
+                                  class="oj-text-field-end"
+                                >
+                                  <a
+                                    class="oj-searchselect-arrow oj-searchselect-open-icon oj-searchselect-icon oj-component-icon oj-clickable-icon-nocontext"
+                                    role="presentation"
+                                  />
+                                </span>
+                              </div>
+                              <oj-input-text
+                                aria-autocomplete="list"
+                                autocomplete="off"
+                                class="oj-searchselect-filter oj-inputtext oj-form-control oj-component oj-text-field oj-has-no-value oj-complete"
+                                clear-icon="never"
+                                data-oj-binding-provider="none"
+                                data-oj-context=""
+                                data-oj-internal=""
+                                display-options.messages="none"
+                                labelled-by="oj-selectsingle-3-labelled-by"
+                                style="visibility: hidden;"
+                                user-assistance-density="compact"
+                                virtual-keyboard="search"
+                              >
+                                <div
+                                  class="oj-text-field-container oj-text-field-has-end-slot"
+                                  role="presentation"
+                                >
+                                  <div
+                                    class="oj-text-field-middle"
+                                  >
+                                    <input
+                                      aria-label=""
+                                      autocomplete="off"
+                                      class="oj-inputtext-input oj-text-field-input oj-component-initnode"
+                                      data-oj-internal=""
+                                      placeholder=""
+                                      type="text"
+                                    />
+                                  </div>
+                                  <span
+                                    class="oj-text-field-end"
+                                  >
+                                    <a
+                                      class="oj-searchselect-arrow oj-searchselect-open-icon oj-searchselect-icon oj-component-icon oj-clickable-icon-nocontext"
+                                      slot="end"
+                                    />
+                                  </span>
+                                </div>
+                              </oj-input-text>
+                              <input
+                                aria-hidden="true"
+                                class="oj-component-initnode"
+                                data-oj-internal=""
+                                disabled=""
+                                style="display: none;"
+                                type="text"
+                              />
+                              <div
+                                class="oj-user-assistance-inline-container oj-reflow"
+                              />
+                            </oj-select-single>
+                          </div>
+                        </div>
+                        <div
+                          class="oj-flex"
+                          data-oj-formlayout-bonus-dom=""
+                          data-oj-internal=""
+                        >
+                          <div
+                            class="oj-flex-item"
+                            data-oj-formlayout-bonus-dom=""
+                            data-oj-internal=""
+                            style="flex-grow: 1; flex-shrink: 1; max-width: calc(((100% / 2) - ((var(--oj-form-layout-column-gutter) * (1) / 2))));"
+                          >
+                            <oj-combobox-one
+                              class="oj-combobox oj-component oj-enabled oj-read-only oj-required oj-form-control oj-text-field oj-text-field-label-inside oj-complete"
+                              labelled-by="oj-combobox-10-labelled-by"
+                            >
+                              <div
+                                class="oj-text-field-container oj-text-field-has-end-slot"
+                                role="presentation"
+                              >
+                                  
+                                <div
+                                  class="oj-combobox-choice oj-combobox-accessible-container"
+                                  role="presentation"
+                                  tabindex="-1"
+                                >
+                                     
+                                  <div
+                                    class="oj-text-field-middle"
+                                  >
+                                         
+                                    <oj-label
+                                      class="oj-combobox-label oj-label oj-component oj-read-only oj-complete"
+                                      data-oj-binding-provider="none"
+                                      data-oj-input-id="oj-combobox-10|input"
+                                      data-oj-internal=""
+                                    >
+                                      <div
+                                        class="oj-label-group"
+                                      >
+                                        <label
+                                          class="oj-component-initnode"
+                                          data-oj-internal=""
+                                        >
+                                          <span>
+                                            Clinical Status
+                                          </span>
+                                        </label>
+                                      </div>
+                                    </oj-label>
+                                    <div
+                                      class="oj-text-field-readonly-div"
+                                    >
+                                      <div
+                                        aria-readonly="true"
+                                        class="oj-text-field-readonly"
+                                        role="textbox"
+                                        tabindex="0"
+                                      >
+                                        Active
+                                      </div>
+                                    </div>
+                                    <input
+                                      aria-autocomplete="list"
+                                      aria-owns="oj-listbox-results-oj-combobox-10"
+                                      aria-required="true"
+                                      autocapitalize="off"
+                                      autocomplete="off"
+                                      autocorrect="off"
+                                      class="oj-combobox-input"
+                                      readonly="readonly"
+                                      spellcheck="false"
+                                      type="text"
+                                    />
+                                       
+                                  </div>
+                                     
+                                  <abbr
+                                    class="oj-combobox-clear-entry"
+                                    role="presentation"
+                                  />
+                                     
+                                  <span
+                                    class="oj-combobox-divider"
+                                    role="presentation"
+                                  />
+                                     
+                                  <span
+                                    class="oj-text-field-end"
+                                  >
+                                         
+                                    <a
+                                      class="oj-combobox-arrow oj-combobox-icon oj-component-icon oj-clickable-icon-nocontext oj-combobox-open-icon"
+                                      role="presentation"
+                                    />
+                                       
+                                  </span>
+                                    
+                                </div>
+                              </div>
+                              <div
+                                class="oj-listbox-drop"
+                                data-oj-containerid="oj-combobox-10"
+                                role="presentation"
+                                style="display: none;"
+                              >
+                                   
+                                <div
+                                  class="oj-listbox-loader-wrapper"
+                                />
+                                   
+                                <ul
+                                  class="oj-listbox-results"
+                                  data-oj-context=""
+                                  role="listbox"
+                                >
+                                     
+                                </ul>
+                              </div>
+                              <div
+                                aria-live="polite"
+                                class="oj-helper-hidden-accessible oj-listbox-liveregion"
+                              />
+                              <input
+                                aria-hidden="true"
+                                class="oj-component-initnode"
+                                data-oj-internal=""
+                                style="display: none;"
+                                tabindex="-1"
+                              />
+                              <div
+                                class="oj-user-assistance-inline-container oj-reflow"
+                              />
+                            </oj-combobox-one>
+                          </div>
+                          <div
+                            class="oj-formlayout-column-gutter"
+                            data-oj-formlayout-bonus-dom=""
+                            data-oj-internal=""
+                          />
+                          <div
+                            class="oj-flex-item"
+                            data-oj-formlayout-bonus-dom=""
+                            data-oj-internal=""
+                            style="flex-grow: 1; flex-shrink: 1; max-width: calc(((100% / 2) - ((var(--oj-form-layout-column-gutter) * (1) / 2))));"
+                          >
+                            <oj-combobox-one
+                              class="oj-combobox oj-component oj-enabled oj-read-only oj-required oj-form-control oj-text-field oj-text-field-label-inside oj-complete"
+                              labelled-by="oj-combobox-11-labelled-by"
+                            >
+                              <div
+                                class="oj-text-field-container oj-text-field-has-end-slot"
+                                role="presentation"
+                              >
+                                  
+                                <div
+                                  class="oj-combobox-choice oj-combobox-accessible-container"
+                                  role="presentation"
+                                  tabindex="-1"
+                                >
+                                     
+                                  <div
+                                    class="oj-text-field-middle"
+                                  >
+                                         
+                                    <oj-label
+                                      class="oj-combobox-label oj-label oj-component oj-read-only oj-complete"
+                                      data-oj-binding-provider="none"
+                                      data-oj-input-id="oj-combobox-11|input"
+                                      data-oj-internal=""
+                                    >
+                                      <div
+                                        class="oj-label-group"
+                                      >
+                                        <label
+                                          class="oj-component-initnode"
+                                          data-oj-internal=""
+                                        >
+                                          <span>
+                                            Verification Status
+                                          </span>
+                                        </label>
+                                      </div>
+                                    </oj-label>
+                                    <div
+                                      class="oj-text-field-readonly-div"
+                                    >
+                                      <div
+                                        aria-readonly="true"
+                                        class="oj-text-field-readonly"
+                                        role="textbox"
+                                        tabindex="0"
+                                      >
+                                        Confirmed
+                                      </div>
+                                    </div>
+                                    <input
+                                      aria-autocomplete="list"
+                                      aria-owns="oj-listbox-results-oj-combobox-11"
+                                      aria-required="true"
+                                      autocapitalize="off"
+                                      autocomplete="off"
+                                      autocorrect="off"
+                                      class="oj-combobox-input"
+                                      readonly="readonly"
+                                      spellcheck="false"
+                                      type="text"
+                                    />
+                                       
+                                  </div>
+                                     
+                                  <abbr
+                                    class="oj-combobox-clear-entry"
+                                    role="presentation"
+                                  />
+                                     
+                                  <span
+                                    class="oj-combobox-divider"
+                                    role="presentation"
+                                  />
+                                     
+                                  <span
+                                    class="oj-text-field-end"
+                                  >
+                                         
+                                    <a
+                                      class="oj-combobox-arrow oj-combobox-icon oj-component-icon oj-clickable-icon-nocontext oj-combobox-open-icon"
+                                      role="presentation"
+                                    />
+                                       
+                                  </span>
+                                    
+                                </div>
+                              </div>
+                              <div
+                                class="oj-listbox-drop"
+                                data-oj-containerid="oj-combobox-11"
+                                role="presentation"
+                                style="display: none;"
+                              >
+                                   
+                                <div
+                                  class="oj-listbox-loader-wrapper"
+                                />
+                                   
+                                <ul
+                                  class="oj-listbox-results"
+                                  data-oj-context=""
+                                  role="listbox"
+                                >
+                                     
+                                </ul>
+                              </div>
+                              <div
+                                aria-live="polite"
+                                class="oj-helper-hidden-accessible oj-listbox-liveregion"
+                              />
+                              <input
+                                aria-hidden="true"
+                                class="oj-component-initnode"
+                                data-oj-internal=""
+                                style="display: none;"
+                                tabindex="-1"
+                              />
+                              <div
+                                class="oj-user-assistance-inline-container oj-reflow"
+                              />
+                            </oj-combobox-one>
+                          </div>
+                        </div>
+                        <div
+                          class="oj-flex"
+                          data-oj-formlayout-bonus-dom=""
+                          data-oj-internal=""
+                        >
+                          <div
+                            class="oj-flex-item"
+                            data-oj-formlayout-bonus-dom=""
+                            data-oj-internal=""
+                            style="flex-grow: 1; flex-shrink: 1; max-width: calc(((100% / 2) - ((var(--oj-form-layout-column-gutter) * (1) / 2))));"
+                          >
+                            <oj-input-date-time
+                              class="oj-inputdatetime-date-time oj-component oj-inputdatetime oj-form-control oj-text-field oj-text-field-label-inside oj-required oj-read-only oj-complete"
+                              labelled-by="ui-id-8-labelled-by"
+                            >
+                              <div
+                                class=" oj-inputdatetime-input-container oj-text-field-container"
+                                role="presentation"
+                                tabindex="-1"
+                              >
+                                <div
+                                  class="oj-text-field-middle"
+                                >
+                                  <oj-label
+                                    class="oj-inputdatetime-label oj-label oj-component oj-read-only oj-complete"
+                                    data-oj-binding-provider="none"
+                                    data-oj-input-id="ui-id-8|input"
+                                    data-oj-internal=""
+                                  >
+                                    <div
+                                      class="oj-label-group"
+                                    >
+                                      <label
+                                        class="oj-component-initnode"
+                                        data-oj-internal=""
+                                      >
+                                        <span>
+                                          Date Recorded
+                                        </span>
+                                      </label>
+                                    </div>
+                                  </oj-label>
+                                  <div
+                                    class="oj-text-field-readonly-div"
+                                  >
+                                    <div
+                                      aria-readonly="true"
+                                      class="oj-text-field-readonly"
+                                      role="textbox"
+                                      tabindex="0"
+                                    >
+                                      06/08/2022, 08:11 PM
+                                    </div>
+                                  </div>
+                                  <input
+                                    aria-haspopup="true"
+                                    aria-required="true"
+                                    class="oj-inputdatetime-input oj-text-field-input oj-component-initnode"
+                                    data-oj-internal=""
+                                    placeholder=""
+                                    readonly=""
+                                    role="combobox"
+                                    type="text"
+                                  />
+                                </div>
+                              </div>
+                              <div
+                                class="oj-user-assistance-inline-container oj-reflow"
+                              />
+                            </oj-input-date-time>
+                          </div>
+                          <div
+                            class="oj-formlayout-column-gutter"
+                            data-oj-formlayout-bonus-dom=""
+                            data-oj-internal=""
+                          />
+                          <div
+                            class="oj-flex-item"
+                            data-oj-formlayout-bonus-dom=""
+                            data-oj-internal=""
+                            style="flex-grow: 0; flex-shrink: 1; max-width: calc(((100% / 2) - ((var(--oj-form-layout-column-gutter) * (1) / 2))));"
+                          />
+                        </div>
+                        <div
+                          data-oj-formlayout-workaround-dom=""
+                          style="display: table; visibility: hidden;"
+                        />
+                      </div>
+                    </oj-form-layout>
+                  </div>
+                </div>
+                <div
+                  class="oj-xl-4 oj-lg-6 oj-sm-6 oj-flex-item oj-sm-padding-2x-end oj-sm-padding-2x-bottom"
+                >
+                  <div
+                    class="oj-panel oj-flex oj-sm-justify-content-space-between"
+                  >
+                    <oj-form-layout
+                      class="oj-flex-item oj-sm-0 oj-sm-padding-2x-end oj-form-layout oj-complete oj-form-layout-no-min-column-width oj-formlayout-max-cols-2"
+                    >
+                      <div
+                        class="oj-form oj-efficient oj-form-cols oj-formlayout-form-across"
+                        data-oj-context=""
+                        data-oj-formlayout-bonus-dom=""
+                        data-oj-internal=""
+                        style="column-count: 1; webkit-column-count: 1;"
+                      >
+                        <div
+                          class="oj-flex"
+                          data-oj-formlayout-bonus-dom=""
+                          data-oj-internal=""
+                        >
+                          <div
+                            class="oj-flex-item"
+                            data-oj-formlayout-bonus-dom=""
+                            data-oj-internal=""
+                            style="flex-grow: 1; flex-shrink: 1; max-width: calc(((100% / 2) - ((var(--oj-form-layout-column-gutter) * (1) / 2))));"
+                          >
+                            <oj-combobox-one
+                              class="oj-combobox oj-component oj-enabled oj-read-only oj-required oj-form-control oj-text-field oj-text-field-label-inside oj-complete"
+                              labelled-by="oj-combobox-12-labelled-by"
+                            >
+                              <div
+                                class="oj-text-field-container oj-text-field-has-end-slot"
+                                role="presentation"
+                              >
+                                  
+                                <div
+                                  class="oj-combobox-choice oj-combobox-accessible-container"
+                                  role="presentation"
+                                  tabindex="-1"
+                                >
+                                     
+                                  <div
+                                    class="oj-text-field-middle"
+                                  >
+                                         
+                                    <oj-label
+                                      class="oj-combobox-label oj-label oj-component oj-read-only oj-complete"
+                                      data-oj-binding-provider="none"
+                                      data-oj-input-id="oj-combobox-12|input"
+                                      data-oj-internal=""
+                                    >
+                                      <div
+                                        class="oj-label-group"
+                                      >
+                                        <label
+                                          class="oj-component-initnode"
+                                          data-oj-internal=""
+                                        >
+                                          <span>
+                                            Category
+                                          </span>
+                                        </label>
+                                      </div>
+                                    </oj-label>
+                                    <div
+                                      class="oj-text-field-readonly-div"
+                                    >
+                                      <div
+                                        aria-readonly="true"
+                                        class="oj-text-field-readonly"
+                                        role="textbox"
+                                        tabindex="0"
+                                      >
+                                        Encounter Diagnosis
+                                      </div>
+                                    </div>
+                                    <input
+                                      aria-autocomplete="list"
+                                      aria-owns="oj-listbox-results-oj-combobox-12"
+                                      aria-required="true"
+                                      autocapitalize="off"
+                                      autocomplete="off"
+                                      autocorrect="off"
+                                      class="oj-combobox-input"
+                                      readonly="readonly"
+                                      spellcheck="false"
+                                      type="text"
+                                    />
+                                       
+                                  </div>
+                                     
+                                  <abbr
+                                    class="oj-combobox-clear-entry"
+                                    role="presentation"
+                                  />
+                                     
+                                  <span
+                                    class="oj-combobox-divider"
+                                    role="presentation"
+                                  />
+                                     
+                                  <span
+                                    class="oj-text-field-end"
+                                  >
+                                         
+                                    <a
+                                      class="oj-combobox-arrow oj-combobox-icon oj-component-icon oj-clickable-icon-nocontext oj-combobox-open-icon"
+                                      role="presentation"
+                                    />
+                                       
+                                  </span>
+                                    
+                                </div>
+                              </div>
+                              <div
+                                class="oj-listbox-drop"
+                                data-oj-containerid="oj-combobox-12"
+                                role="presentation"
+                                style="display: none;"
+                              >
+                                   
+                                <div
+                                  class="oj-listbox-loader-wrapper"
+                                />
+                                   
+                                <ul
+                                  class="oj-listbox-results"
+                                  data-oj-context=""
+                                  role="listbox"
+                                >
+                                     
+                                </ul>
+                              </div>
+                              <div
+                                aria-live="polite"
+                                class="oj-helper-hidden-accessible oj-listbox-liveregion"
+                              />
+                              <input
+                                aria-hidden="true"
+                                class="oj-component-initnode"
+                                data-oj-internal=""
+                                style="display: none;"
+                                tabindex="-1"
+                              />
+                              <div
+                                class="oj-user-assistance-inline-container oj-reflow"
+                              />
+                            </oj-combobox-one>
+                          </div>
+                          <div
+                            class="oj-formlayout-column-gutter"
+                            data-oj-formlayout-bonus-dom=""
+                            data-oj-internal=""
+                          />
+                          <div
+                            class="oj-flex-item"
+                            data-oj-formlayout-bonus-dom=""
+                            data-oj-internal=""
+                            style="flex-grow: 1; flex-shrink: 1; max-width: calc(((100% / 2) - ((var(--oj-form-layout-column-gutter) * (1) / 2))));"
+                          >
+                            <oj-select-single
+                              class="oj-required oj-text-field oj-complete oj-searchselect oj-form-control oj-component oj-read-only oj-text-field-label-inside"
+                              labelled-by="oj-selectsingle-4-labelled-by"
+                            >
+                              <div
+                                aria-live="polite"
+                                class="oj-helper-hidden-accessible oj-listbox-liveregion"
+                              />
+                              <div
+                                class="oj-text-field-container oj-searchselect-main-field oj-text-field-has-end-slot"
+                                role="presentation"
+                              >
+                                <div
+                                  class="oj-text-field-middle"
+                                >
+                                  <oj-label
+                                    class="oj-searchselect-label oj-label oj-component oj-complete oj-read-only oj-inputtext-label"
+                                    data-oj-binding-provider="none"
+                                    data-oj-input-id="oj-searchselect-filter-oj-selectsingle-4|input"
+                                    data-oj-internal=""
+                                  >
+                                    <div
+                                      class="oj-label-group"
+                                    >
+                                      <label
+                                        class="oj-component-initnode"
+                                        data-oj-internal=""
+                                      >
+                                        <span>
+                                          Code
+                                        </span>
+                                      </label>
+                                    </div>
+                                  </oj-label>
+                                  <div
+                                    class="oj-text-field-readonly-div"
+                                  >
+                                    <div
+                                      aria-readonly="true"
+                                      class="oj-text-field-readonly"
+                                      role="textbox"
+                                      tabindex="0"
+                                    />
+                                  </div>
+                                  <input
+                                    aria-autocomplete="list"
+                                    aria-required="true"
+                                    autocapitalize="off"
+                                    autocomplete="off"
+                                    autocorrect="off"
+                                    class="oj-searchselect-input oj-text-field-input"
+                                    placeholder=""
+                                    readonly="true"
+                                    spellcheck="false"
+                                    tabindex="0"
+                                    type="text"
+                                  />
+                                </div>
+                                <span
+                                  class="oj-text-field-end"
+                                >
+                                  <a
+                                    class="oj-searchselect-arrow oj-searchselect-open-icon oj-searchselect-icon oj-component-icon oj-clickable-icon-nocontext"
+                                    role="presentation"
+                                  />
+                                </span>
+                              </div>
+                              <oj-input-text
+                                aria-autocomplete="list"
+                                autocomplete="off"
+                                class="oj-searchselect-filter oj-inputtext oj-form-control oj-component oj-text-field oj-has-no-value oj-complete"
+                                clear-icon="never"
+                                data-oj-binding-provider="none"
+                                data-oj-context=""
+                                data-oj-internal=""
+                                display-options.messages="none"
+                                labelled-by="oj-selectsingle-4-labelled-by"
+                                style="visibility: hidden;"
+                                user-assistance-density="compact"
+                                virtual-keyboard="search"
+                              >
+                                <div
+                                  class="oj-text-field-container oj-text-field-has-end-slot"
+                                  role="presentation"
+                                >
+                                  <div
+                                    class="oj-text-field-middle"
+                                  >
+                                    <input
+                                      aria-label=""
+                                      autocomplete="off"
+                                      class="oj-inputtext-input oj-text-field-input oj-component-initnode"
+                                      data-oj-internal=""
+                                      placeholder=""
+                                      type="text"
+                                    />
+                                  </div>
+                                  <span
+                                    class="oj-text-field-end"
+                                  >
+                                    <a
+                                      class="oj-searchselect-arrow oj-searchselect-open-icon oj-searchselect-icon oj-component-icon oj-clickable-icon-nocontext"
+                                      slot="end"
+                                    />
+                                  </span>
+                                </div>
+                              </oj-input-text>
+                              <input
+                                aria-hidden="true"
+                                class="oj-component-initnode"
+                                data-oj-internal=""
+                                disabled=""
+                                style="display: none;"
+                                type="text"
+                              />
+                              <div
+                                class="oj-user-assistance-inline-container oj-reflow"
+                              />
+                            </oj-select-single>
+                          </div>
+                        </div>
+                        <div
+                          class="oj-flex"
+                          data-oj-formlayout-bonus-dom=""
+                          data-oj-internal=""
+                        >
+                          <div
+                            class="oj-flex-item"
+                            data-oj-formlayout-bonus-dom=""
+                            data-oj-internal=""
+                            style="flex-grow: 1; flex-shrink: 1; max-width: calc(((100% / 2) - ((var(--oj-form-layout-column-gutter) * (1) / 2))));"
+                          >
+                            <oj-combobox-one
+                              class="oj-combobox oj-component oj-enabled oj-read-only oj-required oj-form-control oj-text-field oj-text-field-label-inside oj-complete"
+                              labelled-by="oj-combobox-13-labelled-by"
+                            >
+                              <div
+                                class="oj-text-field-container oj-text-field-has-end-slot"
+                                role="presentation"
+                              >
+                                  
+                                <div
+                                  class="oj-combobox-choice oj-combobox-accessible-container"
+                                  role="presentation"
+                                  tabindex="-1"
+                                >
+                                     
+                                  <div
+                                    class="oj-text-field-middle"
+                                  >
+                                         
+                                    <oj-label
+                                      class="oj-combobox-label oj-label oj-component oj-read-only oj-complete"
+                                      data-oj-binding-provider="none"
+                                      data-oj-input-id="oj-combobox-13|input"
+                                      data-oj-internal=""
+                                    >
+                                      <div
+                                        class="oj-label-group"
+                                      >
+                                        <label
+                                          class="oj-component-initnode"
+                                          data-oj-internal=""
+                                        >
+                                          <span>
+                                            Clinical Status
+                                          </span>
+                                        </label>
+                                      </div>
+                                    </oj-label>
+                                    <div
+                                      class="oj-text-field-readonly-div"
+                                    >
+                                      <div
+                                        aria-readonly="true"
+                                        class="oj-text-field-readonly"
+                                        role="textbox"
+                                        tabindex="0"
+                                      >
+                                        Active
+                                      </div>
+                                    </div>
+                                    <input
+                                      aria-autocomplete="list"
+                                      aria-owns="oj-listbox-results-oj-combobox-13"
+                                      aria-required="true"
+                                      autocapitalize="off"
+                                      autocomplete="off"
+                                      autocorrect="off"
+                                      class="oj-combobox-input"
+                                      readonly="readonly"
+                                      spellcheck="false"
+                                      type="text"
+                                    />
+                                       
+                                  </div>
+                                     
+                                  <abbr
+                                    class="oj-combobox-clear-entry"
+                                    role="presentation"
+                                  />
+                                     
+                                  <span
+                                    class="oj-combobox-divider"
+                                    role="presentation"
+                                  />
+                                     
+                                  <span
+                                    class="oj-text-field-end"
+                                  >
+                                         
+                                    <a
+                                      class="oj-combobox-arrow oj-combobox-icon oj-component-icon oj-clickable-icon-nocontext oj-combobox-open-icon"
+                                      role="presentation"
+                                    />
+                                       
+                                  </span>
+                                    
+                                </div>
+                              </div>
+                              <div
+                                class="oj-listbox-drop"
+                                data-oj-containerid="oj-combobox-13"
+                                role="presentation"
+                                style="display: none;"
+                              >
+                                   
+                                <div
+                                  class="oj-listbox-loader-wrapper"
+                                />
+                                   
+                                <ul
+                                  class="oj-listbox-results"
+                                  data-oj-context=""
+                                  role="listbox"
+                                >
+                                     
+                                </ul>
+                              </div>
+                              <div
+                                aria-live="polite"
+                                class="oj-helper-hidden-accessible oj-listbox-liveregion"
+                              />
+                              <input
+                                aria-hidden="true"
+                                class="oj-component-initnode"
+                                data-oj-internal=""
+                                style="display: none;"
+                                tabindex="-1"
+                              />
+                              <div
+                                class="oj-user-assistance-inline-container oj-reflow"
+                              />
+                            </oj-combobox-one>
+                          </div>
+                          <div
+                            class="oj-formlayout-column-gutter"
+                            data-oj-formlayout-bonus-dom=""
+                            data-oj-internal=""
+                          />
+                          <div
+                            class="oj-flex-item"
+                            data-oj-formlayout-bonus-dom=""
+                            data-oj-internal=""
+                            style="flex-grow: 1; flex-shrink: 1; max-width: calc(((100% / 2) - ((var(--oj-form-layout-column-gutter) * (1) / 2))));"
+                          >
+                            <oj-combobox-one
+                              class="oj-combobox oj-component oj-enabled oj-read-only oj-required oj-form-control oj-text-field oj-text-field-label-inside oj-complete"
+                              labelled-by="oj-combobox-14-labelled-by"
+                            >
+                              <div
+                                class="oj-text-field-container oj-text-field-has-end-slot"
+                                role="presentation"
+                              >
+                                  
+                                <div
+                                  class="oj-combobox-choice oj-combobox-accessible-container"
+                                  role="presentation"
+                                  tabindex="-1"
+                                >
+                                     
+                                  <div
+                                    class="oj-text-field-middle"
+                                  >
+                                         
+                                    <oj-label
+                                      class="oj-combobox-label oj-label oj-component oj-read-only oj-complete"
+                                      data-oj-binding-provider="none"
+                                      data-oj-input-id="oj-combobox-14|input"
+                                      data-oj-internal=""
+                                    >
+                                      <div
+                                        class="oj-label-group"
+                                      >
+                                        <label
+                                          class="oj-component-initnode"
+                                          data-oj-internal=""
+                                        >
+                                          <span>
+                                            Verification Status
+                                          </span>
+                                        </label>
+                                      </div>
+                                    </oj-label>
+                                    <div
+                                      class="oj-text-field-readonly-div"
+                                    >
+                                      <div
+                                        aria-readonly="true"
+                                        class="oj-text-field-readonly"
+                                        role="textbox"
+                                        tabindex="0"
+                                      >
+                                        Confirmed
+                                      </div>
+                                    </div>
+                                    <input
+                                      aria-autocomplete="list"
+                                      aria-owns="oj-listbox-results-oj-combobox-14"
+                                      aria-required="true"
+                                      autocapitalize="off"
+                                      autocomplete="off"
+                                      autocorrect="off"
+                                      class="oj-combobox-input"
+                                      readonly="readonly"
+                                      spellcheck="false"
+                                      type="text"
+                                    />
+                                       
+                                  </div>
+                                     
+                                  <abbr
+                                    class="oj-combobox-clear-entry"
+                                    role="presentation"
+                                  />
+                                     
+                                  <span
+                                    class="oj-combobox-divider"
+                                    role="presentation"
+                                  />
+                                     
+                                  <span
+                                    class="oj-text-field-end"
+                                  >
+                                         
+                                    <a
+                                      class="oj-combobox-arrow oj-combobox-icon oj-component-icon oj-clickable-icon-nocontext oj-combobox-open-icon"
+                                      role="presentation"
+                                    />
+                                       
+                                  </span>
+                                    
+                                </div>
+                              </div>
+                              <div
+                                class="oj-listbox-drop"
+                                data-oj-containerid="oj-combobox-14"
+                                role="presentation"
+                                style="display: none;"
+                              >
+                                   
+                                <div
+                                  class="oj-listbox-loader-wrapper"
+                                />
+                                   
+                                <ul
+                                  class="oj-listbox-results"
+                                  data-oj-context=""
+                                  role="listbox"
+                                >
+                                     
+                                </ul>
+                              </div>
+                              <div
+                                aria-live="polite"
+                                class="oj-helper-hidden-accessible oj-listbox-liveregion"
+                              />
+                              <input
+                                aria-hidden="true"
+                                class="oj-component-initnode"
+                                data-oj-internal=""
+                                style="display: none;"
+                                tabindex="-1"
+                              />
+                              <div
+                                class="oj-user-assistance-inline-container oj-reflow"
+                              />
+                            </oj-combobox-one>
+                          </div>
+                        </div>
+                        <div
+                          class="oj-flex"
+                          data-oj-formlayout-bonus-dom=""
+                          data-oj-internal=""
+                        >
+                          <div
+                            class="oj-flex-item"
+                            data-oj-formlayout-bonus-dom=""
+                            data-oj-internal=""
+                            style="flex-grow: 1; flex-shrink: 1; max-width: calc(((100% / 2) - ((var(--oj-form-layout-column-gutter) * (1) / 2))));"
+                          >
+                            <oj-input-date-time
+                              class="oj-inputdatetime-date-time oj-component oj-inputdatetime oj-form-control oj-text-field oj-text-field-label-inside oj-required oj-read-only oj-complete"
+                              labelled-by="ui-id-11-labelled-by"
+                            >
+                              <div
+                                class=" oj-inputdatetime-input-container oj-text-field-container"
+                                role="presentation"
+                                tabindex="-1"
+                              >
+                                <div
+                                  class="oj-text-field-middle"
+                                >
+                                  <oj-label
+                                    class="oj-inputdatetime-label oj-label oj-component oj-read-only oj-complete"
+                                    data-oj-binding-provider="none"
+                                    data-oj-input-id="ui-id-11|input"
+                                    data-oj-internal=""
+                                  >
+                                    <div
+                                      class="oj-label-group"
+                                    >
+                                      <label
+                                        class="oj-component-initnode"
+                                        data-oj-internal=""
+                                      >
+                                        <span>
+                                          Date Recorded
+                                        </span>
+                                      </label>
+                                    </div>
+                                  </oj-label>
+                                  <div
+                                    class="oj-text-field-readonly-div"
+                                  >
+                                    <div
+                                      aria-readonly="true"
+                                      class="oj-text-field-readonly"
+                                      role="textbox"
+                                      tabindex="0"
+                                    >
+                                      06/08/2022, 08:11 PM
+                                    </div>
+                                  </div>
+                                  <input
+                                    aria-haspopup="true"
+                                    aria-required="true"
+                                    class="oj-inputdatetime-input oj-text-field-input oj-component-initnode"
+                                    data-oj-internal=""
+                                    placeholder=""
+                                    readonly=""
+                                    role="combobox"
+                                    type="text"
+                                  />
+                                </div>
+                              </div>
+                              <div
+                                class="oj-user-assistance-inline-container oj-reflow"
+                              />
+                            </oj-input-date-time>
+                          </div>
+                          <div
+                            class="oj-formlayout-column-gutter"
+                            data-oj-formlayout-bonus-dom=""
+                            data-oj-internal=""
+                          />
+                          <div
+                            class="oj-flex-item"
+                            data-oj-formlayout-bonus-dom=""
+                            data-oj-internal=""
+                            style="flex-grow: 0; flex-shrink: 1; max-width: calc(((100% / 2) - ((var(--oj-form-layout-column-gutter) * (1) / 2))));"
+                          />
+                        </div>
+                        <div
+                          data-oj-formlayout-workaround-dom=""
+                          style="display: table; visibility: hidden;"
+                        />
+                      </div>
+                    </oj-form-layout>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h3
+              class="oj-typography-subheading-sm"
+            >
+              Recommendation
+            </h3>
+            <oj-form-layout
+              class="oj-formlayout-full-width oj-form-layout oj-complete oj-formlayout-max-cols-1"
+            >
+              <div
+                class="oj-form oj-efficient oj-form-cols oj-formlayout-form-across"
+                data-oj-context=""
+                data-oj-formlayout-bonus-dom=""
+                data-oj-internal=""
+                style="column-count: 1; webkit-column-count: 1;"
+              >
+                <div
+                  class="oj-helper-detect-contraction"
+                >
+                  <div
+                    style="width: 200%; height: 200%;"
+                  />
+                </div>
+                <div
+                  class="oj-helper-detect-expansion"
+                >
+                  <div />
+                </div>
+                <div
+                  class="oj-flex"
+                  data-oj-formlayout-bonus-dom=""
+                  data-oj-internal=""
+                >
+                  <div
+                    class="oj-flex-item"
+                    data-oj-formlayout-bonus-dom=""
+                    data-oj-internal=""
+                    style="flex-grow: 1; flex-shrink: 1; max-width: calc(((100% / 1) - ((var(--oj-form-layout-column-gutter) * (0) / 1))));"
+                  >
+                    <oj-c-text-area
+                      class="oj-complete"
+                    >
+                      <div
+                        class="_1s3skvi d1iwqt _3navvy"
+                        labelstartwidth="33%"
+                        role="presentation"
+                      >
+                        <div
+                          class="_1kz2e2a _1e7m3af _13qk218 _1auvrj3"
+                        >
+                          <label
+                            class="_1iep09b _1auu5wh _111uzw1"
+                          >
+                            Instruction
+                          </label>
+                          <textarea
+                            class="vblukg fdlpr5 _1klg2yk"
+                            readonly="true"
+                          >
+                            Test recommendation
+                          </textarea>
+                        </div>
+                      </div>
+                    </oj-c-text-area>
+                  </div>
+                </div>
+                <div
+                  class="oj-flex"
+                  data-oj-formlayout-bonus-dom=""
+                  data-oj-internal=""
+                >
+                  <div
+                    class="oj-flex-item"
+                    data-oj-formlayout-bonus-dom=""
+                    data-oj-internal=""
+                    style="flex-grow: 1; flex-shrink: 1; max-width: calc(((100% / 1) - ((var(--oj-form-layout-column-gutter) * (0) / 1))));"
+                  >
+                    <oj-c-text-area
+                      class="oj-complete"
+                    >
+                      <div
+                        class="_1s3skvi d1iwqt _3navvy"
+                        labelstartwidth="33%"
+                        role="presentation"
+                      >
+                        <div
+                          class="_1kz2e2a _1e7m3af _13qk218 _1auvrj3"
+                        >
+                          <label
+                            class="_1iep09b _1auu5wh _111uzw1"
+                          >
+                            Additional Instructions
+                          </label>
+                          <textarea
+                            class="vblukg fdlpr5 _1klg2yk"
+                            readonly="true"
+                          >
+                            None
+                          </textarea>
+                        </div>
+                      </div>
+                    </oj-c-text-area>
+                  </div>
+                </div>
+                <div
+                  data-oj-formlayout-workaround-dom=""
+                  style="display: table; visibility: hidden;"
+                />
+              </div>
+            </oj-form-layout>
+            <oj-form-layout
+              class="oj-form-layout oj-complete oj-formlayout-max-cols-2"
+            >
+              <div
+                class="oj-form oj-efficient oj-form-cols oj-formlayout-form-across"
+                data-oj-context=""
+                data-oj-formlayout-bonus-dom=""
+                data-oj-internal=""
+                style="column-count: 1; webkit-column-count: 1;"
+              >
+                <div
+                  class="oj-helper-detect-contraction"
+                >
+                  <div
+                    style="width: 200%; height: 200%;"
+                  />
+                </div>
+                <div
+                  class="oj-helper-detect-expansion"
+                >
+                  <div />
+                </div>
+                <div
+                  class="oj-flex"
+                  data-oj-formlayout-bonus-dom=""
+                  data-oj-internal=""
+                >
+                  <div
+                    class="oj-flex-item"
+                    data-oj-formlayout-bonus-dom=""
+                    data-oj-internal=""
+                    style="flex-grow: 1; flex-shrink: 1; max-width: calc(((100% / 2) - ((var(--oj-form-layout-column-gutter) * (1) / 2))));"
+                  >
+                    <oj-input-date-time
+                      class="oj-inputdatetime-date-time oj-component oj-inputdatetime oj-form-control oj-text-field oj-text-field-label-inside oj-required oj-read-only oj-complete"
+                      labelled-by="ui-id-13-labelled-by"
+                    >
+                      <div
+                        class=" oj-inputdatetime-input-container oj-text-field-container"
+                        role="presentation"
+                        tabindex="-1"
+                      >
+                        <div
+                          class="oj-text-field-middle"
+                        >
+                          <oj-label
+                            class="oj-inputdatetime-label oj-label oj-component oj-read-only oj-complete"
+                            data-oj-binding-provider="none"
+                            data-oj-input-id="ui-id-13|input"
+                            data-oj-internal=""
+                          >
+                            <div
+                              class="oj-label-group"
+                            >
+                              <label
+                                class="oj-component-initnode"
+                                data-oj-internal=""
+                              >
+                                <span>
+                                  Recommendation Date
+                                </span>
+                              </label>
+                            </div>
+                          </oj-label>
+                          <div
+                            class="oj-text-field-readonly-div"
+                          >
+                            <div
+                              aria-readonly="true"
+                              class="oj-text-field-readonly"
+                              role="textbox"
+                              tabindex="0"
+                            >
+                              06/08/2022, 08:11 PM
+                            </div>
+                          </div>
+                          <input
+                            aria-haspopup="true"
+                            aria-required="true"
+                            class="oj-inputdatetime-input oj-text-field-input oj-component-initnode"
+                            data-oj-internal=""
+                            placeholder=""
+                            readonly=""
+                            role="combobox"
+                            type="text"
+                          />
+                        </div>
+                      </div>
+                      <div
+                        class="oj-user-assistance-inline-container oj-reflow"
+                      />
+                    </oj-input-date-time>
+                  </div>
+                  <div
+                    class="oj-formlayout-column-gutter"
+                    data-oj-formlayout-bonus-dom=""
+                    data-oj-internal=""
+                  />
+                  <div
+                    class="oj-flex-item"
+                    data-oj-formlayout-bonus-dom=""
+                    data-oj-internal=""
+                    style="flex-grow: 1; flex-shrink: 1; max-width: calc(((100% / 2) - ((var(--oj-form-layout-column-gutter) * (1) / 2))));"
+                  >
+                    <oj-c-input-text
+                      class="oj-complete"
+                    >
+                      <div
+                        class="_1s3skvi d1iwqt _3navvy"
+                        labelstartwidth="33%"
+                        role="presentation"
+                      >
+                        <div
+                          class="_1kz2e2a _13qk218"
+                        >
+                          <label
+                            class="_1iep09b _1auu5wh _111uzw1"
+                          >
+                            Recommended By
+                          </label>
+                          <div
+                            aria-readonly="true"
+                            class="oj-c-hide-scrollbar vblukg _1klg2yk"
+                            role="textbox"
+                            tabindex="0"
+                          >
+                            Dr. Danilo Mraz
+                          </div>
+                        </div>
+                      </div>
+                    </oj-c-input-text>
+                  </div>
+                </div>
+                <div
+                  data-oj-formlayout-workaround-dom=""
+                  style="display: table; visibility: hidden;"
+                />
+              </div>
+            </oj-form-layout>
+          </div>
+        </oj-validation-group>
+      </div>
+    </div>
+  </div>
+  <div
+    id="__oj_layerhost_container"
+  />
+</DocumentFragment>
+`;

@@ -1,0 +1,18 @@
+{
+  "name": "@uho/ts-config",
+  "version": "0.0.0",
+  "license": "UPL-1.0",
+  "devDependencies": {
+    "@oracle/oraclejet": "14.1.0",
+    "@oracle/oraclejet-preact": "14.1.0",
+    "@oracle/oraclejet-core-pack": "14.1.0"
+  },
+  "dependencies": {
+    "typescript": "5.0.4"
+  },
+  "main": "tsconfig.json",
+  "files": [
+    "tsconfig.json",
+    "global.d.ts"
+  ]
+}

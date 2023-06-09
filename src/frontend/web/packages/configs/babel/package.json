@@ -1,0 +1,13 @@
+{
+  "name": "@uho/babel-config",
+  "version": "0.0.0",
+  "license": "UPL-1.0",
+  "scripts": {},
+  "dependencies": {
+    "@babel/preset-env": "7.21.4",
+    "@babel/preset-react": "7.18.6",
+    "@babel/preset-typescript": "7.21.4",
+    "babel-plugin-transform-amd-to-commonjs": "1.6.0"
+  },
+  "main": "index.js"
+}

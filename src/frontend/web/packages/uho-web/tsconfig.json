@@ -1,0 +1,22 @@
+{
+  "extends": "@uho/ts-config",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "esModuleInterop": true,
+    "declaration": false,
+    "typeRoots": ["node_modules/@oracle/oraclejet/dist/types", "node_modules/@types", "<rootDir>/typings/index.ts"],
+    "paths": {
+      "ojs/*": ["./node_modules/@oracle/oraclejet/dist/types/*"],
+      "oj-c/*": ["./node_modules/@oracle/oraclejet-core-pack/oj-c/types/*"],
+      "react": ["./node_modules/preact/compat/"],
+      "react-dom": ["./node_modules/preact/compat/"],
+      "components/*": ["src/components/*"],
+      "hooks/*": ["src/hooks/*"],
+      "api": ["src/api"],
+      "api/*": ["src/api/*"],
+      "patient/*": ["src/content/patient/*"],
+      "provider/*": ["src/content/provider/*"]
+    }
+  },
+  "exclude": ["build", "node_modules", "dist"]
+}

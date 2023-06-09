@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: idcs
+  namespace: uho
+data:
+  url: {{ .Values.idcs.url }}
+{{ (.Files.Glob "scripts/idcs-init.sh").AsConfig | indent 2 }}
+{{ (.Files.Glob "scripts/vault-write.sh").AsConfig | indent 2 }}

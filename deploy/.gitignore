@@ -1,0 +1,37 @@
+.DS_Store
+*.tgz
+*.zip
+.idea/
+
+## Kubeconfig
+kubeconfig
+terraform/generated/
+
+### Terraform ###
+# Local .terraform directories
+**/.terraform/*
+**/.terrafor*
+.terraform.lock.hcl
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+# Ignore any .tfvars files that are generated automatically for each Terraform run. Most
+# .tfvars files are managed as part of configuration and so should be included in
+# version control.
+#
+*.tfvars
+
+# Ignore override files as they are usually used to override resources locally and so
+# are not checked in
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Ignore local file containing idcs public key
+**/idcs_public_key
+
+# tf crash log
+crash.log

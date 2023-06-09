@@ -1,0 +1,14 @@
+.appointment-container {
+  height: 100%;
+
+  .appointment-body {
+    white-space: pre-wrap;
+    height: calc(100% - 70px);
+    overflow-y: hidden;
+  }
+
+  .encounter-list {
+    height: 100%;
+    overflow-y: auto;
+  }
+}

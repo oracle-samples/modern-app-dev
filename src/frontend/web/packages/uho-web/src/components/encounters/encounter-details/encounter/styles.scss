@@ -1,0 +1,9 @@
+.encounter-container {
+  height: 100%;
+
+  .encounter-body {
+    white-space: pre-wrap;
+    height: calc(100% - 70px);
+    overflow-y: auto;
+  }
+}

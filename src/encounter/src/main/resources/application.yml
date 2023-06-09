@@ -1,0 +1,76 @@
+micronaut:
+  application:
+    name: encounter
+  security:
+    token:
+      jwt:
+        signatures:
+          static-jwks:
+            key-type: "RSA"
+            keys:
+      roles-name: "scope"
+    endpoints:
+      logout:
+        enabled: true
+        get-allowed: true
+    intercept-url-map:
+      - pattern: /v1/encounters
+        httpMethod: POST
+        access:
+          - /patient
+          - /provider
+          - /service
+      - pattern: /v1/encounters/*
+        httpMethod: DELETE
+        access:
+          - /provider
+      - pattern: /v1/encounters/*
+        httpMethod: GET
+        access:
+          - /patient
+          - /provider
+          - /service
+      - pattern: /v1/encounters/*
+        httpMethod: PUT
+        access:
+          - /provider
+      - pattern: /v1/encounters/codes
+        httpMethod: GET
+        access:
+          - /patient
+          - /provider
+      - pattern: /v1/encounters/actions/search
+        httpMethod: GET
+        access:
+          - /patient
+          - /provider
+  metrics:
+    enabled: true
+    export:
+      oraclecloud:
+        enabled: true
+        namespace: uho_${micronaut.application.name}
+        resourceGroup: mn_prod
+        compartmentId:
+  objectstorage:
+    oraclecloud:
+      compartmentId: ${OBJECT_STORAGE_COMPARTMENT_ID}
+      bucketName: ${OBJECT_STORAGE_BUCKET_NAME}
+
+liquibase:
+  datasources:
+    default:
+      change-log: 'classpath:db/migrations.xml'
+  enabled: true
+
+tracing:
+  zipkin:
+    enabled: true
+    sampler:
+      probability: 1
+    http:
+      url:
+      path:
+
+oci:
+  config:

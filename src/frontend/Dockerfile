@@ -1,0 +1,51 @@
+# syntax=docker/dockerfile:experimental
+
+# Copyright (c) 2023 Oracle and/or its affiliates.
+# Licensed under the Universal Permissive License v 1.0 as shown at https://oss.oracl.com/licenses/upl/
+
+# build nodejs
+FROM ghcr.io/graalvm/jdk:ol8-java17-22.3.1 as nodebuild
+
+RUN  microdnf module enable nodejs:14 && \
+     microdnf install nodejs
+
+WORKDIR /app
+ADD target/specs target/specs
+ADD web web
+
+RUN  cd /app/web && npm install --global yarn && mkdir -p ~/.config/yarn/config && yarn && yarn run build
+
+
+# 1st stage, build the app
+FROM ghcr.io/graalvm/jdk:ol8-java17-22.3.1 as build
+
+# Install Apache Maven
+RUN echo "Installing Apache Maven 3.9.2 ..." && \
+  microdnf install gzip && \
+  curl https://repo1.maven.org/maven2/org/apache/maven/apache-maven/3.9.2/apache-maven-3.9.2-bin.tar.gz --output /tmp/maven.tar.gz && \
+  mkdir /opt/maven && \
+  tar -zxvf /tmp/maven.tar.gz -C /opt/maven --strip-components=1
+
+ENV M2_HOME=/opt/maven
+ENV MAVEN_HOME=/opt/maven
+ENV PATH=${M2_HOME}/bin:${PATH}
+ENV MAVEN_OPTS='-Xms256m -Xmx1024m -XX:-UseGCOverheadLimit'
+
+WORKDIR /app
+
+ADD pom.xml .
+
+ADD src src
+COPY --from=nodebuild /app/web/packages/uho-web/build/prod/en-US src/main/resources/static
+RUN --mount=type=cache,target=/root/.m2 mvn package
+
+# 2nd stage, build the runtime image
+FROM ghcr.io/graalvm/jdk:ol8-java17-22.3.1
+WORKDIR /app
+
+# Copy the binary built in the 1st stage
+COPY --from=build /app/target/frontend-1.0-SNAPSHOT.jar ./frontend.jar
+
+CMD ["java", "-jar", "frontend.jar"]
+
+EXPOSE 8080

@@ -1,0 +1,76 @@
+micronaut:
+  http:
+    client:
+      read-timeout: 60s
+  application:
+    name: appointment
+  security:
+    token:
+      jwt:
+        signatures:
+          static-jwks:
+            key-type: "RSA"
+            keys:
+      roles-name: "scope"
+    endpoints:
+      logout:
+        enabled: true
+        get-allowed: true
+    intercept-url-map:
+      - pattern: /v1/appointments/*
+        httpMethod: GET
+        access:
+          - /patient
+          - /provider
+      - pattern: /v1/appointments
+        httpMethod: POST
+        access:
+          - /patient
+      - pattern: /v1/appointments
+        httpMethod: PUT
+        access:
+          - /patient
+          - /provider
+      - pattern: /v1/appointments/*
+        httpMethod: DELETE
+        access:
+          - /service
+      - pattern: /v1/appointments/actions/search
+        httpMethod: GET
+        access:
+          - /patient
+          - /provider
+  metrics:
+    enabled: true
+    export:
+      oraclecloud:
+        enabled: true
+        namespace: uho_${micronaut.application.name}
+        resourceGroup: mn_prod
+        compartmentId:
+
+liquibase:
+  datasources:
+    default:
+      change-log: 'classpath:db/migrations.xml'
+  enabled: true
+
+streaming:
+  id:
+  endpoint:
+
+service:
+  patient: "http://uho-patient"
+  provider: "http://uho-provider"
+
+tracing:
+  zipkin:
+    enabled: true
+    sampler:
+      probability: 1
+    http:
+      url:
+      path:
+
+oci:
+  config:

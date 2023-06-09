@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: "object-storage"
+  namespace: uho
+data:
+  namespace-name: {{ .Values.config_maps.object_storage.namespace }}
+  bucket-name: {{ .Values.config_maps.object_storage.bucket_name }}
+  region-id: {{ .Values.config_maps.object_storage.region_id }}

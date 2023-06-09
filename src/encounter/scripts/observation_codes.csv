@@ -1,0 +1,154 @@
+code,text
+8302-2,Body Height
+72514-3,Pain severity - 0-10 verbal numeric rating [Score] - Reported
+29463-7,Body Weight
+39156-5,Body Mass Index
+85354-9,Blood Pressure
+8867-4,Heart rate
+9279-1,Respiratory rate
+2093-3,Total Cholesterol
+2571-8,Triglycerides
+18262-6,Low Density Lipoprotein Cholesterol
+2085-9,High Density Lipoprotein Cholesterol
+6690-2,Leukocytes [#/volume] in Blood by Automated count
+789-8,Erythrocytes [#/volume] in Blood by Automated count
+718-7,Hemoglobin [Mass/volume] in Blood
+4544-3,Hematocrit [Volume Fraction] of Blood by Automated count
+787-2,MCV [Entitic volume] by Automated count
+785-6,MCH [Entitic mass] by Automated count
+786-4,MCHC [Mass/volume] by Automated count
+21000-5,Erythrocyte distribution width [Entitic volume] by Automated count
+777-3,Platelets [#/volume] in Blood by Automated count
+32207-3,Platelet distribution width [Entitic volume] in Blood by Automated count
+32623-1,Platelet mean volume [Entitic volume] in Blood by Automated count
+72166-2,Tobacco smoking status NHIS
+4548-4,Hemoglobin A1c/Hemoglobin.total in Blood
+93025-5,"Protocol for Responding to and Assessing Patients' Assets, Risks, and Experiences [PRAPARE]"
+70274-6,Generalized anxiety disorder 7 item (GAD-7) total score [Reported.PHQ]
+55758-7,Patient Health Questionnaire 2 item (PHQ-2) total score [Reported]
+91148-7,"Pain intensity, Enjoyment of life, General activity (PEG) 3 item pain scale"
+65750-2,Drugs of abuse 5 panel - Urine by Screen method
+8310-5,Body temperature
+2339-0,Glucose
+6299-2,Urea Nitrogen
+38483-4,Creatinine
+49765-1,Calcium
+2947-0,Sodium
+6298-4,Potassium
+2069-3,Chloride
+20565-8,Carbon Dioxide
+14959-1,Microalbumin Creatinine Ratio
+33914-3,Estimated Glomerular Filtration Rate
+82667-7,Total score [DAST-10]
+20570-8,Hematocrit [Volume Fraction] of Blood
+76504-0,Total score [HARK]
+75626-2,Total score [AUDIT-C]
+44261-6,Patient Health Questionnaire 9 item (PHQ-9) total score [Reported]
+59576-9,Body mass index (BMI) [Percentile] Per age and gender
+89204-2,Patient Health Questionnaire-9: Modified for Teens total score [Reported.PHQ.Teen]
+77606-2,Weight-for-length Per age and sex
+9843-4,Head Occipital-frontal circumference
+38208-5,Pain severity - Reported
+88262-1,Gram positive blood culture panel by Probe in Positive blood culture
+44963-7,Capillary refill [Time] of Nail bed
+2713-6,Oxygen Saturation
+59032-3,Lactate [Mass/volume] in Blood
+8478-0,Mean blood pressure
+2885-2,Protein [Mass/volume] in Serum or Plasma
+1751-7,Albumin [Mass/volume] in Serum or Plasma
+10834-0,Globulin [Mass/volume] in Serum by calculation
+1975-2,Bilirubin.total [Mass/volume] in Serum or Plasma
+6768-6,Alkaline phosphatase [Enzymatic activity/volume] in Serum or Plasma
+1742-6,Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma
+1920-8,Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma
+59460-6,Fall risk total [Morse Fall Scale]
+59461-4,Fall risk level [Morse Fall Scale]
+69453-9,Cause of Death [US Standard Certificate of Death]
+33756-8,Polyp size greatest dimension by CAP cancer protocols
+57905-2,Hemoglobin.gastrointestinal [Presence] in Stool by Immunologic method
+38265-5,DXA [T-score] Bone density
+2708-6,Oxygen saturation in Arterial blood
+80382-5,Influenza virus A Ag [Presence] in Nasopharynx by Rapid immunoassay
+80383-3,Influenza virus B Ag [Presence] in Nasopharynx by Rapid immunoassay
+94531-1,SARS-CoV-2 RNA Pnl Resp NAA+probe
+6206-7,Peanut IgE Ab in Serum
+6273-7,Walnut IgE Ab in Serum
+6082-2,Codfish IgE Ab in Serum
+6246-3,Shrimp IgE Ab in Serum
+6276-0,Wheat IgE Ab in Serum
+6106-9,Egg white IgE Ab in Serum
+6248-9,Soybean IgE Ab in Serum
+7258-7,Cow milk IgE Ab in Serum
+6189-5,White oak IgE Ab in Serum
+6085-5,Common Ragweed IgE Ab in Serum
+6833-8,Cat dander IgE Ab in Serum
+6095-4,American house dust mite IgE Ab in Serum
+6075-6,Cladosporium herbarum IgE Ab in Serum
+6844-5,Honey bee IgE Ab in Serum
+6158-0,Latex IgE Ab in Serum
+66519-0,Percentage area affected by eczema Head and Neck
+66529-9,Percentage area affected by eczema Trunk
+66524-0,Percentage area affected by eczema Upper extremitiy - bilateral
+66534-9,Percentage area affected by eczema Lower extremitiy - bilateral
+92142-9,Influenza virus A RNA [Presence] in Respiratory specimen by NAA with probe detection
+92141-1,Influenza virus B RNA [Presence] in Respiratory specimen by NAA with probe detection
+92131-2,Respiratory syncytial virus RNA [Presence] in Respiratory specimen by NAA with probe detection
+92140-3,Parainfluenza virus 1 RNA [Presence] in Respiratory specimen by NAA with probe detection
+92139-5,Parainfluenza virus 2 RNA [Presence] in Respiratory specimen by NAA with probe detection
+92138-7,Parainfluenza virus 3 RNA [Presence] in Respiratory specimen by NAA with probe detection
+92130-4,Rhinovirus RNA [Presence] in Respiratory specimen by NAA with probe detection
+92134-6,Human metapneumovirus RNA [Presence] in Respiratory specimen by NAA with probe detection
+94040-3,Adenovirus A+B+C+D+E DNA [Presence] in Respiratory specimen by NAA with probe detection
+788-0,Erythrocyte distribution width [Ratio] by Automated count
+770-8,Neutrophils/100 leukocytes in Blood by Automated count
+736-9,Lymphocytes/100 leukocytes in Blood by Automated count
+5905-5,Monocytes/100 leukocytes in Blood by Automated count
+713-8,Eosinophils/100 leukocytes in Blood by Automated count
+706-2,Basophils/100 leukocytes in Blood by Automated count
+751-8,Neutrophils [#/volume] in Blood by Automated count
+731-0,Lymphocytes [#/volume] in Blood by Automated count
+742-7,Monocytes [#/volume] in Blood by Automated count
+711-2,Eosinophils [#/volume] in Blood by Automated count
+704-7,Basophils [#/volume] in Blood by Automated count
+2345-7,Glucose [Mass/volume] in Serum or Plasma
+3094-0,Urea nitrogen [Mass/volume] in Serum or Plasma
+2160-0,Creatinine [Mass/volume] in Serum or Plasma
+17861-6,Calcium [Mass/volume] in Serum or Plasma
+2951-2,Sodium [Moles/volume] in Serum or Plasma
+2823-3,Potassium [Moles/volume] in Serum or Plasma
+2075-0,Chloride [Moles/volume] in Serum or Plasma
+2028-9,"Carbon dioxide, total [Moles/volume] in Serum or Plasma"
+2744-1,pH of Arterial blood
+2019-8,Carbon dioxide [Partial pressure] in Arterial blood
+2703-7,Oxygen [Partial pressure] in Arterial blood
+1960-4,Bicarbonate [Moles/volume] in Arterial blood
+19994-3,Oxygen/Inspired gas setting [Volume Fraction] Ventilator
+48065-7,Fibrin D-dimer FEU [Mass/volume] in Platelet poor plasma
+2276-4,Ferritin [Mass/volume] in Serum or Plasma
+89579-7,Troponin I.cardiac [Mass/volume] in Serum or Plasma by High sensitivity method
+14804-9,Lactate dehydrogenase [Enzymatic activity/volume] in Serum or Plasma by Lactate to pyruvate reaction
+2157-6,Creatine kinase [Enzymatic activity/volume] in Serum or Plasma
+1988-5,C reactive protein [Mass/volume] in Serum or Plasma
+5902-2,Prothrombin time (PT)
+6301-6,INR in Platelet poor plasma by Coagulation assay
+33959-8,Procalcitonin [Mass/volume] in Serum or Plasma
+75325-1,Symptom
+33762-6,NT-proBNP
+19123-9,Magnesium [Mass/volume] in Serum or Plasma
+2498-4,Iron [Mass/volume] in Serum or Plasma
+2500-7,Iron binding capacity [Mass/volume] in Serum or Plasma
+2502-3,Iron saturation [Mass Fraction] in Serum or Plasma
+88020-3,Functional capacity NYHA
+88021-1,Objective assessment of cardiovascular disease NYHA
+10230-1,Left ventricular Ejection fraction
+19926-5,FEV1/FVC
+76690-7,Sexual orientation
+55277-8,HIV status
+28245-9,Abuse Status [OMAHA]
+71802-3,Housing status
+63513-6,Are you covered by health insurance or some other kind of health care plan [PhenX]
+46240-8,History of Hospitalizations+Outpatient visits
+32465-7,Physical findings of Prostate
+2857-1,Prostate specific Ag [Mass/volume] in Serum or Plasma
+46288-7,US Guidance for biopsy of Prostate
+99999-0,DSM-5 Clinical Diagnostic Criteria for Opioid Use Disorder

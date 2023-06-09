@@ -1,0 +1,16 @@
+$footerHeight: 48px;
+$headerHeight: 196px;
+
+.smart-filter-search {
+  height: 100%;
+  .content {
+    background-color: var(--surface-neutral-10);
+    height: calc(100% - $headerHeight - $footerHeight);
+  }
+  .header {
+    height: $headerHeight;
+  }
+  .footer {
+    height: $footerHeight;
+  }
+}

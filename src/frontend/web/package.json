@@ -1,0 +1,87 @@
+{
+  "name": "root",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/api/*",
+      "packages/configs/*",
+      "packages/uho-web"
+    ],
+    "nohoist": [
+      "*"
+    ]
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "5.58.0",
+    "@typescript-eslint/parser": "5.58.0",
+    "eslint": "8.38.0",
+    "eslint-config-preact": "1.3.0",
+    "eslint-config-prettier": "8.8.0",
+    "eslint-plugin-header": "3.1.1",
+    "eslint-plugin-jest": "27.2.1",
+    "jest": "27.5.1",
+    "lerna": "6.6.1",
+    "prettier": "2.8.7",
+    "typescript": "5.0.4"
+  },
+  "scripts": {
+    "clean": "lerna run clean && lerna clean --yes && rm -rf node_modules",
+    "build": "lerna run build",
+    "test": "lerna run test -- --passWithNoTests",
+    "watch:dev": "lerna run --scope @uho/web watch:dev",
+    "serve:dev": "lerna run --scope @uho/web serve:dev",
+    "eslint:fix": "eslint $(pwd) --ext .js,.ts,.tsx --fix",
+    "eslint:verify": "eslint $(pwd) --ext .js,.ts,.tsx --max-warnings=0 --color",
+    "prettier:fix": "prettier '**/*.{md,json,scss,css,yaml,html,js,ts,tsx}' --write",
+    "prettier:verify": "prettier '**/*.{md,json,scss,css,yaml,html,js,ts,tsx}' --check",
+    "format": "yarn run eslint:fix && yarn run prettier:fix",
+    "format:verify": "yarn run eslint:verify && yarn run prettier:verify"
+  },
+  "prettier": {
+    "printWidth": 120,
+    "semi": true,
+    "singleQuote": true,
+    "bracketSpacing": true,
+    "arrowParens": "always",
+    "trailingComma": "none"
+  },
+  "eslintConfig": {
+    "ignorePatterns": [
+      "build/",
+      "dist/",
+      "jet_components/"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+      "@typescript-eslint",
+      "jest",
+      "header"
+    ],
+    "rules": {
+      "no-duplicate-imports": "off",
+      "no-unused-vars": "off",
+      "no-undef": "off",
+      "no-useless-constructor": "off",
+      "react/display-name": "off",
+      "@typescript-eslint/no-non-null-assertion": "off",
+      "@typescript-eslint/no-non-null-asserted-optional-chain": "off",
+      "@typescript-eslint/explicit-module-boundary-types": "off",
+      "@typescript-eslint/no-unused-vars": "off",
+      "@typescript-eslint/ban-ts-comment": "off",
+      "@typescript-eslint/no-useless-constructor": [
+        "error"
+      ],
+      "header/header": [
+        2,
+        "./oracle.license"
+      ]
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:@typescript-eslint/recommended",
+      "plugin:jest/recommended",
+      "preact",
+      "prettier"
+    ]
+  }
+}

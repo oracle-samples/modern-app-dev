@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshot tests for Content Panel Snapshot: Component - Content Panel 1`] = `
+<DocumentFragment>
+  <div
+    data-oj-binding-provider="preact"
+  >
+    <div
+      class="foo oj-panel oj-panel-shadow-sm oj-flex oj-flex-1 oj-panel-shadow-sm content-panel"
+    >
+      <div>
+        My Content
+      </div>
+    </div>
+  </div>
+  <div
+    id="__oj_layerhost_container"
+  />
+</DocumentFragment>
+`;

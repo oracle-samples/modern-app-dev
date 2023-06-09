@@ -1,0 +1,16 @@
+.chip {
+  border-style: solid;
+  padding: 4px;
+  border-width: 1px;
+  border-color: var(--border-divider);
+  border-radius: 6px;
+  height: 32px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(var(--oj-palette-neutral-rgb-10), 0.25);
+    .filter-chip-label {
+      color: var(--oj-core-text-color-primary) !important;
+    }
+  }
+}

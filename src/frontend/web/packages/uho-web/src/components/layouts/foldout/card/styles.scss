@@ -1,0 +1,12 @@
+.foldout-card {
+  height: 100%;
+  width: 458px;
+  min-width: 458px;
+
+  &:nth-child(even) {
+    background-color: var(--page-background-neutral-30);
+  }
+  &:nth-child(odd) {
+    background-color: var(--page-background-neutral-10);
+  }
+}

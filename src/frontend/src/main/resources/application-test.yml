@@ -1,0 +1,48 @@
+micronaut:
+  server:
+    context-path: /home
+  application:
+    name: frontend
+  router:
+    static-resources:
+      default:
+        enabled: true
+        paths: classpath:static
+        #        paths: file:<path-to>/ReferenceApp/frontend/web/packages/uho-web/build/dev/en-US # run frontend with npm run dev-watch
+        mapping: /**
+  security:
+    oauth2:
+      clients:
+        patient:
+          client-id: test-patient-id
+        provider:
+          client-id: test-provider-id
+    enabled: false
+  metrics:
+    enabled: false
+    export:
+      oraclecloud:
+        enabled: true
+        namespace: uho_${micronaut.application.name}
+        resourceGroup: mn_local
+        compartmentId: dummy-compartment-id
+
+tracing:
+  zipkin:
+    enabled: false
+    sampler:
+      probability: 1
+    http:
+      url: "testUrl"
+      path: "testPath"
+
+apigw:
+  url: test-url
+
+oci:
+  config:
+    profile: DEFAULT
+
+test-values:
+  test-id-token: test-id-token
+  test-cookie: test-cookie

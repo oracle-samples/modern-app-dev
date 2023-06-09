@@ -1,0 +1,11 @@
+replicaCount: 3
+name : uho-patient
+
+image:
+  pullPolicy: Always
+
+pod:
+  containerPort: 8080
+
+service:
+  port: 80

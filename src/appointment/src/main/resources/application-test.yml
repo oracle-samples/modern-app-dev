@@ -1,0 +1,27 @@
+micronaut:
+  application:
+    name: appointment
+  security:
+    enabled: false
+  metrics:
+    enabled: false
+    export:
+      oraclecloud:
+        enabled: true
+        namespace: uho_${micronaut.application.name}
+        resourceGroup: mn_local
+        compartmentId: dummy-compartment-id
+datasources:
+  default:
+    url: jdbc:h2:mem:devDb;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE
+    driverClassName: org.h2.Driver
+    username: sa
+    password: ''
+
+streaming:
+  id: ""
+  endpoint: ""
+
+oci:
+  config:
+    profile: DEFAULT

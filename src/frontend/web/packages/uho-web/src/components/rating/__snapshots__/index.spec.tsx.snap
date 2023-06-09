@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshot tests for Rating Snapshot: Component - Rating 1`] = `
+<DocumentFragment>
+  <div
+    data-oj-binding-provider="preact"
+  >
+    <oj-picto-chart
+      class="oj-dvtbase oj-pictochart oj-component-initnode oj-complete"
+    >
+      <div
+        class="oj-helper-detect-contraction"
+      >
+        <div
+          style="width: 200%; height: 200%;"
+        />
+      </div>
+      <div
+        class="oj-helper-detect-expansion"
+      >
+        <div />
+      </div>
+      <template
+        slot="itemTemplate"
+      />
+      <div
+        style="visibility: hidden;"
+      />
+      <svg
+        height="100%"
+        width="100%"
+      >
+        <defs />
+        <g
+          cursor="default"
+          font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Arial,sans-serif"
+          font-size="12px"
+          font-weight="400"
+        >
+          <g />
+        </g>
+      </svg>
+    </oj-picto-chart>
+  </div>
+  <div
+    id="__oj_layerhost_container"
+  />
+</DocumentFragment>
+`;

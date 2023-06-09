@@ -1,0 +1,37 @@
+global:
+  atpAdminSecret: "atp-admin"
+  atpWalletSecret: "atp-wallet"
+  atpConnectionSecret: "atp-connection"
+  ajdbAdminSecret: "ajdb-admin"
+  ajdbWalletSecret: "ajdb-wallet"
+  ajdbConnectionSecret: "ajdb-connection"
+  oci_vault_id:
+  idcs:
+    url:
+    keys:
+  secrets:
+    atp:
+      patient:
+        username: "PATIENT_SERVICE_USER"
+        password:
+      provider:
+        username: "PROVIDER_SERVICE_USER"
+        password:
+      encounter:
+        username: "ENCOUNTER_SERVICE_USER"
+        password:
+      appointment:
+        username: "APPOINTMENT_SERVICE_USER"
+        password:
+    ajdb:
+      encounter:
+        username: "ENCOUNTER_SERVICE_USER"
+        password:
+  deploy_id:
+  lb_nsg_id:
+  lb_ingress_nsg_id:
+  compartment_id:
+  repo_path:
+  image_tag:
+  atp_ocid:
+  ajdb_ocid:

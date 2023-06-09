@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshot tests for Patient Snapshot: Component - Patient 1`] = `
+<DocumentFragment>
+  <div
+    data-oj-binding-provider="preact"
+  />
+  <div
+    id="__oj_layerhost_container"
+  />
+</DocumentFragment>
+`;

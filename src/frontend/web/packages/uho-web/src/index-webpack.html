@@ -1,0 +1,35 @@
+<!--
+  ~ Copyright (c) 2023 Oracle and/or its affiliates.
+  ~ Licensed under the Universal Permissive License v 1.0 as shown at https://oss.oracl.com/licenses/upl/
+  -->
+<!DOCTYPE html>
+<html
+  id="main"
+  lang="<%= htmlWebpackPlugin.options.build.locale.lang %>"
+  dir="<%= htmlWebpackPlugin.options.build.locale.dir %>"
+>
+  <head>
+    <base href="/" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="refapp:version" content="<%= htmlWebpackPlugin.options.build.version %>" />
+    <meta name="refapp:environment" content="<%= htmlWebpackPlugin.options.build.env %>" />
+    <meta name="refapp:date" content="<%= htmlWebpackPlugin.options.build.date %>" />
+
+    <!-- Copyright (c) 2019,2023 Oracle and/or its affiliates. All rights reserved. -->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="https://static.oracle.com/cdn/fnd/gallery/2307.0.2/images/iconfont/ojuxIconFont.min.css"
+    />
+  </head>
+
+  <body data-oj-binding-provider="preact">
+    <script type="text/javascript">
+      // The "oj_whenReady" global variable enables a strategy that the busy context whenReady,
+      // will implicitly add a busy state, until the application calls applicationBootstrapComplete
+      // on the busy state context.
+      window['oj_whenReady'] = true;
+    </script>
+  </body>
+</html>

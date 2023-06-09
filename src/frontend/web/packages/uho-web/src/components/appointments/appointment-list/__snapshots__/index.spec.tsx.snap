@@ -1,0 +1,165 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshot tests for AppointmentList Snapshot: Component - AppointmentList 1`] = `
+<DocumentFragment>
+  <div
+    data-oj-binding-provider="preact"
+  >
+    <oj-list-view
+      class="oj-listview oj-listview-container oj-component oj-listview-gridlines-hidden oj-complete gridline-top-hidden gridline-bottom-hidden"
+    >
+      <div
+        class="oj-helper-detect-contraction"
+      >
+        <div
+          style="width: 200%; height: 200%;"
+        />
+      </div>
+      <div
+        class="oj-helper-detect-expansion"
+      >
+        <div />
+      </div>
+      <div
+        class="oj-helper-hidden-accessible"
+        tabindex="-1"
+      >
+         
+      </div>
+      <ul
+        aria-busy="false"
+        aria-label="list of appointments"
+        aria-multiselectable="false"
+        aria-rowcount="1"
+        class="oj-listview-element oj-component-initnode"
+        data-oj-context=""
+        data-oj-internal=""
+        role="grid"
+        tabindex="0"
+        x-ms-format-detection="none"
+      >
+        <li
+          aria-rowindex="1"
+          class="oj-listview-focused-element oj-listview-item-element oj-listview-item oj-listview-item-layout"
+          role="row"
+        >
+          <div
+            aria-selected="false"
+            class="oj-listview-cell-element"
+            role="gridcell"
+          >
+            <oj-c-list-item-layout
+              class="oj-complete"
+              data-oj-vdom-template-root=""
+            >
+              <div
+                style="padding: 12px 16px;"
+              >
+                <div
+                  class="_1mhs7ua undefined"
+                  style="grid-template-columns: 1fr; gap: calc(4 * var(--oj-c-PRIVATE-DO-NOT-USE-core-spacing-1x)) calc(4 * var(--oj-c-PRIVATE-DO-NOT-USE-core-spacing-1x));"
+                >
+                  <div
+                    class="_3lfxww"
+                  >
+                    <div
+                      class="_198d627"
+                    >
+                      <div />
+                      <div>
+                        <div
+                          class="oj-typography-body-md oj-typography-bold"
+                        >
+                          Wed Jun 08 2022
+                        </div>
+                        <div
+                          class="oj-typography-body-sm"
+                          slot="secondary"
+                        />
+                        <div
+                          class="oj-typography-body-xs oj-text-color-secondary"
+                          slot="tertiary"
+                        >
+                          Provider 1
+                        </div>
+                        <div
+                          class="oj-typography-body-xs oj-text-color-secondary"
+                          slot="metadata"
+                        >
+                          CONFIRMED
+                        </div>
+                      </div>
+                      <div />
+                      <div />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </oj-c-list-item-layout>
+          </div>
+        </li>
+        <li
+          class="oj-listview-skeleton-container"
+          role="presentation"
+          style="visibility: hidden;"
+        >
+          <ul
+            class="oj-listview-group"
+            role="presentation"
+          >
+            <li
+              class="oj-listview-item oj-listview-item-layout gridline-hidden"
+              role="presentation"
+            >
+              <div
+                class="oj-listview-cell-element oj-listview-skeleton oj-listview-skeleton-line-height oj-animation-skeleton"
+              />
+            </li>
+            <li
+              class="oj-listview-item oj-listview-item-layout gridline-hidden"
+              role="presentation"
+            >
+              <div
+                class="oj-listview-cell-element oj-listview-skeleton oj-listview-skeleton-line-height oj-animation-skeleton"
+              />
+            </li>
+            <li
+              class="oj-listview-item oj-listview-item-layout gridline-hidden"
+              role="presentation"
+            >
+              <div
+                class="oj-listview-cell-element oj-listview-skeleton oj-listview-skeleton-line-height oj-animation-skeleton"
+              />
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <template
+        slot="itemTemplate"
+      />
+      <div
+        class="oj-listview-status-message oj-listview-status"
+        role="status"
+        style="display: none;"
+      >
+        <div
+          class="oj-icon oj-listview-loading-icon"
+        />
+      </div>
+      <div
+        class="oj-helper-hidden-accessible"
+        role="status"
+        tabindex="-1"
+      />
+      <div
+        class="oj-helper-hidden-accessible"
+      >
+        Use arrow keys to expand and collapse.
+      </div>
+    </oj-list-view>
+  </div>
+  <div
+    id="__oj_layerhost_container"
+  />
+</DocumentFragment>
+`;

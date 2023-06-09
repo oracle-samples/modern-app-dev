@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshot tests for 404 Snapshot: Component - 404 1`] = `
+<DocumentFragment>
+  <div
+    data-oj-binding-provider="preact"
+  >
+    <div
+      class="not-found-wrapper"
+    >
+      <div
+        class="content"
+      >
+        <div
+          class="oj-flex oj-sm-flex-direction-column"
+        >
+          <div
+            class="oj-flex-item"
+          >
+            <span
+              class="animation oj-text-primary-color"
+            >
+              Error 404
+            </span>
+          </div>
+          <div
+            class="oj-flex-item"
+          >
+            <oj-c-button
+              class="oj-button-lg oj-complete"
+            >
+              <button
+                class="_1hs6wpf oj-c-base-button-callToAction oj-c-base-button-md _1y7lsgo _1bp9nal undefined"
+                style="width: 100%;"
+                tabindex="0"
+              >
+                Go back to Home
+              </button>
+            </oj-c-button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    id="__oj_layerhost_container"
+  />
+</DocumentFragment>
+`;

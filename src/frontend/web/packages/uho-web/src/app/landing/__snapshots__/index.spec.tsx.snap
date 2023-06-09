@@ -1,0 +1,131 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshot tests for Landing Snapshot: Component - Landing 1`] = `
+<DocumentFragment>
+  <div
+    data-oj-binding-provider="preact"
+  >
+    <div
+      class="landing-page"
+    >
+      <div
+        class="oj-web-applayout-max-width oj-flex oj-sm-margin-12x-top oj-sm-justify-content-center"
+      >
+        <div
+          class="oj-flex-item oj-sm-10 oj-md-10 oj-lg-10 oj-sm-margin-12x-top"
+        >
+          <div
+            class="undefined oj-panel oj-panel-shadow-sm oj-flex oj-flex-1 oj-panel-shadow-sm content-panel"
+          >
+            <div
+              class="oj-flex"
+            >
+              <div
+                class="oj-flex-item oj-sm-margin-6x"
+              >
+                <div
+                  class="oj-typography-heading-lg"
+                >
+                  Welcome to Universal Healthcare Organization
+                </div>
+                <div
+                  class="oj-typography-body-lg"
+                >
+                  All the care you need. In one single place.
+                </div>
+              </div>
+            </div>
+            <div
+              class="oj-flex oj-sm-flex-items-initial oj-sm-justify-content-center oj-sm-align-items-center oj-xl-margin-12x"
+            >
+              <div
+                class="oj-flex-item oj-sm-margin-10x"
+              >
+                <oj-action-card
+                  class="action-card"
+                >
+                  <div
+                    class="oj-sm-padding-4x"
+                  >
+                    <div
+                      class="oj-flex oj-sm-flex-direction-column oj-sm-flex-justify-content-center"
+                    >
+                      <oj-c-avatar
+                        class="card-avatar oj-flex-item oj-sm-margin-8x-horizontal oj-sm-margin-4x-bottom oj-complete"
+                        role="img"
+                      >
+                        <div
+                          aria-label="Login as Patient"
+                          class="x4exih oj-c-avatar-bg-teal oj-c-avatar-2xl"
+                          role="img"
+                        >
+                          <div
+                            aria-hidden="true"
+                            class="k1vxov _1fma8t6 _1lhcr86 u5bbjp"
+                          >
+                            <span
+                              class="oj-ux-ico-patient"
+                            />
+                          </div>
+                        </div>
+                      </oj-c-avatar>
+                      <span
+                        class="card-title oj-text-primary-color oj-typography-subheading-xs oj-flex-item"
+                      >
+                        Login as Patient
+                      </span>
+                    </div>
+                  </div>
+                </oj-action-card>
+              </div>
+              <div
+                class="oj-flex-item oj-sm-margin-10x"
+              >
+                <oj-action-card
+                  class="action-card"
+                >
+                  <div
+                    class="oj-sm-padding-4x"
+                  >
+                    <div
+                      class="oj-flex oj-sm-flex-direction-column oj-sm-flex-justify-content-center"
+                    >
+                      <oj-c-avatar
+                        class="card-avatar oj-flex-item oj-sm-margin-8x-horizontal oj-sm-margin-4x-bottom oj-complete"
+                        role="img"
+                      >
+                        <div
+                          aria-label="Login as Provider"
+                          class="x4exih oj-c-avatar-bg-pink oj-c-avatar-2xl"
+                          role="img"
+                        >
+                          <div
+                            aria-hidden="true"
+                            class="k1vxov _1fma8t6 _1lhcr86 u5bbjp"
+                          >
+                            <span
+                              class="oj-ux-ico-user-md"
+                            />
+                          </div>
+                        </div>
+                      </oj-c-avatar>
+                      <span
+                        class="card-title oj-text-primary-color oj-typography-subheading-xs oj-flex-item"
+                      >
+                        Login as Provider
+                      </span>
+                    </div>
+                  </div>
+                </oj-action-card>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    id="__oj_layerhost_container"
+  />
+</DocumentFragment>
+`;

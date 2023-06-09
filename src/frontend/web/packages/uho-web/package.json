@@ -1,0 +1,57 @@
+{
+  "name": "@uho/web",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "watch:dev": "NODE_ENV=development TS_NODE_PROJECT=tsconfig.commonjs.json webpack --config ./webpack/webpack.config.dev.ts --watch",
+    "serve:dev": "NODE_ENV=development TS_NODE_PROJECT=tsconfig.commonjs.json WATCH=true webpack serve --config webpack/webpack.config.dev.ts --hot --progress",
+    "test": "TZ=America/New_York NODE_ENV=test node ./node_modules/.bin/jest",
+    "test-coverage": "TZ=America/New_York node ./node_modules/.bin/jest --coverage",
+    "build:prod": "NODE_ENV=production TS_NODE_PROJECT=tsconfig.commonjs.json webpack --config ./webpack/webpack.config.prod.ts",
+    "build:dev": "NODE_ENV=development TS_NODE_PROJECT=tsconfig.commonjs.json webpack --config ./webpack/webpack.config.dev.ts",
+    "build": "npm run build:prod"
+  },
+  "workspaces": {
+    "nohoist": [
+      "**"
+    ]
+  },
+  "dependencies": {
+    "@uho/appointment-api-client": "*",
+    "@uho/encounter-api-client": "*",
+    "@uho/patient-api-client": "*",
+    "@uho/provider-api-client": "*",
+    "@oracle/oraclejet": "14.1.0",
+    "@oracle/oraclejet-preact": "14.1.0",
+    "@oracle/oraclejet-core-pack": "14.1.0",
+    "preact": "10.11.3",
+    "@tanstack/react-query": "4.29.3",
+    "react-router-dom": "6.10.0"
+  },
+  "devDependencies": {
+    "@prefresh/webpack": "3.3.4",
+    "@types/mini-css-extract-plugin": "1.4.3",
+    "@types/node": "14.18.42",
+    "@types/react-router-dom": "5.3.3",
+    "@types/webpack-merge": "5.0.0",
+    "@uho/jest-preset": "*",
+    "@uho/ts-config": "*",
+    "compression-webpack-plugin": "10.0.0",
+    "css-fix-url-loader": "1.0.2",
+    "css-loader": "5.2.7",
+    "html-loader": "4.2.0",
+    "html-webpack-plugin": "5.5.1",
+    "jest": "27.5.1",
+    "mini-css-extract-plugin": "1.6.2",
+    "raw-loader": "4.0.2",
+    "sass": "1.61.0",
+    "sass-loader": "13.2.2",
+    "style-loader": "3.3.2",
+    "ts-loader": "9.4.2",
+    "ts-node": "10.9.1",
+    "webpack": "5.79.0",
+    "webpack-cli": "5.0.1",
+    "webpack-dev-server": "4.13.3",
+    "webpack-merge": "5.8.0"
+  }
+}

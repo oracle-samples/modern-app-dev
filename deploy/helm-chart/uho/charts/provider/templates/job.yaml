@@ -1,0 +1,53 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: "provider-init-job"
+spec:
+  ttlSecondsAfterFinished: 1200
+  template:
+    spec:
+      restartPolicy: Never
+      containers:
+        - name: init
+          image: ghcr.io/oracle/oraclelinux8-instantclient:19
+          workingDir: "/data"
+          command: ["/bin/sh","-c"]
+          args:
+            - sqlplus ADMIN/\"${ATP_ADMIN_PW}\"@${ATP_SERVICE} @atp.init.sql ${PROVIDER_ATP_USERNAME} ${PROVIDER_ATP_PASSWORD}
+          env:
+            - name: ATP_ADMIN_PW
+              valueFrom:
+                secretKeyRef:
+                  name: {{ .Values.global.atpAdminSecret }}
+                  key: atp-admin-password
+            - name: PROVIDER_ATP_USERNAME
+              valueFrom:
+                secretKeyRef:
+                  name: atp-provider-secret
+                  key: atp-provider-username
+            - name: PROVIDER_ATP_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: atp-provider-secret
+                  key: atp-provider-password
+            - name: ATP_SERVICE
+              valueFrom:
+                secretKeyRef:
+                  name: {{ .Values.global.atpConnectionSecret }}
+                  key: atp-service
+          volumeMounts:
+            - name: initdb
+              mountPath: /data/
+            - name: wallet
+              mountPath: /usr/lib/oracle/19.18/client64/lib/network/admin/
+              readOnly: true
+      volumes:
+        - name: wallet
+          secret:
+            secretName: {{ .Values.global.atpWalletSecret }}
+        - name: initdb
+          configMap:
+            name: "provider-atp-init-configmap"
+            items:
+            - key: atp.init.sql
+              path: atp.init.sql

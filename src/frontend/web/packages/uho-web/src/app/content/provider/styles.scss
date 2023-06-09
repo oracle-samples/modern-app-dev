@@ -1,0 +1,11 @@
+.provider-background {
+  background: var(--background-image-left) left bottom / auto no-repeat,
+    var(--background-image-right) right bottom / auto no-repeat,
+    linear-gradient(to bottom, var(--header-background-neutral-30), var(--header-background-neutral-30)) top / auto
+      236px no-repeat,
+    linear-gradient(to top, var(--page-background-neutral-30), var(--page-background-neutral-30)) top / auto no-repeat;
+
+  .provider-landing {
+    height: 100vh;
+  }
+}

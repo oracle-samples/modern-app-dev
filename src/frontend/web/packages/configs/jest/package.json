@@ -1,0 +1,33 @@
+{
+  "name": "@uho/jest-preset",
+  "version": "0.0.0",
+  "license": "UPL-1.0",
+  "private": "true",
+  "dependencies": {
+    "@oracle/oraclejet-jest-preset": "14.1.0",
+    "@uho/babel-config": "*",
+    "@testing-library/jest-dom": "5.16.5",
+    "@testing-library/preact": "3.2.3",
+    "@testing-library/user-event": "14.4.3",
+    "@types/jest": "27.5.1",
+    "babel-jest": "27.5.1",
+    "jest": "27.5.1",
+    "ts-jest": "27.1.5"
+  },
+  "peerDependencies": {
+    "preact": "10.11.3",
+    "@oracle/oraclejet": "14.1.0",
+    "@oracle/oraclejet-core-pack": "14.1.0"
+  },
+  "workspaces": {
+    "nohoist": [
+      "**"
+    ]
+  },
+  "main": "jest-preset.js",
+  "files": [
+    "jest-preset.js",
+    "babel.config.js",
+    "setupTests.ts"
+  ]
+}

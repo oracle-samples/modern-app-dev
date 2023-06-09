@@ -1,0 +1,75 @@
+# Copyright (c) 2023 Oracle and/or its affiliates.
+# Licensed under the Universal Permissive License v 1.0 as shown at https://oss.oracl.com/licenses/upl/
+version: 0.1
+component: build
+timeoutInSeconds: 600
+runAs: root
+shell: bash
+env:
+  variables:
+    key: "value"
+  exportedVariables:
+    - BUILDRUN_HASH
+
+steps:
+  - type: Command
+    name: "Export variables step"
+    timeoutInSeconds: 40
+    command: |
+      export BUILDRUN_HASH=`echo ${OCI_BUILD_RUN_ID} | rev | cut -c 1-7`
+      echo "BUILDRUN_HASH: " $BUILDRUN_HASH
+    onFailure:
+      - type: Command
+        command: echo "build failed, please debug"
+        timeoutInSeconds: 40
+        runAs: root
+  - type: Command
+    name: "Install jq"
+    timeoutInSeconds: 300
+    command: |
+      yum install yum-utils
+      yum-config-manager --enable public_ol6_addons
+      yum install jq -y
+    onFailure:
+      - type: Command
+        command: echo "jq install failed"
+        timeoutInSeconds: 40
+        runAs: root
+  - type: Command
+    name: "Wait for deploy pipelines"
+    timeoutInSeconds: 1800
+    command: |
+      timestamp_120_mins_ago=$(date -u "+%FT%TZ" --date='120 minutes ago')
+      while : ; do
+          lifecycle_state_list=$(oci devops deployment list --all --time-created-greater-than-or-equal-to $timestamp_120_mins_ago --project-id ${DEVOPS_PROJECT_ID} | jq '.data.items[] | select(."lifecycle-state" != "SUCCEEDED")  | {"lifecycle-state"} | join("")' -r)
+          if [ -z "$lifecycle_state_list" ]; then
+              break
+          elif [[ "$lifecycle_state_list" == *"FAILED"* ]]; then
+              echo "ERROR: Deployment(s) in FAILED state. Terminating build."
+              exit 1
+          else
+              echo "Waiting for 2 mins"
+              sleep 120
+          fi
+      done
+    onFailure:
+      - type: Command
+        command: echo "wait for deploy pipelines failed"
+        timeoutInSeconds: 40
+        runAs: root
+  - type: Command
+    name: "Build and Test step"
+    timeoutInSeconds: 1200
+    command: |
+      cd ${OCI_WORKSPACE_DIR}/uho_build_source/test
+      idcs_secret_bundle=$(oci secrets secret-bundle get-secret-bundle-by-name --secret-name ${SECRET_NAME} --vault-id ${VAULT_ID} | jq -r '.data."secret-bundle-content".content')
+      docker build \
+      -t test:latest \
+      --build-arg IDCS_URL=${IDCS_URL} \
+      --build-arg APIGW_URL=${APIGW_URL} \
+      --build-arg IDCS_SECRET_BUNDLE=$idcs_secret_bundle .
+    onFailure:
+      - type: Command
+        command: echo "build failed"
+        timeoutInSeconds: 40
+        runAs: root

@@ -1,0 +1,74 @@
+micronaut:
+  application:
+    name: frontend
+  router:
+    static-resources:
+      default:
+        enabled: true
+        paths: classpath:static
+        mapping: /**
+
+  security:
+    token:
+      jwt:
+        signatures:
+          static-jwks:
+            key-type: "RSA"
+            keys:
+    interceptUrlMap:
+      - pattern: ${micronaut.server.context-path}
+        access: isAnonymous()
+      - pattern: ${micronaut.server.context-path}/app/**/*.*
+        access: isAnonymous()
+      - pattern: ${micronaut.server.context-path}/main.css
+        access: isAnonymous()
+      - pattern: ${micronaut.server.context-path}/favicon.ico
+        access: isAnonymous()
+      - pattern: ${micronaut.server.context-path}/patient/**/*.*
+        access: isAuthenticated()
+      - pattern: ${micronaut.server.context-path}/provider/**/*.*
+        access: isAuthenticated()
+    authentication: idtoken
+    redirect:
+      patient-login-success: ${micronaut.server.context-path}/patient
+      provider-login-success: ${micronaut.server.context-path}/provider
+      logout: ${micronaut.server.context-path}/
+    oauth2:
+      clients:
+        patient:
+          scopes:
+            - openid
+            - ${apigw.url}/patient
+        provider:
+          scopes:
+            - openid
+            - ${apigw.url}/provider
+      callback-uri: ${apigw.url}/oauth/callback{/provider}
+      login-uri: ${apigw.url}/oauth/login{/provider}
+    endpoints:
+      logout:
+        enabled: true
+        get-allowed: true
+        path: /oauth/logout
+  server:
+    context-path: /home
+
+  metrics:
+    enabled: true
+    export:
+      oraclecloud:
+        enabled: true
+        namespace: uho_${micronaut.application.name}
+        resourceGroup: mn_prod
+        compartmentId:
+tracing:
+  zipkin:
+    enabled: true
+    sampler:
+      probability: 1
+    http:
+      url:
+      path:
+
+oci:
+  config:

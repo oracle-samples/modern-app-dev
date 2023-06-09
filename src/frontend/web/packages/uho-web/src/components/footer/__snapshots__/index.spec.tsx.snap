@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshot tests for Footer Snapshot: Component - Footer 1`] = `
+<DocumentFragment>
+  <div
+    data-oj-binding-provider="preact"
+  >
+    <div
+      class="footer"
+    >
+      <oj-navigation-list
+        class="oj-sm-condense oj-sm-margin-8x-horizontal oj-navigationlist oj-navigationlist-horizontal-bottom oj-navigationlist-expanded oj-navigationlist-horizontal oj-navigationlist-app-level oj-component-initnode oj-complete"
+        role="tablist"
+        tabindex="0"
+      >
+        <template
+          slot="itemTemplate"
+        />
+        <div
+          class="oj-navigationlist-listview-container"
+          role="presentation"
+        >
+          <div
+            class="oj-navigationlist-listview oj-component"
+            role="presentation"
+            style="max-width: none;"
+          >
+            <div
+              class="oj-helper-detect-contraction"
+            >
+              <div
+                style="width: 200%; height: 200%;"
+              />
+            </div>
+            <div
+              class="oj-helper-detect-expansion"
+            >
+              <div />
+            </div>
+            <div
+              class="oj-helper-hidden-accessible"
+              tabindex="-1"
+            >
+               
+            </div>
+            <ul
+              class="oj-navigationlist-element oj-navigationlist-has-icons"
+              role="presentation"
+            >
+              <li
+                class="oj-navigationlist-item-element oj-navigationlist-item oj-default"
+                data-oj-vdom-template-root=""
+                role="presentation"
+              >
+                <a
+                  aria-selected="false"
+                  class="oj-navigationlist-focused-element oj-navigationlist-item-content"
+                  data-oj-tabmod="0"
+                  href="#"
+                  role="tab"
+                  tabindex="-1"
+                >
+                  <span
+                    class="oj-navigationlist-item-icon icon"
+                  />
+                  <span
+                    class="oj-navigationlist-item-label"
+                  >
+                    foo
+                  </span>
+                </a>
+              </li>
+            </ul>
+            <div
+              class="oj-navigationlist-status-message oj-navigationlist-status"
+              role="status"
+              style="display: none;"
+            >
+              <div
+                class="oj-icon oj-navigationlist-loading-icon"
+              />
+            </div>
+            <div
+              class="oj-helper-hidden-accessible"
+              role="status"
+              tabindex="-1"
+            />
+          </div>
+        </div>
+      </oj-navigation-list>
+    </div>
+  </div>
+  <div
+    id="__oj_layerhost_container"
+  />
+</DocumentFragment>
+`;

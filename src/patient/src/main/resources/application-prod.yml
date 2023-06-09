@@ -1,0 +1,77 @@
+micronaut:
+  application:
+    name: patient
+  security:
+    token:
+      jwt:
+        signatures:
+          static-jwks:
+            key-type: "RSA"
+            keys:
+      roles-name: "scope"
+    endpoints:
+      logout:
+        enabled: true
+        get-allowed: true
+    intercept-url-map:
+      - pattern: /v1/patients/*/actions/authorizeDevice
+        httpMethod: POST
+        access:
+          - /patient
+      - pattern: /v1/patients
+        httpMethod: POST
+        access:
+          - /service
+      - pattern: /v1/patients/*
+        httpMethod: DELETE
+        access:
+          - /service
+      - pattern: /v1/patients/*
+        httpMethod: GET
+        access:
+          - /patient
+          - /provider
+          - /service
+      - pattern: /v1/patients/username/*
+        httpMethod: GET
+        access:
+          - /patient
+          - /provider
+      - pattern: /v1/patients/actions/search
+        httpMethod: GET
+        access:
+          - /provider
+      - pattern: /v1/patients/*
+        httpMethod: PUT
+        access:
+          - /patient
+          - /service
+
+  metrics:
+    enabled: true
+    export:
+      oraclecloud:
+        enabled: true
+        namespace: uho_${micronaut.application.name}
+        resourceGroup: mn_prod
+        compartmentId:
+
+streaming:
+  id:
+  endpoint:
+
+tracing:
+  zipkin:
+    enabled: true
+    sampler:
+      probability: 1
+    http:
+      url:
+      path:
+service:
+  provider: "http://uho-provider"
+
+oci:
+  config:
+    instance-principal:
+      enabled: true
