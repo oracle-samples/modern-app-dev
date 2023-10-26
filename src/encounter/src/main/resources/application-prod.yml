@@ -13,6 +13,7 @@ micronaut:
       logout:
         enabled: true
         get-allowed: true
+    intercept-url-map-prepend-pattern-with-context-path: false
     intercept-url-map:
       - pattern: /v1/encounters
         httpMethod: POST
@@ -52,10 +53,6 @@ micronaut:
         namespace: uho_${micronaut.application.name}
         resourceGroup: mn_prod
         compartmentId:
-  objectstorage:
-    oraclecloud:
-      compartmentId: ${OBJECT_STORAGE_COMPARTMENT_ID}
-      bucketName: ${OBJECT_STORAGE_BUCKET_NAME}
 datasources:
   default:
     url: jdbc:oracle:thin:@${ATP_SERVICE}?tns_admin=${TNS_ADMIN}
@@ -69,16 +66,6 @@ datasources:
       oracle:
         jdbc:
           fanEnabled: false
-
-tracing:
-  zipkin:
-    enabled: true
-    sampler:
-      probability: 1
-    http:
-      url:
-      path:
-
 oci:
   config:
     instance-principal:

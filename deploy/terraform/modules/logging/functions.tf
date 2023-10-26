@@ -12,7 +12,7 @@ resource "oci_logging_log" "fn_log" {
   configuration {
     source {
       category    = local.category_invoke
-      resource    = var.email_devliery_application_id
+      resource    = var.email_delivery_application_id
       service     = local.service_functions
       source_type = local.source_type
     }

@@ -97,10 +97,10 @@ class ProviderMapperTest {
   @DisplayName("test Schedule - mapApiToDomainModels")
   void testScheduleMapApiToDomainModels() {
     CreateScheduleDetailsRequest request = new CreateScheduleDetailsRequest();
-    request.setStartTime(TEST_START_TIME);
-    request.setEndTime(TEST_END_TIME);
-    Assertions.assertEquals(TEST_START_TIME, request.getStartTime());
-    Assertions.assertEquals(TEST_END_TIME, request.getEndTime());
+    request.setStartTime(TEST_ZONE_START_TIME);
+    request.setEndTime(TEST_ZONE_END_TIME);
+    Assertions.assertEquals(TEST_ZONE_START_TIME, request.getStartTime());
+    Assertions.assertEquals(TEST_ZONE_END_TIME, request.getEndTime());
   }
 
   @Test
@@ -120,8 +120,8 @@ class ProviderMapperTest {
     scheduleEntity.setEndTime(TEST_ZONE_END_TIME);
     Schedule result = providerMapper.mapDomainToApiModels(scheduleEntity);
     Assertions.assertEquals(result.getProviderId(), scheduleEntity.getProvider().getId());
-    Assertions.assertEquals(TEST_START_TIME, result.getStartTime());
-    Assertions.assertEquals(TEST_END_TIME, result.getEndTime());
+    Assertions.assertEquals(TEST_ZONE_START_TIME, result.getStartTime());
+    Assertions.assertEquals(TEST_ZONE_END_TIME, result.getEndTime());
   }
 
   @Test

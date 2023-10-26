@@ -11,10 +11,10 @@ import com.oracle.refapp.domain.entity.EncounterEntity;
 import com.oracle.refapp.domain.entity.EncounterEntityCollection;
 import com.oracle.refapp.exceptions.EncounterCRUDFailedException;
 import com.oracle.refapp.model.FilterSpecification;
+import jakarta.inject.Singleton;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-import javax.inject.Singleton;
 import oracle.soda.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -125,7 +125,7 @@ public class EncounterRepository {
       Integer nextPage = totalNumberOfItems > (long) (page + 1) * limit ? page + 1 : null;
       return new EncounterEntityCollection(items, nextPage);
     } catch (OracleException | JsonProcessingException e) {
-      LOG.error("Error while filtering encounters");
+      LOG.error("Error while filtering encounters", e);
       throw new EncounterCRUDFailedException("Error while filtering encounters");
     } finally {
       if (cursor != null) {

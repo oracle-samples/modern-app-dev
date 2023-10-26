@@ -15,6 +15,7 @@ import com.oracle.refapp.model.*;
 import com.oracle.refapp.service.AppointmentService;
 import com.oracle.refapp.telemetry.TelemetryClient;
 import io.micronaut.data.exceptions.DataAccessException;
+import io.micronaut.http.HttpResponse;
 import io.micronaut.http.HttpStatus;
 import io.micronaut.http.annotation.Controller;
 import io.micronaut.http.exceptions.HttpStatusException;
@@ -24,11 +25,10 @@ import java.time.format.DateTimeParseException;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-import org.openapitools.api.AbstractAppointmentController;
 import reactor.core.publisher.Mono;
 
 @Controller
-public class AppointmentController extends AbstractAppointmentController {
+public class AppointmentController implements AppointmentApi {
 
   private final AppointmentService appointmentService;
 
@@ -80,10 +80,10 @@ public class AppointmentController extends AbstractAppointmentController {
   }
 
   @Override
-  public Mono<Object> deleteAppointment(Integer appointmentId) {
+  public Mono<HttpResponse<Void>> deleteAppointment(Integer appointmentId) {
     try {
       appointmentService.deleteAppointment(appointmentId);
-      return Mono.just("{}");
+      return Mono.just(HttpResponse.ok());
     } catch (NoSuchAppointmentFoundException exception) {
       throw new HttpStatusException(
         HttpStatus.NOT_FOUND,
@@ -109,8 +109,8 @@ public class AppointmentController extends AbstractAppointmentController {
   public Mono<AppointmentCollection> listAppointments(
     Integer patientId,
     Integer providerId,
-    String startTime,
-    String endTime,
+    ZonedDateTime startTime,
+    ZonedDateTime endTime,
     Integer limit,
     Integer page
   ) {
@@ -123,8 +123,8 @@ public class AppointmentController extends AbstractAppointmentController {
             .message("Search with either patientId or providerId")
         );
       }
-      ZonedDateTime zonedStartTime = startTime != null ? ZonedDateTime.parse(startTime) : null;
-      ZonedDateTime zonedEndTime = endTime != null ? ZonedDateTime.parse(endTime) : null;
+      ZonedDateTime zonedStartTime = startTime != null ? startTime : null;
+      ZonedDateTime zonedEndTime = endTime != null ? endTime : null;
       AppointmentSearchCriteria searchCriteria = new AppointmentSearchCriteria(
         zonedStartTime,
         zonedEndTime,

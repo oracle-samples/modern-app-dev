@@ -4,20 +4,15 @@
  */
 package com.oracle.refapp.helpers;
 
-import com.oracle.bmc.objectstorage.ObjectStorageClient;
-import com.oracle.bmc.objectstorage.requests.PutObjectRequest;
-import com.oracle.bmc.objectstorage.responses.PutObjectResponse;
-import com.oracle.refapp.connections.ObjectStorageConnection;
 import com.oracle.refapp.exceptions.EncounterServiceException;
 import com.oracle.refapp.model.Encounter;
 import com.oracle.refapp.model.Recommendation;
-import java.io.ByteArrayInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.nio.charset.StandardCharsets;
+import io.micronaut.objectstorage.ObjectStorageException;
+import io.micronaut.objectstorage.ObjectStorageOperations;
+import io.micronaut.objectstorage.request.UploadRequest;
+import jakarta.inject.Singleton;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import javax.inject.Singleton;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -26,59 +21,28 @@ public class ObjectStorageHelper {
 
   private static final Logger LOG = LoggerFactory.getLogger(ObjectStorageHelper.class);
 
-  private final ObjectStorageConnection objectStorage;
+  private final ObjectStorageOperations<?, ?, ?> objectStorage;
 
-  public ObjectStorageHelper(ObjectStorageConnection objectStorage) {
+  public ObjectStorageHelper(ObjectStorageOperations<?, ?, ?> objectStorage) {
     this.objectStorage = objectStorage;
   }
 
   public void upload(Encounter encounter) throws EncounterServiceException {
-    ObjectStorageClient client = objectStorage.getClient();
-    String osNamespace = objectStorage.getNameSpace();
     String filePath = encounter.getEncounterId() + "_" + encounter.getPatientId() + ".txt";
-
+    String content = generatePrescriptionContent(encounter.getRecommendation());
+    UploadRequest objectStorageUpload = UploadRequest.fromBytes(content.getBytes(), filePath);
     try {
-      PutObjectResponse putObjectResponse = putObjectToBucket(
-        client,
-        osNamespace,
-        encounter.getRecommendation(),
-        filePath
-      );
-      int responseCode = putObjectResponse.get__httpStatusCode__();
-      if (responseCode != 200) {
-        throw new EncounterServiceException("Received non 200 response from object storage." + putObjectResponse);
-      }
-    } catch (IOException e) {
-      throw new EncounterServiceException("Error saving recommendation to object storage." + e);
+      objectStorage.upload(objectStorageUpload);
+      LOG.info("File uploaded: {}", filePath);
+    } catch (ObjectStorageException exception) {
+      throw new EncounterServiceException("Error saving recommendation to object storage.", exception);
     }
   }
 
-  public PutObjectResponse putObjectToBucket(
-    ObjectStorageClient osClient,
-    String osNamespace,
-    Recommendation recommendation,
-    String objectName
-  ) throws IOException {
-    PutObjectResponse putObjectResponse;
-    String osPathToObject = "/n/" + osNamespace + "/b/" + objectStorage.getBucket() + "/o/" + objectName;
-    LOG.info("Uploading the recommendation as {}", osPathToObject);
-    try (InputStream content = generatePrescriptionContent(recommendation); content) {
-      PutObjectRequest putObjectRequest = PutObjectRequest
-        .builder()
-        .namespaceName(osNamespace)
-        .bucketName(objectStorage.getBucket())
-        .objectName(objectName)
-        .putObjectBody(content)
-        .build();
-      putObjectResponse = osClient.putObject(putObjectRequest);
-    }
-    return putObjectResponse;
-  }
-
-  private InputStream generatePrescriptionContent(Recommendation recommendation) {
+  private String generatePrescriptionContent(Recommendation recommendation) {
     SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy.dd.MM");
     Date date = new Date();
-    String data = String.format(
+    return String.format(
       "United Healthcare Organisation %n %n Date Generated: %s%n%n" +
       "Recommendation Date: %s%n" +
       "Recommended By: %s%n" +
@@ -90,7 +54,5 @@ public class ObjectStorageHelper {
       recommendation.getInstruction(),
       recommendation.getAdditionalInstructions()
     );
-
-    return new ByteArrayInputStream(data.getBytes(StandardCharsets.UTF_8));
   }
 }

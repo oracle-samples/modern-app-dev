@@ -27,15 +27,6 @@ micronaut:
         resourceGroup: mn_local
         compartmentId: dummy-compartment-id
 
-tracing:
-  zipkin:
-    enabled: false
-    sampler:
-      probability: 1
-    http:
-      url: "testUrl"
-      path: "testPath"
-
 apigw:
   url: test-url
 

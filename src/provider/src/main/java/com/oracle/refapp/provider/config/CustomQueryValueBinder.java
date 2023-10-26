@@ -19,7 +19,7 @@ import java.util.Optional;
  */
 public class CustomQueryValueBinder<T> extends QueryValueArgumentBinder<T> {
 
-  public CustomQueryValueBinder(ConversionService<?> conversionService) {
+  public CustomQueryValueBinder(ConversionService conversionService) {
     super(conversionService);
   }
 

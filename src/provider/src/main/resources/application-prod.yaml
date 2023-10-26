@@ -13,6 +13,7 @@ micronaut:
       logout:
         enabled: true
         get-allowed: true
+    intercept-url-map-prepend-pattern-with-context-path: false
     intercept-url-map:
       - pattern: /v1/providers/*/feedbacks
         httpMethod: POST
@@ -88,15 +89,6 @@ datasources:
 streaming:
   id:
   endpoint:
-
-tracing:
-  zipkin:
-    enabled: true
-    sampler:
-      probability: 1
-    http:
-      url:
-      path:
 
 oci:
   config:

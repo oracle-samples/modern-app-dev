@@ -9,7 +9,6 @@ import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
 import com.oracle.refapp.connections.JSONConnection;
-import com.oracle.refapp.connections.ObjectStorageConnection;
 import com.oracle.refapp.exceptions.EncounterServiceException;
 import com.oracle.refapp.model.CodeCollection;
 import com.oracle.refapp.model.CodeSummary;
@@ -26,6 +25,7 @@ import io.micronaut.http.client.HttpClient;
 import io.micronaut.http.client.annotation.Client;
 import io.micronaut.http.client.exceptions.HttpClientResponseException;
 import io.micronaut.http.uri.UriBuilder;
+import io.micronaut.objectstorage.ObjectStorageOperations;
 import io.micronaut.test.annotation.MockBean;
 import io.micronaut.test.extensions.junit5.annotation.MicronautTest;
 import jakarta.inject.Inject;
@@ -53,15 +53,22 @@ class EncounterControllerTest {
     return mock(JSONConnection.class);
   }
 
-  @Singleton
-  @Replaces(ObjectStorageConnection.class)
-  ObjectStorageConnection mockedObjectStorageConnection() {
-    return mock(ObjectStorageConnection.class);
-  }
-
   @MockBean(EncounterService.class)
   EncounterService mockedEncounterService() {
     return mock(EncounterService.class);
+  }
+
+  @Inject
+  ObjectStorageOperations<?, ?, ?> objectStorageOperations;
+
+  /*
+   * Mock ObjectStorageOperations with Mockito (https://site.mockito.org/)
+   * The @MockBean annotation indicates the method returns a mock bean of ObjectStorageOperations.
+   * The ObjectStorageOperations mock is injected into the test with @Inject above.
+   */
+  @MockBean(ObjectStorageOperations.class)
+  ObjectStorageOperations<?, ?, ?> objectStorageOperations() {
+    return mock(ObjectStorageOperations.class);
   }
 
   @Test

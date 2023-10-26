@@ -24,7 +24,7 @@ mvn package -DskipTests
 
 ### Start the application through Docker
 ```shell
-docker build -t feedback:java -f Dockerfile.dev .
+DOCKER_BUILDKIT=1 docker build -t feedback:java -f Dockerfile.dev .
 docker run -p 8080:8080 feedback:java
 ```
 

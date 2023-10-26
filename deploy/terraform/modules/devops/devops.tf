@@ -107,7 +107,7 @@ resource "oci_logging_log" "devops_log" {
 resource "oci_devops_deploy_environment" "function_environment" {
   deploy_environment_type = "FUNCTION"
   project_id              = oci_devops_project.uho_project.id
-  function_id             = var.email_devliery_function_id
+  function_id             = var.email_delivery_function_id
 
   description  = "Notification function environment"
   display_name = "notification-function-environment"
@@ -115,8 +115,9 @@ resource "oci_devops_deploy_environment" "function_environment" {
 }
 
 resource "oci_devops_build_pipeline" "uho_build_pipeline" {
+  for_each = toset(local.projects)
   project_id   = oci_devops_project.uho_project.id
-  display_name = "uho-build-pipeline"
+  display_name = "uho-build-pipeline-${each.key}"
 
   build_pipeline_parameters {
     items {
@@ -140,8 +141,6 @@ resource "oci_devops_build_pipeline" "uho_build_pipeline" {
       default_value = oci_devops_project.uho_project.id
     }
   }
-
-  depends_on = [oci_devops_deploy_stage.notification_deploy_pipeline_stage]
 }
 
 locals {
@@ -166,4 +165,5 @@ locals {
   build_source_name                             = "uho_build_source"
   build_stage_timeout_in_seconds                = "1800"
   uho_repository_build_pipeline_branch          = var.create_external_connection ? var.github_branch_name : "master"
+  projects                                      = ["appointment","encounter","feedback","followup","frontend","notification","patient","provider"]
 }

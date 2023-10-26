@@ -27,15 +27,15 @@ import com.oracle.refapp.provider.service.FeedbackService;
 import com.oracle.refapp.provider.service.ProviderService;
 import com.oracle.refapp.provider.service.ScheduleService;
 import com.oracle.refapp.provider.service.SlotService;
+import io.micronaut.http.HttpResponse;
 import io.micronaut.http.HttpStatus;
 import io.micronaut.http.annotation.Controller;
 import io.micronaut.http.exceptions.HttpStatusException;
 import java.time.ZonedDateTime;
-import org.openapitools.api.AbstractProviderController;
 import reactor.core.publisher.Mono;
 
 @Controller
-public class ProviderController extends AbstractProviderController {
+public class ProviderController implements ProviderApi {
 
   private final ProviderService providerService;
   private final SlotService slotService;
@@ -102,10 +102,10 @@ public class ProviderController extends AbstractProviderController {
   }
 
   @Override
-  public Mono<Object> deleteProvider(Integer providerId) {
+  public Mono<HttpResponse<Void>> deleteProvider(Integer providerId) {
     try {
       providerService.deleteProvider(providerId);
-      return Mono.just("{}");
+      return Mono.just(HttpResponse.ok());
     } catch (ProviderNotFoundException e) {
       throw new HttpStatusException(
         HttpStatus.NOT_FOUND,
@@ -115,10 +115,10 @@ public class ProviderController extends AbstractProviderController {
   }
 
   @Override
-  public Mono<Object> deleteSchedule(Integer providerId, Integer scheduleId) {
+  public Mono<HttpResponse<Void>> deleteSchedule(Integer providerId, Integer scheduleId) {
     try {
       scheduleService.deleteSchedule(scheduleId);
-      return Mono.just("{}");
+      return Mono.just(HttpResponse.ok());
     } catch (ScheduleNotFoundException exception) {
       throw new HttpStatusException(
         HttpStatus.NOT_FOUND,
@@ -200,15 +200,13 @@ public class ProviderController extends AbstractProviderController {
   @Override
   public Mono<SlotCollection> listSlots(
     Integer providerId,
-    String startTime,
-    String endTime,
+    ZonedDateTime startTime,
+    ZonedDateTime endTime,
     Integer limit,
     Integer page
   ) {
     try {
-      return Mono.just(
-        slotService.search(providerId, ZonedDateTime.parse(startTime), ZonedDateTime.parse(endTime), limit, page)
-      );
+      return Mono.just(slotService.search(providerId, startTime, endTime, limit, page));
     } catch (ProviderNotFoundException exception) {
       throw new HttpStatusException(
         HttpStatus.NOT_FOUND,

@@ -82,6 +82,16 @@ spec:
                 configMapKeyRef:
                   name: object-storage
                   key: bucket-name
+            - name: OBJECT_STORAGE_NAMESPACE_NAME
+              valueFrom:
+                configMapKeyRef:
+                  name: object-storage
+                  key: namespace-name
+            - name: OBJECT_STORAGE_REGION_ID
+              valueFrom:
+                configMapKeyRef:
+                  name: object-storage
+                  key: region-id
             - name: OBJECT_STORAGE_COMPARTMENT_ID
               value: {{ .Values.global.compartment_id }}
             - name: OCI_CONFIG_INSTANCE-PRINCIPAL_ENABLED

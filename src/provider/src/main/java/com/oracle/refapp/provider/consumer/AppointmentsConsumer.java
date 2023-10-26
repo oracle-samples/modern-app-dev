@@ -16,6 +16,7 @@ import com.oracle.bmc.streaming.requests.CreateGroupCursorRequest;
 import com.oracle.bmc.streaming.requests.GetMessagesRequest;
 import com.oracle.bmc.streaming.responses.CreateGroupCursorResponse;
 import com.oracle.bmc.streaming.responses.GetMessagesResponse;
+import com.oracle.refapp.provider.domain.entity.SlotEntity;
 import com.oracle.refapp.provider.exceptions.ProviderNotFoundException;
 import com.oracle.refapp.provider.helpers.Helper;
 import com.oracle.refapp.provider.service.SlotService;
@@ -77,37 +78,51 @@ public class AppointmentsConsumer {
   }
 
   @Scheduled(fixedDelay = "30s")
-  public void receive() throws ProviderNotFoundException, IOException {
-    GetMessagesRequest getRequest = GetMessagesRequest
-      .builder()
-      .streamId(streamId)
-      .cursor(groupCursor)
-      .limit(1)
-      .build();
+  public void test() {
+    LOG.info("I'm just a test");
+  }
 
-    LOG.info("Group cursor value {}", groupCursor);
-    GetMessagesResponse getResponse = streamClient.getMessages(getRequest);
+  @Scheduled(fixedDelay = "30s")
+  public void receive() {
+    LOG.info("Receiving messages");
+    try {
+      GetMessagesRequest getRequest = GetMessagesRequest
+        .builder()
+        .streamId(streamId)
+        .cursor(groupCursor)
+        .limit(1)
+        .build();
+      LOG.info("Group cursor value {}", groupCursor);
+      GetMessagesResponse getResponse = streamClient.getMessages(getRequest);
 
-    LOG.info("Read {} messages.", getResponse.getItems().size());
-    for (Message message : getResponse.getItems()) {
-      LOG.info(
-        "Key {}: Value {}",
-        message.getKey() == null ? "Null" : new String(message.getKey(), UTF_8),
-        new String(message.getValue(), UTF_8)
-      );
-      Map<String, String> map = helper.jsonToMap(new String(message.getValue(), UTF_8));
-      String startTime = map.get("startTime");
-      String endTime = map.get("endTime");
-      ZonedDateTime slotStartTime = helper.getFormattedZonedDateTimeFor(startTime);
-      ZonedDateTime slotEndTime = helper.getFormattedZonedDateTimeFor(endTime);
-      slotService.updateSlot(
-        Integer.parseInt(new String(message.getKey(), UTF_8)),
-        slotStartTime,
-        slotEndTime,
-        map.get("status")
-      );
+      LOG.info("Read {} messages.", getResponse.getItems().size());
+      for (Message message : getResponse.getItems()) {
+        try {
+          LOG.info(
+            "Key {}: Value {}",
+            message.getKey() == null ? "Null" : new String(message.getKey(), UTF_8),
+            new String(message.getValue(), UTF_8)
+          );
+          Map<String, String> map = helper.jsonToMap(new String(message.getValue(), UTF_8));
+          String startTime = map.get("startTime");
+          String endTime = map.get("endTime");
+          ZonedDateTime slotStartTime = helper.getFormattedZonedDateTimeFor(startTime);
+          ZonedDateTime slotEndTime = helper.getFormattedZonedDateTimeFor(endTime);
+          SlotEntity entity = slotService.updateSlot(
+            Integer.parseInt(new String(message.getKey(), UTF_8)),
+            slotStartTime,
+            slotEndTime,
+            map.get("status")
+          );
+          LOG.info("Inserted slot {}", entity);
+        } catch (Exception ex) {
+          LOG.error("Cannot parse message", ex);
+        }
+      }
+      groupCursor = getResponse.getOpcNextCursor();
+    } catch (Exception e) {
+      LOG.error("Cannot receive messages", e);
     }
-    groupCursor = getResponse.getOpcNextCursor();
   }
 
   private static String getCursorByGroup(StreamClient streamClient, String streamId) {

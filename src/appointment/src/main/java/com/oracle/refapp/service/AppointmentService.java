@@ -18,9 +18,9 @@ import com.oracle.refapp.search.AppointmentSearcher;
 import com.oracle.refapp.search.AppointmentSearcherFactory;
 import io.micronaut.data.exceptions.DataAccessException;
 import jakarta.inject.Singleton;
+import jakarta.transaction.Transactional;
 import java.io.IOException;
 import java.util.Map;
-import javax.transaction.Transactional;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

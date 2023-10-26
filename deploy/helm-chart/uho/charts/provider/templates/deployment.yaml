@@ -104,12 +104,12 @@ spec:
               value: {{ .Values.global.compartment_id }}
             - name: OCI_CONFIG_INSTANCE-PRINCIPAL_ENABLED
               value: "true"
-            - name: TRACING_ZIPKIN_HTTP_URL
+            - name: ZIPKIN_URL
               valueFrom:
                 secretKeyRef:
                   name: apm
                   key: data_upload_endpoint
-            - name: TRACING_ZIPKIN_HTTP_PATH
+            - name: ZIPKIN_PATH
               valueFrom:
                 secretKeyRef:
                   name: apm

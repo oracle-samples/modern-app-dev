@@ -220,7 +220,7 @@ module "logging" {
     patient     = module.api_gateway.deployment.patient
     provider    = module.api_gateway.deployment.provider
   }
-  email_devliery_application_id = module.notification.email_devliery_application_id
+  email_delivery_application_id = module.notification.email_delivery_application_id
   object_storage_bucket_name    = module.object_storage.object_storage_bucket_name
   waf_id                        = var.enable_waf ? module.web_application_firewall[0].waf_id : null
   enable_waf                    = var.enable_waf
@@ -245,7 +245,7 @@ module "devops" {
   build_pipeline_stage_image             = var.build_pipeline_stage_image
   cluster_id                             = module.oci_oke.cluster_id
   region                                 = var.region
-  email_devliery_function_id             = module.notification.email_devliery_function_id
+  email_delivery_function_id             = module.notification.email_delivery_function_id
   smtp_username                          = var.smtp_username
   smtp_password                          = var.smtp_password
   object_storage_namespace_name          = module.object_storage.object_storage_namespace_name

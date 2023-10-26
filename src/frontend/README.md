@@ -7,7 +7,7 @@ Frontend is a Micronaut based microservice for client request forwarding in the 
 
 Building a docker image:
 ```shell
-docker build -t frontend:latest -f Dockerfile .
+DOCKER_BUILDKIT=1 docker build -t frontend:latest -f Dockerfile .
 ```
 
 Start the application through Java:
@@ -20,7 +20,7 @@ Start the application in a Docker container:
 
 ```shell
 mvn package 
-docker build -t frontend:latest -f Dockerfile .
+DOCKER_BUILDKIT=1 docker build -t frontend:latest -f Dockerfile .
 docker run -p 8080:8080 frontend:latest
 ```
 

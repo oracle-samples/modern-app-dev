@@ -95,7 +95,7 @@ locals {
   app_name_normalized       = substr(replace(lower(var.app_name), " ", "-"), 0, 6)
   ingress_protocol          = "http"
   ingress_ip                = var.ingress_ip
-  issuer                    = "https://identity.oraclecloud.com/"
+  issuer                    = var.idcs_url
   public_keys_type          = "STATIC_KEYS"
   route_backend_type        = "HTTP_BACKEND"
   authentication_type       = "JWT_AUTHENTICATION"

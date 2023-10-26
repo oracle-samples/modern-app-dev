@@ -13,6 +13,7 @@ micronaut:
       logout:
         enabled: true
         get-allowed: true
+    intercept-url-map-prepend-pattern-with-context-path: false
     intercept-url-map:
       - pattern: /v1/patients/*/actions/authorizeDevice
         httpMethod: POST
@@ -60,14 +61,6 @@ streaming:
   id:
   endpoint:
 
-tracing:
-  zipkin:
-    enabled: true
-    sampler:
-      probability: 1
-    http:
-      url:
-      path:
 service:
   provider: "http://uho-provider"
 

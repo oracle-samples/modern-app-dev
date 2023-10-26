@@ -5,6 +5,7 @@
 package com.oracle.refapp.provider.domain.entity;
 
 import com.oracle.refapp.provider.models.Status;
+import io.micronaut.core.annotation.Introspected;
 import io.micronaut.data.annotation.MappedEntity;
 import jakarta.persistence.*;
 import java.time.ZonedDateTime;
@@ -16,6 +17,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @MappedEntity(value = "slot")
+@Introspected
 public class SlotEntity {
 
   @Id

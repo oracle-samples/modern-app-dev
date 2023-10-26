@@ -12,18 +12,20 @@ import com.oracle.refapp.model.Appointment;
 import com.oracle.refapp.model.AppointmentSummary;
 import com.oracle.refapp.model.CreateAppointmentRequest;
 import java.io.IOException;
+import java.time.LocalDate;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
-import java.util.Collections;
-import java.util.List;
-import java.util.Map;
-import java.util.Objects;
+import java.util.*;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.Named;
 
 @Mapper(componentModel = "jsr330")
 public interface AppointmentMapper {
+  default LocalDate fromDate(Date date) {
+    return new java.sql.Date(date.getTime()).toLocalDate();
+  }
+
   @Mapping(target = "id", ignore = true)
   @Mapping(target = "status", ignore = true)
   @Mapping(source = "preVisitData", target = "preVisitData", qualifiedByName = "fromMapToJson")

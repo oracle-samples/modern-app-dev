@@ -5,7 +5,7 @@
 package com.oracle.refapp.search;
 
 import com.oracle.refapp.model.AppointmentSearchCriteria;
-import javax.inject.Singleton;
+import jakarta.inject.Singleton;
 
 @Singleton
 public class AppointmentSearcherFactory {

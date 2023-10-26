@@ -17,6 +17,7 @@ steps:
     timeoutInSeconds: 40
     command: |
       export BUILDRUN_HASH=`echo ${OCI_BUILD_RUN_ID} | rev | cut -c 1-7`
+      export DOCKER_BUILDKIT=1
       echo "BUILDRUN_HASH: " $BUILDRUN_HASH
     onFailure:
       - type: Command
@@ -28,8 +29,9 @@ steps:
     timeoutInSeconds: 1200
     command: |
       cd ${OCI_WORKSPACE_DIR}/uho_build_source/src/appointment
-      cp ${OCI_WORKSPACE_DIR}/uho_build_source/deploy/terraform/specs ${OCI_WORKSPACE_DIR}/uho_build_source/appointment/target/specs
-      docker build -t appointment:latest .
+      mkdir -p ${OCI_WORKSPACE_DIR}/uho_build_source/src/appointment/target
+      cp -r ${OCI_WORKSPACE_DIR}/uho_build_source/deploy/terraform/specs ${OCI_WORKSPACE_DIR}/uho_build_source/src/appointment/target/specs
+      DOCKER_BUILDKIT=1 docker build -t appointment:latest .
     onFailure:
       - type: Command
         command: echo "build failed"

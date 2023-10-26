@@ -9,4 +9,8 @@ public class EncounterServiceException extends Exception {
   public EncounterServiceException(String message) {
     super(message);
   }
+
+  public EncounterServiceException(String message, Exception e) {
+    super(message, e);
+  }
 }

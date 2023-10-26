@@ -1,3 +1,4 @@
+
 micronaut:
   application:
     name: provider
@@ -13,6 +14,7 @@ micronaut:
       logout:
         enabled: true
         get-allowed: true
+    intercept-url-map-prepend-pattern-with-context-path: false
     intercept-url-map:
       - pattern: /v1/providers/*/feedbacks
         httpMethod: POST
@@ -78,6 +80,18 @@ micronaut:
         namespace: uho_${micronaut.application.name}
         resourceGroup: mn_prod
         compartmentId:
+  http:
+    client:
+      event-loop-group: other
+    services:
+      "*":
+        pool:
+          enabled: false
+  netty:
+    event-loops:
+      other:
+        num-threads: 10
+        prefer-native-transport: true
 
 liquibase:
   datasources:
@@ -89,14 +103,11 @@ streaming:
   id:
   endpoint:
 
-tracing:
-  zipkin:
-    enabled: true
-    sampler:
-      probability: 1
-    http:
-      url:
-      path:
+otel:
+  exporter:
+    zipkin:
+      url: ${ZIPKIN_URL:''}
+      path: ${ZIPKIN_PATH:''}
 
 oci:
   config:

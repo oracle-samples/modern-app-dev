@@ -53,9 +53,11 @@ public class AppointmentMessageProducer {
         streamClient = StreamClient.builder().endpoint(streamEndpoint).build(provider);
       }
     }
+    LOG.info("AppointMessageProducer - Stream Endpoint: {}, Id: {}", streamEndpoint, streamId);
   }
 
   public void sendMessage(String key, String value) {
+    LOG.info("Sending message: {} - {}", key, value);
     List<PutMessagesDetailsEntry> messages = new ArrayList<>();
     messages.add(
       PutMessagesDetailsEntry
@@ -72,6 +74,8 @@ public class AppointmentMessageProducer {
       .streamId(streamId)
       .putMessagesDetails(messagesDetails)
       .build();
+    LOG.info("Sending on stream id: {}", streamId);
+    LOG.info("Data: {}", putRequest);
     PutMessagesResponse putResponse = streamClient.putMessages(putRequest);
 
     for (PutMessagesResultEntry entry : putResponse.getPutMessagesResult().getEntries()) {

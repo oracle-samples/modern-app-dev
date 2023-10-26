@@ -5,18 +5,21 @@
 package com.oracle.refapp.provider.domain.entity;
 
 import com.oracle.refapp.provider.models.Gender;
+import io.micronaut.core.annotation.Introspected;
 import io.micronaut.data.annotation.GeneratedValue;
 import io.micronaut.data.annotation.Id;
 import io.micronaut.data.annotation.MappedEntity;
+import io.micronaut.serde.annotation.SerdeImport;
 import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;
-import javax.validation.constraints.Email;
+import jakarta.validation.constraints.Email;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
 @NoArgsConstructor
 @MappedEntity(value = "provider")
+@SerdeImport(ProviderEntity.class)
 public class ProviderEntity {
 
   @Id
