@@ -6,6 +6,7 @@ package com.oracle.refapp.domain.entity;
 
 import com.oracle.refapp.constants.Status;
 import io.micronaut.data.annotation.MappedEntity;
+import io.micronaut.serde.annotation.SerdeImport;
 import jakarta.persistence.*;
 import java.time.ZonedDateTime;
 import lombok.Data;
@@ -14,6 +15,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @MappedEntity(value = "appointment")
+@SerdeImport(AppointmentEntity.class)
 public class AppointmentEntity {
 
   @GeneratedValue(strategy = GenerationType.IDENTITY)

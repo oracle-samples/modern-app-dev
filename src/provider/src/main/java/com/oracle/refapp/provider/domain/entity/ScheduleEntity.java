@@ -4,7 +4,9 @@
  */
 package com.oracle.refapp.provider.domain.entity;
 
+import io.micronaut.core.annotation.Introspected;
 import io.micronaut.data.annotation.MappedEntity;
+import io.micronaut.serde.annotation.SerdeImport;
 import jakarta.persistence.*;
 import java.time.ZonedDateTime;
 import lombok.Data;
@@ -21,6 +23,7 @@ import lombok.NoArgsConstructor;
     ),
   }
 )
+@SerdeImport(ScheduleEntity.class)
 public class ScheduleEntity {
 
   @Id

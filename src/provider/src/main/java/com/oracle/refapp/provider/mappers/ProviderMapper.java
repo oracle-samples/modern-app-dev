@@ -17,10 +17,12 @@ import com.oracle.refapp.provider.models.Schedule;
 import com.oracle.refapp.provider.models.ScheduleSummary;
 import com.oracle.refapp.provider.models.Slot;
 import com.oracle.refapp.provider.models.SlotSummary;
+import java.time.LocalDate;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
 import org.mapstruct.Mapper;
@@ -29,6 +31,10 @@ import org.mapstruct.Named;
 
 @Mapper(componentModel = "jsr330")
 public interface ProviderMapper {
+  default LocalDate fromDate(Date date) {
+    return new java.sql.Date(date.getTime()).toLocalDate();
+  }
+
   @Mapping(target = "tags", source = "tags", qualifiedByName = "mapListToString")
   @Mapping(target = "id", ignore = true)
   ProviderEntity mapCreateProviderDetailsToProviderEntity(CreateProviderDetailsRequest provider);

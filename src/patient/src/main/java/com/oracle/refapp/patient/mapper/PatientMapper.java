@@ -8,11 +8,20 @@ import com.oracle.refapp.patient.domain.entity.PatientEntity;
 import com.oracle.refapp.patient.models.CreatePatientDetailsRequest;
 import com.oracle.refapp.patient.models.Patient;
 import com.oracle.refapp.patient.models.UpdatePatientDetailsRequest;
+import java.time.LocalDate;
+import java.util.Date;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 
 @Mapper(componentModel = "jsr330")
 public interface PatientMapper {
+  default LocalDate fromDate(Date date) {
+    if (date == null) {
+      return null;
+    }
+    return new java.sql.Date(date.getTime()).toLocalDate();
+  }
+
   @Mapping(source = "patientEntity.dob", target = "dateOfBirth")
   Patient mapDomainToApiModels(PatientEntity patientEntity);
 

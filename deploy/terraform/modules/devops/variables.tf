@@ -37,7 +37,7 @@ variable "region" {
   type = string
 }
 
-variable "email_devliery_function_id" {
+variable "email_delivery_function_id" {
   type = string
 }
 

@@ -27,8 +27,8 @@ class AppointmentMapperTest {
   void testMapperMapApiToDomainModels() {
     CreateAppointmentRequest request = new CreateAppointmentRequest(TEST_PATIENT_ID, TEST_PROVIDER_ID);
     request.setPreVisitData(TEST_PRESCRIPTION_MAP);
-    request.setStartTime(TEST_START_TIME);
-    request.setEndTime(TEST_END_TIME);
+    request.setStartTime(TEST_ZONED_START_TIME);
+    request.setEndTime(TEST_ZONED_END_TIME);
     AppointmentEntity result = appointmentMapper.mapApiToDomainModels(request);
     Assertions.assertEquals(result.getPatientId(), request.getPatientId());
     Assertions.assertEquals(result.getProviderId(), request.getProviderId());
@@ -52,8 +52,8 @@ class AppointmentMapperTest {
     Assertions.assertEquals(result.getStatus().getValue(), request.getStatus().name());
     Assertions.assertEquals(result.getPatientId(), request.getPatientId());
     Assertions.assertEquals(result.getProviderId(), request.getProviderId());
-    Assertions.assertEquals(ZonedDateTime.parse(result.getStartTime()), request.getStartTime());
-    Assertions.assertEquals(ZonedDateTime.parse(result.getEndTime()), request.getEndTime());
+    Assertions.assertEquals(result.getStartTime(), request.getStartTime());
+    Assertions.assertEquals(result.getEndTime(), request.getEndTime());
   }
 
   @Test

@@ -34,7 +34,7 @@ variable "deployment" {
   })
 }
 
-variable "email_devliery_application_id" {
+variable "email_delivery_application_id" {
   type = string
 }
 

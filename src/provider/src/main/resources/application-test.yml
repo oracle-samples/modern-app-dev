@@ -28,11 +28,3 @@ liquibase:
     default:
       parameters:
         prefix: test
-tracing:
-  zipkin:
-    enabled: false
-    sampler:
-      probability: 1
-    http:
-      url:
-      path:

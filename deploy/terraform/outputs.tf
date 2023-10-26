@@ -18,12 +18,12 @@ output "provider_username" {
 
 output "patient_password" {
   value     = "UH01_patient"
-  sensitive = true
+  # sensitive = true
 }
 
 output "provider_password" {
   value     = "UH01_provider"
-  sensitive = true
+  # sensitive = true
 }
 
 output "private_ssh_key" {
@@ -38,8 +38,4 @@ output "public_ssh_key" {
 
 output "uho_url" {
   value = "${module.api_gateway.apigw_url}/home/"
-}
-
-output "oci_build_pipeline_id" {
-  value = module.devops[0].build_pipeline_id
 }

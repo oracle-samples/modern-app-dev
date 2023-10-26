@@ -28,8 +28,9 @@ steps:
     timeoutInSeconds: 1200
     command: |
       cd ${OCI_WORKSPACE_DIR}/uho_build_source/src/provider
-      cp ${OCI_WORKSPACE_DIR}/uho_build_source/deploy/terraform/specs ${OCI_WORKSPACE_DIR}/uho_build_source/provider/target/specs
-      docker build -t provider:latest .
+      mkdir -p ${OCI_WORKSPACE_DIR}/uho_build_source/src/provider/target
+      cp -r ${OCI_WORKSPACE_DIR}/uho_build_source/deploy/terraform/specs ${OCI_WORKSPACE_DIR}/uho_build_source/src/provider/target/specs
+      DOCKER_BUILDKIT=1 docker build -t provider:latest .
     onFailure:
       - type: Command
         command: echo "build failed"

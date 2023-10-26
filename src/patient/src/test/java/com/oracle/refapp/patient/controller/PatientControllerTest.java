@@ -11,6 +11,7 @@ import static com.oracle.refapp.patient.TestUtils.TEST_PATIENT_ID;
 import static com.oracle.refapp.patient.TestUtils.TEST_PATIENT_USERNAME;
 import static com.oracle.refapp.patient.TestUtils.buildPatientEntity;
 import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.Mockito.any;
 import static org.mockito.Mockito.doNothing;
 import static org.mockito.Mockito.doThrow;
@@ -44,6 +45,7 @@ import jakarta.inject.Singleton;
 import java.io.IOException;
 import java.net.URI;
 import java.time.LocalDate;
+import java.time.ZoneId;
 import java.util.ArrayList;
 import java.util.List;
 import org.junit.jupiter.api.DisplayName;
@@ -126,7 +128,10 @@ class PatientControllerTest {
     updatePatientDetailsRequest.setZip(TEST_PATIENT_ENTITY.getZip());
     updatePatientDetailsRequest.setCity(TEST_PATIENT_ENTITY.getCity());
     updatePatientDetailsRequest.setCountry(TEST_PATIENT_ENTITY.getCountry());
-    when(patientService.updatePatient(TEST_PATIENT_ID, patientEntity)).thenReturn(patientEntity);
+    updatePatientDetailsRequest.setDateOfBirth(
+      TEST_PATIENT_ENTITY.getDob().toInstant().atZone(ZoneId.systemDefault()).toLocalDate()
+    );
+    when(patientService.updatePatient(eq(TEST_PATIENT_ID), any())).thenReturn(patientEntity);
     HttpRequest<Object> request = HttpRequest.PUT("/v1/patients/1", updatePatientDetailsRequest);
     HttpResponse<Patient> response = client.toBlocking().exchange(request, Patient.class);
     assertEquals(HttpStatus.OK, response.getStatus());
@@ -167,7 +172,9 @@ class PatientControllerTest {
     createPatientDetailsRequest.setName(TEST_PATIENT_ENTITY.getName());
     createPatientDetailsRequest.setUsername(TEST_PATIENT_ENTITY.getUsername());
     createPatientDetailsRequest.setPhone(TEST_PATIENT_ENTITY.getPhone());
-    createPatientDetailsRequest.setDateOfBirth(TEST_PATIENT_ENTITY.getDob());
+    createPatientDetailsRequest.setDateOfBirth(
+      TEST_PATIENT_ENTITY.getDob().toInstant().atZone(ZoneId.systemDefault()).toLocalDate()
+    );
     createPatientDetailsRequest.setEmail(TEST_PATIENT_ENTITY.getEmail());
     createPatientDetailsRequest.setGender(Gender.valueOf(TEST_PATIENT_ENTITY.getGender().getValue()));
     createPatientDetailsRequest.setZip(TEST_PATIENT_ENTITY.getZip());
@@ -176,7 +183,7 @@ class PatientControllerTest {
     PatientEntity testEntity = buildPatientEntity();
     testEntity.setId(null);
     testEntity.setPrimaryCareProviderId(null);
-    when(patientService.createPatient(testEntity)).thenReturn(testEntity);
+    when(patientService.createPatient(any())).thenReturn(testEntity);
     HttpRequest<Object> request = HttpRequest.POST("/v1/patients/", createPatientDetailsRequest);
     HttpResponse<Patient> response = client.toBlocking().exchange(request, Patient.class);
     assertEquals(HttpStatus.OK, response.getStatus());

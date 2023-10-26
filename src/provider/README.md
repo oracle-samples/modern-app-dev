@@ -15,7 +15,7 @@ Start the application in a Docker container by passing required variables that a
 your application-env.yml file.
 
 ```shell
-docker build -t provider:latest .
+DOCKER_BUILDKIT=1 docker build -t provider:latest .
 docker run -p 8080:8080 --env MICRONAUT_ENVIRONMENTS=<env> --mount type=bind,source=<path-to-.oci>,target=/root/.oci provider:latest
 ```
 Access the application at http://localhost:8080

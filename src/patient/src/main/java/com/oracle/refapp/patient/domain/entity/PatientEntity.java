@@ -8,8 +8,8 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 import com.oracle.refapp.patient.models.Gender;
 import io.micronaut.data.annotation.MappedEntity;
 import jakarta.persistence.*;
+import jakarta.validation.constraints.Email;
 import java.util.Date;
-import javax.validation.constraints.Email;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 

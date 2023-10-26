@@ -15,14 +15,14 @@ import com.oracle.refapp.model.EncounterCollection;
 import com.oracle.refapp.model.ErrorResponse;
 import com.oracle.refapp.search.SearchCriteria;
 import com.oracle.refapp.service.EncounterService;
+import io.micronaut.http.HttpResponse;
 import io.micronaut.http.HttpStatus;
 import io.micronaut.http.annotation.Controller;
 import io.micronaut.http.exceptions.HttpStatusException;
-import org.openapitools.api.AbstractEncounterController;
 import reactor.core.publisher.Mono;
 
 @Controller
-public class EncounterController extends AbstractEncounterController {
+public class EncounterController implements EncounterApi {
 
   private final EncounterService encounterService;
 
@@ -43,10 +43,10 @@ public class EncounterController extends AbstractEncounterController {
   }
 
   @Override
-  public Mono<Object> deleteEncounter(String encounterId) {
+  public Mono<HttpResponse<Void>> deleteEncounter(String encounterId) {
     try {
       encounterService.deleteEncounter(encounterId);
-      return Mono.just("{}");
+      return Mono.just(HttpResponse.ok());
     } catch (EncounterServiceException exception) {
       throw new HttpStatusException(
         HttpStatus.INTERNAL_SERVER_ERROR,

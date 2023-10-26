@@ -303,8 +303,8 @@ class ProviderControllerTest {
     when(scheduleService.createSchedule(testScheduleEntityWithNullIds, TEST_PROVIDER_ID))
       .thenReturn(TEST_SCHEDULE_ENTITY);
     CreateScheduleDetailsRequest createScheduleDetailsRequest = new CreateScheduleDetailsRequest();
-    createScheduleDetailsRequest.setStartTime(TEST_START_TIME);
-    createScheduleDetailsRequest.setEndTime(TEST_END_TIME);
+    createScheduleDetailsRequest.setStartTime(TEST_ZONE_START_TIME);
+    createScheduleDetailsRequest.setEndTime(TEST_ZONE_END_TIME);
     HttpRequest<CreateScheduleDetailsRequest> request = HttpRequest.POST(
       "v1/providers/" + TEST_PROVIDER_ID + "/schedules/",
       createScheduleDetailsRequest
@@ -322,8 +322,8 @@ class ProviderControllerTest {
     when(scheduleService.createSchedule(testScheduleEntityWithNullIds, TEST_PROVIDER_ID))
       .thenThrow(ScheduleAlreadyExistsException.class);
     CreateScheduleDetailsRequest createScheduleDetailsRequest = new CreateScheduleDetailsRequest();
-    createScheduleDetailsRequest.setStartTime(TEST_START_TIME);
-    createScheduleDetailsRequest.setEndTime(TEST_END_TIME);
+    createScheduleDetailsRequest.setStartTime(TEST_ZONE_START_TIME);
+    createScheduleDetailsRequest.setEndTime(TEST_ZONE_END_TIME);
     HttpRequest<CreateScheduleDetailsRequest> request = HttpRequest.POST(
       "v1/providers/schedules/",
       createScheduleDetailsRequest

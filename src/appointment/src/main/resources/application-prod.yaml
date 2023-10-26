@@ -16,6 +16,7 @@ micronaut:
       logout:
         enabled: true
         get-allowed: true
+    intercept-url-map-prepend-pattern-with-context-path: false
     intercept-url-map:
       - pattern: /v1/appointments/*
         httpMethod: GET
@@ -62,15 +63,6 @@ streaming:
 service:
   patient: "http://uho-patient"
   provider: "http://uho-provider"
-
-tracing:
-  zipkin:
-    enabled: true
-    sampler:
-      probability: 1
-    http:
-      url:
-      path:
 
 oci:
   config:

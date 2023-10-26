@@ -4,21 +4,16 @@
  */
 package com.oracle.refapp.patient.service;
 
-import com.fasterxml.jackson.databind.DeserializationFeature;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.oracle.refapp.patient.exceptions.NoSuchProviderFoundException;
 import com.oracle.refapp.patient.models.Provider;
 import io.micronaut.context.annotation.Value;
 import io.micronaut.core.annotation.ReflectiveAccess;
-import java.io.IOException;
-import javax.inject.Singleton;
-import org.apache.http.HttpEntity;
-import org.apache.http.client.methods.CloseableHttpResponse;
-import org.apache.http.client.methods.HttpUriRequest;
-import org.apache.http.client.methods.RequestBuilder;
-import org.apache.http.impl.client.CloseableHttpClient;
-import org.apache.http.impl.client.HttpClients;
-import org.apache.http.util.EntityUtils;
+import io.micronaut.http.HttpRequest;
+import io.micronaut.http.HttpResponse;
+import io.micronaut.http.HttpStatus;
+import io.micronaut.http.client.HttpClient;
+import io.micronaut.http.client.annotation.Client;
+import jakarta.inject.Singleton;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -26,38 +21,25 @@ import org.slf4j.LoggerFactory;
 public class ProviderServiceClient {
 
   private static final Logger LOGGER = LoggerFactory.getLogger(ProviderServiceClient.class);
-  private final ObjectMapper mapper = new ObjectMapper();
-  private final CloseableHttpClient httpClient = HttpClients.createDefault();
 
   @ReflectiveAccess
   @Value("${service.provider}")
   private String providerServiceUrl;
 
-  public ProviderServiceClient() {
-    this.mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+  private final HttpClient providerClient;
+
+  public ProviderServiceClient(@Client(id = "provider") HttpClient providerClient) {
+    this.providerClient = providerClient;
   }
 
-  public Provider getProvider(Integer providerId, String accessToken) throws IOException, NoSuchProviderFoundException {
+  public Provider getProvider(Integer providerId, String accessToken) throws NoSuchProviderFoundException {
     LOGGER.debug("Calling provider service using url {}", providerServiceUrl);
-    HttpUriRequest request = RequestBuilder
-      .get(providerServiceUrl + "/v1/providers/" + providerId)
-      .addHeader("Authorization", accessToken)
-      .build();
-    int statusCode;
-    HttpEntity entity;
-    try {
-      CloseableHttpResponse response = httpClient.execute(request);
-      entity = response.getEntity();
-      statusCode = response.getStatusLine().getStatusCode();
-    } catch (Exception e) {
-      LOGGER.error("Provider Service Call Failed.", e);
-      return null;
-    }
-    String responseString = EntityUtils.toString(entity);
-    LOGGER.debug("Provider entity retrieved {}", responseString);
-    if (statusCode != 200) {
+    String providerUrl = "/v1/providers/" + providerId;
+    HttpRequest<Provider> request = HttpRequest.<Provider>GET(providerUrl).header("Authorization", accessToken);
+    HttpResponse<Provider> response = providerClient.toBlocking().exchange(request);
+    if (response.getStatus() != HttpStatus.OK) {
       throw new NoSuchProviderFoundException("No such Provider found with id: " + providerId);
     }
-    return mapper.readValue(responseString, Provider.class);
+    return response.body();
   }
 }

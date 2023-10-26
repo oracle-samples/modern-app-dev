@@ -3,10 +3,11 @@ micronaut:
     name: encounter
   security:
     enabled: false
-  objectstorage:
-    oraclecloud:
-      compartmentId: '<your compartment id>'
-      bucketName: '<your bucket name>'
+  object-storage:
+    oracle-cloud:
+      default:
+        namespace: '<your namespace name>'
+        bucket: '<your bucket name>'
   metrics:
     enabled: false
 datasources:

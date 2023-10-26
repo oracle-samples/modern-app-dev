@@ -30,7 +30,7 @@ public class TestUtils {
   public static final String TEST_END_TIME = "2021-11-28T10:00Z";
   public static final ZonedDateTime TEST_ZONE_START_TIME = ZonedDateTime.parse(TEST_START_TIME);
   public static final ZonedDateTime TEST_ZONE_END_TIME = ZonedDateTime.parse(TEST_END_TIME);
-  public static final Slot TEST_SLOT = new Slot().id(2).startTime(TEST_START_TIME).endTime(TEST_END_TIME);
+  public static final Slot TEST_SLOT = new Slot().id(2).startTime(TEST_ZONE_START_TIME).endTime(TEST_ZONE_END_TIME);
   public static final String TEST_FEEDBACK_TEXT = "Good";
   public static final Integer TEST_FEEDBACK_RATING = 3;
 

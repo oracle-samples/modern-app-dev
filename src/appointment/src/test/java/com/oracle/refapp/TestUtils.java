@@ -67,8 +67,8 @@ public class TestUtils {
     appointment.setId(TEST_APPOINTMENT_ID);
     appointment.setStatus(Status.CONFIRMED);
     appointment.setPreVisitData(TEST_PRESCRIPTION_MAP);
-    appointment.setStartTime(TEST_START_TIME);
-    appointment.setEndTime(TEST_END_TIME);
+    appointment.setStartTime(TEST_ZONED_START_TIME);
+    appointment.setEndTime(TEST_ZONED_END_TIME);
     return appointment;
   }
 }

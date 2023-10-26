@@ -1,6 +1,6 @@
 # Modern App Development - Reference Application
 
-Universal Health Organization (UHO) is a sample application that adheres to the principals of the [Oracle Modern App Development framework](https://www.oracle.com/application-development/modern-app-development/). In particular, it implements elements of the [Web or mobile applications](https://docs.oracle.com/en/solutions/mad-web-mobile), [Messaging](https://docs.oracle.com/en/solutions/mad-messaging-pattern), and [Event-driven](https://docs.oracle.com/en/solutions/mad-event-driven) architecture patterns.
+Universal Health Organization (UHO) is a sample application that adheres to the principles of the [Oracle Modern App Development framework](https://www.oracle.com/application-development/modern-app-development/). In particular, it implements elements of the [Web or mobile applications](https://docs.oracle.com/en/solutions/mad-web-mobile), [Messaging](https://docs.oracle.com/en/solutions/mad-messaging-pattern), and [Event-driven](https://docs.oracle.com/en/solutions/mad-event-driven) architecture patterns.
 
 The application implements a patient portal for a healthcare organization allowing patients and providers to schedule and manage appointments.
 

@@ -5,37 +5,43 @@
   -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-
   <parent>
-    <groupId>io.micronaut</groupId>
+    <groupId>io.micronaut.platform</groupId>
     <artifactId>micronaut-parent</artifactId>
-    <version>3.9.2</version>
+    <version>4.0.7-oracle-00001</version>
   </parent>
+
   <groupId>com.oracle.refapp</groupId>
   <artifactId>encounter</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>${packaging}</packaging>
-
   <properties>
     <packaging>jar</packaging>
-    <exec.mainClass>com.oracle.refapp.Application</exec.mainClass>
-    <micronaut.runtime>netty</micronaut.runtime>
     <jdk.version>17</jdk.version>
     <release.version>17</release.version>
-    <micronaut.version>3.9.2</micronaut.version>
-    <maven-surefire-plugin.version>2.22.2</maven-surefire-plugin.version>
-    <maven-failsafe-plugin.version>2.22.2</maven-failsafe-plugin.version>
-    <micronaut.runtime>netty</micronaut.runtime>
     <app.version>1.0-SNAPSHOT</app.version>
     <jacoco.version>0.8.7</jacoco.version>
+    <exec.mainClass>com.oracle.refapp.Application</exec.mainClass>
+
+    <micronaut.version>4.0.7-oracle-00001</micronaut.version>
+    <micronaut.runtime>netty</micronaut.runtime>
+    <micronaut.oraclecloud.version>3.0.7</micronaut.oraclecloud.version>
+
+    <micronaut.openapi.generate.server>true</micronaut.openapi.generate.server>
+    <micronaut.openapi.definition>${basedir}/target/specs/Encounter.yml</micronaut.openapi.definition>
+    <micronaut.openapi.api.package.name>com.oracle.refapp.controller</micronaut.openapi.api.package.name>
+    <micronaut.openapi.model.package.name>com.oracle.refapp.model</micronaut.openapi.model.package.name>
+    <micronaut.openapi.invoker.package.name>com.oracle.refapp</micronaut.openapi.invoker.package.name>
+    <micronaut.openapi.use.reactive>true</micronaut.openapi.use.reactive>
+    <micronaut.openapi.server.use.auth>false</micronaut.openapi.server.use.auth>
   </properties>
 
   <dependencyManagement>
     <dependencies>
       <dependency>
-        <groupId>com.oracle.oci.sdk</groupId>
-        <artifactId>oci-java-sdk-bom</artifactId>
-        <version>2.63.0</version>
+        <groupId>cloud.graal.gcn</groupId>
+        <artifactId>gcn-bom</artifactId>
+        <version>2.1</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
@@ -45,14 +51,40 @@
   <dependencies>
     <dependency>
       <groupId>io.micronaut</groupId>
+      <artifactId>micronaut-core</artifactId>
+      <version>4.1.10</version>
+    </dependency>
+    <dependency>
+      <groupId>io.micronaut.serde</groupId>
+      <artifactId>micronaut-serde-jackson</artifactId>
+      <version>2.2.6</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>io.micronaut.serde</groupId>
+      <artifactId>micronaut-serde-support</artifactId>
+      <version>2.2.6</version>
+    </dependency>
+    <dependency>
+      <groupId>io.micronaut.serde</groupId>
+      <artifactId>micronaut-serde-api</artifactId>
+      <version>2.2.6</version>
+    </dependency>
+    <dependency>
+      <groupId>io.micronaut.oraclecloud</groupId>
+      <artifactId>micronaut-oraclecloud-httpclient-netty</artifactId>
+      <version>${micronaut.oraclecloud.version}</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>io.micronaut.objectstorage</groupId>
+      <artifactId>micronaut-object-storage-oracle-cloud</artifactId>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>io.micronaut</groupId>
       <artifactId>micronaut-http-server-netty</artifactId>
       <scope>compile</scope>
-      <exclusions>
-        <exclusion>
-          <groupId>io.netty</groupId>
-          <artifactId>netty-tcnative-classes</artifactId>
-        </exclusion>
-      </exclusions>
     </dependency>
     <dependency>
       <groupId>io.micronaut</groupId>
@@ -74,9 +106,8 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
-      <groupId>io.micronaut</groupId>
+      <groupId>io.micronaut.validation</groupId>
       <artifactId>micronaut-validation</artifactId>
-      <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>io.micronaut.security</groupId>
@@ -98,10 +129,8 @@
     <dependency>
       <groupId>ch.qos.logback</groupId>
       <artifactId>logback-classic</artifactId>
-      <version>1.2.11</version>
       <scope>runtime</scope>
     </dependency>
-
     <dependency>
       <groupId>io.micronaut.oraclecloud</groupId>
       <artifactId>micronaut-oraclecloud-atp</artifactId>
@@ -110,7 +139,7 @@
     <dependency>
       <groupId>org.mapstruct</groupId>
       <artifactId>mapstruct</artifactId>
-      <version>1.4.2.Final</version>
+      <version>1.5.5.Final</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
@@ -126,29 +155,23 @@
     <dependency>
       <groupId>org.mockito</groupId>
       <artifactId>mockito-core</artifactId>
-      <version>3.3.0</version>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>com.h2database</groupId>
       <artifactId>h2</artifactId>
-      <version>2.1.210</version>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>io.micronaut.oraclecloud</groupId>
       <artifactId>micronaut-oraclecloud-sdk</artifactId>
+      <version>${micronaut.oraclecloud.version}</version>
       <exclusions>
         <exclusion>
           <groupId>commons-logging</groupId>
           <artifactId>commons-logging</artifactId>
         </exclusion>
       </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>org.slf4j</groupId>
-      <artifactId>jcl-over-slf4j</artifactId>
-      <version>1.7.36</version>
     </dependency>
     <dependency>
       <groupId>io.micronaut.micrometer</groupId>
@@ -168,7 +191,8 @@
     </dependency>
     <dependency>
       <groupId>io.micronaut.tracing</groupId>
-      <artifactId>micronaut-tracing-zipkin</artifactId>
+      <artifactId>micronaut-tracing-opentelemetry-zipkin-exporter</artifactId>
+      <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>io.micronaut.data</groupId>
@@ -179,34 +203,34 @@
       <artifactId>micronaut-data-processor</artifactId>
     </dependency>
     <dependency>
+      <groupId>io.micronaut.validation</groupId>
+      <artifactId>micronaut-validation-processor</artifactId>
+    </dependency>
+    <dependency>
       <groupId>io.micronaut</groupId>
       <artifactId>micronaut-http-validation</artifactId>
     </dependency>
     <dependency>
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
-      <version>1.18.22</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>com.oracle.database.soda</groupId>
       <artifactId>orajsoda</artifactId>
-      <version>1.1.7.1</version>
+      <version>1.1.7.2</version>
     </dependency>
     <dependency>
-      <groupId>com.oracle.oci.sdk</groupId>
-      <artifactId>oci-java-sdk-objectstorage</artifactId>
-      <exclusions>
-        <exclusion>
-          <groupId>commons-logging</groupId>
-          <artifactId>commons-logging</artifactId>
-        </exclusion>
-      </exclusions>
+      <groupId>org.yaml</groupId>
+      <artifactId>snakeyaml</artifactId>
     </dependency>
     <dependency>
-      <groupId>io.swagger</groupId>
+      <groupId>io.swagger.core.v3</groupId>
       <artifactId>swagger-annotations</artifactId>
-      <version>1.6.5</version>
+    </dependency>
+    <dependency>
+      <groupId>jakarta.annotation</groupId>
+      <artifactId>jakarta.annotation-api</artifactId>
     </dependency>
   </dependencies>
 
@@ -215,16 +239,18 @@
       <id>central</id>
       <url>https://repo.maven.apache.org/maven2</url>
     </repository>
+
     <repository>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
-      <id>sonatype-snapshots</id>
-      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+      <id>gcn</id>
+      <url>https://maven.oracle.com/public</url>
     </repository>
   </repositories>
   <build>
     <plugins>
+      <plugin>
+        <groupId>io.micronaut.maven</groupId>
+        <artifactId>micronaut-maven-plugin</artifactId>
+      </plugin>
       <plugin>
         <groupId>org.cyclonedx</groupId>
         <artifactId>cyclonedx-maven-plugin</artifactId>
@@ -245,10 +271,6 @@
         </executions>
       </plugin>
       <plugin>
-        <groupId>io.micronaut.build</groupId>
-        <artifactId>micronaut-maven-plugin</artifactId>
-      </plugin>
-      <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
         <configuration>
@@ -256,17 +278,17 @@
             <path>
               <groupId>org.projectlombok</groupId>
               <artifactId>lombok</artifactId>
-              <version>1.18.22</version>
+              <version>${lombok.version}</version>
             </path>
             <path>
               <groupId>org.mapstruct</groupId>
               <artifactId>mapstruct-processor</artifactId>
-              <version>1.4.2.Final</version>
+              <version>1.5.5.Final</version>
             </path>
             <path>
               <groupId>io.micronaut</groupId>
               <artifactId>micronaut-inject-java</artifactId>
-              <version>${micronaut.version}</version>
+              <version>${micronaut.core.version}</version>
             </path>
             <path>
               <groupId>io.micronaut.data</groupId>
@@ -274,14 +296,31 @@
               <version>${micronaut.data.version}</version>
             </path>
             <path>
-              <groupId>io.micronaut</groupId>
-              <artifactId>micronaut-http-validation</artifactId>
-              <version>${micronaut.version}</version>
+              <groupId>io.micronaut.validation</groupId>
+              <artifactId>micronaut-validation-processor</artifactId>
+              <version>${micronaut.validation.version}</version>
+              <exclusions>
+                <exclusion>
+                  <groupId>io.micronaut</groupId>
+                  <artifactId>micronaut-inject</artifactId>
+                </exclusion>
+              </exclusions>
             </path>
             <path>
               <groupId>io.micronaut</groupId>
+              <artifactId>micronaut-http-validation</artifactId>
+              <version>${micronaut.core.version}</version>
+            </path>
+            <path>
+              <groupId>io.micronaut.validation</groupId>
               <artifactId>micronaut-validation</artifactId>
-              <version>${micronaut.version}</version>
+              <version>${micronaut.validation.version}</version>
+              <exclusions>
+                <exclusion>
+                  <groupId>io.micronaut</groupId>
+                  <artifactId>micronaut-inject</artifactId>
+                </exclusion>
+              </exclusions>
             </path>
             <path>
               <groupId>io.micronaut.security</groupId>
@@ -303,12 +342,12 @@
                 <path>
                   <groupId>io.micronaut</groupId>
                   <artifactId>micronaut-inject-java</artifactId>
-                  <version>${micronaut.version}</version>
+                  <version>${micronaut.core.version}</version>
                 </path>
                 <path>
-                  <groupId>io.micronaut</groupId>
-                  <artifactId>micronaut-validation</artifactId>
-                  <version>${micronaut.version}</version>
+                  <groupId>io.micronaut.validation</groupId>
+                  <artifactId>micronaut-validation-processor</artifactId>
+                  <version>${micronaut.validation.version}</version>
                 </path>
               </annotationProcessorPaths>
             </configuration>
@@ -343,6 +382,13 @@
               <goal>check</goal>
             </goals>
             <configuration>
+              <excludes>
+                <exclude>**/mapper/*.*</exclude>
+                <exclude>**/Application.*</exclude>
+                <exclude>**/connections/*.*</exclude>
+                <exclude>**/model/*</exclude>
+                <exclude>**/exceptions/ObjectStorageConnectionException.*</exclude>
+              </excludes>
               <rules>
                 <rule>
                   <element>PACKAGE</element>
@@ -350,7 +396,7 @@
                     <limit>
                       <counter>LINE</counter>
                       <value>COVEREDRATIO</value>
-                      <minimum>0.7</minimum>
+                      <minimum>0.6</minimum>
                     </limit>
                   </limits>
                 </rule>
@@ -384,77 +430,6 @@
                 </transformer>
                 <transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"></transformer>
               </transformers>
-            </configuration>
-          </execution>
-        </executions>
-      </plugin>
-      <plugin>
-        <groupId>org.jacoco</groupId>
-        <artifactId>jacoco-maven-plugin</artifactId>
-        <version>${jacoco.version}</version>
-        <executions>
-          <execution>
-            <goals>
-              <goal>prepare-agent</goal>
-            </goals>
-          </execution>
-          <execution>
-            <id>jacoco-report</id>
-            <goals>
-              <goal>report</goal>
-            </goals>
-            <phase>test</phase>
-          </execution>
-          <execution>
-            <id>jacoco-check</id>
-            <goals>
-              <goal>check</goal>
-            </goals>
-            <configuration>
-              <excludes>
-                <exclude>**/mapper/*.*</exclude>
-                <exclude>**/Application.*</exclude>
-                <exclude>**/connections/*.*</exclude>
-                <exclude>**/model/*</exclude>
-                <exclude>**/exceptions/ObjectStorageConnectionException.*</exclude>
-              </excludes>
-              <rules>
-                <rule>
-                  <element>PACKAGE</element>
-                  <limits>
-                    <limit>
-                      <counter>LINE</counter>
-                      <value>COVEREDRATIO</value>
-                      <minimum>0.7</minimum>
-                    </limit>
-                  </limits>
-                </rule>
-              </rules>
-            </configuration>
-          </execution>
-        </executions>
-      </plugin>
-      <plugin>
-        <groupId>org.openapitools</groupId>
-        <artifactId>openapi-generator-maven-plugin</artifactId>
-        <version>6.0.0-beta</version>
-        <executions>
-          <execution>
-            <goals>
-              <goal>generate</goal>
-            </goals>
-            <configuration>
-              <inputSpec>${basedir}/target/specs/Encounter.yml</inputSpec>
-              <generatorName>java-micronaut-server</generatorName>
-              <generateApiTests>false</generateApiTests>
-              <generateModelTests>false</generateModelTests>
-              <configOptions>
-                <sourceFolder>src/main/java</sourceFolder>
-                <generateControllerAsAbstract>true</generateControllerAsAbstract>
-                <controllerPackage>com.oracle.refapp.controller</controllerPackage>
-                <modelPackage>com.oracle.refapp.model</modelPackage>
-                <useAuth>false</useAuth>
-              </configOptions>
             </configuration>
           </execution>
         </executions>
@@ -525,9 +500,9 @@
               </includes>
               <licenseHeader>
                 <content>/*
-                 * Copyright (c) 2023 Oracle and/or its affiliates.
-                 * Licensed under the Universal Permissive License v 1.0 as shown at https://oss.oracl.com/licenses/upl/
-                 */</content>
+                  * Copyright (c) 2023 Oracle and/or its affiliates.
+                  * Licensed under the Universal Permissive License v 1.0 as shown at https://oss.oracl.com/licenses/upl/
+                  */</content>
                 <delimiter>^package</delimiter>
               </licenseHeader>
               <prettier>

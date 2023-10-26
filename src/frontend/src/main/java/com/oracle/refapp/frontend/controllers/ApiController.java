@@ -26,7 +26,7 @@ import org.reactivestreams.Publisher;
 import reactor.core.publisher.Mono;
 
 @Controller("/api")
-@ExecuteOn(TaskExecutors.IO)
+@ExecuteOn(TaskExecutors.BLOCKING)
 public class ApiController {
 
   private final ApiService apiService;
@@ -81,12 +81,9 @@ public class ApiController {
     return apiService.user(authentication, accessToken);
   }
 
-  @Secured(SecurityRule.IS_AUTHENTICATED)
+  @Secured(SecurityRule.IS_ANONYMOUS)
   @Get(uri = "/apmInformation")
-  public Publisher<Map<String, String>> apm(
-    @CookieValue(value = "ACCESS_TOKEN") String accessToken,
-    @Nullable Authentication authentication
-  ) {
-    return apiService.apm(authentication, accessToken);
+  public Publisher<Map<String, String>> apm() {
+    return apiService.apm();
   }
 }

@@ -21,12 +21,13 @@ import io.micronaut.http.cookie.Cookie;
 import io.micronaut.security.authentication.Authentication;
 import io.micronaut.security.authentication.AuthenticationMode;
 import io.micronaut.security.config.RedirectConfigurationProperties;
+import io.micronaut.security.config.RedirectService;
 import io.micronaut.security.config.SecurityConfigurationProperties;
 import io.micronaut.security.errors.OauthErrorResponseException;
 import io.micronaut.security.errors.ObtainingAuthorizationErrorCode;
 import io.micronaut.security.errors.PriorToLoginPersistence;
 import io.micronaut.security.oauth2.endpoint.token.response.IdTokenLoginHandler;
-import io.micronaut.security.token.jwt.cookie.AccessTokenCookieConfiguration;
+import io.micronaut.security.token.cookie.AccessTokenCookieConfiguration;
 import jakarta.inject.Singleton;
 import java.net.URI;
 import java.net.URISyntaxException;
@@ -66,10 +67,11 @@ public class CustomIdTokenLoginHandler extends IdTokenLoginHandler {
     AccessTokenCookieConfiguration accessTokenCookieConfiguration,
     RedirectConfigurationProperties redirectConfiguration,
     CustomRedirectConfigurationProperties customRedirectConfigurationProperties,
+    RedirectService redirectService,
     @Nullable PriorToLoginPersistence priorToLoginPersistence,
     TelemetryClient telemetryClient
   ) {
-    super(accessTokenCookieConfiguration, redirectConfiguration, priorToLoginPersistence);
+    super(accessTokenCookieConfiguration, redirectConfiguration, redirectService, priorToLoginPersistence);
     this.patientLoginSuccess = customRedirectConfigurationProperties.getPatientLoginSuccess();
     this.providerLoginSuccess = customRedirectConfigurationProperties.getProviderLoginSuccess();
     this.telemetryClient = telemetryClient;

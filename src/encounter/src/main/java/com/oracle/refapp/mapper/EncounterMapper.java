@@ -8,12 +8,18 @@ import com.oracle.refapp.domain.entity.CodeEntity;
 import com.oracle.refapp.domain.entity.ConditionEntity;
 import com.oracle.refapp.domain.entity.EncounterEntity;
 import com.oracle.refapp.model.*;
+import java.time.LocalDate;
+import java.util.Date;
 import java.util.List;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 
 @Mapper(componentModel = "jsr330")
 public interface EncounterMapper {
+  default LocalDate fromDate(Date date) {
+    return new java.sql.Date(date.getTime()).toLocalDate();
+  }
+
   List<CodeSummary> mapDomainToApiModels(List<CodeEntity> codeEntity);
 
   Encounter mapDomainToApiModels(EncounterEntity encounterEntity);

@@ -7,6 +7,7 @@ package com.oracle.refapp.patient;
 import com.oracle.refapp.patient.domain.entity.PatientEntity;
 import com.oracle.refapp.patient.models.Gender;
 import com.oracle.refapp.patient.models.Provider;
+import java.util.Date;
 
 public class TestUtils {
 
@@ -29,6 +30,7 @@ public class TestUtils {
     patientEntity.setCity("SomeCity");
     patientEntity.setCountry("SomeCountry");
     patientEntity.setPrimaryCareProviderId(2);
+    patientEntity.setDob(new Date());
     return patientEntity;
   }
 

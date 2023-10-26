@@ -1,4 +1,13 @@
+service:
+  provider: "http://uho-provider"
 micronaut:
+  openapi:
+    schema:
+      java.time.LocalDate: java.util.Date
+  http:
+      services:
+        provider:
+          url: ${service.provider}
   application:
     name: patient
   security:
@@ -13,6 +22,7 @@ micronaut:
       logout:
         enabled: true
         get-allowed: true
+    intercept-url-map-prepend-pattern-with-context-path: false
     intercept-url-map:
       - pattern: /v1/patients/*/actions/authorizeDevice
         httpMethod: POST
@@ -66,13 +76,8 @@ streaming:
   id:
   endpoint:
 
-tracing:
-  zipkin:
-    enabled: true
-    sampler:
-      probability: 1
-    http:
-      url:
-      path:
-service:
-  provider: "http://uho-provider"
+otel:
+  exporter:
+    zipkin:
+      url: ${TRACING_ZIPKIN_HTTP_URL:''}
+      path: ${TRACING_ZIPKIN_HTTP_PATH:''}

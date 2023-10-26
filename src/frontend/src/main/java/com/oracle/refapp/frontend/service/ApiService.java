@@ -8,6 +8,7 @@ import static io.micronaut.http.HttpHeaders.ACCEPT;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.oracle.refapp.frontend.auth.CustomIdTokenLoginHandler;
 import com.oracle.refapp.frontend.models.Role;
 import io.micronaut.context.annotation.Value;
 import io.micronaut.core.annotation.ReflectiveAccess;
@@ -18,6 +19,7 @@ import io.micronaut.http.client.HttpClient;
 import io.micronaut.http.uri.UriBuilder;
 import io.micronaut.security.authentication.Authentication;
 import jakarta.inject.Singleton;
+import java.net.URI;
 import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
@@ -25,10 +27,14 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.stream.Collectors;
 import org.reactivestreams.Publisher;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import reactor.core.publisher.Mono;
 
 @Singleton
 public class ApiService {
+
+  private static final Logger LOG = LoggerFactory.getLogger(ApiService.class);
 
   private final HttpClient httpClient;
   private final ObjectMapper objectMapper;
@@ -45,10 +51,10 @@ public class ApiService {
   @ReflectiveAccess
   private String providerClientId;
 
-  @Value("${tracing.zipkin.http.url}")
+  @Value("${otel.exporter.zipkin.url}")
   private String apmDataUploadEndpoint;
 
-  @Value("${tracing.zipkin.http.path}")
+  @Value("${otel.exporter.zipkin.path}")
   private String apmDataUploadPath;
 
   public ApiService(HttpClient httpClient) {
@@ -62,7 +68,7 @@ public class ApiService {
     HttpRequest<?> request = HttpRequest
       .GET(builder.build())
       .header(ACCEPT, "application/json")
-      .setAttribute("accessToken", accessToken);
+      .bearerAuth(accessToken);
     return Mono.from(httpClient.retrieve(request, Object.class));
   }
 
@@ -71,7 +77,7 @@ public class ApiService {
     HttpRequest<?> request = HttpRequest
       .PUT(builder.build(), requestBody)
       .header(ACCEPT, "application/json")
-      .setAttribute("accessToken", accessToken);
+      .bearerAuth(accessToken);
     return Mono.from(httpClient.retrieve(request, Object.class));
   }
 
@@ -80,7 +86,7 @@ public class ApiService {
     HttpRequest<?> request = HttpRequest
       .POST(builder.build(), requestBody)
       .header(ACCEPT, "application/json")
-      .setAttribute("accessToken", accessToken);
+      .bearerAuth(accessToken);
     return Mono.from(httpClient.retrieve(request, Object.class));
   }
 
@@ -89,11 +95,11 @@ public class ApiService {
     HttpRequest<?> request = HttpRequest
       .DELETE(builder.build(), null)
       .header(ACCEPT, "application/json")
-      .setAttribute("accessToken", accessToken);
+      .bearerAuth(accessToken);
     return Mono.from(httpClient.retrieve(request, HttpStatus.class));
   }
 
-  public Mono<Map<String, String>> apm(Authentication authentication, String accessToken) {
+  public Mono<Map<String, String>> apm() {
     Map<String, String> apmMap = new HashMap<>();
     apmMap.put("serviceName", "uho-frontend");
     apmMap.put("webApplication", "uho-frontend-web");
@@ -115,11 +121,10 @@ public class ApiService {
     } else {
       throw new IllegalStateException("Cannot retrieve role");
     }
+    LOG.info("Retrieving user information for: {}", authentication.getName());
     UriBuilder builder = UriBuilder.of(apigwUrl).path(homePath + authentication.getName());
-    HttpRequest<?> request = HttpRequest
-      .GET(builder.build())
-      .header(ACCEPT, "application/json")
-      .setAttribute("accessToken", accessToken);
+    URI uri = builder.build();
+    HttpRequest<?> request = HttpRequest.GET(uri).header(ACCEPT, "application/json").bearerAuth(accessToken);
     Publisher<String> publisher = Mono.from(httpClient.retrieve(request, String.class));
 
     return Publishers.map(

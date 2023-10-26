@@ -84,8 +84,8 @@ class AppointmentControllerTest {
   public void testCreateAppointment()
     throws NoSuchPatientFoundException, IOException, NoSuchProviderFoundException, MultipleAppointmentNotAllowedException {
     CreateAppointmentRequest appointmentRequest = new CreateAppointmentRequest(TEST_PATIENT_ID, TEST_PROVIDER_ID);
-    appointmentRequest.setStartTime(TEST_START_TIME);
-    appointmentRequest.setEndTime(TEST_END_TIME);
+    appointmentRequest.setStartTime(TEST_ZONED_START_TIME);
+    appointmentRequest.setEndTime(TEST_ZONED_END_TIME);
     when(appointmentService.createAppointment(any(AppointmentEntity.class), any(String.class)))
       .thenReturn(TEST_APPOINTMENT_ENTITY);
     MutableHttpRequest<CreateAppointmentRequest> request = HttpRequest
@@ -103,8 +103,8 @@ class AppointmentControllerTest {
   public void testCreateAppointmentExceptions()
     throws NoSuchPatientFoundException, IOException, NoSuchProviderFoundException, MultipleAppointmentNotAllowedException {
     CreateAppointmentRequest appointmentRequest = new CreateAppointmentRequest(TEST_PATIENT_ID, TEST_PROVIDER_ID);
-    appointmentRequest.setStartTime(TEST_START_TIME);
-    appointmentRequest.setEndTime(TEST_END_TIME);
+    appointmentRequest.setStartTime(TEST_ZONED_START_TIME);
+    appointmentRequest.setEndTime(TEST_ZONED_END_TIME);
     MutableHttpRequest<CreateAppointmentRequest> request = HttpRequest
       .POST("/v1/appointments/", appointmentRequest)
       .header("Authorization", "test");

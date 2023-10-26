@@ -11,7 +11,7 @@ import com.oracle.refapp.model.AppointmentSearchCriteria;
 import io.micronaut.data.model.Page;
 import io.micronaut.data.model.Pageable;
 import io.micronaut.data.model.Sort;
-import javax.inject.Singleton;
+import jakarta.inject.Singleton;
 
 @Singleton
 public class ProviderAppointmentSearcher extends AbstractAppointmentSearcher {

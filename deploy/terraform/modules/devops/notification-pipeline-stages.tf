@@ -1,8 +1,8 @@
 resource "oci_devops_build_pipeline_stage" "notification_build_pipeline_build_stage" {
-  build_pipeline_id = oci_devops_build_pipeline.uho_build_pipeline.id
+  build_pipeline_id = oci_devops_build_pipeline.uho_build_pipeline["notification"].id
   build_pipeline_stage_predecessor_collection {
     items {
-      id = oci_devops_build_pipeline_stage.frontend_build_stage_trigger_deploy_pipeline.id
+      id = oci_devops_build_pipeline.uho_build_pipeline["notification"].id
     }
   }
   build_pipeline_stage_type = "BUILD"
@@ -22,7 +22,7 @@ resource "oci_devops_build_pipeline_stage" "notification_build_pipeline_build_st
   display_name                       = local.notification_build_pipeline_build_stage_name
   image                              = local.build_pipeline_stage_image
   stage_execution_timeout_in_seconds = local.build_stage_timeout_in_seconds
-  depends_on                         = [oci_devops_build_pipeline_stage.frontend_build_stage_trigger_deploy_pipeline]
+  depends_on                         = [oci_devops_build_pipeline.uho_build_pipeline["notification"]]
 }
 
 resource "oci_devops_deploy_artifact" "notification_docker_image_artifact" {
@@ -40,7 +40,7 @@ resource "oci_devops_deploy_artifact" "notification_docker_image_artifact" {
 
 resource "oci_devops_build_pipeline_stage" "notification_artifact_deliver_stage" {
 
-  build_pipeline_id = oci_devops_build_pipeline.uho_build_pipeline.id
+  build_pipeline_id = oci_devops_build_pipeline.uho_build_pipeline["notification"].id
   build_pipeline_stage_predecessor_collection {
     items {
       id = oci_devops_build_pipeline_stage.notification_build_pipeline_build_stage.id
@@ -60,7 +60,7 @@ resource "oci_devops_build_pipeline_stage" "notification_artifact_deliver_stage"
 }
 
 resource "oci_devops_build_pipeline_stage" "notification_build_stage_trigger_deploy_pipeline" {
-  build_pipeline_id = oci_devops_build_pipeline.uho_build_pipeline.id
+  build_pipeline_id = oci_devops_build_pipeline.uho_build_pipeline["notification"].id
   build_pipeline_stage_predecessor_collection {
     items {
       id = oci_devops_build_pipeline_stage.notification_artifact_deliver_stage.id

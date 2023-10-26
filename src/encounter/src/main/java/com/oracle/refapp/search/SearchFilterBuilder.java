@@ -4,8 +4,8 @@
  */
 package com.oracle.refapp.search;
 
+import jakarta.inject.Singleton;
 import java.util.ArrayList;
-import javax.inject.Singleton;
 
 @Singleton
 public class SearchFilterBuilder {

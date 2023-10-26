@@ -14,17 +14,17 @@ import com.oracle.refapp.patient.models.Patient;
 import com.oracle.refapp.patient.models.PatientCollection;
 import com.oracle.refapp.patient.models.UpdatePatientDetailsRequest;
 import com.oracle.refapp.patient.service.PatientService;
+import io.micronaut.http.HttpResponse;
 import io.micronaut.http.HttpStatus;
 import io.micronaut.http.annotation.Controller;
 import io.micronaut.http.exceptions.HttpStatusException;
 import java.io.IOException;
-import org.openapitools.api.AbstractPatientController;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import reactor.core.publisher.Mono;
 
 @Controller
-public class PatientController extends AbstractPatientController {
+public class PatientController implements PatientApi {
 
   private static final Logger LOG = LoggerFactory.getLogger(PatientController.class);
 
@@ -67,10 +67,10 @@ public class PatientController extends AbstractPatientController {
   }
 
   @Override
-  public Mono<Object> deletePatient(Integer patientId) {
+  public Mono<HttpResponse<Void>> deletePatient(Integer patientId) {
     try {
       patientService.deletePatient(patientId);
-      return Mono.just("{}");
+      return Mono.just(HttpResponse.ok());
     } catch (NoSuchPatientFoundException exception) {
       throw new HttpStatusException(
         HttpStatus.NOT_FOUND,
@@ -82,6 +82,7 @@ public class PatientController extends AbstractPatientController {
   @Override
   public Mono<Patient> getPatient(Integer patientId, String accessToken) {
     try {
+      LOG.info("Retrieving patient with id: {}", patientId);
       return Mono.just(patientService.getPatient(patientId, accessToken));
     } catch (NoSuchPatientFoundException exception) {
       throw new HttpStatusException(

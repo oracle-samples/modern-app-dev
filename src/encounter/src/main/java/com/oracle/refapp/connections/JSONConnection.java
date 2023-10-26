@@ -6,11 +6,11 @@ package com.oracle.refapp.connections;
 
 import com.oracle.refapp.exceptions.DatabaseConnectionException;
 import io.micronaut.context.annotation.Value;
+import jakarta.inject.Singleton;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.Properties;
-import javax.inject.Singleton;
 import oracle.soda.OracleCollection;
 import oracle.soda.OracleDatabase;
 import oracle.soda.OracleException;
@@ -21,7 +21,7 @@ import org.slf4j.LoggerFactory;
 @Singleton
 public class JSONConnection {
 
-  private OracleDatabase db;
+  private final OracleDatabase db;
 
   private static final Logger LOG = LoggerFactory.getLogger(JSONConnection.class);
 
@@ -40,6 +40,7 @@ public class JSONConnection {
       OracleCollection collection = db.openCollection("ENCOUNTERS");
       if (collection == null) {
         db.admin().createCollection("ENCOUNTERS");
+        LOG.info("Created collection ENCOUNTERS");
       }
     } catch (OracleException | SQLException e) {
       LOG.error("Error connecting to JSON DB : {}", e.getCause().toString());

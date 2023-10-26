@@ -1,7 +1,16 @@
+service:
+  patient: "http://uho-patient"
+  provider: "http://uho-provider"
+
 micronaut:
   http:
     client:
       read-timeout: 60s
+    services:
+      patient:
+        url: ${service.patient}
+      provider:
+        url: ${service.provider}
   application:
     name: appointment
   security:
@@ -16,6 +25,7 @@ micronaut:
       logout:
         enabled: true
         get-allowed: true
+    intercept-url-map-prepend-pattern-with-context-path: false
     intercept-url-map:
       - pattern: /v1/appointments/*
         httpMethod: GET
@@ -59,18 +69,10 @@ streaming:
   id:
   endpoint:
 
-service:
-  patient: "http://uho-patient"
-  provider: "http://uho-provider"
-
-tracing:
-  zipkin:
-    enabled: true
-    sampler:
-      probability: 1
-    http:
-      url:
-      path:
-
+otel:
+  exporter:
+    zipkin:
+      url: ${TRACING_ZIPKIN_HTTP_URL:''}
+      path: ${TRACING_ZIPKIN_HTTP_PATH:''}
 oci:
   config:
