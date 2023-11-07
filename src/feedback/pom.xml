@@ -8,7 +8,7 @@
   <parent>
     <groupId>io.helidon.applications</groupId>
     <artifactId>helidon-mp</artifactId>
-    <version>3.2.0</version>
+    <version>3.2.3</version>
     <relativePath></relativePath>
   </parent>
   <groupId>com.oracle.refapp</groupId>
