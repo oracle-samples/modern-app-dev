@@ -8,7 +8,7 @@
   <parent>
     <groupId>io.micronaut.platform</groupId>
     <artifactId>micronaut-parent</artifactId>
-    <version>4.0.7-oracle-00001</version>
+    <version>4.1.5</version>
   </parent>
 
   <groupId>com.oracle.refapp</groupId>
