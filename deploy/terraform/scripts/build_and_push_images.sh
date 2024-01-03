@@ -16,11 +16,22 @@ export DOCKER_BUILDKIT=1
 echo $NAMESPACE/$USERNAME
 docker login $REGION_CODE.ocir.io --username "$NAMESPACE/$USERNAME" --password "$AUTHTOKEN"
 
-for service in appointment encounter feedback followup frontend patient provider notification; do
+# docker images build from dockerfile
+for service in appointment encounter feedback followup frontend patient provider; do
   mkdir -p "$service/target"
   cp -r ../deploy/terraform/specs "$service/target"
   docker build -t "$REGION_CODE.ocir.io/$NAMESPACE/uho-$service-$DEPLOY_ID:$IMAGE_TAG" "$service/."
   docker push "$REGION_CODE.ocir.io/$NAMESPACE/uho-$service-$DEPLOY_ID:$IMAGE_TAG"
+done
+
+# docker images build from jib
+for service in notification; do
+  mkdir -p "$service/target"
+  cp -r ../deploy/terraform/specs "$service/target"
+  cd "$service"
+  mvn package -Dpackaging=docker -Djib.docker.image="$REGION_CODE.ocir.io/$NAMESPACE/uho-$service-$DEPLOY_ID" -Djib.docker.tag="$IMAGE_TAG"
+  docker push "$REGION_CODE.ocir.io/$NAMESPACE/uho-$service-$DEPLOY_ID:$IMAGE_TAG"
+  cd ..
 done
 
 echo "Docker image builds and push to OCIR completed"

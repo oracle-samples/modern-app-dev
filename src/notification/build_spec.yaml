@@ -6,16 +6,20 @@ timeoutInSeconds: 600
 runAs: root
 shell: bash
 env:
-  variables:
-    key: "value"
   exportedVariables:
     - BUILDRUN_HASH
-
+  variables:
+    "JAVA_HOME" : "/usr/lib64/graalvm/graalvm22-ee-java17"
 steps:
+  - type: Command
+    name: "Install GraalVM 22.x Native Image for Java17"
+    command: |
+      yum -y install graalvm22-ee-17-native-image
   - type: Command
     name: "Export variables step"
     timeoutInSeconds: 40
     command: |
+      export PATH=$JAVA_HOME/bin:$PATH
       export BUILDRUN_HASH=`echo ${OCI_BUILD_RUN_ID} | rev | cut -c 1-7`
       export DOCKER_BUILDKIT=1
       echo "BUILDRUN_HASH: " $BUILDRUN_HASH
@@ -29,9 +33,7 @@ steps:
     timeoutInSeconds: 600
     command: |
       cd ${OCI_WORKSPACE_DIR}/uho_build_source/src/notification
-      mkdir -p ${OCI_WORKSPACE_DIR}/uho_build_source/src/notification/target
-      cp -r ${OCI_WORKSPACE_DIR}/uho_build_source/deploy/terraform/specs ${OCI_WORKSPACE_DIR}/uho_build_source/src/notification/target/specs
-      DOCKER_BUILDKIT=1 docker build -t notification:latest .
+      mvn package -Dpackaging=docker
     onFailure:
       - type: Command
         command: echo "build failed"

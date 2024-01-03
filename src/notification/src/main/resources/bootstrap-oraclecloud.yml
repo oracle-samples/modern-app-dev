@@ -1,0 +1,12 @@
+micronaut:
+  application:
+    name: oci
+  config-client:
+    enabled: true
+oci:
+  vault:
+    config:
+      enabled: true
+    vaults:
+      - compartment-ocid: ${COMPARTMENT_ID}
+        ocid: ${VAULT_ID}

@@ -100,6 +100,7 @@ resource "oci_devops_deploy_stage" "notification_deploy_pipeline_stage" {
     "NAMESPACE" : var.object_storage_namespace_name,
     "BUCKET_NAME" : var.object_storage_bucket_name,
     "VAULT_ID" : var.vault_id,
+    "COMPARTMENT_ID": var.compartment_id,
     "SECRET_NAME" : var.secret_name,
     "IDCS_URL" : var.idcs_url,
     "APIGW_URL" : var.apigw_url
