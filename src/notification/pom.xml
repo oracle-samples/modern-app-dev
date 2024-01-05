@@ -15,6 +15,7 @@
         <artifactId>micronaut-parent</artifactId>
         <version>4.2.1-oracle-00001</version>
     </parent>
+
     <repositories>
         <repository>
             <id>central</id>

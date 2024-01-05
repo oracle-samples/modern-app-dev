@@ -25,9 +25,13 @@ import java.time.format.DateTimeParseException;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+
+import io.micronaut.scheduling.TaskExecutors;
+import io.micronaut.scheduling.annotation.ExecuteOn;
 import reactor.core.publisher.Mono;
 
 @Controller
+@ExecuteOn(TaskExecutors.BLOCKING)
 public class AppointmentController implements AppointmentApi {
 
   private final AppointmentService appointmentService;

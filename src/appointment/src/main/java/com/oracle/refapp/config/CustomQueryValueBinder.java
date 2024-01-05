@@ -4,7 +4,6 @@
  */
 package com.oracle.refapp.config;
 
-import io.micronaut.core.bind.ArgumentBinder.BindingResult;
 import io.micronaut.core.convert.ArgumentConversionContext;
 import io.micronaut.core.convert.ConversionError;
 import io.micronaut.core.convert.ConversionService;
