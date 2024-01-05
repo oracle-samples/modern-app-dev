@@ -1,0 +1,33 @@
+javamail:
+  properties:
+    mail:
+      smtp:
+        auth: true
+        host: ${SMTP_HOST:''}
+        port: 587
+        starttls:
+          enable: true
+micronaut:
+  email:
+    from:
+      email: ${FROM_ADDRESS:''}
+      name: UHO Notification
+  object-storage:
+    oracle-cloud:
+      default:
+        bucket: ${BUCKET_NAME}
+        namespace: ${NAMESPACE}
+  http:
+    services:
+      idcs:
+        url: ${IDCS_URL}
+      apigw:
+        url: ${APIGW_URL}
+oci:
+  config:
+    profile: DEFAULT
+
+smtp:
+  password: ${SMTP_PASSWORD:''}
+  user: ${SMTP_USERNAME:''}
+  host: ${SMTP_HOST:''}
