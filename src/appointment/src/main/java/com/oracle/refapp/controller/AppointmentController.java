@@ -19,6 +19,8 @@ import io.micronaut.http.HttpResponse;
 import io.micronaut.http.HttpStatus;
 import io.micronaut.http.annotation.Controller;
 import io.micronaut.http.exceptions.HttpStatusException;
+import io.micronaut.scheduling.TaskExecutors;
+import io.micronaut.scheduling.annotation.ExecuteOn;
 import java.io.IOException;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeParseException;
@@ -28,6 +30,7 @@ import java.util.List;
 import reactor.core.publisher.Mono;
 
 @Controller
+@ExecuteOn(TaskExecutors.BLOCKING)
 public class AppointmentController implements AppointmentApi {
 
   private final AppointmentService appointmentService;

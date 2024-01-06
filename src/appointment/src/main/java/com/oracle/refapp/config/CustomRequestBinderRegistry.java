@@ -21,6 +21,6 @@ public class CustomRequestBinderRegistry extends DefaultRequestBinderRegistry {
 
   public CustomRequestBinderRegistry(ConversionService conversionService, List<RequestArgumentBinder> binders) {
     super(conversionService, binders);
-    addRequestArgumentBinder(new CustomQueryValueBinder<>(conversionService));
+    addArgumentBinder(new CustomQueryValueBinder<>(conversionService));
   }
 }

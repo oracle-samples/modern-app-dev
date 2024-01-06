@@ -8,7 +8,7 @@
   <parent>
     <groupId>io.micronaut.platform</groupId>
     <artifactId>micronaut-parent</artifactId>
-    <version>4.0.7-oracle-00001</version>
+    <version>4.2.1-oracle-00001</version>
   </parent>
 
   <groupId>com.oracle.refapp</groupId>
@@ -23,9 +23,8 @@
     <jacoco.version>0.8.7</jacoco.version>
     <exec.mainClass>com.oracle.refapp.patient.Application</exec.mainClass>
 
-    <micronaut.version>4.0.7-oracle-00001</micronaut.version>
+    <micronaut.version>4.2.1-oracle-00001</micronaut.version>
     <micronaut.runtime>netty</micronaut.runtime>
-    <micronaut.oraclecloud.version>3.0.7</micronaut.oraclecloud.version>
 
     <micronaut.openapi.generate.server>true</micronaut.openapi.generate.server>
     <micronaut.openapi.definition>${basedir}/target/specs/Patient.yml</micronaut.openapi.definition>
@@ -42,7 +41,7 @@
       <dependency>
         <groupId>cloud.graal.gcn</groupId>
         <artifactId>gcn-bom</artifactId>
-        <version>2.1</version>
+        <version>4.2.1.1</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
@@ -51,30 +50,13 @@
 
   <dependencies>
     <dependency>
-      <groupId>io.micronaut</groupId>
-      <artifactId>micronaut-core</artifactId>
-      <version>4.1.10</version>
-    </dependency>
-    <dependency>
       <groupId>io.micronaut.serde</groupId>
       <artifactId>micronaut-serde-jackson</artifactId>
-      <version>2.2.6</version>
       <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>io.micronaut.serde</groupId>
-      <artifactId>micronaut-serde-support</artifactId>
-      <version>2.2.6</version>
-    </dependency>
-    <dependency>
-      <groupId>io.micronaut.serde</groupId>
-      <artifactId>micronaut-serde-api</artifactId>
-      <version>2.2.6</version>
     </dependency>
     <dependency>
       <groupId>io.micronaut.oraclecloud</groupId>
       <artifactId>micronaut-oraclecloud-httpclient-netty</artifactId>
-      <version>${micronaut.oraclecloud.version}</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
@@ -165,13 +147,6 @@
     <dependency>
       <groupId>io.micronaut.oraclecloud</groupId>
       <artifactId>micronaut-oraclecloud-sdk</artifactId>
-      <version>${micronaut.oraclecloud.version}</version>
-      <exclusions>
-        <exclusion>
-          <groupId>commons-logging</groupId>
-          <artifactId>commons-logging</artifactId>
-        </exclusion>
-      </exclusions>
     </dependency>
     <dependency>
       <groupId>io.micronaut.micrometer</groupId>
@@ -237,12 +212,12 @@
       <optional>false</optional>
     </dependency>
   </dependencies>
+
   <repositories>
     <repository>
       <id>central</id>
       <url>https://repo.maven.apache.org/maven2</url>
     </repository>
-
     <repository>
       <id>gcn</id>
       <url>https://maven.oracle.com/public</url>
@@ -496,7 +471,7 @@
       <plugin>
         <groupId>com.diffplug.spotless</groupId>
         <artifactId>spotless-maven-plugin</artifactId>
-        <version>2.36.0</version>
+        <version>2.41.1</version>
         <configuration>
           <pom>
             <includes>
@@ -518,8 +493,8 @@
               </licenseHeader>
               <prettier>
                 <devDependencies>
-                  <prettier-plugin-java>2.1.0</prettier-plugin-java>
-                  <prettier>2.8.7</prettier>
+                  <prettier-plugin-java>2.5.0</prettier-plugin-java>
+                  <prettier>2.8.8</prettier>
                 </devDependencies>
                 <config>
                   <parser>java</parser>

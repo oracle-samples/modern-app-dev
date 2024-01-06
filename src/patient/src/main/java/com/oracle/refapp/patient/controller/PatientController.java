@@ -18,12 +18,15 @@ import io.micronaut.http.HttpResponse;
 import io.micronaut.http.HttpStatus;
 import io.micronaut.http.annotation.Controller;
 import io.micronaut.http.exceptions.HttpStatusException;
+import io.micronaut.scheduling.TaskExecutors;
+import io.micronaut.scheduling.annotation.ExecuteOn;
 import java.io.IOException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import reactor.core.publisher.Mono;
 
 @Controller
+@ExecuteOn(TaskExecutors.BLOCKING)
 public class PatientController implements PatientApi {
 
   private static final Logger LOG = LoggerFactory.getLogger(PatientController.class);
